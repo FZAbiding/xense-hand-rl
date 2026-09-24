@@ -35,3 +35,14 @@ free pen task. Official joint axes, limits, masses, inertias and collision
 meshes are retained. See `assets/revo3/provenance.json` and `REVO3_RESEARCH.md`.
 The official Revo-MjLab checkout was consulted as an implementation reference;
 its code and pretrained policy are not incorporated into this PPO policy.
+
+## Wuji Hand 2
+
+The Wuji Hand 2 Beta 2 right-hand MJCF and meshes are sourced from
+https://github.com/wuji-technology/wuji-description and pinned through the
+`third_party/wuji-description` submodule. The upstream repository is MIT
+licensed. `build_wuji_hand2.py` fixes the palm orientation and adds the same
+free training rod task while preserving official link geometry, inertia,
+joint limits and actuator force limits. For comparison with Revo3, position
+controller `kp` is set to 3; official `kv` is retained. The generated scene records its exact
+source revision in `assets/wuji_hand2/provenance.json`.

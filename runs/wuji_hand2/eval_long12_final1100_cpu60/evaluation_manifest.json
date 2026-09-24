@@ -1,0 +1,11 @@
+{
+  "checkpoint_sha256": "deba17338f7550206f2a1c4ae6ae1c4bb66e2436c8316665ed10fb424514181f",
+  "sources": {
+    "experiments/wuji_hand2/evaluate.py": "8c286a6e901ea802c081a178fa1890e1f2995a97a81231cc6dc0ce452a3c1708",
+    "experiments/wuji_hand2/motion_audit.py": "87c4714629d1704d90633fd64740fba498aa726de57ef1c380f20b1dba4af76c",
+    "train.py": "3a038566dc831b8ab30615a1db38cfeb2b99621e65b757527673dd5edde5acbe"
+  },
+  "joint_noise_std_rad": 0.005,
+  "position_noise_std_m": 0.0004,
+  "automatic_resets": false
+}

@@ -1,0 +1,1241 @@
+{
+  "checkpoint": "runs/wuji_hand2/long12_pilot020_6s_seed1/checkpoint_000250.pt",
+  "experiment_version": "2.0",
+  "backend": "CPU MuJoCo closed-loop",
+  "seed": 20260925,
+  "episodes": 16,
+  "seconds": 12.0,
+  "amplitude_rad": 0.2,
+  "period_seconds": 6.0,
+  "quality_success_rate": 0.0,
+  "survival_rate": 0.625,
+  "workspace_survival_rate": 0.625,
+  "quality_definition": "survive; MAE<=3deg; mean tilt<=10deg; P95 tilt<=15deg; clip<5%; non-tip Fn>0.05N <5%frames; palm Fn>0.05N <1%; two tips Fn>0.02N >80%; each half-cycle peak>=90% target",
+  "mae_deg": 4.589223350931211,
+  "mean_tilt_deg": 5.0892988365136365,
+  "p95_tilt_deg": 21.272740043679057,
+  "command_clip_fraction": 0.047871093749999996,
+  "normal_force_sum_n": 0.8854891754710644,
+  "non_tip_force_frame_fraction": 0.967578125,
+  "palm_force_frame_fraction": 0.0,
+  "two_tip_fraction": 0.8692708333333333,
+  "minimum_half_cycle_gain": 0.49209550747606645,
+  "per_episode": [
+    {
+      "episode": 0,
+      "grasp_index": 0,
+      "survived": false,
+      "within_workspace": false,
+      "mae_deg": 4.3704346027269,
+      "mean_tilt_deg": 8.498746745747011,
+      "p95_tilt_deg": 43.36958651088311,
+      "command_clip_fraction": 0.047187499999999986,
+      "normal_force_sum_n": 0.8463770743394988,
+      "non_tip_force_frame_fraction": 0.9770833333333333,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.75,
+      "minimum_half_cycle_gain": 0.7803249000231205,
+      "half_cycle_gains": [
+        1.0297441542534358,
+        0.7926536597073898,
+        0.7803249000231205,
+        1.6902538042311
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.22916666666666666,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.12708333333333333,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.2125,
+        "r_index_finger_pip": 0.004166666666666667,
+        "r_index_finger_dip": 0.10625,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.08125,
+        "r_ring_finger_dip": 0.18333333333333332,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 9.9067631784694,
+          "rms_acceleration_deg_s2": 612.48792064763,
+          "p95_step_deg": 0.7889146991466971,
+          "max_step_deg": 6.478484667645155
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.7902446046046405,
+          "rms_acceleration_deg_s2": 343.7372369879406,
+          "p95_step_deg": 0.5189373121830965,
+          "max_step_deg": 2.569970863224853
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 6.57009506771145,
+          "rms_acceleration_deg_s2": 337.8312004456337,
+          "p95_step_deg": 0.5270729773540062,
+          "max_step_deg": 3.2517565223957376
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.389686093820057,
+          "rms_acceleration_deg_s2": 80.99162091173996,
+          "p95_step_deg": 0.2900115232476743,
+          "max_step_deg": 0.5810217268862132
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.754951595576898,
+          "rms_acceleration_deg_s2": 110.82460390066007,
+          "p95_step_deg": 0.20623057021143865,
+          "max_step_deg": 1.313687854785428
+        }
+      }
+    },
+    {
+      "episode": 1,
+      "grasp_index": 1,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 2.7808297179485897,
+      "mean_tilt_deg": 1.8096159326847356,
+      "p95_tilt_deg": 4.698903955261547,
+      "command_clip_fraction": 0.027291666666666665,
+      "normal_force_sum_n": 0.8552546249769034,
+      "non_tip_force_frame_fraction": 0.9583333333333334,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9416666666666667,
+      "minimum_half_cycle_gain": 0.7409229350892066,
+      "half_cycle_gains": [
+        1.217472874446477,
+        0.741128176131024,
+        1.0609515865694685,
+        0.7409229350892066
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.0,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.06041666666666667,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.07708333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.18541666666666667,
+        "r_ring_finger_dip": 0.22291666666666668,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 7.125225045746923,
+          "rms_acceleration_deg_s2": 893.0037454277106,
+          "p95_step_deg": 0.3964981647401471,
+          "max_step_deg": 9.86474325216517
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 6.912509014497188,
+          "rms_acceleration_deg_s2": 352.98998236333716,
+          "p95_step_deg": 0.4229611057704279,
+          "max_step_deg": 3.329506563240699
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 6.209686226969174,
+          "rms_acceleration_deg_s2": 255.59516715823574,
+          "p95_step_deg": 0.3879687379650827,
+          "max_step_deg": 2.674252520435232
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.28518017059306,
+          "rms_acceleration_deg_s2": 69.28340320369888,
+          "p95_step_deg": 0.28766155465989746,
+          "max_step_deg": 0.6802076089772733
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.9634141516303014,
+          "rms_acceleration_deg_s2": 134.16739595315693,
+          "p95_step_deg": 0.20318762076891694,
+          "max_step_deg": 1.2995506344244063
+        }
+      }
+    },
+    {
+      "episode": 2,
+      "grasp_index": 2,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 3.5975621471959687,
+      "mean_tilt_deg": 2.046242447654243,
+      "p95_tilt_deg": 6.840830571321921,
+      "command_clip_fraction": 0.04927083333333333,
+      "normal_force_sum_n": 0.9737024040371861,
+      "non_tip_force_frame_fraction": 0.9729166666666667,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9479166666666666,
+      "minimum_half_cycle_gain": 0.31087159628860217,
+      "half_cycle_gains": [
+        1.0025245844800723,
+        0.6317990580613742,
+        0.8337899687249595,
+        0.31087159628860217
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.16458333333333333,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.14791666666666667,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.10833333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.28541666666666665,
+        "r_ring_finger_dip": 0.2791666666666667,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 7.83190234832887,
+          "rms_acceleration_deg_s2": 998.4587277419647,
+          "p95_step_deg": 0.4209348653166558,
+          "max_step_deg": 10.80084728602573
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.0737415230051015,
+          "rms_acceleration_deg_s2": 398.40402645600443,
+          "p95_step_deg": 0.47912282335878764,
+          "max_step_deg": 3.739964958611992
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 5.251844351621211,
+          "rms_acceleration_deg_s2": 382.90680638361806,
+          "p95_step_deg": 0.37197038749033595,
+          "max_step_deg": 4.20955902009301
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.344322838686635,
+          "rms_acceleration_deg_s2": 86.33487344019619,
+          "p95_step_deg": 0.31902736770092766,
+          "max_step_deg": 0.6303427973562314
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.6699742219277116,
+          "rms_acceleration_deg_s2": 135.4709438396716,
+          "p95_step_deg": 0.16372101306484055,
+          "max_step_deg": 1.4239479212598987
+        }
+      }
+    },
+    {
+      "episode": 3,
+      "grasp_index": 3,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 3.5968358883117664,
+      "mean_tilt_deg": 2.2167997915760895,
+      "p95_tilt_deg": 7.140566999632142,
+      "command_clip_fraction": 0.04958333333333333,
+      "normal_force_sum_n": 1.0612650346217594,
+      "non_tip_force_frame_fraction": 0.9666666666666667,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9645833333333333,
+      "minimum_half_cycle_gain": 0.355909210007247,
+      "half_cycle_gains": [
+        1.013461305240202,
+        0.6301098109358395,
+        0.8493787691502641,
+        0.355909210007247
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.14166666666666666,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.14791666666666667,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.11666666666666667,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.3020833333333333,
+        "r_ring_finger_dip": 0.2833333333333333,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 7.5806149375182565,
+          "rms_acceleration_deg_s2": 647.289264660982,
+          "p95_step_deg": 0.4437826014299104,
+          "max_step_deg": 7.215257422089062
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 6.71647263732464,
+          "rms_acceleration_deg_s2": 299.50628437740625,
+          "p95_step_deg": 0.45138930430547575,
+          "max_step_deg": 2.4733835098844708
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 5.2076893471644885,
+          "rms_acceleration_deg_s2": 234.49669876742544,
+          "p95_step_deg": 0.37696745252981945,
+          "max_step_deg": 2.3351699993586976
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.295060601890745,
+          "rms_acceleration_deg_s2": 59.174846701257465,
+          "p95_step_deg": 0.32637127203236993,
+          "max_step_deg": 0.4418857683455357
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.5647735608631805,
+          "rms_acceleration_deg_s2": 104.00316480154557,
+          "p95_step_deg": 0.15095246800234907,
+          "max_step_deg": 1.2824312008404846
+        }
+      }
+    },
+    {
+      "episode": 4,
+      "grasp_index": 4,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 2.5291391818673503,
+      "mean_tilt_deg": 1.8715292951985605,
+      "p95_tilt_deg": 7.260383394081966,
+      "command_clip_fraction": 0.04947916666666666,
+      "normal_force_sum_n": 0.7934734085279641,
+      "non_tip_force_frame_fraction": 0.9833333333333333,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9895833333333334,
+      "minimum_half_cycle_gain": 0.4191733985237911,
+      "half_cycle_gains": [
+        0.9644497390200313,
+        0.7730658777876798,
+        0.7712826852389232,
+        0.4191733985237911
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.29791666666666666,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.13333333333333333,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.058333333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.25416666666666665,
+        "r_ring_finger_dip": 0.24583333333333332,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 8.261451922276247,
+          "rms_acceleration_deg_s2": 847.4881878537711,
+          "p95_step_deg": 0.4649632006162199,
+          "max_step_deg": 9.057490242492516
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.265926927826597,
+          "rms_acceleration_deg_s2": 392.45473009296654,
+          "p95_step_deg": 0.507241411814058,
+          "max_step_deg": 3.007677270108502
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 4.574729878567117,
+          "rms_acceleration_deg_s2": 373.525197989786,
+          "p95_step_deg": 0.36423459092429056,
+          "max_step_deg": 3.871860848246257
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.277774077592067,
+          "rms_acceleration_deg_s2": 85.09454363983545,
+          "p95_step_deg": 0.30571002673756364,
+          "max_step_deg": 0.7501724295245076
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.653321141887241,
+          "rms_acceleration_deg_s2": 120.11153697921932,
+          "p95_step_deg": 0.1810784241829566,
+          "max_step_deg": 1.4486331735422482
+        }
+      }
+    },
+    {
+      "episode": 5,
+      "grasp_index": 5,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 2.9749269195910673,
+      "mean_tilt_deg": 1.9736656567697104,
+      "p95_tilt_deg": 6.395353688622969,
+      "command_clip_fraction": 0.038958333333333345,
+      "normal_force_sum_n": 0.8443841780026292,
+      "non_tip_force_frame_fraction": 0.9770833333333333,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.925,
+      "minimum_half_cycle_gain": 0.4739930546945914,
+      "half_cycle_gains": [
+        1.0859547482360865,
+        0.7152758321337671,
+        0.7565312933295532,
+        0.4739930546945914
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.07291666666666667,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.11666666666666667,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.09583333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.2520833333333333,
+        "r_ring_finger_dip": 0.24166666666666667,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 7.590345446140344,
+          "rms_acceleration_deg_s2": 830.7863153112402,
+          "p95_step_deg": 0.4129027621849706,
+          "max_step_deg": 8.256313401315115
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.2743474404865305,
+          "rms_acceleration_deg_s2": 405.8107117245768,
+          "p95_step_deg": 0.4898962918542882,
+          "max_step_deg": 3.7186900604055353
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 5.334402205100847,
+          "rms_acceleration_deg_s2": 304.948444145824,
+          "p95_step_deg": 0.3731164900426478,
+          "max_step_deg": 3.1669773853009815
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.320512319759993,
+          "rms_acceleration_deg_s2": 74.07233742506314,
+          "p95_step_deg": 0.3017680831014852,
+          "max_step_deg": 0.59566381934021
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.774701449318709,
+          "rms_acceleration_deg_s2": 165.17075457704001,
+          "p95_step_deg": 0.16456782057659503,
+          "max_step_deg": 1.3791961210148784
+        }
+      }
+    },
+    {
+      "episode": 6,
+      "grasp_index": 6,
+      "survived": false,
+      "within_workspace": false,
+      "mae_deg": 16.37513908527455,
+      "mean_tilt_deg": 12.614871694272063,
+      "p95_tilt_deg": 57.76064938728013,
+      "command_clip_fraction": 0.06802083333333334,
+      "normal_force_sum_n": 0.8855447362294996,
+      "non_tip_force_frame_fraction": 0.8375,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.6791666666666667,
+      "minimum_half_cycle_gain": 0.6983684962832237,
+      "half_cycle_gains": [
+        1.063883812344174,
+        0.6983684962832237,
+        0.8469838158807474,
+        15.084033461872838
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0020833333333333333,
+        "r_thumb_cmc_abd": 0.21875,
+        "r_thumb_mcp": 0.058333333333333334,
+        "r_thumb_ip": 0.0,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.36666666666666664,
+        "r_index_finger_pip": 0.01875,
+        "r_index_finger_dip": 0.32708333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.13333333333333333,
+        "r_ring_finger_pip": 0.0,
+        "r_ring_finger_dip": 0.23541666666666666,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 12.757543625454979,
+          "rms_acceleration_deg_s2": 947.4238570653562,
+          "p95_step_deg": 0.8651388667397022,
+          "max_step_deg": 8.797962599743952
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 8.01881911255553,
+          "rms_acceleration_deg_s2": 493.1723519000218,
+          "p95_step_deg": 0.6526397268549271,
+          "max_step_deg": 4.149184968494071
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 7.112333525753094,
+          "rms_acceleration_deg_s2": 262.93456529507785,
+          "p95_step_deg": 0.5479254095442269,
+          "max_step_deg": 2.393576519778847
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.559517884068972,
+          "rms_acceleration_deg_s2": 96.7383019358442,
+          "p95_step_deg": 0.3254027566962727,
+          "max_step_deg": 0.5272365610255463
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 3.521913052565226,
+          "rms_acceleration_deg_s2": 178.17723801791578,
+          "p95_step_deg": 0.26460303549854647,
+          "max_step_deg": 1.3165935670938609
+        }
+      }
+    },
+    {
+      "episode": 7,
+      "grasp_index": 7,
+      "survived": false,
+      "within_workspace": false,
+      "mae_deg": 10.05441936495662,
+      "mean_tilt_deg": 9.285578077051435,
+      "p95_tilt_deg": 37.50003058150406,
+      "command_clip_fraction": 0.059479166666666666,
+      "normal_force_sum_n": 0.7550318856587019,
+      "non_tip_force_frame_fraction": 0.9791666666666666,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.71875,
+      "minimum_half_cycle_gain": -0.3086078410987924,
+      "half_cycle_gains": [
+        0.9513632421123552,
+        0.7575750984929575,
+        0.773229089236479,
+        -0.3086078410987924
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.175,
+        "r_thumb_mcp": 0.03125,
+        "r_thumb_ip": 0.15625,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.18541666666666667,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.06041666666666667,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.17083333333333334,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.12916666666666668,
+        "r_ring_finger_pip": 0.06666666666666667,
+        "r_ring_finger_dip": 0.21458333333333332,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 10.159669555616432,
+          "rms_acceleration_deg_s2": 771.8676341902226,
+          "p95_step_deg": 0.6928131935554989,
+          "max_step_deg": 7.900696503835686
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.806405274524575,
+          "rms_acceleration_deg_s2": 377.0926715483845,
+          "p95_step_deg": 0.5395875328835604,
+          "max_step_deg": 3.732085941596381
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 5.984637305402467,
+          "rms_acceleration_deg_s2": 367.76589335288713,
+          "p95_step_deg": 0.47394667510748967,
+          "max_step_deg": 3.5540712461043995
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.31100270849307,
+          "rms_acceleration_deg_s2": 62.70635692345827,
+          "p95_step_deg": 0.2849363718282665,
+          "max_step_deg": 0.37539300189957814
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 3.3344967293622827,
+          "rms_acceleration_deg_s2": 124.271773137528,
+          "p95_step_deg": 0.23065164313142486,
+          "max_step_deg": 1.4883723205313188
+        }
+      }
+    },
+    {
+      "episode": 8,
+      "grasp_index": 0,
+      "survived": false,
+      "within_workspace": false,
+      "mae_deg": 3.6419741591556405,
+      "mean_tilt_deg": 9.502618583098952,
+      "p95_tilt_deg": 46.07670784657797,
+      "command_clip_fraction": 0.0515625,
+      "normal_force_sum_n": 0.8787936405610977,
+      "non_tip_force_frame_fraction": 0.9854166666666667,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.75625,
+      "minimum_half_cycle_gain": 0.7754256433713489,
+      "half_cycle_gains": [
+        1.0283972226253513,
+        0.8200622320266115,
+        0.7754256433713489,
+        1.8791221208234457
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.23541666666666666,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.1375,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.2375,
+        "r_index_finger_pip": 0.03958333333333333,
+        "r_index_finger_dip": 0.10833333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.041666666666666664,
+        "r_ring_finger_pip": 0.0625,
+        "r_ring_finger_dip": 0.16875,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 9.742642595966267,
+          "rms_acceleration_deg_s2": 642.3037240691725,
+          "p95_step_deg": 0.8027042094682564,
+          "max_step_deg": 6.614076334468912
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.679376803129137,
+          "rms_acceleration_deg_s2": 396.35236684314054,
+          "p95_step_deg": 0.5081841268606215,
+          "max_step_deg": 3.151815396850381
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 6.597619159758522,
+          "rms_acceleration_deg_s2": 304.20272805739376,
+          "p95_step_deg": 0.5396378694758879,
+          "max_step_deg": 2.821614530777964
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.356974036263651,
+          "rms_acceleration_deg_s2": 87.56062429110364,
+          "p95_step_deg": 0.2837563931879039,
+          "max_step_deg": 0.658016599106471
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.8457774812779877,
+          "rms_acceleration_deg_s2": 103.20473092659248,
+          "p95_step_deg": 0.20859575807328135,
+          "max_step_deg": 1.1132753766936148
+        }
+      }
+    },
+    {
+      "episode": 9,
+      "grasp_index": 1,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 2.668970471557542,
+      "mean_tilt_deg": 2.373024167026705,
+      "p95_tilt_deg": 4.741277153443843,
+      "command_clip_fraction": 0.016666666666666663,
+      "normal_force_sum_n": 0.8366811529248044,
+      "non_tip_force_frame_fraction": 0.95625,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.94375,
+      "minimum_half_cycle_gain": 0.7562741870605849,
+      "half_cycle_gains": [
+        1.0656378130333288,
+        0.8475983056592551,
+        0.9609983893338003,
+        0.7562741870605849
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.0,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.035416666666666666,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.05625,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.07291666666666667,
+        "r_ring_finger_dip": 0.16875,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 7.713363856961931,
+          "rms_acceleration_deg_s2": 849.2786405658085,
+          "p95_step_deg": 0.4117792641444291,
+          "max_step_deg": 9.284545711767578
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.702671045993932,
+          "rms_acceleration_deg_s2": 396.081155216223,
+          "p95_step_deg": 0.4804838183910709,
+          "max_step_deg": 3.5636721368170896
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 6.186093150942554,
+          "rms_acceleration_deg_s2": 280.5350580623778,
+          "p95_step_deg": 0.37706612457501265,
+          "max_step_deg": 2.832768014797182
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.316318881581798,
+          "rms_acceleration_deg_s2": 78.22348251776219,
+          "p95_step_deg": 0.2639182136953444,
+          "max_step_deg": 0.580365179751638
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 3.1056218333387386,
+          "rms_acceleration_deg_s2": 164.467342460319,
+          "p95_step_deg": 0.22557237231631078,
+          "max_step_deg": 1.8707854910582924
+        }
+      }
+    },
+    {
+      "episode": 10,
+      "grasp_index": 2,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 3.3211354493913277,
+      "mean_tilt_deg": 2.025076383935496,
+      "p95_tilt_deg": 6.92907001379101,
+      "command_clip_fraction": 0.04541666666666667,
+      "normal_force_sum_n": 0.8898052650735001,
+      "non_tip_force_frame_fraction": 0.9708333333333333,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9645833333333333,
+      "minimum_half_cycle_gain": 0.3200334947474269,
+      "half_cycle_gains": [
+        1.0067827248516836,
+        0.6524549765526466,
+        0.8038909355653043,
+        0.3200334947474269
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.15416666666666667,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.13125,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.08541666666666667,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.26666666666666666,
+        "r_ring_finger_dip": 0.2708333333333333,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 8.127682285419976,
+          "rms_acceleration_deg_s2": 957.6328028359751,
+          "p95_step_deg": 0.4575657216798952,
+          "max_step_deg": 10.328888584166958
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.3820976480040486,
+          "rms_acceleration_deg_s2": 375.03854229102,
+          "p95_step_deg": 0.5197311655575936,
+          "max_step_deg": 3.4546867438309192
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 4.987550536097157,
+          "rms_acceleration_deg_s2": 402.69421275499974,
+          "p95_step_deg": 0.3618407912160855,
+          "max_step_deg": 4.627959537885104
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.2770178312400535,
+          "rms_acceleration_deg_s2": 70.39544275847635,
+          "p95_step_deg": 0.3135753645482273,
+          "max_step_deg": 0.444082286817018
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.754156064772211,
+          "rms_acceleration_deg_s2": 136.30804331047034,
+          "p95_step_deg": 0.18123298057989912,
+          "max_step_deg": 1.340134774478603
+        }
+      }
+    },
+    {
+      "episode": 11,
+      "grasp_index": 3,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 3.532817406343949,
+      "mean_tilt_deg": 2.3233713168707553,
+      "p95_tilt_deg": 7.871282073671995,
+      "command_clip_fraction": 0.04697916666666666,
+      "normal_force_sum_n": 0.9953395978743368,
+      "non_tip_force_frame_fraction": 0.9833333333333333,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9520833333333333,
+      "minimum_half_cycle_gain": 0.33365724980758515,
+      "half_cycle_gains": [
+        1.0813351836273377,
+        0.6517803146580204,
+        0.8646106801974385,
+        0.33365724980758515
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.13958333333333334,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.1375,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.09375,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.28541666666666665,
+        "r_ring_finger_dip": 0.2833333333333333,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 8.076196568394238,
+          "rms_acceleration_deg_s2": 659.032842081327,
+          "p95_step_deg": 0.4879701300785274,
+          "max_step_deg": 6.871980575486475
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.022035567799784,
+          "rms_acceleration_deg_s2": 367.86070885309874,
+          "p95_step_deg": 0.49273051879054464,
+          "max_step_deg": 3.708221737736622
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 4.835963062996506,
+          "rms_acceleration_deg_s2": 233.3332885870162,
+          "p95_step_deg": 0.37229978878630243,
+          "max_step_deg": 2.0198314816955474
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.262452557848641,
+          "rms_acceleration_deg_s2": 67.43597252890783,
+          "p95_step_deg": 0.3227072748899493,
+          "max_step_deg": 0.5355980829589129
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.5919054395056422,
+          "rms_acceleration_deg_s2": 130.4561907681549,
+          "p95_step_deg": 0.16040558221382373,
+          "max_step_deg": 0.8951358673562915
+        }
+      }
+    },
+    {
+      "episode": 12,
+      "grasp_index": 4,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 2.670067804534793,
+      "mean_tilt_deg": 2.23638650896763,
+      "p95_tilt_deg": 7.558559623168123,
+      "command_clip_fraction": 0.045625,
+      "normal_force_sum_n": 0.8602957384412704,
+      "non_tip_force_frame_fraction": 0.98125,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9625,
+      "minimum_half_cycle_gain": 0.4054469721077336,
+      "half_cycle_gains": [
+        0.9546995769059983,
+        0.7526721017256466,
+        0.8177775123496067,
+        0.4054469721077336
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.20833333333333334,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.13125,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.058333333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.25833333333333336,
+        "r_ring_finger_dip": 0.25625,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 8.088922359709334,
+          "rms_acceleration_deg_s2": 867.1301352696169,
+          "p95_step_deg": 0.4769924750219958,
+          "max_step_deg": 9.168283855340102
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.253342678745361,
+          "rms_acceleration_deg_s2": 410.8605965819698,
+          "p95_step_deg": 0.5169500952642645,
+          "max_step_deg": 3.311639856377994
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 4.798244063758154,
+          "rms_acceleration_deg_s2": 381.1047439684963,
+          "p95_step_deg": 0.3676991029119048,
+          "max_step_deg": 3.9982952909775094
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.314327722749038,
+          "rms_acceleration_deg_s2": 82.51349774833837,
+          "p95_step_deg": 0.3097044221790357,
+          "max_step_deg": 0.6468880447753058
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.6149220943547147,
+          "rms_acceleration_deg_s2": 127.1050357060455,
+          "p95_step_deg": 0.18341938888830978,
+          "max_step_deg": 1.4563226435811885
+        }
+      }
+    },
+    {
+      "episode": 13,
+      "grasp_index": 5,
+      "survived": true,
+      "within_workspace": true,
+      "mae_deg": 3.2348298599717498,
+      "mean_tilt_deg": 2.0275323398415668,
+      "p95_tilt_deg": 7.109612121022558,
+      "command_clip_fraction": 0.03791666666666667,
+      "normal_force_sum_n": 0.8093429631289564,
+      "non_tip_force_frame_fraction": 0.9833333333333333,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.9479166666666666,
+      "minimum_half_cycle_gain": 0.3532444010605118,
+      "half_cycle_gains": [
+        1.1359585105280368,
+        0.6984511570328955,
+        0.8060144449803253,
+        0.3532444010605118
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.0,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.04375,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.12083333333333333,
+        "r_index_finger_pip": 0.0,
+        "r_index_finger_dip": 0.08958333333333333,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.0,
+        "r_ring_finger_pip": 0.24791666666666667,
+        "r_ring_finger_dip": 0.25625,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 8.036667574942095,
+          "rms_acceleration_deg_s2": 854.8165581684656,
+          "p95_step_deg": 0.4575734201400401,
+          "max_step_deg": 8.352127843402169
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.31773575289202,
+          "rms_acceleration_deg_s2": 384.17753661268983,
+          "p95_step_deg": 0.48895458951273163,
+          "max_step_deg": 3.3470079832593314
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 5.112316546781451,
+          "rms_acceleration_deg_s2": 255.98298217715714,
+          "p95_step_deg": 0.3696631649150701,
+          "max_step_deg": 2.2325511134628755
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.290880208307378,
+          "rms_acceleration_deg_s2": 70.1945159502726,
+          "p95_step_deg": 0.31165767887837426,
+          "max_step_deg": 0.5602264953771474
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.7646684882391686,
+          "rms_acceleration_deg_s2": 146.8330310285166,
+          "p95_step_deg": 0.17403639123885206,
+          "max_step_deg": 1.309454868996763
+        }
+      }
+    },
+    {
+      "episode": 14,
+      "grasp_index": 6,
+      "survived": false,
+      "within_workspace": false,
+      "mae_deg": 4.1006435245923925,
+      "mean_tilt_deg": 11.905946871578841,
+      "p95_tilt_deg": 41.54260824705678,
+      "command_clip_fraction": 0.08281249999999998,
+      "normal_force_sum_n": 1.0962273230194874,
+      "non_tip_force_frame_fraction": 0.9854166666666667,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.6958333333333333,
+      "minimum_half_cycle_gain": 0.7021874655685367,
+      "half_cycle_gains": [
+        1.0818532735129238,
+        0.7021874655685367,
+        0.8233987450145597,
+        2.096638048909042
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.03333333333333333,
+        "r_thumb_cmc_abd": 0.24166666666666667,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.0,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.39375,
+        "r_index_finger_pip": 0.03125,
+        "r_index_finger_dip": 0.325,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.09791666666666667,
+        "r_ring_finger_pip": 0.2625,
+        "r_ring_finger_dip": 0.2708333333333333,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 12.397018035290817,
+          "rms_acceleration_deg_s2": 1486.7864795329504,
+          "p95_step_deg": 0.7325124858275083,
+          "max_step_deg": 20.392664266075162
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 6.98625583235726,
+          "rms_acceleration_deg_s2": 524.193426547862,
+          "p95_step_deg": 0.5197397299246023,
+          "max_step_deg": 4.982339942062971
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 7.008820047806947,
+          "rms_acceleration_deg_s2": 232.8728309995529,
+          "p95_step_deg": 0.5649733633029106,
+          "max_step_deg": 2.2810252425684467
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.157323598756836,
+          "rms_acceleration_deg_s2": 78.24302125816284,
+          "p95_step_deg": 0.3184316075011836,
+          "max_step_deg": 0.46041232402306065
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 2.895515521063617,
+          "rms_acceleration_deg_s2": 143.8647030183927,
+          "p95_step_deg": 0.16865932254824312,
+          "max_step_deg": 1.0934872770967345
+        }
+      }
+    },
+    {
+      "episode": 15,
+      "grasp_index": 7,
+      "survived": false,
+      "within_workspace": false,
+      "mae_deg": 3.9778480314791684,
+      "mean_tilt_deg": 8.717775571944395,
+      "p95_tilt_deg": 47.568418531544786,
+      "command_clip_fraction": 0.049687499999999996,
+      "normal_force_sum_n": 0.786307780119436,
+      "non_tip_force_frame_fraction": 0.9833333333333333,
+      "palm_force_frame_fraction": 0.0,
+      "two_tip_fraction": 0.76875,
+      "minimum_half_cycle_gain": 0.7563029560823453,
+      "half_cycle_gains": [
+        1.0054679528635857,
+        0.7616743556192882,
+        0.7563029560823453,
+        1.8798547973124857
+      ],
+      "quality_success": false,
+      "joint_clip_fractions": {
+        "r_thumb_cmc_flex": 0.0,
+        "r_thumb_cmc_abd": 0.14791666666666667,
+        "r_thumb_mcp": 0.0,
+        "r_thumb_ip": 0.17708333333333334,
+        "r_index_finger_mcp_flex": 0.0,
+        "r_index_finger_mcp_abd": 0.22083333333333333,
+        "r_index_finger_pip": 0.022916666666666665,
+        "r_index_finger_dip": 0.06458333333333334,
+        "r_middle_finger_mcp_flex": 0.0,
+        "r_middle_finger_mcp_abd": 0.0,
+        "r_middle_finger_pip": 0.0,
+        "r_middle_finger_dip": 0.0,
+        "r_ring_finger_mcp_flex": 0.0,
+        "r_ring_finger_mcp_abd": 0.03125,
+        "r_ring_finger_pip": 0.10625,
+        "r_ring_finger_dip": 0.22291666666666668,
+        "r_pinky_mcp_flex": 0.0,
+        "r_pinky_mcp_abd": 0.0,
+        "r_pinky_pip": 0.0,
+        "r_pinky_dip": 0.0
+      },
+      "finger_motion": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 10.043485205112441,
+          "rms_acceleration_deg_s2": 735.4585572332511,
+          "p95_step_deg": 0.7891233411368708,
+          "max_step_deg": 7.412856155427999
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 7.93953740391815,
+          "rms_acceleration_deg_s2": 413.6699540122966,
+          "p95_step_deg": 0.5451262224416311,
+          "max_step_deg": 3.7989867959041987
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 6.451095843372498,
+          "rms_acceleration_deg_s2": 380.48387866457364,
+          "p95_step_deg": 0.5476930659701686,
+          "max_step_deg": 4.060550315574346
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.3062639044394,
+          "rms_acceleration_deg_s2": 57.90680529522102,
+          "p95_step_deg": 0.29264711152620104,
+          "max_step_deg": 0.3653140509820183
+        },
+        "pinky": {
+          "mean_abs_velocity_deg_s": 3.050530980496143,
+          "rms_acceleration_deg_s2": 168.10672505315964,
+          "p95_step_deg": 0.22317768419727813,
+          "max_step_deg": 1.5949719520419663
+        }
+      }
+    }
+  ]
+}

@@ -4,7 +4,19 @@
 
 项目原创代码与内容采用 [MIT License](LICENSE)。第三方代码与资产保留各自许可证，具体来源和限制见 [NOTICE.md](NOTICE.md)。
 
-## 当前案例：LEAP / Revo3 指尖往复转笔
+## 当前案例：LEAP / Revo3 / Wuji Hand 2 往复转笔
+
+已从 [Wuji Hand 2 官方模型](https://github.com/wuji-technology/wuji-description)接入 Beta 2 右手，并在与 LEAP、Revo3 相同的自由笔杆、±0.6 rad、4 秒周期任务上完成训练和未见种子 CPU 闭环对比。三手各测 24 回合 × 60 秒：
+
+| 手型 | 严格质量通过 | 全程持笔 | 平均角误差 | 非指尖受力帧 |
+|---|---:|---:|---:|---:|
+| LEAP | 24/24 | 24/24 | 1.49° | 0.0% |
+| Revo3 | 24/24 | 24/24 | 0.32° | 0.0% |
+| Wuji Hand 2 | **0/24** | 24/24 | 1.15° | **38.8%** |
+
+Wuji 能稳定持笔和跟踪，但笔明显依赖非指尖接触，因此**未通过**与其他两手相同的严格验收，不能据此推断真机手型优劣。[完整方法、限制和原始结果](reports/wuji_hand2/REPORT.md) · [Wuji 演示视频](runs/comparison/wuji_demo_seed20260926/rollout.mp4) · [官方资产与复现命令](experiments/wuji_hand2/README.md)
+
+### 原 LEAP 案例与历史结果
 
 **新增强脑 Revo3 策略：** 独立的 21 关节训练、真实指尖接触验收和播放方式见 [REVO3.md](REVO3.md)。两种手的资产与策略分别保存，下面继续记录原 LEAP 案例。
 
