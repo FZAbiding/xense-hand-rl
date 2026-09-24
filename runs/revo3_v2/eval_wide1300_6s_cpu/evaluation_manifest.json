@@ -1,0 +1,11 @@
+{
+  "checkpoint_sha256": "84d750bc335649d22beda7f464f5f63665891797177346e421a5a9cab7f46480",
+  "sources": {
+    "experiments/revo3_v2/evaluate.py": "2c8bd432bf3074a484aec5d23c36983d4a87d94c8f7d2cfe9321c22e3d9c1d96",
+    "experiments/revo3_v2/motion_audit.py": "c63fd1087e7054b2dd780c6222d9e72a9fd87c08562bb5d45e1f194169ddb18e",
+    "train.py": "3a038566dc831b8ab30615a1db38cfeb2b99621e65b757527673dd5edde5acbe"
+  },
+  "joint_noise_std_rad": 0.005,
+  "position_noise_std_m": 0.0004,
+  "automatic_resets": false
+}

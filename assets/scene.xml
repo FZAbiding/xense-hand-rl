@@ -1,0 +1,28 @@
+<mujoco model="LEAP fingertip reciprocal pen rotation">
+  <include file="hand.xml"/>
+  <statistic center="0.10 0 0.02" extent="0.38"/>
+  <visual><global offwidth="1280" offheight="720" azimuth="120" elevation="-30"/>
+    <headlight diffuse="0.8 0.8 0.8" ambient="0.4 0.4 0.4"/></visual>
+  <asset><mesh name="pen_mesh" file="pen.obj"/>
+    <texture name="floor_tex" type="2d" builtin="checker" rgb1=".16 .19 .23" rgb2=".20 .23 .28" width="128" height="128"/>
+    <material name="floor_mat" texture="floor_tex" texrepeat="2 2" texuniform="true"/>
+  </asset>
+  <worldbody>
+    <light pos="0 -0.5 1" diffuse="0.8 0.8 0.8"/>
+    <geom name="floor" type="plane" pos="0 0 -0.24" size="1 1 .01" material="floor_mat" contype="2" conaffinity="2"/>
+    <camera name="overview" pos="-.25 .38 .32" xyaxes="-.74 -.67 0 .37 -.41 .83"/>
+    <body name="pen" pos=".10 0 .065" quat=".70710678 .70710678 0 0">
+      <freejoint name="pen_free"/>
+      <geom name="pen_collision" type="capsule" size="0.009 0.081" mass="0.025" friction="1.2 .005 .0001" condim="3" solref=".01 1" group="3"/>
+      <geom name="pen_visual" type="mesh" mesh="pen_mesh" density="0" contype="0" conaffinity="0" rgba=".06 .42 .90 1" group="2"/>
+      <geom name="pen_cap" type="cylinder" size="0.009089999999999999 .009" pos="0 0 0.081" density="0" contype="0" conaffinity="0" rgba="1 .30 .08 1" group="2"/>
+      <geom name="pen_ring" type="cylinder" size="0.009089999999999999 .002" pos="0 0 -0.078" density="0" contype="0" conaffinity="0" rgba=".9 .9 .95 1" group="2"/>
+      <site name="pen_tip_a" pos="0 0 0.09" size=".002"/>
+      <site name="pen_tip_b" pos="0 0 -0.09" size=".002"/>
+    </body>
+  </worldbody>
+  <sensor><framepos name="pen_pos" objtype="body" objname="pen"/>
+    <framezaxis name="pen_axis" objtype="body" objname="pen"/>
+    <framelinvel name="pen_vel" objtype="body" objname="pen"/>
+    <frameangvel name="pen_omega" objtype="body" objname="pen"/></sensor>
+</mujoco>

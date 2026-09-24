@@ -1,0 +1,164 @@
+{
+  "baseline": "runs/revo3_v2/v1_matched_task_60s",
+  "candidate": "runs/revo3_v2/eval_wide1600_4s_cpu",
+  "matched": {
+    "amplitude_rad": 0.6,
+    "period_seconds": 4.0,
+    "seconds": 60.0,
+    "episodes": 12,
+    "seed": 20260925
+  },
+  "caveat": "Same command and evaluation protocol, not a single-variable ablation: grasp, controller, reward, observations and training budget differ. Joint motion sampled at 40Hz; finger metrics averaged over episode summaries.",
+  "metrics": [
+    {
+      "metric": "quality_success_rate",
+      "v1": 0.0,
+      "v2": 1.0
+    },
+    {
+      "metric": "survival_rate",
+      "v1": 1.0,
+      "v2": 1.0
+    },
+    {
+      "metric": "workspace_survival_rate",
+      "v1": 0.6666666666666666,
+      "v2": 1.0
+    },
+    {
+      "metric": "mae_deg",
+      "v1": 3.3467031096315303,
+      "v2": 0.2429976460402896
+    },
+    {
+      "metric": "mean_tilt_deg",
+      "v1": 30.38012095810033,
+      "v2": 0.29805380368215023
+    },
+    {
+      "metric": "p95_tilt_deg",
+      "v1": 35.63547715482074,
+      "v2": 0.7654084903113808
+    },
+    {
+      "metric": "command_clip_fraction",
+      "v1": 0.40725529100529106,
+      "v2": 0.001372354497354497
+    },
+    {
+      "metric": "normal_force_sum_n",
+      "v1": 9.974477656954148,
+      "v2": 0.940933763379098
+    },
+    {
+      "metric": "non_tip_force_frame_fraction",
+      "v1": 0.3613888888888889,
+      "v2": 0.0
+    },
+    {
+      "metric": "palm_force_frame_fraction",
+      "v1": 0.07888888888888888,
+      "v2": 0.0
+    },
+    {
+      "metric": "thumb_mean_abs_velocity_deg_s",
+      "v1": 47.216586254302904,
+      "v2": 13.526061198171817
+    },
+    {
+      "metric": "thumb_rms_acceleration_deg_s2",
+      "v1": 5061.044431365871,
+      "v2": 77.37423396223282
+    },
+    {
+      "metric": "thumb_p95_step_deg",
+      "v1": 3.7162942581827227,
+      "v2": 0.9030549176512007
+    },
+    {
+      "metric": "thumb_max_step_deg",
+      "v1": 7.347444318599249,
+      "v2": 1.4729690426652573
+    },
+    {
+      "metric": "index_mean_abs_velocity_deg_s",
+      "v1": 71.63100410237261,
+      "v2": 4.1395429091544615
+    },
+    {
+      "metric": "index_rms_acceleration_deg_s2",
+      "v1": 6490.855298421749,
+      "v2": 46.56311803978472
+    },
+    {
+      "metric": "index_p95_step_deg",
+      "v1": 5.0390472604849785,
+      "v2": 0.31791077735315354
+    },
+    {
+      "metric": "index_max_step_deg",
+      "v1": 6.79118886823822,
+      "v2": 0.6202085357753558
+    },
+    {
+      "metric": "middle_mean_abs_velocity_deg_s",
+      "v1": 71.57166566235288,
+      "v2": 5.516192240705336
+    },
+    {
+      "metric": "middle_rms_acceleration_deg_s2",
+      "v1": 6777.4705770734145,
+      "v2": 71.17810560940156
+    },
+    {
+      "metric": "middle_p95_step_deg",
+      "v1": 5.252444582964165,
+      "v2": 0.4832089726474249
+    },
+    {
+      "metric": "middle_max_step_deg",
+      "v1": 7.6378587043358825,
+      "v2": 1.3958481173887989
+    },
+    {
+      "metric": "ring_mean_abs_velocity_deg_s",
+      "v1": 71.18883742300704,
+      "v2": 7.5655447450776805
+    },
+    {
+      "metric": "ring_rms_acceleration_deg_s2",
+      "v1": 6516.103605676577,
+      "v2": 53.33721665144008
+    },
+    {
+      "metric": "ring_p95_step_deg",
+      "v1": 4.444248771020663,
+      "v2": 0.523726603761603
+    },
+    {
+      "metric": "ring_max_step_deg",
+      "v1": 6.626987267305878,
+      "v2": 0.9900053530867986
+    },
+    {
+      "metric": "little_mean_abs_velocity_deg_s",
+      "v1": 68.13486144328466,
+      "v2": 4.9525305056915165
+    },
+    {
+      "metric": "little_rms_acceleration_deg_s2",
+      "v1": 7057.444398211411,
+      "v2": 36.90675824909165
+    },
+    {
+      "metric": "little_p95_step_deg",
+      "v1": 4.239269704848176,
+      "v2": 0.35557522649677126
+    },
+    {
+      "metric": "little_max_step_deg",
+      "v1": 6.6495036566939305,
+      "v2": 0.7263429996812959
+    }
+  ]
+}

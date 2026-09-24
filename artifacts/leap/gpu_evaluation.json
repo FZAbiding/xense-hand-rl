@@ -1,0 +1,17 @@
+{
+  "checkpoint": "runs/ppo_wide/checkpoint_000800.pt",
+  "seed": 777,
+  "episodes": 128,
+  "seconds": 12,
+  "amplitude_rad": 1.0,
+  "period_seconds": 4.0,
+  "survival_rate": 1.0,
+  "success_rate": 1.0,
+  "mean_abs_error_rad": 0.044973224401474,
+  "mean_angle_span_rad": 2.0312106609344482,
+  "mean_alternating_crossings": 6.0,
+  "minimum_alternating_crossings": 6,
+  "fingertip_proximity_fraction": 1.0,
+  "success_definition": "12s without falling, >=6 alternating crossings of +/-0.600 rad, MAE<0.25 rad, >=2 fingertips within 24mm for >80% frames",
+  "source": "runs/eval_wide_800/metrics.json"
+}

@@ -1,0 +1,15 @@
+{
+  "run": "runs/revo3_medium",
+  "num_envs": 1024,
+  "iterations": 250,
+  "amplitude": 0.6,
+  "period": 4.0,
+  "seed": 1,
+  "resume": "runs/revo3_fingertip/checkpoint_000300.pt",
+  "reference": false,
+  "lr": 0.0001,
+  "horizon": 32,
+  "save_every": 50,
+  "robot": "revo3",
+  "objective": "fingertip"
+}

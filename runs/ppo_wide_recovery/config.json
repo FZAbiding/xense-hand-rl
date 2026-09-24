@@ -1,0 +1,13 @@
+{
+  "run": "runs/ppo_wide_recovery",
+  "num_envs": 1024,
+  "iterations": 100,
+  "amplitude": 1.0,
+  "period": 4.0,
+  "seed": 1,
+  "resume": "runs/ppo_wide/checkpoint_000850.pt",
+  "reference": false,
+  "lr": 0.0001,
+  "horizon": 32,
+  "save_every": 50
+}

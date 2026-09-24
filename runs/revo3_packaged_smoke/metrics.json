@@ -1,0 +1,36 @@
+{
+  "robot": "revo3",
+  "checkpoint": "artifacts/revo3/policy.pt",
+  "backend": "CPU MuJoCo closed-loop policy",
+  "seed": 12345,
+  "episodes": 2,
+  "seconds": 12.0,
+  "amplitude_rad": 0.6,
+  "period_seconds": 4.0,
+  "objective": "fingertip",
+  "success_rate": 1.0,
+  "survival_rate": 1.0,
+  "mean_abs_error_rad": 0.05826783918217425,
+  "mean_actual_contacting_fingers": 2.9020833333333336,
+  "actual_two_fingertip_contact_fraction": 0.9989583333333334,
+  "per_episode": [
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.05896015273966981,
+      "angle_span_rad": 1.2138028834620689,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 0.9979166666666667,
+      "mean_actual_contacting_fingers": 2.908333333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.05757552562467868,
+      "angle_span_rad": 1.1882134907359783,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.8958333333333335
+    }
+  ]
+}

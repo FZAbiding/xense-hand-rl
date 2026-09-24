@@ -1,0 +1,28 @@
+{
+  "robot": "revo3",
+  "source": "runs/revo3_final_gpu550/rollout.npz",
+  "method": "CPU contact-geometry audit of saved positions, not independent dynamics or contact-force measurement",
+  "sampled_frames": 1920,
+  "two_fingertip_fraction": 0.9994791666666667,
+  "any_non_fingertip_contact_fraction": 0.38385416666666666,
+  "body_contact_frame_counts": {
+    "right_index_DIP_Link": 1887,
+    "right_thumb_DIP_Link": 1883,
+    "right_little_MCP_Link": 419,
+    "right_little_PIP_Link": 238,
+    "right_hand_base_link": 154,
+    "right_middle_DIP_Link": 1830,
+    "right_middle_PIP_Link": 5
+  },
+  "body_contact_frame_fractions": {
+    "right_index_DIP_Link": 0.9828125,
+    "right_thumb_DIP_Link": 0.9807291666666667,
+    "right_little_MCP_Link": 0.21822916666666667,
+    "right_little_PIP_Link": 0.12395833333333334,
+    "right_hand_base_link": 0.08020833333333334,
+    "right_middle_DIP_Link": 0.953125,
+    "right_middle_PIP_Link": 0.0026041666666666665
+  },
+  "minimum_pen_center_height_m": 0.05689362436532974,
+  "maximum_pen_center_height_m": 0.07157523185014725
+}

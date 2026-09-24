@@ -1,0 +1,6 @@
+{
+  "valid": false,
+  "reason": "MuJoCo Warp reported repeated nefc overflow with njmax=240 during this evaluation. Raw metrics retained for audit but are not admissible for qualification.",
+  "required_action": "Re-evaluate with larger buffers and per-physics-substep capacity monitoring.",
+  "cpu_evaluation_affected": false
+}

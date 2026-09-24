@@ -1,0 +1,87 @@
+{
+  "note": "Actual joint-angle finite differences at 40Hz. Different amplitude/period/grasp are confounders; this is not an ablation. First three stored episodes only.",
+  "evaluations": [
+    {
+      "evaluation": "runs/revo3_v2/v1_strict_baseline",
+      "checkpoint": "artifacts/revo3/v1.0/policy.pt",
+      "amplitude_rad": 0.6,
+      "period_seconds": 4.0,
+      "sampled_episodes": 3,
+      "sampled_seconds": 12.0,
+      "control_dt": 0.025,
+      "fingers": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 48.55656313180675,
+          "rms_acceleration_deg_s2": 4980.0650162132415,
+          "p95_step_deg": 3.831849380013725,
+          "max_step_deg": 7.414768906605637
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 70.86783233961194,
+          "rms_acceleration_deg_s2": 6441.425016952219,
+          "p95_step_deg": 5.0086886985848755,
+          "max_step_deg": 7.02252457095301
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 65.80440150014981,
+          "rms_acceleration_deg_s2": 6359.413382022313,
+          "p95_step_deg": 5.10070616976114,
+          "max_step_deg": 7.191130931652879
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 68.47704665946785,
+          "rms_acceleration_deg_s2": 6308.993284846004,
+          "p95_step_deg": 4.597605020965707,
+          "max_step_deg": 6.741676025625857
+        },
+        "little": {
+          "mean_abs_velocity_deg_s": 70.02136467007794,
+          "rms_acceleration_deg_s2": 6939.632746909675,
+          "p95_step_deg": 4.645011089585286,
+          "max_step_deg": 6.7872547952523234
+        }
+      }
+    },
+    {
+      "evaluation": "runs/revo3_v2/eval_medium1000_60s",
+      "checkpoint": "runs/revo3_v2/medium_precision_seed1/checkpoint_001000.pt",
+      "amplitude_rad": 0.35,
+      "period_seconds": 6.0,
+      "sampled_episodes": 3,
+      "sampled_seconds": 12.0,
+      "control_dt": 0.025,
+      "fingers": {
+        "thumb": {
+          "mean_abs_velocity_deg_s": 8.56559383638172,
+          "rms_acceleration_deg_s2": 61.96241726523343,
+          "p95_step_deg": 0.5682818485780153,
+          "max_step_deg": 1.0527487714543469
+        },
+        "index": {
+          "mean_abs_velocity_deg_s": 2.23902276887996,
+          "rms_acceleration_deg_s2": 36.25637629548175,
+          "p95_step_deg": 0.15647391378790593,
+          "max_step_deg": 0.647177031816625
+        },
+        "middle": {
+          "mean_abs_velocity_deg_s": 3.3325996452292297,
+          "rms_acceleration_deg_s2": 47.41999283370183,
+          "p95_step_deg": 0.23033254468488393,
+          "max_step_deg": 0.730296508879043
+        },
+        "ring": {
+          "mean_abs_velocity_deg_s": 4.869121869503457,
+          "rms_acceleration_deg_s2": 47.105883459808396,
+          "p95_step_deg": 0.36488404621119047,
+          "max_step_deg": 0.6522179353511817
+        },
+        "little": {
+          "mean_abs_velocity_deg_s": 6.064351890125962,
+          "rms_acceleration_deg_s2": 53.45343257858916,
+          "p95_step_deg": 0.4322219488793347,
+          "max_step_deg": 0.6618520284316176
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "robot": "revo3",
+  "checkpoint": "runs/revo3_fingertip/checkpoint_000200.pt",
+  "backend": "CPU MuJoCo closed-loop policy",
+  "seed": 901,
+  "episodes": 8,
+  "seconds": 12.0,
+  "success_rate": 0.875,
+  "survival_rate": 1.0,
+  "mean_abs_error_rad": 0.04878544086489115,
+  "mean_actual_contacting_fingers": 2.9033854166666666,
+  "per_episode": [
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.046609835069525145,
+      "angle_span_rad": 0.704837159642064,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 0.9958333333333333,
+      "mean_actual_contacting_fingers": 2.9208333333333334
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.04692656516105552,
+      "angle_span_rad": 0.6799749007295947,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.90625
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.045979622611083903,
+      "angle_span_rad": 0.6234666951860917,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.8958333333333335
+    },
+    {
+      "success": false,
+      "survived": true,
+      "mae_rad": 0.05176005128017151,
+      "angle_span_rad": 0.7163023800695822,
+      "crossings": 4,
+      "at_least_two_actual_fingertip_contacts": 0.9979166666666667,
+      "mean_actual_contacting_fingers": 2.908333333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.04354879143155843,
+      "angle_span_rad": 0.6456268856895251,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.8979166666666667
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.05589314461387447,
+      "angle_span_rad": 0.6876853310642808,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.89375
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.05149767490705062,
+      "angle_span_rad": 0.6846825532666123,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.908333333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.04806784184480961,
+      "angle_span_rad": 0.686508510219524,
+      "crossings": 6,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.8958333333333335
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "robot": "revo3",
+  "checkpoint": "runs/revo3_fingertip/checkpoint_000300.pt",
+  "backend": "CPU MuJoCo closed-loop policy",
+  "seed": 901,
+  "episodes": 16,
+  "seconds": 60.0,
+  "success_rate": 1.0,
+  "survival_rate": 1.0,
+  "mean_abs_error_rad": 0.03223722763583616,
+  "mean_actual_contacting_fingers": 2.978671875,
+  "per_episode": [
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.031951732095635975,
+      "angle_span_rad": 0.8691514237258147,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.982083333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03349388664622466,
+      "angle_span_rad": 0.8871777154960481,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.9770833333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03250819715363116,
+      "angle_span_rad": 0.8810023880270131,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.9766666666666666
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03321929640721406,
+      "angle_span_rad": 0.8963952930281951,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9783333333333335
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03093339733227395,
+      "angle_span_rad": 0.8970951246324459,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9779166666666668
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.033492044063649355,
+      "angle_span_rad": 0.915115261729156,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9766666666666666
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.030677649368681822,
+      "angle_span_rad": 0.8871190142373505,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9795833333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.030593799460557954,
+      "angle_span_rad": 0.9108880269817844,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.9766666666666666
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03143438107992671,
+      "angle_span_rad": 0.9238420623689713,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9795833333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.031579821496884874,
+      "angle_span_rad": 0.9044246024857899,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9991666666666666,
+      "mean_actual_contacting_fingers": 2.97875
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03360207412407585,
+      "angle_span_rad": 0.8967373620356784,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9791666666666665
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03197835329260979,
+      "angle_span_rad": 0.9161977474760397,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.9808333333333334
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.0326469153358545,
+      "angle_span_rad": 0.897576270246135,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9770833333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03223914434198801,
+      "angle_span_rad": 0.895492265924467,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9795833333333333
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03213071927651989,
+      "angle_span_rad": 0.8977718747535887,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 0.9995833333333334,
+      "mean_actual_contacting_fingers": 2.9808333333333334
+    },
+    {
+      "success": true,
+      "survived": true,
+      "mae_rad": 0.03331423069765002,
+      "angle_span_rad": 0.9038514752929728,
+      "crossings": 30,
+      "at_least_two_actual_fingertip_contacts": 1.0,
+      "mean_actual_contacting_fingers": 2.9779166666666668
+    }
+  ]
+}

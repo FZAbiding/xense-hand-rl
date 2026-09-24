@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "c4586508a662b5264009c73783f01495cecc173fe823d3a4114bd0832ddb9e3a",
+  "sources": {
+    "experiments/revo3_v2/evaluate_gpu.py": "b64c6714d3870f0e53143ff2ce0a6a6a85a2203682fb6ae60512ea0f2a7d43f1",
+    "experiments/revo3_v2/evaluate.py": "2c8bd432bf3074a484aec5d23c36983d4a87d94c8f7d2cfe9321c22e3d9c1d96",
+    "experiments/revo3_v2/env.py": "f3b2e354b79ae7f58e2e048b76cca863b16b445b55eadcd325dbe3df7b5c9bb5",
+    "experiments/revo3_v2/motion_audit.py": "c63fd1087e7054b2dd780c6222d9e72a9fd87c08562bb5d45e1f194169ddb18e",
+    "train.py": "3a038566dc831b8ab30615a1db38cfeb2b99621e65b757527673dd5edde5acbe"
+  },
+  "joint_noise_std_rad": 0.005,
+  "position_noise_std_m": 0.0004,
+  "automatic_resets": false
+}

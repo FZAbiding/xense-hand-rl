@@ -1,0 +1,20 @@
+{
+  "policy.pt": "0f73f5bce8d27fc693c4eb0dab3915695f7c29fb8809e3e28b3b63b9ea524a8d",
+  "demo.mp4": "f973a50e61a1856ecbb18bb04b4f1cd2e64368fd80a346883c7eafad9bbaeea0",
+  "preview.png": "29cde9b230edea04532a96eb5efd119bf6126f3f0f6dabae4735756b6734b15e",
+  "tracking.png": "4e61e073a4772c60c450dd21a09c1b9fbf6f2ff691e78ed8c286ca526dc9c45f",
+  "gpu_evaluation.json": "76b1b8f457a6ccee8a84dae539a891455c369ee629a6ad384f070d30d8d0d683",
+  "cpu_60s_evaluation.json": "a7f96672ef63e99cfdbbb783d4884b7d44ca75fce3a1a42f8beb4f6af951d652",
+  "policy_source": "runs/ppo_wide/checkpoint_000800.pt",
+  "source_commits": {
+    "mujoco_playground": "4057c147714b6ac09b395377f1a1724bbeacc4d3",
+    "mujoco_menagerie": "822c2d8f877dd166c5b7d3c9f7e3c3b6589473b7"
+  },
+  "training_lineage": {
+    "base_iteration": 550,
+    "base_steps": 18022400,
+    "wide_iterations": 250,
+    "wide_steps": 8192000,
+    "total_steps": 26214400
+  }
+}
