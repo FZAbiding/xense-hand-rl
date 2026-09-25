@@ -14,6 +14,7 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT))
 from train import ActorCritic
 from experiments.wuji_hand2.motion_audit import joint_motion
+from experiments.wuji_hand2.env import assets_for_grasp
 
 
 def quality_pass(row):
@@ -53,10 +54,10 @@ def main():
     p.add_argument('--video',action='store_true');args=p.parse_args();torch.set_num_threads(1)
     if (ROOT/args.output/'metrics.json').exists():raise RuntimeError('Choose a new evaluation output directory')
     checkpoint=ROOT/args.checkpoint;ck=torch.load(checkpoint,map_location='cpu',weights_only=False);cfg=ck['config'];v2=cfg.get('experiment_version')=='2.0'
-    assets=ROOT/'assets/wuji_hand2'
-    bank_name = 'grasp_bank_long_initial.npz' if cfg.get('grasp_version') == 'long12' else 'grasp_bank.npz'
+    assets,bank_name=assets_for_grasp(cfg.get('grasp_version','v2'))
+    asset_rel=assets.relative_to(ROOT).as_posix()
     if v2:
-        for name in ['assets/wuji_hand2/scene.xml',f'assets/wuji_hand2/{bank_name}']:
+        for name in [f'{asset_rel}/scene.xml',f'{asset_rel}/{bank_name}']:
             assert hashlib.sha256((ROOT/name).read_bytes()).hexdigest()==ck['source_manifest'][name],name
     m=mujoco.MjModel.from_xml_path(str(assets/'scene.xml'));m.opt.iterations=8;m.opt.ls_iterations=8;d=mujoco.MjData(m);h=m.nu
     bank=np.load(assets/bank_name);bq=bank['qpos'];bc=bank['ctrl']

@@ -1,0 +1,53 @@
+{
+  "robot": "Wuji Hand 2 Beta 2 right hand",
+  "task_orientation": "palm_up",
+  "wrist_quat": ".5 .5 -.5 -.5",
+  "palm_normal_world": [
+    0,
+    0,
+    1
+  ],
+  "source": "https://github.com/wuji-technology/wuji-description",
+  "commit": "c2cd7f8d1ef8b6dc8cb907c17daa5a88b4442d95",
+  "source_mjcf": "third_party/wuji-description/hand2/hand2_beta2/body/mjcf/right.xml",
+  "joint_names": [
+    "r_thumb_cmc_flex",
+    "r_thumb_cmc_abd",
+    "r_thumb_mcp",
+    "r_thumb_ip",
+    "r_index_finger_mcp_flex",
+    "r_index_finger_mcp_abd",
+    "r_index_finger_pip",
+    "r_index_finger_dip",
+    "r_middle_finger_mcp_flex",
+    "r_middle_finger_mcp_abd",
+    "r_middle_finger_pip",
+    "r_middle_finger_dip",
+    "r_ring_finger_mcp_flex",
+    "r_ring_finger_mcp_abd",
+    "r_ring_finger_pip",
+    "r_ring_finger_dip",
+    "r_pinky_mcp_flex",
+    "r_pinky_mcp_abd",
+    "r_pinky_pip",
+    "r_pinky_dip"
+  ],
+  "actuators": 20,
+  "official_geometry_inertia_joint_limits_and_actuator_force_limits": "preserved",
+  "position_actuator_kp": 3,
+  "task_changes": [
+    "fixed palm-up horizontal wrist pose",
+    "5 ms implicitfast integration",
+    "position-controller kp matched to Revo3 task; official kv and force limits retained",
+    "pen contact friction and compliance matched to Revo3 task",
+    "same free training rod, floor and lighting"
+  ],
+  "pen_length_m": 0.18,
+  "pen_radius_m": 0.009,
+  "pen_mass_kg": 0.025,
+  "license": "MIT; upstream LICENSE retained in submodule",
+  "grasp_count": 8,
+  "calibration": "three-finger IK and 12s physical validation; pre-settling pose saved",
+  "training_bank": "grasp_bank_60s.npz",
+  "training_bank_certification": "1 of 8 candidates passed 60s no-control physical validation under zero noise and four independent perturbations; see grasp_bank_60s_certification.json"
+}

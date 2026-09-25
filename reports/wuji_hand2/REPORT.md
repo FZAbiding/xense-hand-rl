@@ -1,6 +1,8 @@
-# Wuji Hand 2、Revo3、LEAP 同任务对比
+# 历史实验：Wuji Hand 2 掌心朝下场景（对比结论已撤回）
 
-2026-09-25。结论：三只手在相同笔杆和目标轨迹上都能在 24 个独立 CPU 闭环回合中持笔 60 秒；但在预先固定的完整质量门槛下，LEAP 与 Revo3 均为 **24/24 通过**，Wuji Hand 2 为 **0/24**。Wuji 的角度跟踪并不差，失败主因是笔与非指尖部位持续接触，不能把“持笔并跟踪”冒充为“指尖主导的合格转笔”。
+**更正（2026-09-25）：** 此报告中的 Wuji 场景掌心法线朝向世界 `-Z`，而预期配置应为基座水平、掌心朝向世界 `+Z`。因此，下文三手数值仅保留为旧实验溯源，不是预期 Wuji 姿态下的有效手型对比。旧模型、权重、评估与演示归档于 [`artifacts/wuji_hand2/legacy_palm_down/`](../../artifacts/wuji_hand2/legacy_palm_down/)；新场景在 `assets/wuji_hand2_palm_up/`，必须重新校准抓握、训练并独立评估。
+
+2026-09-25 旧场景记录：三只手在相同笔杆和目标轨迹上都能在 24 个独立 CPU 闭环回合中持笔 60 秒；但在预先固定的完整质量门槛下，LEAP 与 Revo3 均为 **24/24 通过**，掌心朝下的 Wuji Hand 2 为 **0/24**。此数据不能用于判断正确朝向下 Wuji 的性能。
 
 ## 模型和任务
 
@@ -38,6 +40,7 @@ Wuji 早期仅做 2 秒抓握验收的库，在 12/60 秒测试中经常掉笔�
 
 ```bash
 .venv-warp/bin/python experiments/wuji_hand2/compare.py \
+  --allow-legacy-palm-down \
   --leap runs/comparison/leap_060_4s_strict_holdout_cpu60 \
   --revo3 runs/comparison/revo3_060_4s_strict_holdout_cpu60 \
   --wuji runs/comparison/wuji_060_4s_strict_holdout_cpu60 \

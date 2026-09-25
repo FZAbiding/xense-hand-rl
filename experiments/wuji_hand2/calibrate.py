@@ -9,7 +9,8 @@ import numpy as np
 from scipy.optimize import least_squares
 
 ROOT = Path(__file__).resolve().parents[2]
-ASSETS = ROOT / 'assets/wuji_hand2'
+LEGACY_ASSETS = ROOT / 'assets/wuji_hand2'
+PALM_UP_ASSETS = ROOT / 'assets/wuji_hand2_palm_up'
 FINGERS = ('thumb', 'index_finger', 'middle_finger', 'ring_finger', 'pinky')
 
 
@@ -46,15 +47,17 @@ def main():
     parser.add_argument('--settle-seconds', type=float, default=2.)
     parser.add_argument('--bank-name', default='grasp_bank.npz')
     parser.add_argument('--local-refine', action='store_true')
+    parser.add_argument('--orientation', choices=('palm_up', 'legacy_palm_down'), default='palm_up')
     args = parser.parse_args()
+    assets = PALM_UP_ASSETS if args.orientation == 'palm_up' else LEGACY_ASSETS
     if Path(args.bank_name).name != args.bank_name or not args.bank_name.endswith('.npz'):
         raise ValueError('--bank-name must be a local .npz filename')
-    bank_path = ASSETS / args.bank_name
-    metrics_path = ASSETS / ('grasp_metrics.json' if args.bank_name == 'grasp_bank.npz' else args.bank_name.replace('.npz', '_metrics.json'))
-    candidates_path = ASSETS / ('calibration_candidates.json' if args.bank_name == 'grasp_bank.npz' else args.bank_name.replace('.npz', '_candidates.json'))
+    bank_path = assets / args.bank_name
+    metrics_path = assets / ('grasp_metrics.json' if args.bank_name == 'grasp_bank.npz' else args.bank_name.replace('.npz', '_metrics.json'))
+    candidates_path = assets / ('calibration_candidates.json' if args.bank_name == 'grasp_bank.npz' else args.bank_name.replace('.npz', '_candidates.json'))
     if args.candidate_index is None and bank_path.exists():
         raise RuntimeError('Grasp bank already exists; do not replace assets beneath a trained policy.')
-    model = mujoco.MjModel.from_xml_path(str(ASSETS / 'scene.xml'))
+    model = mujoco.MjModel.from_xml_path(str(assets / 'scene.xml'))
     data = mujoco.MjData(model)
     hand = model.nu
     pen = model.body('pen').id
@@ -74,10 +77,18 @@ def main():
     seed[16:18] = [args.pinky_flex, args.pinky_abd]
     seed[:4] = [.3, -.4, .4, .2]
     seed = np.clip(seed, lower + 1e-5, upper - 1e-5)
-    if args.local_refine:
+    if args.local_refine and args.orientation == 'palm_up':
+        positions = list(itertools.product([.085, .09, .095], [-.005, .0, .005], [.095, .10, .105],
+                                           [.014, .018, .022], [.015, .02, .025], [.006, .009, .012],
+                                           [.002, .004, .006]))
+    elif args.local_refine:
         positions = list(itertools.product([.078, .080, .082], [.003, .005, .007], [.055],
                                            [.010, .012, .014], [.030, .035, .040],
                                            [-.011, -.009, -.007], [.003, .004, .005]))
+    elif args.orientation == 'palm_up':
+        positions = list(itertools.product([.09, .105, .12], [-.01, 0., .01], [.07, .085, .10],
+                                           [.012, .018], [.02, .035], [-.009, 0., .009],
+                                           [0., .002, .004]))
     else:
         positions = list(itertools.product([.08, .09, .10], [-.005, .005], [.055, .07, .085],
                                            [.012, .016], [.020, .035], [-.009, -.004, .001],
@@ -91,9 +102,10 @@ def main():
         cx, cy, z, inset, thumb_y, z_offset, squeeze = positions[n]
         center = np.array([cx, cy, z])
         tip_z = z + z_offset
-        targets = np.array([[cx - inset, cy + thumb_y, tip_z],
-                            [cx + inset, cy + .025, tip_z],
-                            [cx + inset + args.middle_x_offset, cy - .020, tip_z]])
+        y_sign = -1 if args.orientation == 'palm_up' else 1
+        targets = np.array([[cx - inset, cy + y_sign * thumb_y, tip_z],
+                            [cx + inset, cy + y_sign * .025, tip_z],
+                            [cx + inset + args.middle_x_offset, cy - y_sign * .020, tip_z]])
 
         def residual(joints):
             data.qpos[:hand] = seed
@@ -191,7 +203,7 @@ def main():
             saved_qpos = initial_qpos if args.settle_seconds >= 12 else data.qpos.copy()
             accepted.append((score, saved_qpos, control.copy(), row))
         if args.candidate_index is not None:
-            (ASSETS / f'calibration_debug_{n}.json').write_text(json.dumps(row, indent=2))
+            (assets / f'calibration_debug_{n}.json').write_text(json.dumps(row, indent=2))
             print('DEBUG', args.ring_flex, args.ring_abd, args.pinky_flex, args.pinky_abd, row['two_tip_fraction'],
                   row['mean_other_normal_force_n'], row['final_drift_m'], row['other_body_mean_force_n'], flush=True)
         elif (n + 1) % 12 == 0:
@@ -199,20 +211,20 @@ def main():
             candidates_path.write_text(json.dumps(candidates, indent=2))
     if args.candidate_index is None:
         candidates_path.write_text(json.dumps(candidates, indent=2))
-    if not accepted:
-        raise RuntimeError(f'No Wuji grasp passed gravity/contact gates; inspect {candidates_path.name}.')
     if args.candidate_index is not None:
         return
+    if not accepted:
+        raise RuntimeError(f'No Wuji grasp passed gravity/contact gates; inspect {candidates_path.name}.')
     accepted.sort(key=lambda x: x[0], reverse=True)
     selected = accepted[:8]
     np.savez(bank_path, qpos=np.array([x[1] for x in selected]),
              ctrl=np.array([x[2] for x in selected]))
     metrics_path.write_text(json.dumps([x[3] for x in selected], indent=2))
     if args.bank_name == 'grasp_bank.npz':
-        provenance = json.loads((ASSETS / 'provenance.json').read_text())
+        provenance = json.loads((assets / 'provenance.json').read_text())
         pose_kind = 'pre-settling pose' if args.settle_seconds >= 12 else 'settled pose'
         provenance.update(grasp_count=len(selected), calibration=f'three-finger IK and {args.settle_seconds:g}s physical validation; {pose_kind} saved')
-        (ASSETS / 'provenance.json').write_text(json.dumps(provenance, indent=2))
+        (assets / 'provenance.json').write_text(json.dumps(provenance, indent=2))
     print('SAVED', len(selected), 'grasps', flush=True)
 
 

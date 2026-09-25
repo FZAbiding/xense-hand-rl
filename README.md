@@ -6,15 +6,15 @@
 
 ## 当前案例：LEAP / Revo3 / Wuji Hand 2 往复转笔
 
-已从 [Wuji Hand 2 官方模型](https://github.com/wuji-technology/wuji-description)接入 Beta 2 右手，并在与 LEAP、Revo3 相同的自由笔杆、±0.6 rad、4 秒周期任务上完成训练和未见种子 CPU 闭环对比。三手各测 24 回合 × 60 秒：
+**Wuji 对比结果正在重做。** 先前场景误将掌心法线设为朝下，和预期的水平基座、掌心朝上配置不符；旧策略及 24×60 秒评估已标记为历史结果，不可作为正确姿态下与 LEAP/Revo3 的有效对比。新场景在 `assets/wuji_hand2_palm_up/`，须重新校准抓握、训练、评估。以下表格仅展示旧实验记录，Wuji 一行不具备当前比较资格：
 
 | 手型 | 严格质量通过 | 全程持笔 | 平均角误差 | 非指尖受力帧 |
 |---|---:|---:|---:|---:|
 | LEAP | 24/24 | 24/24 | 1.49° | 0.0% |
 | Revo3 | 24/24 | 24/24 | 0.32° | 0.0% |
-| Wuji Hand 2 | **0/24** | 24/24 | 1.15° | **38.8%** |
+| Wuji Hand 2（旧朝下场景，已撤回比较） | **0/24** | 24/24 | 1.15° | **38.8%** |
 
-Wuji 能稳定持笔和跟踪，但笔明显依赖非指尖接触，因此**未通过**与其他两手相同的严格验收，不能据此推断真机手型优劣。[完整方法、限制和原始结果](reports/wuji_hand2/REPORT.md) · [Wuji 演示视频](runs/comparison/wuji_demo_seed20260926/rollout.mp4) · [官方资产与复现命令](experiments/wuji_hand2/README.md)
+旧策略在错误朝向下能持笔和跟踪，但依赖非指尖接触；这不说明掌心朝上的 Wuji 性能。[旧结果与撤回说明](reports/wuji_hand2/REPORT.md) · [旧朝向演示](artifacts/wuji_hand2/legacy_palm_down/demo.mp4) · [模型与复现说明](experiments/wuji_hand2/README.md)
 
 ### 原 LEAP 案例与历史结果
 
@@ -33,12 +33,12 @@ Wuji 能稳定持笔和跟踪，但笔明显依赖非指尖接触，因此**未�
 
 ## 成果目录
 
-`artifacts` 按手型归档；Revo3 进一步按实验版本及课程阶段归档，保留旧权重。
+`artifacts` 按手型归档；Wuji 的旧朝下场景结果单独标为 `legacy_palm_down`，不能与新场景混用。
 
 ```text
 artifacts/
 ├── leap/              # LEAP 最终策略、视频、评估与校验清单
-└── revo3/
+├── revo3/
     ├── v1.0/          # 已归档的 Revo3 V1.0 成果
     │   └── small/     # V1.0 小幅基线
     └── v2.0/          # V2.0 实验状态与通过验收后的成果
@@ -46,6 +46,8 @@ artifacts/
         ├── medium/    # ±20.1°、6s 周期，CPU/GPU 60s 严格验收通过
         ├── wide_6s/   # ±34.4°、6s 周期，CPU/GPU 60s 严格验收通过
         └── wide_4s/   # ±34.4°、4s 周期，CPU/GPU 60s 严格验收通过
+└── wuji_hand2/
+    └── legacy_palm_down/ # 旧朝下场景；仅供溯源，不参与有效三手对比
 ```
 
 ## 已测结果

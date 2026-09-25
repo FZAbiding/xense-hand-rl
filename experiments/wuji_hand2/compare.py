@@ -6,13 +6,14 @@ from pathlib import Path
 
 import mujoco
 import numpy as np
+import torch
 
 ROOT = Path(__file__).resolve().parents[2]
 FIELDS = ('mae_deg', 'mean_tilt_deg', 'p95_tilt_deg', 'command_clip_fraction',
           'non_tip_force_frame_fraction', 'palm_force_frame_fraction',
           'two_tip_fraction', 'minimum_half_cycle_gain')
 SCENES = {'LEAP': 'assets/scene.xml', 'Revo3': 'assets/revo3_v2/scene.xml',
-          'Wuji Hand2': 'assets/wuji_hand2/scene.xml'}
+          'Wuji Hand2': 'assets/wuji_hand2_palm_up/scene.xml'}
 
 
 def digest(path):
@@ -24,6 +25,8 @@ def main():
     for hand in ('leap', 'revo3', 'wuji'):
         parser.add_argument(f'--{hand}', required=True)
     parser.add_argument('--output', required=True)
+    parser.add_argument('--allow-legacy-palm-down', action='store_true',
+                        help='Only for reproducing the withdrawn historical comparison')
     args = parser.parse_args()
     evaluations = {}
     expected = None
@@ -46,10 +49,23 @@ def main():
                        for ep in result['per_episode']])),
                    checkpoint=result['checkpoint'], evaluation=str(path.relative_to(ROOT)),
                    checkpoint_sha256=digest(ROOT / result['checkpoint']))
-        model = mujoco.MjModel.from_xml_path(str(ROOT / SCENES[name]))
+        scene = SCENES[name]
+        if hand == 'wuji':
+            checkpoint = torch.load(ROOT / result['checkpoint'], map_location='cpu', weights_only=False)
+            source_manifest = checkpoint['source_manifest']
+            matches = [s for s in ('assets/wuji_hand2_palm_up/scene.xml',
+                                   'assets/wuji_hand2/scene.xml') if s in source_manifest]
+            if len(matches) != 1:
+                raise ValueError('Wuji checkpoint has no unambiguous scene manifest')
+            scene = matches[0]
+            if scene == 'assets/wuji_hand2/scene.xml' and not args.allow_legacy_palm_down:
+                raise ValueError('Palm-down Wuji results are historical and not a valid three-hand comparison; pass --allow-legacy-palm-down only to reproduce the withdrawn report')
+            if digest(ROOT / scene) != source_manifest[scene]:
+                raise ValueError('Wuji scene no longer matches checkpoint manifest')
+        model = mujoco.MjModel.from_xml_path(str(ROOT / scene))
         pen = model.geom('pen_collision').id
-        row.update(actuators=model.nu, scene=SCENES[name],
-                   scene_sha256=digest(ROOT / SCENES[name]),
+        row.update(actuators=model.nu, scene=scene,
+                   scene_sha256=digest(ROOT / scene),
                    pen_radius_m=float(model.geom_size[pen, 0]),
                    pen_length_m=float(2 * (model.geom_size[pen, 0] + model.geom_size[pen, 1])),
                    pen_mass_kg=float(model.body_mass[model.body('pen').id]))

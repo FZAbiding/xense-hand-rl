@@ -13,7 +13,7 @@ import torch
 ROOT=Path(__file__).resolve().parents[2]
 sys.path.insert(0,str(ROOT))
 from train import ActorCritic
-from experiments.wuji_hand2.env import Env,ASSETS
+from experiments.wuji_hand2.env import Env,assets_for_grasp
 
 
 def main():
@@ -30,7 +30,7 @@ def main():
     p.add_argument('--max-policy-std',type=float,default=1.)
     p.add_argument('--resume');p.add_argument('--action-mode',choices=['delta','home'],default='delta')
     p.add_argument('--reward-mode',choices=['quality','fingertip'],default='quality')
-    p.add_argument('--grasp-version',choices=['v2','long12'],default='long12')
+    p.add_argument('--grasp-version',choices=['v2','long12','palm_up_v1'],default='palm_up_v1')
     args=p.parse_args();torch.set_num_threads(4);torch.manual_seed(args.seed)
     if not np.exp(-3)<=args.max_policy_std<=1:raise ValueError('max-policy-std must be in [exp(-3), 1]')
     out=ROOT/args.run;out.mkdir(parents=True,exist_ok=True)
@@ -39,9 +39,13 @@ def main():
              clip=.2,value_coefficient=.5,entropy_coefficient=.002,epochs=4,minibatches=8,
              observation_size=105,action_size=20,control_dt=.025,physics_dt=.005)
     (out/'config.json').write_text(json.dumps(cfg,indent=2))
-    bank_name = 'grasp_bank_long_initial.npz' if args.grasp_version == 'long12' else 'grasp_bank.npz'
+    assets,bank_name=assets_for_grasp(args.grasp_version)
+    asset_rel=assets.relative_to(ROOT).as_posix()
     sources=['train.py','experiments/wuji_hand2/env.py','experiments/wuji_hand2/train.py','experiments/wuji_hand2/calibrate.py',
-             'assets/wuji_hand2/scene.xml',f'assets/wuji_hand2/{bank_name}','assets/wuji_hand2/provenance.json']
+             f'{asset_rel}/scene.xml',f'{asset_rel}/{bank_name}',f'{asset_rel}/provenance.json']
+    if args.grasp_version == 'palm_up_v1':
+        sources.extend(['experiments/wuji_hand2/certify_grasps.py',
+                        f'{asset_rel}/grasp_bank_60s_certification.json'])
     manifest={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in sources}
     (out/'source_manifest.json').write_text(json.dumps(manifest,indent=2))
     for name in sources:
@@ -53,7 +57,7 @@ def main():
         c=torch.load(ROOT/args.resume,weights_only=False)
         for key in ['experiment_version','action_mode','grasp_version']:
             if c['config'][key]!=cfg[key]:raise ValueError('Incompatible resume: '+key)
-        for name in ['assets/wuji_hand2/scene.xml',f'assets/wuji_hand2/{bank_name}']:
+        for name in [f'{asset_rel}/scene.xml',f'{asset_rel}/{bank_name}']:
             if c['source_manifest'][name]!=manifest[name]:raise ValueError('Cannot resume after changing task assets')
         agent.load_state_dict(c['model']);opt.load_state_dict(c['optimizer']);start=c['iteration']
         for g in opt.param_groups:g['lr']=args.lr

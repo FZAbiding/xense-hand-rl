@@ -8,6 +8,17 @@ import warp as wp
 
 ROOT=Path(__file__).resolve().parents[2]
 ASSETS=ROOT/'assets/wuji_hand2'
+PALM_UP_ASSETS=ROOT/'assets/wuji_hand2_palm_up'
+
+
+def assets_for_grasp(grasp_version):
+    if grasp_version == 'palm_up_v1':
+        return PALM_UP_ASSETS, 'grasp_bank_60s.npz'
+    if grasp_version == 'long12':
+        return ASSETS, 'grasp_bank_long_initial.npz'
+    if grasp_version == 'v2':
+        return ASSETS, 'grasp_bank.npz'
+    raise ValueError(f'Unknown grasp version: {grasp_version}')
 FINGERS=['thumb','index_finger','middle_finger','ring_finger','pinky']
 
 
@@ -20,7 +31,7 @@ def record_capacity_peaks(nefc:wp.array(dtype=wp.int32),nacon:wp.array(dtype=wp.
 
 class Env:
     def __init__(self,num_envs=1024,amplitude=.2,period=6.,seed=1,episode_seconds=12.,
-                 action_mode='delta',reward_mode='quality',grasp_version='v2',command_clip_penalty=.2,tracking_sigma=.18,
+                 action_mode='delta',reward_mode='quality',grasp_version='palm_up_v1',command_clip_penalty=.2,tracking_sigma=.18,
                  njmax=512,nconmax=128):
         wp.init();torch.manual_seed(seed)
         self.n=num_envs;self.nh=self.naction=20;self.dt=.025
@@ -29,11 +40,11 @@ class Env:
         self.command_clip_penalty=command_clip_penalty
         if tracking_sigma<=0:raise ValueError('tracking_sigma must be positive')
         self.tracking_sigma=tracking_sigma
-        self.cpu_model=mujoco.MjModel.from_xml_path(str(ASSETS/'scene.xml'))
+        assets,bank_name=assets_for_grasp(grasp_version)
+        self.cpu_model=mujoco.MjModel.from_xml_path(str(assets/'scene.xml'))
         self.cpu_model.opt.iterations=8;self.cpu_model.opt.ls_iterations=8
         m=self.cpu_model;cd=mujoco.MjData(m)
-        bank_name = 'grasp_bank_long_initial.npz' if grasp_version == 'long12' else 'grasp_bank.npz'
-        bank=np.load(ASSETS/bank_name);bq=bank['qpos'];bc=bank['ctrl']
+        bank=np.load(assets/bank_name);bq=bank['qpos'];bc=bank['ctrl']
         self.bank_q=torch.tensor(bq,device='cuda',dtype=torch.float32)
         self.bank_ctrl=torch.tensor(bc,device='cuda',dtype=torch.float32)
         self.pen_id=m.body('pen').id;self.pen_geom=m.geom('pen_collision').id
