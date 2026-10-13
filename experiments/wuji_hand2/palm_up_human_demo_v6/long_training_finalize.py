@@ -43,6 +43,9 @@ def main():
     write(dict(status='waiting_for_training_budget'))
     while True:
         preserve_best()
+        if not (out/'training_status.json').exists():
+            time.sleep(10)
+            continue
         state=json.loads((out/'training_status.json').read_text())
         if state['status'] in ['stopped_by_request','stopped_repeated_runtime_failure']:
             write(dict(status='not_run_training_stopped',training_status=state));return
