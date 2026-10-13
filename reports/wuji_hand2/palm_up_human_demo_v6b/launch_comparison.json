@@ -1,0 +1,35 @@
+{
+  "comparison_seed": 2026101405,
+  "source_policy": {
+    "strict_passes": 0,
+    "episodes": 24,
+    "mean_actual_angle_deg": 358.4848763895544,
+    "mean_mae_deg": 1.190334486702171,
+    "mean_seconds": 11.91875,
+    "failure_counts": {
+      "max_drift_m": 24,
+      "max_self_depth_m": 24,
+      "middle_pip_excursion_deg": 24,
+      "full_duration": 1,
+      "rotation_progress": 1,
+      "contact_handovers": 1
+    }
+  },
+  "v6b_iteration_100": {
+    "strict_passes": 9,
+    "episodes": 24,
+    "mean_actual_angle_deg": 355.96611639271913,
+    "mean_mae_deg": 1.487416279710547,
+    "mean_seconds": 11.933333333333334,
+    "failure_counts": {
+      "middle_pip_excursion_deg": 10,
+      "max_self_depth_m": 12,
+      "full_duration": 1,
+      "max_drift_m": 1,
+      "rotation_progress": 1
+    }
+  },
+  "source_metrics": "artifacts/wuji_hand2/palm_up_human_demo_v6b/baseline_source/holdout_0000000/metrics.json",
+  "candidate_metrics": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0000100/metrics.json",
+  "interpretation": "v6b improved 12-second 360-degree strict pass from 0/24 to 9/24 on the same validation seeds; preliminary, no claim of fast or continuous spinning; human motion review pending"
+}
