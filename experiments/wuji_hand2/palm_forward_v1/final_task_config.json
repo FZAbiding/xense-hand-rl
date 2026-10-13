@@ -1,0 +1,19 @@
+{
+  "experiment_id": "wuji_hand2_palm_forward_v1_final_task",
+  "assets": "assets/wuji_hand2_palm_forward_v1",
+  "runs": "runs/wuji_hand2/palm_forward_v1/final_task",
+  "artifacts": "artifacts/wuji_hand2/palm_forward_v1/final_task",
+  "initial_checkpoint": "runs/wuji_hand2/palm_forward_v1/matched_task/medium/checkpoint_000700.pt",
+  "advance_gate": "survival",
+  "training": {
+    "num_envs": 1024, "seed": 1, "horizon": 32,
+    "target_kl": 0.015, "reward_scale": 0.25,
+    "save_every": 50, "command_clip_penalty": 2.0,
+    "action_mode": "delta", "reward_mode": "quality",
+    "grasp_version": "palm_forward_v1", "max_policy_std": 0.05,
+    "stages": [
+      {"name": "matched", "iterations": 400, "amplitude": 0.6, "period": 4, "episode_seconds": 60, "lr": 0.00005}
+    ]
+  },
+  "evaluation": {"validation_seed": 20261017, "holdout_seed": 20261018, "episodes": 8, "holdout_episodes": 24, "seconds": 60}
+}

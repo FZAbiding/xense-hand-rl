@@ -47,9 +47,19 @@ def main():
     parser.add_argument('--settle-seconds', type=float, default=2.)
     parser.add_argument('--bank-name', default='grasp_bank.npz')
     parser.add_argument('--local-refine', action='store_true')
-    parser.add_argument('--orientation', choices=('palm_up', 'legacy_palm_down'), default='palm_up')
+    parser.add_argument('--search-config', type=Path)
+    parser.add_argument('--save-settled', action='store_true')
+    parser.add_argument('--retain-grasps', type=int, default=8)
+    parser.add_argument('--assets-dir',type=Path,help='Explicit independent asset directory')
+    parser.add_argument('--parked-pose-deg',help='Four comma-separated joint angles for both unused fingers')
+    parser.add_argument('--preclosed',action='store_true',help='Initialize the hand at its squeezed control pose')
+    parser.add_argument('--orientation', choices=('palm_up', 'legacy_palm_down', 'palm_forward_v1'), default='palm_up')
     args = parser.parse_args()
     assets = PALM_UP_ASSETS if args.orientation == 'palm_up' else LEGACY_ASSETS
+    if args.assets_dir:assets=(ROOT/args.assets_dir).resolve()
+    if args.orientation == 'palm_forward_v1':
+        config = json.loads((ROOT / 'experiments/wuji_hand2/palm_forward_v1/config.json').read_text())
+        assets = ROOT / config['assets']
     if Path(args.bank_name).name != args.bank_name or not args.bank_name.endswith('.npz'):
         raise ValueError('--bank-name must be a local .npz filename')
     bank_path = assets / args.bank_name
@@ -75,9 +85,21 @@ def main():
         seed[start:start + 4] = [.45, 0, .45, .3]
     seed[12:14] = [args.ring_flex, args.ring_abd]
     seed[16:18] = [args.pinky_flex, args.pinky_abd]
+    if args.parked_pose_deg:
+        folded=np.radians([float(v) for v in args.parked_pose_deg.split(',')])
+        if folded.shape!=(4,):raise ValueError('Expected four parked angles')
+        seed[12:20]=np.tile(folded,2)
     seed[:4] = [.3, -.4, .4, .2]
     seed = np.clip(seed, lower + 1e-5, upper - 1e-5)
-    if args.local_refine and args.orientation == 'palm_up':
+    if args.orientation == 'palm_forward_v1':
+        search = config['calibration']
+        if args.search_config:
+            search = json.loads(args.search_config.read_text())
+        wrist_z = model.body_pos[model.body('r_wrist').id, 2]
+        positions = list(itertools.product(search['center_x_m'], search['center_y_m'],
+                         [wrist_z + v for v in search['center_z_above_wrist_m']],
+                         search['inset_m'], search['thumb_y_m'], search['tip_x_offset_m'], search['squeeze_m']))
+    elif args.local_refine and args.orientation == 'palm_up':
         positions = list(itertools.product([.085, .09, .095], [-.005, .0, .005], [.095, .10, .105],
                                            [.014, .018, .022], [.015, .02, .025], [.006, .009, .012],
                                            [.002, .004, .006]))
@@ -93,6 +115,10 @@ def main():
         positions = list(itertools.product([.08, .09, .10], [-.005, .005], [.055, .07, .085],
                                            [.012, .016], [.020, .035], [-.009, -.004, .001],
                                            [0., .001, .002, .004]))
+    if args.search_config and args.orientation=='palm_up':
+        search=json.loads(args.search_config.read_text())
+        positions=list(itertools.product(search['center_x_m'],search['center_y_m'],search['center_z_m'],
+            search['inset_m'],search['thumb_y_m'],search['tip_z_offset_m'],search['squeeze_m']))
     np.random.default_rng(42).shuffle(positions)
     candidates, accepted = [], []
     indices = range(len(positions)) if args.candidate_index is not None else range(min(args.max_candidates, len(positions)))
@@ -106,6 +132,10 @@ def main():
         targets = np.array([[cx - inset, cy + y_sign * thumb_y, tip_z],
                             [cx + inset, cy + y_sign * .025, tip_z],
                             [cx + inset + args.middle_x_offset, cy - y_sign * .020, tip_z]])
+        if args.orientation == 'palm_forward_v1':
+            targets = np.array([[cx + inset, cy - thumb_y, tip_z],
+                                [cx - inset, cy - .025, tip_z],
+                                [cx - inset, cy + .020, tip_z]])
 
         def residual(joints):
             data.qpos[:hand] = seed
@@ -123,6 +153,10 @@ def main():
         closed_targets = targets.copy()
         closed_targets[0, 0] += squeeze
         closed_targets[1:, 0] -= squeeze
+        if args.orientation == 'palm_forward_v1':
+            closed_targets = targets.copy()
+            closed_targets[0, 0] -= squeeze
+            closed_targets[1:, 0] += squeeze
 
         def squeeze_residual(joints):
             data.qpos[:hand] = pose
@@ -135,6 +169,7 @@ def main():
                                     bounds=(lower[:12] + 1e-6, upper[:12] - 1e-6), max_nfev=80)
         control = pose.copy()
         control[:12] = squeeze_fit.x
+        if args.preclosed:pose=control.copy()
         mujoco.mj_resetData(model, data)
         data.qpos[:hand] = pose
         data.qpos[hand:hand + 3] = center
@@ -200,7 +235,7 @@ def main():
         if valid:
             # A long-horizon candidate is certified from its pre-settling pose.
             # Reusing the final pose with zeroed velocity can induce slow drift.
-            saved_qpos = initial_qpos if args.settle_seconds >= 12 else data.qpos.copy()
+            saved_qpos = initial_qpos if args.settle_seconds >= 12 and not args.save_settled else data.qpos.copy()
             accepted.append((score, saved_qpos, control.copy(), row))
         if args.candidate_index is not None:
             (assets / f'calibration_debug_{n}.json').write_text(json.dumps(row, indent=2))
@@ -216,7 +251,7 @@ def main():
     if not accepted:
         raise RuntimeError(f'No Wuji grasp passed gravity/contact gates; inspect {candidates_path.name}.')
     accepted.sort(key=lambda x: x[0], reverse=True)
-    selected = accepted[:8]
+    selected = accepted[:args.retain_grasps]
     np.savez(bank_path, qpos=np.array([x[1] for x in selected]),
              ctrl=np.array([x[2] for x in selected]))
     metrics_path.write_text(json.dumps([x[3] for x in selected], indent=2))

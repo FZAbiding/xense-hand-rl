@@ -1,0 +1,29 @@
+{
+  "experiment_id": "wuji_hand2_palm_forward_ring_v2",
+  "assets": "assets/wuji_hand2_palm_forward_v1",
+  "runs": "runs/wuji_hand2/palm_forward_ring_v2",
+  "artifacts": "artifacts/wuji_hand2/palm_forward_ring_v2",
+  "initial_checkpoint": "runs/wuji_hand2/palm_forward_v1/final_task/matched/checkpoint_000800.pt",
+  "advance_gate": "survival",
+  "training": {
+    "num_envs": 1024, "seed": 2, "horizon": 32,
+    "target_kl": 0.015, "reward_scale": 0.25,
+    "save_every": 100, "command_clip_penalty": 2.0,
+    "action_mode": "delta", "reward_mode": "quality",
+    "grasp_version": "palm_forward_v1", "max_policy_std": 0.05,
+    "ring_profile": "natural_v1", "reset_ring_head": 1,
+    "stages": [
+      {"name": "ring_retrain", "iterations": 600, "amplitude": 0.6, "period": 4, "episode_seconds": 60, "lr": 0.00005}
+    ]
+  },
+  "evaluation": {"validation_seed": 20261019, "holdout_seed": 20261020, "episodes": 8, "holdout_episodes": 24, "seconds": 60},
+  "migration": "Reuse the exact certified upright scene/bank and the previous selected policy. Reset only four ring output rows and all optimizer moments for the changed objective; other learned outputs and observation statistics are retained.",
+  "ring_controller": {
+    "software_ranges_deg": [[0,65],[-15,15],[0,85],[0,60]],
+    "maximum_command_speed_deg_s": 20,
+    "rest_deg": [20,0,30,20],
+    "coordination_prior": "DIP approximately 0.65 times PIP; reward only, independent actuation retained",
+    "initial_posture": "Original certified initial grasp; commands approach software envelope smoothly. Pose diagnostics exclude first 3 seconds only for steady-state metrics.",
+    "clipping": "All envelope clamping is included in existing command clipping metric. Mechanical ranges and strict task gates are unchanged."
+  }
+}

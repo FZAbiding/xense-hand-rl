@@ -1,0 +1,22 @@
+{
+  "source": "v5 final holdout",
+  "checkpoint_sha256": "f858a10a802d097185e80dead39d051698410d8aeae9ce1f576ba6f4239afc68",
+  "iteration": 64902,
+  "episodes": 24,
+  "strict_passes": 0,
+  "mean_actual_angle_deg": 360.5321862381376,
+  "mean_mae_deg": 1.1287349686053496,
+  "full_duration_episodes": 24,
+  "order_violation_frames": 0,
+  "contact_handovers_range": [
+    3,
+    6
+  ],
+  "evidence": "artifacts/wuji_hand2/palm_up_human_demo_v5/long_training_20261012/holdout_0064902/metrics.json",
+  "first_episode_gates": {
+    "drift_max_m": 0.026186988056289516,
+    "self_depth_max_m": 0.0005219302900479018,
+    "middle_pip_excursion_deg": 38.975590529179684
+  },
+  "limitation": "v5 only saved full gate diagnostics for episode 0; other episode failure reasons unavailable"
+}

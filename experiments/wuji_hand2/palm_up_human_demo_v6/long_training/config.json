@@ -1,0 +1,72 @@
+{
+  "experiment_id": "wuji_hand2_v6_long_20261014",
+  "runs": "runs/wuji_hand2/palm_up_human_demo_v6/long_training_20261014",
+  "artifacts": "artifacts/wuji_hand2/palm_up_human_demo_v6/long_training_20261014",
+  "assets": "assets/wuji_hand2_palm_up_human_demo_v6_long",
+  "seed": 2026101401,
+  "wall_hours": 24,
+  "max_iterations": 250000,
+  "num_envs": 1024,
+  "horizon": 32,
+  "lr": 0.00015,
+  "target_kl": 0.015,
+  "reward_scale": 0.2,
+  "max_policy_std": 0.3,
+  "save_every": 100,
+  "evaluate_every": 500,
+  "first_evaluation": 100,
+  "validation_episodes": 24,
+  "validation_seed": 2026101402,
+  "holdout_seed": 2026101403,
+  "checkpoint_keep_recent": 4,
+  "checkpoint_keep_stride": 2000,
+  "max_restarts": 12,
+  "max_consecutive_failed_restarts": 3,
+  "levels": [
+    {
+      "name": "turn_360_quality",
+      "angle_deg": 360,
+      "duration": 10,
+      "episode_seconds": 12
+    },
+    {
+      "name": "turn_360_fast",
+      "angle_deg": 360,
+      "duration": 6,
+      "episode_seconds": 8
+    },
+    {
+      "name": "turn_360_faster",
+      "angle_deg": 360,
+      "duration": 3,
+      "episode_seconds": 5
+    },
+    {
+      "name": "continuous",
+      "angle_deg": 360,
+      "duration": 3,
+      "episode_seconds": 60,
+      "continuous": true
+    }
+  ],
+  "gates": {
+    "success_fraction_min": 0.95,
+    "order_violation_frames": 0,
+    "reverse_bending_frames": 0,
+    "non_tip_fraction_max": 0.05,
+    "inactive_fraction_max": 0.01,
+    "opposing_fraction_min": 0.9,
+    "two_tip_fraction_min": 0.95,
+    "max_drift_m": 0.025,
+    "mae_deg_max": 10,
+    "rotation_progress_min": 0.9,
+    "max_active_self_depth_m": 0.0005
+  },
+  "authorization": "User explicitly requested a detailed plan followed by long-duration training; do not pause for the earlier preview approval gate.",
+  "notes": "V6 warm start from V5 final checkpoint; fresh optimizer and run. Strict 360 quality gates unchanged. Dense reward and GPU fail thresholds target drift, self penetration, middle PIP excursion. CPU independent evaluation and held-out seeds.",
+  "init_checkpoint": "models/wuji_hand2/v5_20261012_final.pt",
+  "starting_level": 0,
+  "initial_policy_std": 0.09,
+  "min_policy_std": 0.07,
+  "source_run": "wuji_hand2_v5_long_20261012"
+}

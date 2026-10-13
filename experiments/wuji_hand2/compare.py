@@ -13,7 +13,7 @@ FIELDS = ('mae_deg', 'mean_tilt_deg', 'p95_tilt_deg', 'command_clip_fraction',
           'non_tip_force_frame_fraction', 'palm_force_frame_fraction',
           'two_tip_fraction', 'minimum_half_cycle_gain')
 SCENES = {'LEAP': 'assets/scene.xml', 'Revo3': 'assets/revo3_v2/scene.xml',
-          'Wuji Hand2': 'assets/wuji_hand2_palm_up/scene.xml'}
+          'Wuji Hand2': 'assets/wuji_hand2_palm_forward_v1/scene.xml'}
 
 
 def digest(path):
@@ -27,6 +27,8 @@ def main():
     parser.add_argument('--output', required=True)
     parser.add_argument('--allow-legacy-palm-down', action='store_true',
                         help='Only for reproducing the withdrawn historical comparison')
+    parser.add_argument('--allow-legacy-palm-up', action='store_true',
+                        help='Only for reproducing historical palm-up experiments')
     args = parser.parse_args()
     evaluations = {}
     expected = None
@@ -53,11 +55,14 @@ def main():
         if hand == 'wuji':
             checkpoint = torch.load(ROOT / result['checkpoint'], map_location='cpu', weights_only=False)
             source_manifest = checkpoint['source_manifest']
-            matches = [s for s in ('assets/wuji_hand2_palm_up/scene.xml',
+            matches = [s for s in ('assets/wuji_hand2_palm_forward_v1/scene.xml',
+                                   'assets/wuji_hand2_palm_up/scene.xml',
                                    'assets/wuji_hand2/scene.xml') if s in source_manifest]
             if len(matches) != 1:
                 raise ValueError('Wuji checkpoint has no unambiguous scene manifest')
             scene = matches[0]
+            if scene == 'assets/wuji_hand2_palm_up/scene.xml' and not args.allow_legacy_palm_up:
+                raise ValueError('Palm-up Wuji results do not use the requested upright layout; pass --allow-legacy-palm-up only for historical reproduction')
             if scene == 'assets/wuji_hand2/scene.xml' and not args.allow_legacy_palm_down:
                 raise ValueError('Palm-down Wuji results are historical and not a valid three-hand comparison; pass --allow-legacy-palm-down only to reproduce the withdrawn report')
             if digest(ROOT / scene) != source_manifest[scene]:

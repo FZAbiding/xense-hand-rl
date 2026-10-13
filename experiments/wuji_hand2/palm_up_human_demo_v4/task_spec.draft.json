@@ -1,0 +1,125 @@
+{
+  "experiment_id": "wuji_hand2_palm_up_human_demo_v4",
+  "status": "user_rejected_finger_crossing",
+  "runnable_training_config": false,
+  "reference_candidate": "A_triangle_pass_clean",
+  "reference_file": "artifacts/human_pen_spinning/review_20261011/A_triangle_pass_clean.mp4",
+  "source_interval_seconds": [
+    139.0,
+    142.0
+  ],
+  "layout": "palm_up",
+  "active_fingers": [
+    "thumb",
+    "index",
+    "middle"
+  ],
+  "inactive_fingers": [
+    "ring",
+    "pinky"
+  ],
+  "inactive_finger_collisions": "retain",
+  "initialization": "new_functional_grasp_bank; do_not_reuse_v3_bank",
+  "policy_initialization": "do_not_use_v3_as_default; compare_reference_controller_and_new_policy_first",
+  "target": "phase_based_continuous_end_over_end_rotation",
+  "orientation_measurement": "directed_pen_axis_with_unwrapped_phase; retain_endpoint_identity",
+  "old_sinusoidal_yaw_target": false,
+  "motion_phases": [
+    "two_finger_pinch",
+    "third_finger_approach",
+    "contact_handover",
+    "released_finger_clearance",
+    "repeat_next_pair"
+  ],
+  "contact_pair_order": null,
+  "contact_pair_order_status": "annotate_from_accepted_demo; do_not_infer_from_2D_occlusion_alone",
+  "functional_constraints": {
+    "index_middle_pip_dip_reverse_bending": "reject_in_initialization_and_evaluation; enforce_in_controller",
+    "pip_dip_coordination": "soft_reference_coupling; no_single_universal_human_ratio",
+    "middle_pip_excursion_and_speed": "derive_robot_feasible_bounds_after_phase_annotation",
+    "contact_regions": "prefer_distal_volar_pads; inspect_actual_contact_locations_and_forces",
+    "non_tip_force_metric": "retain_but_do_not_substitute_for_contact_location_audit",
+    "ring_pinky_pose": "search_clearance_with_all_collision_geometry; do_not_copy_fixed_v3_angles"
+  },
+  "curriculum": [
+    "functional_static_pinch",
+    "single_contact_handover",
+    "180_degree_pass",
+    "360_degree_cycle",
+    "repeated_cycles",
+    "60_second_perturbed_holdout"
+  ],
+  "acceptance": {
+    "human_demo_accepted": true,
+    "human_simulation_motion_accepted": false,
+    "reverse_bending_frames": 0,
+    "inactive_finger_contact_fraction_max": 0.01,
+    "required_evidence": [
+      "side_by_side_phase_comparison",
+      "all_active_joint_angle_traces",
+      "per_link_pen_contacts",
+      "directed_pen_angle_and_completed_cycles",
+      "uninterrupted_rollout",
+      "unseen_seed_holdout"
+    ],
+    "finger_crossing": "reject; calibrate complete finger chains and palm-local ordering before next training"
+  },
+  "human_demo_approval": "User: 找的这个不错，开始执行",
+  "execution_result": {
+    "experiment_id": "wuji_hand2_palm_up_human_demo_v4",
+    "status": "user_rejected_finger_crossing",
+    "full_rotation_achieved": false,
+    "human_like_handover_achieved": false,
+    "ppo_iterations": {
+      "hold": 300,
+      "hold_refine": 200,
+      "handover": 400
+    },
+    "total_ppo_iterations": 900,
+    "ppo_environment_steps": 29491200,
+    "hold": {
+      "episodes": 24,
+      "seconds_per_episode": 60,
+      "passed_under_previous_physical_gates": 24,
+      "natural_posture_status": "requires_re_review",
+      "metrics": "artifacts/wuji_hand2/palm_up_human_demo_v4/hold_verified/metrics.json"
+    },
+    "learned_handover": {
+      "episodes": 24,
+      "passed": 0,
+      "metrics": "artifacts/wuji_hand2/palm_up_human_demo_v4/handover/metrics.json"
+    },
+    "open_loop_partial_rotation": {
+      "nominal_angle_deg": -58.27701395978985,
+      "perturbed_episodes": 24,
+      "partial_passed": 0,
+      "previous_numeric_gate_passed": 7,
+      "natural_motion_status": "rejected_finger_crossing",
+      "handover_passed": 0,
+      "metrics": "artifacts/wuji_hand2/palm_up_human_demo_v4/partial_rotation/metrics.json"
+    },
+    "human_review": {
+      "date": "2026-10-12",
+      "source": "user visual review",
+      "user_feedback": "食指和中指都交叉了，正常人根本做不出来这种动作，这样肯定是不行的！",
+      "verdict": "rejected_finger_crossing",
+      "accepted_natural_motion": false,
+      "withdrawn_claim": "local partial-rotation task pass",
+      "historical_numeric_results_unchanged": true,
+      "do_not_use_as_imitation_reference": true,
+      "static_grasp_posture_status": "requires_re_review",
+      "evidence": [
+        {
+          "path": "artifacts/wuji_hand2/palm_up_human_demo_v4/human_review/finger_crossing_view_1.png",
+          "sha256": "fcb0138779f2871198b331b0067e4d6b6092fccd75b371f478b552b53cef4ca0"
+        },
+        {
+          "path": "artifacts/wuji_hand2/palm_up_human_demo_v4/human_review/finger_crossing_view_2.png",
+          "sha256": "442c50182e8db77a1342f5144cbaed8b59ba2b60a4c56d68ea5c1432e0409cb5"
+        }
+      ],
+      "next_version_status": "plan_awaiting_user_confirmation_no_training"
+    },
+    "next_required_milestone": "Wait for v5 plan approval; calibrate natural finger ordering and review initial poses before short physical handover previews and training."
+  }
+}

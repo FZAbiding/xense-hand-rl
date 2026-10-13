@@ -1,0 +1,40 @@
+{
+  "experiment_id": "wuji_hand2_palm_forward_v1",
+  "assets": "assets/wuji_hand2_palm_forward_v1",
+  "runs": "runs/wuji_hand2/palm_forward_v1",
+  "artifacts": "artifacts/wuji_hand2/palm_forward_v1",
+  "layout": {
+    "wrist_quat": [0, 0.7071067811865476, -0.7071067811865476, 0],
+    "wrist_xy_m": [0.16, 0],
+    "table_height_m": 0,
+    "palm_normal_world": [-1, 0, 0],
+    "finger_direction_world": [0, 0, 1]
+  },
+  "calibration": {
+    "seed": 20261008,
+    "max_candidates": 729,
+    "settle_seconds": 12,
+    "center_x_m": [0.095, 0.105, 0.115],
+    "center_y_m": [-0.005, 0, 0.005],
+    "center_z_above_wrist_m": [0.09, 0.105, 0.12],
+    "inset_m": [0.012, 0.018, 0.024],
+    "thumb_y_m": [0.015, 0.025, 0.035],
+    "tip_x_offset_m": [-0.006, 0, 0.006],
+    "squeeze_m": [0.002, 0.004, 0.006]
+  },
+  "certification": {"seconds": 60, "perturbations": 4, "seed": 20261009},
+  "training": {
+    "num_envs": 1024, "seed": 1, "horizon": 32,
+    "target_kl": 0.015, "reward_scale": 0.25,
+    "save_every": 50, "command_clip_penalty": 2.0,
+    "action_mode": "delta", "reward_mode": "quality",
+    "grasp_version": "palm_forward_v1", "max_policy_std": 0.3,
+    "stages": [
+      {"name": "small_short", "iterations": 250, "amplitude": 0.2, "period": 6, "episode_seconds": 12, "lr": 0.0001},
+      {"name": "small_long", "iterations": 400, "amplitude": 0.2, "period": 6, "episode_seconds": 60, "lr": 0.00005},
+      {"name": "medium", "iterations": 300, "amplitude": 0.35, "period": 6, "episode_seconds": 60, "lr": 0.00005},
+      {"name": "matched", "iterations": 400, "amplitude": 0.6, "period": 4, "episode_seconds": 60, "lr": 0.00005}
+    ]
+  },
+  "evaluation": {"validation_seed": 20261010, "holdout_seed": 20261011, "episodes": 8, "holdout_episodes": 24, "seconds": 60}
+}

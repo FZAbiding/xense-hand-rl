@@ -1,0 +1,27 @@
+{
+  "experiment_id": "wuji_hand2_palm_up_pinch_v2",
+  "assets": "assets/wuji_hand2_palm_up",
+  "runs": "runs/wuji_hand2/palm_up_pinch_v2",
+  "artifacts": "artifacts/wuji_hand2/palm_up_pinch_v2",
+  "initial_checkpoint": "runs/wuji_hand2/palm_up_v1_small_long_seed1/checkpoint_000550.pt",
+  "advance_gate": "survival",
+  "reference_video": "artifacts/revo3/v2.0/wide_6s/demo_60s.mp4",
+  "orientation": "palm_up: wrist quaternion [0.5,0.5,-0.5,-0.5], palm normal world +Z",
+  "training": {
+    "num_envs": 1024, "seed": 3, "horizon": 32,
+    "target_kl": 0.015, "reward_scale": 0.25,
+    "save_every": 50, "command_clip_penalty": 3.0,
+    "action_mode": "delta", "reward_mode": "quality", "tracking_sigma": 0.1,
+    "grasp_version": "palm_up_v1", "max_policy_std": 0.1,
+    "ring_profile": "natural_v1", "reset_ring_head": 1,
+    "pinch_reward_weight": 1.5, "pinch_gate": 1,
+    "stages": [
+      {"name": "pinch_small", "iterations": 200, "amplitude": 0.2, "period": 6, "episode_seconds": 60, "lr": 0.00005},
+      {"name": "wide_6s", "iterations": 400, "amplitude": 0.6, "period": 6, "episode_seconds": 60, "lr": 0.00005, "reset_ring_head": 0}
+    ]
+  },
+  "evaluation": {"validation_seed": 20261021, "holdout_seed": 20261022, "episodes": 8, "holdout_episodes": 24, "seconds": 60},
+  "pinch_definition": "Two DIFFERENT fingertip/distal fingers each have net normal force above 0.02 N on the rod, with normalized directions cosine <= -0.3. Strict success requires opposing pinch >80% of the full 60 seconds plus the original quality gates.",
+  "migration": "Resume only from the early correctly oriented palm-up checkpoint; never load palm-forward checkpoints. Exact scene/bank hash compatibility is checked. Four ring output rows and optimizer state reset once for the revised controller/objective.",
+  "limits": "Real free rod and gravity; no weld, scripted pen trajectory or support fixtures. Surviving alone is not success. The generic runner uses survival as the curriculum progression gate; strict final task success additionally requires tracking and opposing pinch."
+}

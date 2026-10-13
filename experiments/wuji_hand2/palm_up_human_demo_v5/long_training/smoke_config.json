@@ -1,0 +1,103 @@
+{
+  "experiment_id": "wuji_hand2_v5_long_20261012",
+  "runs": "runs/wuji_hand2/palm_up_human_demo_v5/long_training_smoke_20261012",
+  "artifacts": "artifacts/wuji_hand2/palm_up_human_demo_v5/long_training_smoke_20261012",
+  "assets": "assets/wuji_hand2_palm_up_human_demo_v5_long",
+  "seed": 2026101210,
+  "wall_hours": 0.1,
+  "max_iterations": 2,
+  "num_envs": 32,
+  "horizon": 32,
+  "lr": 0.00015,
+  "target_kl": 0.015,
+  "reward_scale": 0.2,
+  "max_policy_std": 0.3,
+  "save_every": 100,
+  "evaluate_every": 500,
+  "first_evaluation": 100,
+  "validation_episodes": 2,
+  "validation_seed": 2026101211,
+  "holdout_seed": 2026101212,
+  "checkpoint_keep_recent": 4,
+  "checkpoint_keep_stride": 2000,
+  "max_restarts": 12,
+  "max_consecutive_failed_restarts": 3,
+  "levels": [
+    {
+      "name": "hold_recovery",
+      "angle_deg": 0,
+      "duration": 4,
+      "episode_seconds": 60
+    },
+    {
+      "name": "turn_15",
+      "angle_deg": 15,
+      "duration": 4,
+      "episode_seconds": 6
+    },
+    {
+      "name": "turn_30",
+      "angle_deg": 30,
+      "duration": 4,
+      "episode_seconds": 6
+    },
+    {
+      "name": "turn_60",
+      "angle_deg": 60,
+      "duration": 4,
+      "episode_seconds": 6
+    },
+    {
+      "name": "turn_90",
+      "angle_deg": 90,
+      "duration": 4,
+      "episode_seconds": 6
+    },
+    {
+      "name": "turn_180",
+      "angle_deg": 180,
+      "duration": 6,
+      "episode_seconds": 8
+    },
+    {
+      "name": "turn_360",
+      "angle_deg": 360,
+      "duration": 10,
+      "episode_seconds": 12
+    },
+    {
+      "name": "turn_360_fast",
+      "angle_deg": 360,
+      "duration": 6,
+      "episode_seconds": 8
+    },
+    {
+      "name": "turn_360_faster",
+      "angle_deg": 360,
+      "duration": 3,
+      "episode_seconds": 5
+    },
+    {
+      "name": "continuous",
+      "angle_deg": 360,
+      "duration": 3,
+      "episode_seconds": 60,
+      "continuous": true
+    }
+  ],
+  "gates": {
+    "success_fraction_min": 0.95,
+    "order_violation_frames": 0,
+    "reverse_bending_frames": 0,
+    "non_tip_fraction_max": 0.05,
+    "inactive_fraction_max": 0.01,
+    "opposing_fraction_min": 0.9,
+    "two_tip_fraction_min": 0.95,
+    "max_drift_m": 0.025,
+    "mae_deg_max": 10,
+    "rotation_progress_min": 0.9,
+    "max_active_self_depth_m": 0.0005
+  },
+  "authorization": "User explicitly requested a detailed plan followed by long-duration training; do not pause for the earlier preview approval gate.",
+  "notes": "Fresh V5 policy. Unchanged physical hand/pen model. CPU/GPU results reported separately. Failed evaluations keep training at current curriculum; they do not end the run."
+}

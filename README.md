@@ -4,6 +4,9 @@
 
 项目原创代码与内容采用 [MIT License](LICENSE)。第三方代码与资产保留各自许可证，具体来源和限制见 [NOTICE.md](NOTICE.md)。
 
+实验协作与离线 HTML 展示规范见 [实验评审 SOP](docs/EXPERIMENT_REVIEW_SOP.md)。
+Wuji v5 已按用户最新授权启动 [24 小时长期训练](experiments/wuji_hand2/palm_up_human_demo_v5/long_training/PLAN.md)，进展见 [实时训练页面](artifacts/wuji_hand2/palm_up_human_demo_v5/long_training_20261012/review.html)。先前标定与预演仍保留在 [v5 历史审阅页面](artifacts/wuji_hand2/palm_up_human_demo_v5/review.html)；训练进行中不代表已通过转笔验收。
+
 ## 当前案例：LEAP / Revo3 / Wuji Hand 2 往复转笔
 
 **Wuji 对比结果正在重做。** 先前场景误将掌心法线设为朝下，和预期的水平基座、掌心朝上配置不符；旧策略及 24×60 秒评估已标记为历史结果，不可作为正确姿态下与 LEAP/Revo3 的有效对比。新场景在 `assets/wuji_hand2_palm_up/`，须重新校准抓握、训练、评估。以下表格仅展示旧实验记录，Wuji 一行不具备当前比较资格：

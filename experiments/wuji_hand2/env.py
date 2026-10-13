@@ -5,6 +5,8 @@ import torch
 import mujoco
 import mujoco_warp as mjw
 import warp as wp
+from experiments.wuji_hand2.ring_control import natural_ring_command, RING_STEP, RING_REST
+from experiments.wuji_hand2.pinch import opposing_strength
 
 ROOT=Path(__file__).resolve().parents[2]
 ASSETS=ROOT/'assets/wuji_hand2'
@@ -12,6 +14,10 @@ PALM_UP_ASSETS=ROOT/'assets/wuji_hand2_palm_up'
 
 
 def assets_for_grasp(grasp_version):
+    if grasp_version == 'palm_up_tripod_v3':
+        return ROOT/'assets/wuji_hand2_palm_up_tripod_v3', 'grasp_bank_60s.npz'
+    if grasp_version == 'palm_forward_v1':
+        return ROOT/'assets/wuji_hand2_palm_forward_v1', 'grasp_bank_60s.npz'
     if grasp_version == 'palm_up_v1':
         return PALM_UP_ASSETS, 'grasp_bank_60s.npz'
     if grasp_version == 'long12':
@@ -32,12 +38,24 @@ def record_capacity_peaks(nefc:wp.array(dtype=wp.int32),nacon:wp.array(dtype=wp.
 class Env:
     def __init__(self,num_envs=1024,amplitude=.2,period=6.,seed=1,episode_seconds=12.,
                  action_mode='delta',reward_mode='quality',grasp_version='palm_up_v1',command_clip_penalty=.2,tracking_sigma=.18,
-                 njmax=512,nconmax=128):
+                 njmax=512,nconmax=128,ring_profile='legacy',pinch_reward_weight=0.,park_unused_fingers=0):
         wp.init();torch.manual_seed(seed)
         self.n=num_envs;self.nh=self.naction=20;self.dt=.025
+        self.park_unused_fingers=bool(park_unused_fingers)
+        if self.park_unused_fingers:
+            if grasp_version!='palm_up_tripod_v3' or action_mode!='delta' or ring_profile!='legacy':
+                raise ValueError('Parked fingers require the certified tripod scene, delta control and legacy ring profile')
+            self.naction=12
         self.amplitude=amplitude;self.period=period;self.horizon=round(episode_seconds/self.dt)
         self.action_mode=action_mode;self.reward_mode=reward_mode;self.grasp_version=grasp_version
         self.command_clip_penalty=command_clip_penalty
+        if ring_profile not in ('legacy', 'natural_v1'):raise ValueError('Unknown ring profile')
+        if ring_profile != 'legacy' and action_mode != 'delta':raise ValueError('Natural ring requires delta control')
+        self.ring_profile=ring_profile
+        self.pinch_reward_weight=pinch_reward_weight
+        if pinch_reward_weight<0:raise ValueError('pinch weight must be nonnegative')
+        self.pinch_strength=torch.zeros(num_envs,device='cuda')
+        self.parked_force=torch.zeros(num_envs,device='cuda')
         if tracking_sigma<=0:raise ValueError('tracking_sigma must be positive')
         self.tracking_sigma=tracking_sigma
         assets,bank_name=assets_for_grasp(grasp_version)
@@ -55,12 +73,15 @@ class Env:
             for suffix in ('distal','tip_sensor_frame'):
                 mapping[m.geom_bodyid==m.body(f'r_{f}_{suffix}').id]=i+1
         self.geom_finger=torch.tensor(mapping,device='cuda');self.geom_body=torch.tensor(m.geom_bodyid,device='cuda',dtype=torch.long)
+        self.geom_parked=torch.tensor([('ring_finger' in m.body(int(b)).name or 'pinky' in m.body(int(b)).name) for b in m.geom_bodyid],device='cuda')
         self.low=torch.tensor(m.actuator_ctrlrange[:,0],device='cuda',dtype=torch.float32)
         self.high=torch.tensor(m.actuator_ctrlrange[:,1],device='cuda',dtype=torch.float32)
         self.safe_low=self.low+torch.minimum((self.high-self.low)*.05,torch.full_like(self.low,np.radians(2)))
         self.safe_high=self.high-(self.safe_low-self.low)
         self.delta_scale=((self.high-self.low)*.03).clamp(.012,.035)
         self.delta_scale[12:]*=.5
+        if self.park_unused_fingers:self.delta_scale[12:]=0
+        if self.ring_profile == 'natural_v1':self.delta_scale[12:16].clamp_(max=RING_STEP)
         self.model=mjw.put_model(m);cd.qpos[:]=bq[0];cd.ctrl[:]=bc[0];mujoco.mj_forward(m,cd)
         self.data=mjw.put_data(m,cd,nworld=num_envs,nconmax=nconmax,njmax=njmax)
         self.capacity_peaks=wp.zeros(2,dtype=wp.int32,device='cuda')
@@ -111,7 +132,18 @@ class Env:
         sums=sums.reshape(self.n,6)
         palm=torch.zeros(self.n,device='cuda');palm.scatter_add_(0,world,fn*(self.geom_body[other]==self.palm_body))
         self.forces[:,:5]=sums[:,1:];self.forces[:,5]=sums[:,0];self.forces[:,6]=palm
-        return (sums[:,1:]>.02).float().sum(-1),sums.sum(-1),sums[:,0],palm
+        if self.park_unused_fingers:
+            self.parked_force.zero_();self.parked_force.scatter_add_(0,world,fn*self.geom_parked[other])
+        if self.pinch_reward_weight:
+            normals=wp.to_torch(c.frame)[:,0,:]
+            sign=torch.where(pair[:,1]==self.pen_geom,1.,-1.)
+            vectors=torch.zeros(self.n*6,3,device='cuda')
+            vectors.index_add_(0,world*6+finger,normals*(fn*sign)[:,None])
+            finger_vectors=vectors.reshape(self.n,6,3)[:,1:]
+            if self.park_unused_fingers:finger_vectors[:,3:]=0
+            self.pinch_strength[:]=opposing_strength(finger_vectors)
+        active=sums[:,1:4] if self.park_unused_fingers else sums[:,1:]
+        return (active>.02).float().sum(-1),sums.sum(-1),sums[:,0],palm
 
     def reset(self,mask,noise=True):
         if not mask.any():return
@@ -139,11 +171,19 @@ class Env:
 
     def step(self,raw_action,auto_reset=True):
         action=raw_action.clamp(-1,1)
+        if self.park_unused_fingers:
+            if action.shape[-1]!=12:raise ValueError('Tripod policy must have exactly 12 actions')
+            action=torch.cat((action,torch.zeros(self.n,8,device=action.device,dtype=action.dtype)),-1)
         if self.action_mode=='delta':
             desired=self.ctrl+action*self.delta_scale;command=desired.clamp(self.safe_low,self.safe_high)
         else:
             desired=self.home+.65*action;command=desired.clamp(self.low,self.high)
-        clipped=(abs(command-desired)>1e-7).float().mean(-1);self.ctrl[:]=command
+        if self.ring_profile == 'natural_v1':command=natural_ring_command(self.ctrl,command)
+        if self.park_unused_fingers:
+            desired[:,12:]=self.home[:,12:];command[:,12:]=self.home[:,12:]
+        clipping=(abs(command-desired)>1e-7).float()
+        clipped=clipping[:,:12].mean(-1) if self.park_unused_fingers else clipping.mean(-1)
+        self.ctrl[:]=command
         wp.capture_launch(self.graph);self.check_capacity();self.time+=self.dt;self.steps+=1
         tips,force,other,palm=self.contact_info()
         angle,yaw,axis=self.angle();phase=self.time*2*torch.pi/self.period
@@ -166,6 +206,16 @@ class Env:
             'control':-.002*action.square().sum(-1)-.005*(action-self.last_action).square().sum(-1)-self.command_clip_penalty*clipped,
             'failure':-8*fail.float(),
         }
+        if self.ring_profile == 'natural_v1':
+            ring=self.qpos[:,12:16]
+            rest=torch.as_tensor(RING_REST,device=ring.device,dtype=ring.dtype)
+            terms['ring_posture']=-.4*((ring-rest)/.5).square().mean(-1)
+            terms['ring_coordination']=-.8*((ring[:,3]-.65*ring[:,2])/.35).square()
+            terms['ring_hyperextension']=-2*(ring[:,[0,2,3]].clamp(max=0)/.25).square().sum(-1)
+        if self.pinch_reward_weight:
+            terms['opposing_pinch']=self.pinch_reward_weight*self.pinch_strength
+            terms['missing_pinch']=-self.pinch_reward_weight*(self.pinch_strength<.3).float()
+        if self.park_unused_fingers:terms['parked_contact']=-4*self.parked_force.clamp(max=3)
         reward=sum(terms.values())
         if self.reward_mode=='fingertip':
             near2=dist.topk(2,largest=False).values

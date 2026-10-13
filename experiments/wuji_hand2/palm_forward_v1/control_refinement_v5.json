@@ -1,0 +1,11 @@
+{
+  "source_bank": "grasp_controls_v4.npz",
+  "source_indices": [9],
+  "output_bank": "grasp_controls_v5.npz",
+  "report": "control_refinement_v5.json",
+  "seed": 20261013,
+  "candidates": 256,
+  "seconds": 60,
+  "control_noise_std_rad": [0.005, 0.01, 0.02],
+  "retained": 32
+}

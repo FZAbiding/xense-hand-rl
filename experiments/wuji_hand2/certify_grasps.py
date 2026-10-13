@@ -1,5 +1,6 @@
 """Certify palm-up Wuji grasps over 60 s before using them for PPO resets."""
 import argparse
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -19,11 +20,24 @@ def main():
     parser.add_argument('--seconds', type=float, default=60.)
     parser.add_argument('--perturbations', type=int, default=4)
     parser.add_argument('--seed', type=int, default=20260927)
+    parser.add_argument('--orientation', choices=('palm_up', 'palm_forward_v1'), default='palm_up')
+    parser.add_argument('--source-bank', default='grasp_bank.npz')
+    parser.add_argument('--report-name', default='grasp_bank_60s_certification.json')
     args = parser.parse_args()
+    assets = ASSETS if args.orientation == 'palm_up' else ROOT / 'assets/wuji_hand2_palm_forward_v1'
     if args.seconds < 60 or args.perturbations < 1:
         raise ValueError('Certification requires at least 60 s and one noisy rollout per grasp')
-    source = np.load(ASSETS / 'grasp_bank.npz')
-    model = mujoco.MjModel.from_xml_path(str(ASSETS / 'scene.xml'))
+    if Path(args.source_bank).name != args.source_bank:
+        raise ValueError('Source bank must be a local filename')
+    if Path(args.report_name).name != args.report_name:
+        raise ValueError('Report must be a local filename')
+    if (assets / args.report_name).exists() or (assets / 'grasp_bank_60s.npz').exists():
+        raise RuntimeError('Certification output exists; use a new report or experiment version')
+    source = np.load(assets / args.source_bank)
+    model = mujoco.MjModel.from_xml_path(str(assets / 'scene.xml'))
+    if args.orientation == 'palm_forward_v1':
+        model.opt.iterations = 8
+        model.opt.ls_iterations = 8
     data = mujoco.MjData(model)
     pen = model.body('pen').id
     palm = model.body('r_wrist').id
@@ -80,15 +94,21 @@ def main():
             print(json.dumps(row), flush=True)
         if all(row['passed'] for row in rows[-args.perturbations - 1:]):
             selected.append(index)
-    (ASSETS / 'grasp_bank_60s_certification.json').write_text(json.dumps(dict(
+    (assets / args.report_name).write_text(json.dumps(dict(
         criteria='60 s, untrained constant controls, zero noise plus Gaussian joint 0.005 rad and pen 0.4 mm; two tips >80%, non-tip <5%, palm <1%, P95 tilt <=15 deg, max drift <=45 mm, no >25 mm downward fall',
-        selected=selected, rows=rows), indent=2))
+        source_bank=args.source_bank, selected=selected, rows=rows), indent=2))
     if not selected:
         raise RuntimeError('No grasp passed 60-second certification; PPO must not start')
-    dest = ASSETS / 'grasp_bank_60s.npz'
+    dest = assets / 'grasp_bank_60s.npz'
     if dest.exists():
         raise RuntimeError('Certified bank already exists; do not overwrite training assets')
     np.savez(dest, qpos=source['qpos'][selected], ctrl=source['ctrl'][selected])
+    if args.orientation == 'palm_forward_v1':
+        (assets / 'certified_bank_manifest.json').write_text(json.dumps(dict(
+            certification_report=args.report_name, source_bank=args.source_bank,
+            scene_sha256=hashlib.sha256((assets / 'scene.xml').read_bytes()).hexdigest(),
+            bank_sha256=hashlib.sha256(dest.read_bytes()).hexdigest(),
+            selected=selected), indent=2))
     print(f'SAVED {len(selected)} certified grasps: {selected}', flush=True)
 
 

@@ -1,0 +1,47 @@
+{
+  "experiment_id": "wuji_hand2_palm_up_human_demo_v4",
+  "accepted_demo": "artifacts/human_pen_spinning/review_20261011/A_triangle_pass_clean.mp4",
+  "source_interval_seconds": [139, 142],
+  "assets": "assets/wuji_hand2_palm_up_human_demo_v4",
+  "runs": "runs/wuji_hand2/palm_up_human_demo_v4",
+  "artifacts": "artifacts/wuji_hand2/palm_up_human_demo_v4",
+  "target": "directed continuous rotation with three-finger handover; no sinusoidal yaw",
+  "policy_initialization": "from_scratch; no_v3_weights",
+  "training": {
+    "num_envs": 1024,
+    "seed": 20261011,
+    "horizon": 32,
+    "lr": 0.0001,
+    "target_kl": 0.015,
+    "reward_scale": 0.25,
+    "save_every": 50,
+    "max_policy_std": 0.12
+  },
+  "stages": {
+    "hold": {"iterations": 300, "amplitude": 0, "period": 12, "episode_seconds": 12, "tracking_sigma": 0.25},
+    "handover": {"iterations": 400, "amplitude": 1, "period": 18, "episode_seconds": 3, "tracking_sigma": 0.30},
+    "half_turn": {"iterations": 400, "amplitude": 1, "period": 12, "episode_seconds": 6, "tracking_sigma": 0.30},
+    "full_turn": {"iterations": 600, "amplitude": 1, "period": 12, "episode_seconds": 12, "tracking_sigma": 0.30},
+    "continuous": {"iterations": 600, "amplitude": 1, "period": 12, "episode_seconds": 60, "tracking_sigma": 0.30}
+  },
+  "stage_gate": {
+    "survival_fraction_min": 0.95,
+    "opposing_pinch_fraction_min": 0.9,
+    "two_tip_fraction_min": 0.95,
+    "reverse_bending_fraction_max": 0,
+    "non_tip_fraction_max": 0.05,
+    "inactive_fraction_max": 0.01,
+    "max_drift_m": 0.025,
+    "hold_mae_deg_max": 5,
+    "rotation_progress_ratio_min": 0.9,
+    "rotation_mae_deg_max": 10,
+    "middle_pip_excursion_deg_max": 35,
+    "command_clip_fraction_max": 0.05
+  },
+  "validation_seed": 2026101106,
+  "holdout_seed": 2026101107,
+  "validation_episodes": 8,
+  "holdout_episodes": 24,
+  "hold_validation_seconds": 60,
+  "notes": "Functional task bounds are software limits; original mechanical ranges, torque limits and all collisions remain. Initial bank is only 12s screened; hold policy must pass 60s before rotation. Rotation-stage timing is slowed for robot feasibility, not measured human 3D timing."
+}

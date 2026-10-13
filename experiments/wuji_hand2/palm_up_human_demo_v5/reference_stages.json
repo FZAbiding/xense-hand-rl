@@ -1,0 +1,17 @@
+{
+  "reference": "artifacts/human_pen_spinning/review_20261011/A_triangle_pass_clean.mp4",
+  "accepted_by_user": true,
+  "continuous_observation_interval_seconds": [139.0, 141.5],
+  "excluded_camera_cut_seconds": 142.0,
+  "observations": [
+    {"source_seconds": 139.0, "visible": "笔位于屈曲手指之间，指尖内收；接触被遮挡", "unverified": "承担法向夹持的精确接触对、力和三维关节角"},
+    {"source_seconds": 140.0, "visible": "笔投影转到近横向，手指保持屈曲并排外观", "unverified": "转移瞬间哪根指头释放，背面接触是否存在"},
+    {"source_seconds": 141.0, "visible": "笔投影继续转动，部分指头与笔的间隙发生变化", "unverified": "完整接触顺序，力矩及完整循环时长"}
+  ],
+  "robot_hypothesis": {
+    "purpose": "先检验自然指序下的一次释放与交接，不声称精确复制人手接触顺序",
+    "stages": ["三指夹持候选", "中指让开以建立拇指-食指接触对", "中指接近恢复三指接触", "食指让开以建立拇指-中指接触对"],
+    "success_evidence": "同回合实际接触先出现稳定 TI，后出现稳定 TM；每对至少持续 0.1 秒且法向相向，整段满足姿态和物理门槛",
+    "status": "tested_hypothesis_not_verified_human_ground_truth"
+  }
+}

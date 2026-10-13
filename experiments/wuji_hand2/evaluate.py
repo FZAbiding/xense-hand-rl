@@ -15,6 +15,8 @@ sys.path.insert(0,str(ROOT))
 from train import ActorCritic
 from experiments.wuji_hand2.motion_audit import joint_motion
 from experiments.wuji_hand2.env import assets_for_grasp
+from experiments.wuji_hand2.ring_control import natural_ring_command, RING_STEP, ring_pose_audit
+from experiments.wuji_hand2.pinch import opposing_strength, normal_vectors
 
 
 def quality_pass(row):
@@ -23,7 +25,9 @@ def quality_pass(row):
         and row['mean_tilt_deg']<=10 and row['p95_tilt_deg']<=15
         and row['command_clip_fraction']<.05 and row['non_tip_force_frame_fraction']<.05
         and row['palm_force_frame_fraction']<.01 and row['two_tip_fraction']>.8
-        and row['minimum_half_cycle_gain']>=.9)
+        and row['minimum_half_cycle_gain']>=.9
+        and (not row.get('require_opposing_pinch',False) or row['opposing_pinch_fraction']>.8)
+        and (not row.get('park_unused_fingers',False) or row['inactive_finger_contact_fraction']<.01))
 
 
 def contact_forces(m,d):
@@ -48,6 +52,18 @@ def observation(m,d,home,center,yaw0,time,last,forces,cfg):
     return base.clip(-20,20)
 
 
+def inactive_finger_force(m,d):
+    pen=m.body('pen').id;total=0.
+    for k,c in enumerate(d.contact):
+        a,b=m.geom_bodyid[c.geom1],m.geom_bodyid[c.geom2]
+        partner=b if a==pen else a if b==pen else -1
+        if partner<0:continue
+        name=m.body(partner).name
+        if 'ring_finger' in name or 'pinky' in name:
+            force=np.zeros(6);mujoco.mj_contactForce(m,d,k,force);total+=max(0.,force[0])
+    return total
+
+
 def main():
     p=argparse.ArgumentParser();p.add_argument('--checkpoint',required=True);p.add_argument('--output',required=True)
     p.add_argument('--episodes',type=int,default=12);p.add_argument('--seconds',type=float,default=12);p.add_argument('--seed',type=int,default=20260924)
@@ -64,6 +80,20 @@ def main():
     net=ActorCritic(ck['nobs'],ck.get('naction',20));net.load_state_dict(ck['model']);net.eval()
     low,high=m.actuator_ctrlrange.T;safe_margin=np.minimum((high-low)*.05,np.radians(2))
     delta_scale=np.clip((high-low)*.03,.012,.035);delta_scale[12:]*=.5
+    natural_ring=cfg.get('ring_profile','legacy')=='natural_v1'
+    parked=bool(cfg.get('park_unused_fingers',0))
+    if parked:
+        if ck.get('naction')!=12:raise ValueError('Tripod policy needs 12 actions')
+        delta_scale[12:]=0
+    if natural_ring:
+        source='experiments/wuji_hand2/ring_control.py'
+        if hashlib.sha256((ROOT/source).read_bytes()).hexdigest()!=ck['source_manifest'][source]:
+            raise ValueError('Ring controller differs from checkpoint snapshot')
+    if cfg.get('pinch_gate'):
+        source='experiments/wuji_hand2/pinch.py'
+        if hashlib.sha256((ROOT/source).read_bytes()).hexdigest()!=ck['source_manifest'][source]:
+            raise ValueError('Pinch diagnostic differs from checkpoint snapshot')
+    if natural_ring:delta_scale[12:16]=np.minimum(delta_scale[12:16],RING_STEP)
     amp=cfg['amplitude'];period=cfg['period'];dt=.025;T=round(args.seconds/dt)
     rng=np.random.default_rng(args.seed);rows=[];all_arrays=[];qposes=[]
     with torch.no_grad():
@@ -71,22 +101,30 @@ def main():
         gi=ep%len(bq);home=bc[gi];center=bq[gi,20:23];mujoco.mj_resetData(m,d);d.qpos[:]=bq[gi];d.ctrl[:]=home
         mujoco.mj_forward(m,d);axis=d.xmat[m.body('pen').id].reshape(3,3)[:,2];yaw0=np.arctan2(axis[1],axis[0])
         d.qpos[:20]+=rng.normal(0,.005,20);d.qpos[20:23]+=rng.normal(0,.0004,3);mujoco.mj_forward(m,d)
-        last=np.zeros(20);forces=contact_forces(m,d);samples=[];qs=[];joint_qs=[];failed=False;dropped=False;clipped_by_joint=np.zeros(20)
+        last=np.zeros(20);forces=contact_forces(m,d);samples=[];qs=[];joint_qs=[];pinches=[];inactive=[];failed=False;dropped=False;clipped_by_joint=np.zeros(20)
         for t in range(T):
             obs=observation(m,d,home,center,yaw0,t*dt,last,forces,cfg)
             raw=net(torch.tensor(obs,dtype=torch.float32)[None])[0][0].numpy();action=raw.clip(-1,1)
+            if parked:action=np.r_[action,np.zeros(8)]
             if v2 and cfg['action_mode']=='delta':desired=d.ctrl+action*delta_scale;command=np.clip(desired,low+safe_margin,high-safe_margin)
             else:desired=home+.65*action;command=np.clip(desired,low,high)
-            clip=float(np.mean(abs(desired-command)>1e-7));d.ctrl[:]=command
+            if natural_ring:command=natural_ring_command(d.ctrl,command)
+            if parked:desired[12:]=home[12:];command[12:]=home[12:]
+            clip=float(np.mean((abs(desired-command)>1e-7)[:12] if parked else abs(desired-command)>1e-7));d.ctrl[:]=command
             clipped_by_joint+=(abs(desired-command)>1e-7)
             for _ in range(5):mujoco.mj_step(m,d)
             mujoco.mj_forward(m,d);last=action;forces=contact_forces(m,d)
+            if cfg.get('pinch_gate'):
+                vectors=normal_vectors(m,d)
+                if parked:vectors[3:]=0
+                pinches.append(float(opposing_strength(vectors)))
+            inactive.append(inactive_finger_force(m,d)>.02)
             axis=d.xmat[m.body('pen').id].reshape(3,3)[:,2];yaw=np.arctan2(axis[1],axis[0])-yaw0;angle=np.arctan2(np.sin(yaw),np.cos(yaw))
             goal=amp*np.sin((t+1)*dt*2*np.pi/period);error=np.arctan2(np.sin(angle-goal),np.cos(angle-goal));tilt=np.arcsin(np.clip(abs(axis[2]),0,1))
             drift=np.linalg.norm(d.qpos[20:23]-center)
             failed|=bool(drift>.045 or d.qpos[22]<center[2]-.025 or tilt>np.radians(40) or not np.isfinite(d.qpos).all())
             dropped|=bool(drift>.075 or d.qpos[22]<.015 or not np.isfinite(d.qpos).all())
-            samples.append([angle,goal,error,tilt,drift,clip,forces[:6].sum(),forces[5],forces[6],np.sum(forces[:5]>.02)])
+            samples.append([angle,goal,error,tilt,drift,clip,forces[:6].sum(),forces[5],forces[6],np.sum(forces[:3 if parked else 5]>.02)])
             joint_qs.append(d.qpos[:20].copy())
             if ep<4:qs.append(d.qpos.copy())
         a=np.array(samples);cycles=int(args.seconds/period);cycle_len=round(period/dt)
@@ -99,13 +137,21 @@ def main():
                  command_clip_fraction=float(a[:,5].mean()),normal_force_sum_n=float(a[:,6].mean()),
                  non_tip_force_frame_fraction=float(np.mean(a[:,7]>.05)),palm_force_frame_fraction=float(np.mean(a[:,8]>.05)),
                  two_tip_fraction=float(np.mean(a[:,9]>=2)),minimum_half_cycle_gain=min(gains) if gains else 0.,half_cycle_gains=gains)
+        if cfg.get('pinch_gate'):
+            row['require_opposing_pinch']=True
+            row['opposing_pinch_fraction']=float(np.mean(np.array(pinches)>=.3))
+        row['ring_pinky_contact_fraction']=float(np.mean(inactive))
+        if parked:
+            row['park_unused_fingers']=True
+            row['inactive_finger_contact_fraction']=float(np.mean(inactive))
         row['quality_success']=quality_pass(row)
         row['joint_clip_fractions']={m.joint(j).name:float(clipped_by_joint[j]/T) for j in range(20)}
         row['finger_motion']=joint_motion(np.array(joint_qs),dt)
+        row['ring_pose']=ring_pose_audit(np.array(joint_qs),dt)
         rows.append(row);all_arrays.append(a)
         if ep<4:qposes.append(qs)
     out=ROOT/args.output;out.mkdir(parents=True,exist_ok=True)
-    evaluation_sources=['experiments/wuji_hand2/evaluate.py','experiments/wuji_hand2/motion_audit.py','train.py']
+    evaluation_sources=['experiments/wuji_hand2/evaluate.py','experiments/wuji_hand2/motion_audit.py','experiments/wuji_hand2/ring_control.py','experiments/wuji_hand2/pinch.py','train.py']
     (out/'evaluation_manifest.json').write_text(json.dumps(dict(
         checkpoint_sha256=hashlib.sha256(checkpoint.read_bytes()).hexdigest(),
         sources={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in evaluation_sources},
@@ -117,6 +163,14 @@ def main():
                  quality_definition='survive; MAE<=3deg; mean tilt<=10deg; P95 tilt<=15deg; clip<5%; non-tip Fn>0.05N <5%frames; palm Fn>0.05N <1%; two tips Fn>0.02N >80%; each half-cycle peak>=90% target')
     for key in ['mae_deg','mean_tilt_deg','p95_tilt_deg','command_clip_fraction','normal_force_sum_n','non_tip_force_frame_fraction','palm_force_frame_fraction','two_tip_fraction','minimum_half_cycle_gain']:
         summary[key]=float(np.mean([r[key] for r in rows]))
+    if cfg.get('pinch_gate'):
+        summary['opposing_pinch_fraction']=float(np.mean([r['opposing_pinch_fraction'] for r in rows]))
+        summary['quality_definition']+='; opposing different-finger normal forces >0.02N with cosine<=-0.3 in >80% frames'
+    if parked:
+        summary['inactive_finger_contact_fraction']=float(np.mean([r['inactive_finger_contact_fraction'] for r in rows]))
+        summary['action_size']=12
+        summary['quality_definition']+='; ring/pinky all-link pen normal force >0.02N in <1% frames; clip denominator=12 active joints'
+    summary['ring_pinky_contact_fraction']=float(np.mean([r['ring_pinky_contact_fraction'] for r in rows]))
     (out/'metrics.json').write_text(json.dumps(dict(summary,per_episode=rows),indent=2));np.savez_compressed(out/'rollout.npz',metrics=np.array(all_arrays),qpos=np.array(qposes),dt=dt)
     print(json.dumps(summary,indent=2),flush=True)
     import matplotlib
@@ -133,9 +187,19 @@ def main():
         import imageio.v2 as imageio
         from PIL import Image,ImageDraw
         renderer=mujoco.Renderer(m,720,960);camera=mujoco.MjvCamera();camera.lookat[:]=[.125,0,.025];camera.distance=.40;camera.azimuth=130;camera.elevation=-35
+        if cfg.get('grasp_version') == 'palm_forward_v1':
+            camera.lookat[:]=[.13,0,.14];camera.distance=.48;camera.azimuth=155;camera.elevation=-15
+        elif cfg.get('pinch_gate'):
+            camera.lookat[:]=[.11,0,.075];camera.distance=.40;camera.azimuth=130;camera.elevation=-35
         option=mujoco.MjvOption();option.geomgroup[3]=0
+        if cfg.get('grasp_version') == 'palm_forward_v1' or cfg.get('pinch_gate'):
+            # Hide official translucent collision overlays while retaining
+            # the pen's group-2 visual mesh. This affects rendering only.
+            m.geom_group[(m.geom_bodyid != m.body('pen').id) & (m.geom_group == 2)] = 3
+            option.sitegroup[:] = 0
         with imageio.get_writer(out/'rollout.mp4',fps=40,codec='libx264',quality=8) as writer:
-            for t,q in enumerate(qposes[0][:480]):
+            video_poses = qposes[0] if cfg.get('grasp_version') == 'palm_forward_v1' or cfg.get('pinch_gate') else qposes[0][:480]
+            for t,q in enumerate(video_poses):
                 d.qpos[:]=q;mujoco.mj_forward(m,d);renderer.update_scene(d,camera=camera,scene_option=option)
                 frame=Image.fromarray(renderer.render());draw=ImageDraw.Draw(frame);draw.rectangle((0,0,960,55),fill=(18,23,32))
                 draw.text((12,10),f'Wuji Hand2 V{summary["experiment_version"]} | t={(t+1)*dt:.2f}s | target={np.degrees(all_arrays[0][t,1]):+.1f} | angle={np.degrees(all_arrays[0][t,0]):+.1f} | tilt={np.degrees(all_arrays[0][t,3]):.1f}',fill='white')

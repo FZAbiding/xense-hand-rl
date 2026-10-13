@@ -1,0 +1,9 @@
+{
+  "source_bank": "grasp_search_v3.npz",
+  "output_bank": "grasp_controls_v4.npz",
+  "seed": 20261012,
+  "candidates": 1024,
+  "seconds": 12,
+  "control_noise_std_rad": [0.02, 0.05, 0.10],
+  "retained": 32
+}

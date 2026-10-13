@@ -4,6 +4,8 @@
 
 `build_wuji_hand2.py` 保留官方关节限位、连杆质量/惯量和执行器力矩范围；为了与 Revo3 的仿真位置控制器对齐，将 `kp` 设置为 3，保留官方 `kv`。默认场景在 `assets/wuji_hand2_palm_up/`：基座水平、掌心法线为世界 `+Z`。原 `assets/wuji_hand2/` 的掌心法线为 `-Z`，属于朝向错误的历史实验。摩擦、接触求解器和控制器属于任务适配，不代表已标定的 Wuji 真机动力学。
 
+新朝向的[模型预览图](../../assets/wuji_hand2_palm_up/orientation_preview.png)显示掌心朝上；`validate_assets.py` 会在关节、质量和执行器参数之外检查掌心法线方向。
+
 ## 复现
 
 ```bash

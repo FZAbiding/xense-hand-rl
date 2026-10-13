@@ -1,0 +1,29 @@
+{
+  "experiment_id": "wuji_hand2_palm_up_tripod_v3",
+  "assets": "assets/wuji_hand2_palm_up_tripod_v3",
+  "runs": "runs/wuji_hand2/palm_up_tripod_v3",
+  "artifacts": "artifacts/wuji_hand2/palm_up_tripod_v3",
+  "advance_gate": "survival",
+  "orientation": "palm_up, world palm normal +Z",
+  "training": {
+    "num_envs": 1024, "seed": 4, "horizon": 32,
+    "target_kl": 0.015, "reward_scale": 0.25,
+    "save_every": 100, "command_clip_penalty": 3.0,
+    "action_mode": "delta", "reward_mode": "quality", "tracking_sigma": 0.18,
+    "grasp_version": "palm_up_tripod_v3", "max_policy_std": 0.1,
+    "ring_profile": "legacy", "park_unused_fingers": 1,
+    "pinch_reward_weight": 1.5, "pinch_gate": 1,
+    "stages": [
+      {"name": "tripod_6s", "iterations": 600, "amplitude": 0.6, "period": 6,
+       "episode_seconds": 60, "lr": 0.00005,
+       "warm_start": "runs/wuji_hand2/palm_up_pinch_v2/wide_6s/checkpoint_001000.pt"}
+    ]
+  },
+  "evaluation": {"validation_seed": 2026101002, "holdout_seed": 2026101003, "episodes": 8, "holdout_episodes": 24, "seconds": 60},
+  "folded_joint_controls_deg": {"ring": [70,0,95,60], "pinky": [70,0,95,60]},
+  "action_space": "Only 12 thumb/index/middle joint outputs. The eight ring/pinky outputs and their exploration noise are removed. Their real actuators hold certified folded commands; all geometry, inertia, force limits and collisions remain.",
+  "strict_gate": "Original tracking/contact/amplitude gates plus opposing active-three-finger pinch >80% and all-link ring/pinky pen force >0.02 N in <1% frames. Command clipping is averaged over the 12 ACTIVE joints.",
+  "migration": "Explicit weights-only palm-up migration: truncate actor output rows and log_std to the first 12. Reset optimizer; keep 105 observations and learned normalizer. Verify scene hash matches parent; new bank independently certified. Prior configs/weights/assets remain untouched.",
+  "references": ["https://www.jugglingworld.biz/tricks/prop-manipulation-tricks/pen-spinning-tricks/", "https://mh.co.za/how-to-spin-a-pen-in-your-fingers/"],
+  "reference_note": "Human thumb-around examples inspire keeping unused fingers out of the way; they are not a robotics performance validation. The current robot target remains +/-0.6 rad oscillation with 6s period."
+}
