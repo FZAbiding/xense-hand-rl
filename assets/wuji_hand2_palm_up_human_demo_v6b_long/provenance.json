@@ -1,0 +1,13 @@
+{
+  "source_v5_checkpoint": "runs/wuji_hand2/palm_up_human_demo_v5/long_training_20261012/latest.pt",
+  "source_v5_checkpoint_sha256": "55fc7e5d426017a8d5748cdb6b4ccc042eebd9da5a492a5e70a3d5e9d3f7bc93",
+  "source_v5_training_iterations": 64902,
+  "source_v5_holdout": "artifacts/wuji_hand2/palm_up_human_demo_v5/long_training_20261012/holdout_0064902/metrics.json",
+  "scene_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
+  "bank_sha256": "bb7dcb800c98100cfe82615c5be2e8ba4c45c50724dfc76754438d5993a276b4",
+  "bank_use": "initialization_only",
+  "physical_model": "byte_identical_to_v5",
+  "source_v5_checkpoint_backup": "models/wuji_hand2/v5_20261012_final.pt",
+  "v6a_trial": "runs/wuji_hand2/palm_up_human_demo_v6/long_training_20261014",
+  "v6a_reason_stopped": "evaluation level-zero duration bug, repaired in v6b"
+}
