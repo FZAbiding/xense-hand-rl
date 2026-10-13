@@ -5,7 +5,7 @@
 项目原创代码与内容采用 [MIT License](LICENSE)。第三方代码与资产保留各自许可证，具体来源和限制见 [NOTICE.md](NOTICE.md)。
 
 实验协作与离线 HTML 展示规范见 [实验评审 SOP](docs/EXPERIMENT_REVIEW_SOP.md)。
-Wuji v5 已按用户最新授权启动 [24 小时长期训练](experiments/wuji_hand2/palm_up_human_demo_v5/long_training/PLAN.md)，进展见 [实时训练页面](artifacts/wuji_hand2/palm_up_human_demo_v5/long_training_20261012/review.html)。先前标定与预演仍保留在 [v5 历史审阅页面](artifacts/wuji_hand2/palm_up_human_demo_v5/review.html)；训练进行中不代表已通过转笔验收。
+Wuji v5 的 24 小时训练已结束：整圈最终保留集 0/24 严格通过，主要问题是漂移、自穿透和中指 PIP 活动超标。修正版 [v6b 训练计划](experiments/wuji_hand2/palm_up_human_demo_v6b/long_training/PLAN.md)已启动，进展见[动态评审页面](artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/review.html)；[同种子起点对比](artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/comparison.html)显示第 100 轮由 0/24 提升到 9/24，仍未通过阶段门槛。v5 的[历史训练评审](artifacts/wuji_hand2/palm_up_human_demo_v5/long_training_20261012/review.html)和[早期预演](artifacts/wuji_hand2/palm_up_human_demo_v5/review.html)继续保留。
 
 ## 当前案例：LEAP / Revo3 / Wuji Hand 2 往复转笔
 
