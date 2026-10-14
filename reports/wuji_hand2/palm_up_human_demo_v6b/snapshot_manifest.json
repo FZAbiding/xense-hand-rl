@@ -1,0 +1,182 @@
+{
+  "snapshot": "2026-10-14 v6b evaluated checkpoint 42500",
+  "created_utc": "2026-10-14T15:31:03.078109+00:00",
+  "source_run": "runs/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014",
+  "selection": "Latest completed CPU validation when snapshot was frozen; training still active",
+  "files": [
+    {
+      "path": "snapshot_20261014_42500/quality10/rollout.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001000/rollout.mp4",
+      "sha256": "5bf8c4c80fdad9e4a794601b318a20feef7833ce338fd568a438e1d0047631ce",
+      "bytes": 3514372
+    },
+    {
+      "path": "snapshot_20261014_42500/quality10/metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001000/metrics.json",
+      "sha256": "29796f24fa30e7d7da9e1edccc7588b0b504fb0fcc30e283b3c1a40dd0c13cc8",
+      "bytes": 30300
+    },
+    {
+      "path": "snapshot_20261014_42500/quality10/frame_metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001000/frame_metrics.json",
+      "sha256": "06b21e6c4cd70858ec24b6ee0c1ff0913f2f5cd8fdd7c95b3f7e33571de845bb",
+      "bytes": 310975
+    },
+    {
+      "path": "snapshot_20261014_42500/quality10/contacts.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001000/contacts.json",
+      "sha256": "91b129749739d8b296bcac864dd3fd6c60c32ab43d6861a03cb0053dd3265803",
+      "bytes": 1347879
+    },
+    {
+      "path": "snapshot_20261014_42500/quality10/rollout.npz",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001000/rollout.npz",
+      "sha256": "01cf30ed1cdf441c935289d7d16fd488c9589179c0ced5f5120af742996a75c0",
+      "bytes": 83888
+    },
+    {
+      "path": "snapshot_20261014_42500/quality10/rollout_frame_0000.png",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001000/rollout_frame_0000.png",
+      "sha256": "716020ada21e6ed4f3765614c05bfff691f9e07a3adfa51dbf8f9851e5157304",
+      "bytes": 139712
+    },
+    {
+      "path": "snapshot_20261014_42500/quality10/model.pt",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/best_level_00.pt",
+      "sha256": "e31ef24ebcf08df1a754173173011fd925a734cef741f40a6def1a7eaa010cb1",
+      "bytes": 3113645
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_validation/rollout.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001500/rollout.mp4",
+      "sha256": "4449b3d97f06545ab6cd72b978491a0ab50dc57d4e0a461071a9fab6d685db78",
+      "bytes": 2536993
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_validation/metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001500/metrics.json",
+      "sha256": "161b5e3a38e465e037e3dc02410780f3b1bafb5156a16059b7f26b92478e6122",
+      "bytes": 29397
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_validation/frame_metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001500/frame_metrics.json",
+      "sha256": "7ffe491ee85ef6d2014b1ddbfa8c98469467928af2ee5c6ffc4e23392a922666",
+      "bytes": 207225
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_validation/contacts.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001500/contacts.json",
+      "sha256": "36b58e531d1d8d5cae7c6cb3cf0fcc8e7ee86ab4e068d292c21babaed0e6a669",
+      "bytes": 875695
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_validation/rollout.npz",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001500/rollout.npz",
+      "sha256": "5ad0c71876ed6da0f6278f3d5a5aa41ee2bf5b5094e64c104868521de25374b3",
+      "bytes": 52643
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_validation/rollout_frame_0000.png",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0001500/rollout_frame_0000.png",
+      "sha256": "b56d81b25f36cf0b53eb4d9ed808ffe886808f5e01ea40efe41d23db136994e7",
+      "bytes": 139090
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_validation/model.pt",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/best_level_01.pt",
+      "sha256": "c97c54d6fa62a83dbafa264098e1c924ce3c293996865d443320a6fab8ad7881",
+      "bytes": 3113645
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_unseen/rollout.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/fast6_unseen_diagnostic/holdout_0001500/rollout.mp4",
+      "sha256": "9f0fdf6221f2c85cc482a9c4f545b1a2600595927b6cf65980aca836e39f5cdf",
+      "bytes": 2525527
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_unseen/metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/fast6_unseen_diagnostic/holdout_0001500/metrics.json",
+      "sha256": "6fdabc4aa52fa0431dc4120ad437e75a350a39ab8c4a4c54713504f64e83eef0",
+      "bytes": 29532
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_unseen/frame_metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/fast6_unseen_diagnostic/holdout_0001500/frame_metrics.json",
+      "sha256": "3e68293c43a36855d927cda364db420e6eeee3217b9b7cf5422dbc1f3294443b",
+      "bytes": 207226
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_unseen/contacts.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/fast6_unseen_diagnostic/holdout_0001500/contacts.json",
+      "sha256": "0ebe97dfaed792805a0a09902a4ee0ecae7712f3846c71248c702c005244ca3e",
+      "bytes": 841778
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_unseen/rollout.npz",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/fast6_unseen_diagnostic/holdout_0001500/rollout.npz",
+      "sha256": "03aa9f2888c320f7560a2e142ae76c70a102cb32af2ad88a6cf066c7a29d1c88",
+      "bytes": 52791
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_unseen/rollout_frame_0000.png",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/fast6_unseen_diagnostic/holdout_0001500/rollout_frame_0000.png",
+      "sha256": "e9454068c8ee8162d2c0aed28092ed988f5bb94cd976305f6f58c8d38b382bd0",
+      "bytes": 139036
+    },
+    {
+      "path": "snapshot_20261014_42500/fast6_unseen/model.pt",
+      "source": "reports/wuji_hand2/palm_up_human_demo_v6b/fast6_unseen_diagnostic.pt",
+      "sha256": "2c96285fbcea5742ae244aa6def3686d5b3e31ccac927c655257b613c4b30290",
+      "bytes": 3113720
+    },
+    {
+      "path": "snapshot_20261014_42500/faster3_latest/rollout.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0042500/rollout.mp4",
+      "sha256": "ea34449199cac7c4f6813575b505077cd1d9685db626045469d0c6a5e8016132",
+      "bytes": 1422351
+    },
+    {
+      "path": "snapshot_20261014_42500/faster3_latest/metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0042500/metrics.json",
+      "sha256": "6f2c5e5acc69ed3390f14e829b4c4af3c0088f8e70d48e5195bf4ec67533c24f",
+      "bytes": 31506
+    },
+    {
+      "path": "snapshot_20261014_42500/faster3_latest/frame_metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0042500/frame_metrics.json",
+      "sha256": "cf4b6417b9259f0c0d6f41f5af8200b723b61520697b49eec9f4a5e37008a98c",
+      "bytes": 107474
+    },
+    {
+      "path": "snapshot_20261014_42500/faster3_latest/contacts.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0042500/contacts.json",
+      "sha256": "c90443d501be75fe31e14a5b87708389fca8c855e4dcac3c92efa58ef66266a3",
+      "bytes": 332695
+    },
+    {
+      "path": "snapshot_20261014_42500/faster3_latest/rollout.npz",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0042500/rollout.npz",
+      "sha256": "f1541a7e0a58ab38c975f1b038843b5a54616279c100b98b590059f7f0d9ac64",
+      "bytes": 32122
+    },
+    {
+      "path": "snapshot_20261014_42500/faster3_latest/rollout_frame_0000.png",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/validation_0042500/rollout_frame_0000.png",
+      "sha256": "28668c939caee4e427ed0444c4fca8e0ddd712105bbe768a2242f8e564d81027",
+      "bytes": 139170
+    },
+    {
+      "path": "snapshot_20261014_42500/faster3_latest/model.pt",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/evaluation_checkpoints/checkpoint_0042500.pt",
+      "sha256": "a8e0eeffe4f0ec0d038c720cd2ed0f7bff83661b570df3c8e9f88eebbeb9262b",
+      "bytes": 3113901
+    },
+    {
+      "path": "snapshot_20261014_42500/human_A.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/human_A.mp4",
+      "sha256": "5ffe284d73e0a07d24beff5b8b3d955cfcb8f2b0a38cd829cf498be973ec720a",
+      "bytes": 437877
+    }
+  ]
+}

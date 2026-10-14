@@ -1,0 +1,53 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wuji v6b：阶段评估快照 / 第 42500 轮</title>
+<style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
+</head><body><h1>Wuji v6b：阶段评估快照 / 第 42500 轮</h1><p class="summary">当前 3 秒整圈 0/24，双指相向夹持与三次交接均未达标；10 秒与 6 秒固定验证各 24/24。所有机器人片段是 CPU MuJoCo 闭环策略 rollout；物理门槛通过不等于真人动作审阅通过。训练仍在进行，此页不是最终结果。</p><div class="grid">
+<article><h2>真人参考 A（已批准片段）</h2><p class="status reference">参考</p>
+<p>仅供动作审阅；未经三维接触与时相标定。</p>
+<video src="snapshot_20261014_42500/human_A.mp4" controls preload="metadata" playsinline></video>
+<p><a href="snapshot_20261014_42500/human_A.mp4">视频文件</a></p>
+</article>
+<article><h2>10 秒整圈 / 第 1000 轮</h2><p class="status passed">通过指定检查</p>
+<p>固定验证种子 24/24 物理严格通过；人工动作相似性待审阅。</p>
+<video src="snapshot_20261014_42500/quality10/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="snapshot_20261014_42500/quality10/rollout.mp4">视频文件</a></p>
+<p><a href="snapshot_20261014_42500/quality10/metrics.json">24 回合原始指标</a></p>
+<p><a href="snapshot_20261014_42500/quality10/frame_metrics.json">逐帧指标</a></p>
+<p><a href="snapshot_20261014_42500/quality10/contacts.json">接触记录</a></p>
+<p><a href="snapshot_20261014_42500/quality10/model.pt">独立权重</a></p>
+</article>
+<article><h2>6 秒整圈 / 第 1500 轮</h2><p class="status passed">通过指定检查</p>
+<p>固定验证种子 24/24 物理严格通过；该权重与额外未见种子诊断权重不同。</p>
+<video src="snapshot_20261014_42500/fast6_validation/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="snapshot_20261014_42500/fast6_validation/rollout.mp4">视频文件</a></p>
+<p><a href="snapshot_20261014_42500/fast6_validation/metrics.json">24 回合原始指标</a></p>
+<p><a href="snapshot_20261014_42500/fast6_validation/frame_metrics.json">逐帧指标</a></p>
+<p><a href="snapshot_20261014_42500/fast6_validation/contacts.json">接触记录</a></p>
+<p><a href="snapshot_20261014_42500/fast6_validation/model.pt">独立权重</a></p>
+</article>
+<article><h2>6 秒整圈 / 独立未见种子诊断</h2><p class="status diagnostic">仅诊断</p>
+<p>另一个第 1500 轮权重，未见种子 23/24；不能将结果归给固定验证所选权重。</p>
+<video src="snapshot_20261014_42500/fast6_unseen/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="snapshot_20261014_42500/fast6_unseen/rollout.mp4">视频文件</a></p>
+<p><a href="snapshot_20261014_42500/fast6_unseen/metrics.json">24 回合原始指标</a></p>
+<p><a href="snapshot_20261014_42500/fast6_unseen/frame_metrics.json">逐帧指标</a></p>
+<p><a href="snapshot_20261014_42500/fast6_unseen/contacts.json">接触记录</a></p>
+<p><a href="snapshot_20261014_42500/fast6_unseen/model.pt">独立权重</a></p>
+</article>
+<article><h2>3 秒整圈 / 第 42500 轮</h2><p class="status failed">失败</p>
+<p>最新已完成评估的模型：0/24。平均转角 352.10°，但双指相向夹持、三次交接均 24/24 未达标，22/24 提前结束。</p>
+<video src="snapshot_20261014_42500/faster3_latest/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="snapshot_20261014_42500/faster3_latest/rollout.mp4">视频文件</a></p>
+<p><a href="snapshot_20261014_42500/faster3_latest/metrics.json">24 回合原始指标</a></p>
+<p><a href="snapshot_20261014_42500/faster3_latest/frame_metrics.json">逐帧指标</a></p>
+<p><a href="snapshot_20261014_42500/faster3_latest/contacts.json">接触记录</a></p>
+<p><a href="snapshot_20261014_42500/faster3_latest/model.pt">独立权重</a></p>
+</article>
+</div>
+<h2>3 秒候选首帧：同一时刻三视角，橙色食指、绿色中指</h2><img src="snapshot_20261014_42500/faster3_latest/rollout_frame_0000.png" alt="3 秒候选首帧：同一时刻三视角，橙色食指、绿色中指" loading="lazy">
+<nav>
+<p><a href="REPORT.md">阶段总结与视频入口</a></p>
+<p><a href="snapshot_manifest.json">源文件与 SHA256</a></p>
+<p><a href="../../../experiments/wuji_hand2/palm_up_human_demo_v6b/long_training/PLAN.md">v6b 训练计划</a></p>
+</nav></body></html>

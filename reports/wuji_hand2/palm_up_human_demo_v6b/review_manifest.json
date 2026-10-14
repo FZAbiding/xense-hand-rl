@@ -1,0 +1,128 @@
+{
+  "title": "Wuji v6b：阶段评估快照 / 第 42500 轮",
+  "summary": "当前 3 秒整圈 0/24，双指相向夹持与三次交接均未达标；10 秒与 6 秒固定验证各 24/24。所有机器人片段是 CPU MuJoCo 闭环策略 rollout；物理门槛通过不等于真人动作审阅通过。训练仍在进行，此页不是最终结果。",
+  "cards": [
+    {
+      "title": "真人参考 A（已批准片段）",
+      "status": "reference",
+      "video": "snapshot_20261014_42500/human_A.mp4",
+      "description": "仅供动作审阅；未经三维接触与时相标定。"
+    },
+    {
+      "title": "10 秒整圈 / 第 1000 轮",
+      "status": "passed",
+      "video": "snapshot_20261014_42500/quality10/rollout.mp4",
+      "description": "固定验证种子 24/24 物理严格通过；人工动作相似性待审阅。",
+      "links": [
+        {
+          "label": "24 回合原始指标",
+          "path": "snapshot_20261014_42500/quality10/metrics.json"
+        },
+        {
+          "label": "逐帧指标",
+          "path": "snapshot_20261014_42500/quality10/frame_metrics.json"
+        },
+        {
+          "label": "接触记录",
+          "path": "snapshot_20261014_42500/quality10/contacts.json"
+        },
+        {
+          "label": "独立权重",
+          "path": "snapshot_20261014_42500/quality10/model.pt"
+        }
+      ]
+    },
+    {
+      "title": "6 秒整圈 / 第 1500 轮",
+      "status": "passed",
+      "video": "snapshot_20261014_42500/fast6_validation/rollout.mp4",
+      "description": "固定验证种子 24/24 物理严格通过；该权重与额外未见种子诊断权重不同。",
+      "links": [
+        {
+          "label": "24 回合原始指标",
+          "path": "snapshot_20261014_42500/fast6_validation/metrics.json"
+        },
+        {
+          "label": "逐帧指标",
+          "path": "snapshot_20261014_42500/fast6_validation/frame_metrics.json"
+        },
+        {
+          "label": "接触记录",
+          "path": "snapshot_20261014_42500/fast6_validation/contacts.json"
+        },
+        {
+          "label": "独立权重",
+          "path": "snapshot_20261014_42500/fast6_validation/model.pt"
+        }
+      ]
+    },
+    {
+      "title": "6 秒整圈 / 独立未见种子诊断",
+      "status": "diagnostic",
+      "video": "snapshot_20261014_42500/fast6_unseen/rollout.mp4",
+      "description": "另一个第 1500 轮权重，未见种子 23/24；不能将结果归给固定验证所选权重。",
+      "links": [
+        {
+          "label": "24 回合原始指标",
+          "path": "snapshot_20261014_42500/fast6_unseen/metrics.json"
+        },
+        {
+          "label": "逐帧指标",
+          "path": "snapshot_20261014_42500/fast6_unseen/frame_metrics.json"
+        },
+        {
+          "label": "接触记录",
+          "path": "snapshot_20261014_42500/fast6_unseen/contacts.json"
+        },
+        {
+          "label": "独立权重",
+          "path": "snapshot_20261014_42500/fast6_unseen/model.pt"
+        }
+      ]
+    },
+    {
+      "title": "3 秒整圈 / 第 42500 轮",
+      "status": "failed",
+      "video": "snapshot_20261014_42500/faster3_latest/rollout.mp4",
+      "description": "最新已完成评估的模型：0/24。平均转角 352.10°，但双指相向夹持、三次交接均 24/24 未达标，22/24 提前结束。",
+      "links": [
+        {
+          "label": "24 回合原始指标",
+          "path": "snapshot_20261014_42500/faster3_latest/metrics.json"
+        },
+        {
+          "label": "逐帧指标",
+          "path": "snapshot_20261014_42500/faster3_latest/frame_metrics.json"
+        },
+        {
+          "label": "接触记录",
+          "path": "snapshot_20261014_42500/faster3_latest/contacts.json"
+        },
+        {
+          "label": "独立权重",
+          "path": "snapshot_20261014_42500/faster3_latest/model.pt"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "label": "3 秒候选首帧：同一时刻三视角，橙色食指、绿色中指",
+      "path": "snapshot_20261014_42500/faster3_latest/rollout_frame_0000.png"
+    }
+  ],
+  "links": [
+    {
+      "label": "阶段总结与视频入口",
+      "path": "REPORT.md"
+    },
+    {
+      "label": "源文件与 SHA256",
+      "path": "snapshot_manifest.json"
+    },
+    {
+      "label": "v6b 训练计划",
+      "path": "../../../experiments/wuji_hand2/palm_up_human_demo_v6b/long_training/PLAN.md"
+    }
+  ]
+}
