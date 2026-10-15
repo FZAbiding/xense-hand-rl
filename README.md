@@ -5,7 +5,7 @@
 项目原创代码与内容采用 [MIT License](LICENSE)。第三方代码与资产保留各自许可证，具体来源和限制见 [NOTICE.md](NOTICE.md)。
 
 实验协作与离线 HTML 展示规范见 [实验评审 SOP](docs/EXPERIMENT_REVIEW_SOP.md)。
-Wuji v5 的 24 小时训练已结束：整圈最终保留集 0/24 严格通过。v6b 的[阶段报告、评估视频与模型快照](reports/wuji_hand2/palm_up_human_demo_v6b/REPORT.md)显示：10 秒和 6 秒整圈在固定验证集上各 24/24 物理严格通过；最终 3 秒整圈保留集仍为 **0/24**，接触与交接失效。v7 的[训练前基线、失败视频与真人参考](reports/wuji_hand2/palm_up_human_demo_v7/BASELINE.md)、[三组短训及模型选取](reports/wuji_hand2/palm_up_human_demo_v7/PILOTS.md)、[正式长训阶段视频与模型](reports/wuji_hand2/palm_up_human_demo_v7/PROGRESS.md)已归档；4 秒、3.5 秒和 3 秒单圈固定验证分别为 23/24、24/24、23/24，现按[阶段计划](experiments/wuji_hand2/palm_up_human_demo_v7/PLAN.md)继续训练 3 秒课程。人工动作审阅与最终保留集评估尚未完成。
+Wuji v5 的 24 小时训练已结束：整圈最终保留集 0/24 严格通过。v6b 的[阶段报告、评估视频与模型快照](reports/wuji_hand2/palm_up_human_demo_v6b/REPORT.md)显示：10 秒和 6 秒整圈在固定验证集上各 24/24 物理严格通过；最终 3 秒整圈保留集仍为 **0/24**，接触与交接失效。v7 的[训练前基线、失败视频与真人参考](reports/wuji_hand2/palm_up_human_demo_v7/BASELINE.md)、[三组短训及模型选取](reports/wuji_hand2/palm_up_human_demo_v7/PILOTS.md)、[正式长训阶段视频与模型](reports/wuji_hand2/palm_up_human_demo_v7/PROGRESS.md)已归档；4 秒、3.5 秒和 3 秒单圈最佳固定验证分别为 23/24、24/24、24/24，最近第 6500 轮的 3 秒验证为 23/24。现按[阶段计划](experiments/wuji_hand2/palm_up_human_demo_v7/PLAN.md)继续训练 3 秒课程；人工动作审阅与最终保留集评估尚未完成。
 
 ## 当前案例：LEAP / Revo3 / Wuji Hand 2 往复转笔
 
