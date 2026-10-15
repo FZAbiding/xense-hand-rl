@@ -52,13 +52,6 @@
       "angle_deg": 360,
       "duration": 3,
       "episode_seconds": 5.5
-    },
-    {
-      "name": "continuous",
-      "angle_deg": 360,
-      "duration": 3,
-      "episode_seconds": 60,
-      "continuous": true
     }
   ],
   "gates": {
@@ -87,5 +80,6 @@
   "grip_gap_allow_steps": 3,
   "grip_gap_fail_steps": 12,
   "pilot_minutes": 20,
-  "perturbation_seed": 2026101502
+  "perturbation_seed": 2026101502,
+  "continuous_requires_human_review": true
 }
