@@ -5,10 +5,15 @@
 | 阶段 | 检查点 | 固定验证种子严格通过 | 失败原因 | 状态 |
 | --- | ---: | ---: | --- | --- |
 | 360°/4 秒，目标后保持约 2 秒 | 第 100 轮 | **23/24** | 1 回合提前结束，并出现姿态/反弯与终点回夹失败 | 达到 ≥23/24，已进入 3.5 秒课程 |
-| 360°/3.5 秒 | 尚未归档合格模型 | 待评估 | 待评估 | 训练中 |
+| 360°/3.5 秒，目标后保持约 2 秒 | 第 500 轮 | **24/24** | 无严格失败 | 已达到 ≥23/24，进入 3 秒课程 |
+| 360°/3 秒 | 尚未归档合格模型 | 待评估 | 待评估 | 训练中 |
 
 4 秒第 100 轮[独立评估视频](progress_20261015/turn_4s_iteration_100/rollout.mp4)、[逐回合指标](progress_20261015/turn_4s_iteration_100/metrics.json)、[接触记录](progress_20261015/turn_4s_iteration_100/contacts.json)和[模型权重](progress_20261015/turn_4s_iteration_100/model.pt)已固定归档。模型 SHA256 为 `37e03ee82085cbab8393b9b304a2ef4c297e7ada9db563ed54239547e2185017`。
 
 <video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_4s_iteration_100/rollout.mp4"></video>
+
+3.5 秒第 500 轮[独立评估视频](progress_20261015/turn_3p5s_iteration_500/rollout.mp4)、[逐回合指标](progress_20261015/turn_3p5s_iteration_500/metrics.json)、[接触记录](progress_20261015/turn_3p5s_iteration_500/contacts.json)和[模型权重](progress_20261015/turn_3p5s_iteration_500/model.pt)已固定归档。模型 SHA256 为 `92fde883ed666fd9e472797c911993e45e239e0c7930e5a18261df802c3d69e6`。
+
+<video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3p5s_iteration_500/rollout.mp4"></video>
 
 视频为闭环策略的同步三视角；真人参考与训练前诊断见 [BASELINE.md](BASELINE.md)。严格物理通过率与人工动作相似性分开记录，后者仍**待审阅**。3 秒单圈通过及人工审阅完成前，60 秒连续课程不会自动启动；最终未见种子只在选模结束后使用。
