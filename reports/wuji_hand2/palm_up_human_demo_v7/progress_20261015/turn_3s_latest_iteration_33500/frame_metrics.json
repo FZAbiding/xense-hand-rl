@@ -1,0 +1,6162 @@
+[
+  {
+    "angle": -0.00832752659542102,
+    "goal": 0.0,
+    "error": -0.00832752659542102,
+    "drift": 0.00042585589774380534,
+    "tilt": 0.040980478580157104,
+    "forces": [
+      0.07239772748545564,
+      0.0,
+      0.09676593478403839,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6879995710817253,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02570913862235539,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.010848093533049274,
+    "goal": 0.0,
+    "error": -0.010848093533049274,
+    "drift": 0.0005933434729907877,
+    "tilt": 0.027651450187077486,
+    "forces": [
+      0.16975980063752183,
+      0.13005777699388146,
+      0.13547818656992588,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7090697860389334,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02719902323993602,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.0009166979773533868,
+    "goal": 0.0,
+    "error": -0.0009166979773533868,
+    "drift": 0.0008413631206488543,
+    "tilt": 0.019976845900256987,
+    "forces": [
+      0.0,
+      0.0,
+      0.07810765774823114,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02838367139298796,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.0061486463106721345,
+    "goal": 0.0,
+    "error": 0.0061486463106721345,
+    "drift": 0.001630486317920512,
+    "tilt": 0.012026940389808234,
+    "forces": [
+      0.0,
+      0.0,
+      0.2675500707436118,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02976229377486364,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.006329780159411991,
+    "goal": 0.0,
+    "error": 0.006329780159411991,
+    "drift": 0.0020357126123158624,
+    "tilt": 0.012353479293518946,
+    "forces": [
+      0.07455381529627793,
+      0.0,
+      0.08553760651708175,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8509438709427627,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.031150657000999702,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.00460800587565946,
+    "goal": 0.0,
+    "error": 0.00460800587565946,
+    "drift": 0.0023851988766140013,
+    "tilt": 0.010945966932013648,
+    "forces": [
+      0.09674288999273883,
+      0.11155127066814394,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8158208947631377,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03237080238578706,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.0003454888049272409,
+    "goal": 0.0,
+    "error": -0.0003454888049272409,
+    "drift": 0.002603784293447381,
+    "tilt": 0.019274682108115365,
+    "forces": [
+      0.09970971200072928,
+      0.0,
+      0.13024766701888066,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8510484558477639,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.033519413047298066,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -3.34227147460453e-05,
+    "goal": 0.0,
+    "error": -3.34227147460453e-05,
+    "drift": 0.0028006640182843007,
+    "tilt": 0.017342097344313828,
+    "forces": [
+      0.09774549544537395,
+      0.10812948222991414,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8181165807194455,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03437574970515973,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.003928788208352962,
+    "goal": 0.0,
+    "error": -0.003928788208352962,
+    "drift": 0.003000739401890741,
+    "tilt": 0.015425008424277506,
+    "forces": [
+      0.08667064546236351,
+      0.0,
+      0.14507110131277617,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8577562542546169,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03521821266220206,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.008276015029012873,
+    "goal": 0.0,
+    "error": -0.008276015029012873,
+    "drift": 0.003157755445184525,
+    "tilt": 0.012380137737024434,
+    "forces": [
+      0.12160624920704316,
+      0.09914005977839668,
+      0.09845439585708811,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8648010633979101,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03568989278973193,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.012116254957136974,
+    "goal": 0.0,
+    "error": -0.012116254957136974,
+    "drift": 0.003359962963307431,
+    "tilt": 0.010037797688894174,
+    "forces": [
+      0.12069924588842976,
+      0.11251943019214947,
+      0.08755849232868812,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8799053583129436,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03629929940202536,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.013251618678471688,
+    "goal": 0.0,
+    "error": -0.013251618678471688,
+    "drift": 0.0035276495816971534,
+    "tilt": 0.007902817742816353,
+    "forces": [
+      0.12260637695805832,
+      0.10990314006279847,
+      0.0837338483766859,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8975505861184736,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03670190860225984,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.014412749212693976,
+    "goal": 0.0,
+    "error": -0.014412749212693976,
+    "drift": 0.0036628391496005656,
+    "tilt": 0.00597552467253226,
+    "forces": [
+      0.12257074218962752,
+      0.11317437215919347,
+      0.09500954161333337,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8972916552973563,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03698185151906288,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.01715651282951014,
+    "goal": 0.0,
+    "error": -0.01715651282951014,
+    "drift": 0.003776589824507033,
+    "tilt": 0.006966956431332347,
+    "forces": [
+      0.11958818854414682,
+      0.09443185137414238,
+      0.10926076317375316,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8917699562647047,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03707485797319497,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.022656800017802015,
+    "goal": 0.0,
+    "error": -0.022656800017802015,
+    "drift": 0.0038974331457519045,
+    "tilt": 0.007365837117834796,
+    "forces": [
+      0.11466678248960034,
+      0.08217787072242877,
+      0.11738578631755833,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8852328807735397,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03716613082328731,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.032000512708268314,
+    "goal": 0.0,
+    "error": -0.032000512708268314,
+    "drift": 0.004008216878566118,
+    "tilt": 0.006534404573113666,
+    "forces": [
+      0.10701385205572417,
+      0.07057680541716198,
+      0.12338389397038346,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8856813494513628,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03728188455289637,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.04770272734563963,
+    "goal": 0.0,
+    "error": -0.04770272734563963,
+    "drift": 0.004346708018758467,
+    "tilt": 0.010123855378398454,
+    "forces": [
+      0.22687452577162767,
+      0.03415305036889294,
+      0.20806189461190122,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9178631738474428,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03749109656724925,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.06885781372596034,
+    "goal": 0.0,
+    "error": -0.06885781372596034,
+    "drift": 0.00453906264228315,
+    "tilt": 0.009616356066753014,
+    "forces": [
+      0.16683602001786985,
+      0.07580259879261367,
+      0.1932324505853818,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9093778445594106,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03743668303726252,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.07574514770179919,
+    "goal": 0.0,
+    "error": -0.07574514770179919,
+    "drift": 0.004739737317424956,
+    "tilt": 0.0072280576776383955,
+    "forces": [
+      0.17704129214833508,
+      0.09203386827864339,
+      0.1710869601414385,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9008920898438749,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03762381255131474,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": -0.034617962051221474,
+    "goal": 0.0,
+    "error": -0.034617962051221474,
+    "drift": 0.005019275239848179,
+    "tilt": 0.0037762354593216313,
+    "forces": [
+      0.17690657189926123,
+      0.13305451284860959,
+      0.11903761763996651,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9134409295092782,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0381714707611456,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.016826547102668288,
+    "goal": 0.05235987755982993,
+    "error": -0.035533330457161644,
+    "drift": 0.005269066105869853,
+    "tilt": 0.008626238210460123,
+    "forces": [
+      0.11065170616282335,
+      0.15834497583921683,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8913426707446891,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.038299888613221054,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.07105692971611899,
+    "goal": 0.10471975511965986,
+    "error": -0.033662825403540875,
+    "drift": 0.005531680989777467,
+    "tilt": 0.016528111835640544,
+    "forces": [
+      0.29296951631918566,
+      0.21368182327481217,
+      0.1223291594069747,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9480010450532239,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.037763591556246145,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.13731895494506108,
+    "goal": 0.1570796326794898,
+    "error": -0.019760677734428717,
+    "drift": 0.005613301860025142,
+    "tilt": 0.009746309962316149,
+    "forces": [
+      0.5410882162688657,
+      0.31820318821674104,
+      0.2476560392041949,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9584861021502111,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03765412389556176,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.19716120800647396,
+    "goal": 0.20943951023931973,
+    "error": -0.012278302232845761,
+    "drift": 0.005683631964983931,
+    "tilt": 0.0029437484348311693,
+    "forces": [
+      0.7464531138985875,
+      0.37040294160244547,
+      0.447751831157248,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9586833384123533,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.038574519133245666,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.24739746997963818,
+    "goal": 0.2617993877991494,
+    "error": -0.014401917819511223,
+    "drift": 0.005797508200114681,
+    "tilt": 0.0018735249156917751,
+    "forces": [
+      1.1794304920506602,
+      0.46014156622968233,
+      0.7545749239294318,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9631036090192971,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04075208081425488,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.2931342322349775,
+    "goal": 0.31415926535897937,
+    "error": -0.02102503312400189,
+    "drift": 0.005792868843037868,
+    "tilt": 0.004856416837704059,
+    "forces": [
+      1.3522842731535756,
+      0.40810873462830416,
+      1.003495948210702,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9645677365628164,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042057533369722545,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 0.34789930390050694,
+    "goal": 0.36651914291880927,
+    "error": -0.01861983901830233,
+    "drift": 0.005857747514538972,
+    "tilt": 0.011143121123489247,
+    "forces": [
+      1.6714768010367078,
+      0.7006646817329901,
+      1.1036892531925888,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.971271400190711,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04406115903117141,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.4006745073300393,
+    "goal": 0.41887902047863923,
+    "error": -0.018204513148599943,
+    "drift": 0.005665072191014362,
+    "tilt": 0.01973317544401582,
+    "forces": [
+      1.760379054071953,
+      0.7852118544507538,
+      1.2034434911974254,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9630267863821707,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.046029680419576356,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.46633311785061404,
+    "goal": 0.47123889803846913,
+    "error": -0.004905780187855091,
+    "drift": 0.005616438207098779,
+    "tilt": 0.033099818848565304,
+    "forces": [
+      1.8165866423965968,
+      0.7199899213148778,
+      1.2994689589753396,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9547713060398778,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04775714618608761,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.5227441135102224,
+    "goal": 0.5235987755982988,
+    "error": -0.0008546620880763856,
+    "drift": 0.005366262460317976,
+    "tilt": 0.04866210985380824,
+    "forces": [
+      1.5450425282349396,
+      0.0,
+      1.5421288658790795,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.950741194428165,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.048179555805005825,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.5707800234784699,
+    "goal": 0.5759586531581288,
+    "error": -0.005178629679658875,
+    "drift": 0.005139791935760369,
+    "tilt": 0.05469075498464774,
+    "forces": [
+      1.6193565649469406,
+      0.0,
+      1.6444430192656858,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9478210815036059,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04805980121806547,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.605466368041863,
+    "goal": 0.6283185307179587,
+    "error": -0.02285216267609569,
+    "drift": 0.004931310987743199,
+    "tilt": 0.053246784620131306,
+    "forces": [
+      1.72762485983255,
+      0.0,
+      1.7529370514576181,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9380548553142629,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04801476494637478,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.6458880364500765,
+    "goal": 0.6806784082777886,
+    "error": -0.03479037182771205,
+    "drift": 0.004953094459091336,
+    "tilt": 0.048016980950777735,
+    "forces": [
+      1.6806817478940466,
+      0.1811417533604508,
+      1.6719107586943323,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.931722091315463,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04846065919173267,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.7034239189502199,
+    "goal": 0.7330382858376185,
+    "error": -0.029614366887398602,
+    "drift": 0.004963478720713538,
+    "tilt": 0.047741496624251555,
+    "forces": [
+      1.691223231803336,
+      0.0,
+      1.789914650622304,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9255270047248141,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.049043480097749115,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.7676258461034402,
+    "goal": 0.7853981633974483,
+    "error": -0.017772317294008078,
+    "drift": 0.0048331058159445,
+    "tilt": 0.05950524049543976,
+    "forces": [
+      1.6036886967907131,
+      0.0,
+      1.622787635657938,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.909681997344417,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04890463138646461,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.8315283344145843,
+    "goal": 0.8377580409572781,
+    "error": -0.006229706542693836,
+    "drift": 0.004808169539693846,
+    "tilt": 0.062022501035073195,
+    "forces": [
+      1.76073506883718,
+      0.0,
+      1.728658828816437,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8979011938643873,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.048351415457236896,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.8885236560268145,
+    "goal": 0.8901179185171082,
+    "error": -0.0015942624902937075,
+    "drift": 0.004986470225425867,
+    "tilt": 0.046656704089774126,
+    "forces": [
+      1.631261983918901,
+      0.0,
+      1.6602089737160193,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8950457420775002,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04745770335919862,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.939616143919962,
+    "goal": 0.942477796076938,
+    "error": -0.002861652156976091,
+    "drift": 0.005107468289507771,
+    "tilt": 0.027273277179996128,
+    "forces": [
+      1.6114787144874045,
+      0.0,
+      1.5630284948523994,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.870301976964801,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04606404328370834,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 0.9877359783027324,
+    "goal": 0.9948376736367679,
+    "error": -0.007101695334035485,
+    "drift": 0.005217092061369593,
+    "tilt": 0.021822463302427042,
+    "forces": [
+      1.5558757756430714,
+      0.0,
+      1.5434677311432918,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8640120198453268,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04447421855898839,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.0354206461549544,
+    "goal": 1.0471975511965976,
+    "error": -0.011776905041643193,
+    "drift": 0.00535421128649554,
+    "tilt": 0.01657678909183867,
+    "forces": [
+      1.4735475221059726,
+      0.0,
+      1.4744167525158043,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8510519778165544,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0421002878665776,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.0908746728898209,
+    "goal": 1.0995574287564278,
+    "error": -0.00868275586660694,
+    "drift": 0.005436424626532394,
+    "tilt": 0.01732396270540742,
+    "forces": [
+      1.5968512836057505,
+      0.0,
+      1.5001741341577028,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8577183708057461,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04023532848683762,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.1467757069208866,
+    "goal": 1.1519173063162575,
+    "error": -0.005141599395370955,
+    "drift": 0.005568702682419461,
+    "tilt": 0.019180262421408932,
+    "forces": [
+      1.362269490128983,
+      0.0,
+      1.3231846093560264,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8453897414664976,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03816820392904829,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.1978688167076412,
+    "goal": 1.2042771838760873,
+    "error": -0.006408367168446061,
+    "drift": 0.005912887499605663,
+    "tilt": 0.024471636116023758,
+    "forces": [
+      1.1646338345471603,
+      0.26461201175865545,
+      1.3045722488177953,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9128995240049852,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03649564255837269,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.2540318014360157,
+    "goal": 1.2566370614359175,
+    "error": -0.002605259999901799,
+    "drift": 0.006298051514903861,
+    "tilt": 0.028824361021289796,
+    "forces": [
+      0.9101178195872797,
+      0.0,
+      0.9617973234686494,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8174391991712104,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03497282863770926,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.3060083443037898,
+    "goal": 1.3089969389957472,
+    "error": -0.002988594691957447,
+    "drift": 0.006822160352560581,
+    "tilt": 0.02939684744125233,
+    "forces": [
+      0.6672060569684621,
+      0.0,
+      0.6716250889187806,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8045961321088368,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03403478468663479,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.346869368844729,
+    "goal": 1.3613568165555772,
+    "error": -0.01448744771084809,
+    "drift": 0.007112023137414809,
+    "tilt": 0.030391468083220883,
+    "forces": [
+      0.4323359396732681,
+      0.0,
+      0.45368551615487074,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7751065002016175,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0335219971686813,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.3943173729383123,
+    "goal": 1.413716694115407,
+    "error": -0.01939932117709464,
+    "drift": 0.007353817127041944,
+    "tilt": 0.042176185614164634,
+    "forces": [
+      0.0,
+      0.1902565803323218,
+      0.24431623584349632,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9455073626350042,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03259398610285467,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.444054932389777,
+    "goal": 1.466076571675237,
+    "error": -0.022021639285460193,
+    "drift": 0.007511731219933069,
+    "tilt": 0.04186296779242575,
+    "forces": [
+      0.3230547582574318,
+      0.12353616445072024,
+      0.33136810579350745,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.95289421055574,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.031834737779604404,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.4938891084801655,
+    "goal": 1.5184364492350668,
+    "error": -0.02454734075490128,
+    "drift": 0.007898501622012756,
+    "tilt": 0.02889557073379124,
+    "forces": [
+      0.0,
+      0.35336767019005044,
+      0.3475437044166181,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9445225042400878,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.031030697714631322,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.5427846385970612,
+    "goal": 1.5707963267948966,
+    "error": -0.028011688197835394,
+    "drift": 0.008270249696558185,
+    "tilt": 0.02287794584857337,
+    "forces": [
+      0.0,
+      0.33833469379058767,
+      0.36929946386045553,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9299182269075137,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.030358654893907502,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.5835958207424248,
+    "goal": 1.6231562043547265,
+    "error": -0.03956038361230174,
+    "drift": 0.008379849416667948,
+    "tilt": 0.025640380084582956,
+    "forces": [
+      0.0,
+      0.4068931371906618,
+      0.44881971536574494,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.9254635984515421,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02964526743721789,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.6428643933566065,
+    "goal": 1.6755160819145563,
+    "error": -0.032651688557949754,
+    "drift": 0.00850665599169508,
+    "tilt": 0.03817202375253349,
+    "forces": [
+      0.0,
+      0.45607613547157444,
+      0.47806478294493826,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.901497204591514,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02875434414452143,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.69897421992504,
+    "goal": 1.7278759594743867,
+    "error": -0.028901739549346717,
+    "drift": 0.00858114192273965,
+    "tilt": 0.06074512573560696,
+    "forces": [
+      0.0,
+      0.4021395446904056,
+      0.44351138429073156,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8909944908580449,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02825122062904638,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.7418632552700688,
+    "goal": 1.7802358370342164,
+    "error": -0.038372581764147595,
+    "drift": 0.008690862946680124,
+    "tilt": 0.07983808131032438,
+    "forces": [
+      0.34192415162822276,
+      0.42919842811270975,
+      0.7029949820745245,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8827110826942803,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02767899154039076,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.7839580513102478,
+    "goal": 1.8325957145940461,
+    "error": -0.04863766328379837,
+    "drift": 0.008792733649800884,
+    "tilt": 0.06889842980270341,
+    "forces": [
+      0.0,
+      0.5949650923120056,
+      0.6685369577186251,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8565706462376779,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02703432332963175,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.8518437365719826,
+    "goal": 1.884955592153876,
+    "error": -0.033111855581893446,
+    "drift": 0.008871168719437982,
+    "tilt": 0.06401409878156726,
+    "forces": [
+      0.0,
+      0.5438124643132508,
+      0.5947809986352801,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8290218255575269,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.026193038760155496,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.9084343147469287,
+    "goal": 1.9373154697137058,
+    "error": -0.028881154966777123,
+    "drift": 0.008930938658104808,
+    "tilt": 0.06792051964507947,
+    "forces": [
+      0.0,
+      0.5468045709662861,
+      0.5956766998983691,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8039321099484946,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02550573994837168,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 1.9710308036039146,
+    "goal": 1.9896753472735358,
+    "error": -0.018644543669621205,
+    "drift": 0.009081865321796783,
+    "tilt": 0.08175284310077055,
+    "forces": [
+      0.0,
+      0.7032265941139615,
+      0.6808820533591098,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7908447128088765,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02458982307659583,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.033939886403496,
+    "goal": 2.0420352248333655,
+    "error": -0.008095338429869425,
+    "drift": 0.009881925391009462,
+    "tilt": 0.103101112619393,
+    "forces": [
+      0.2988375523444564,
+      0.5095625246290546,
+      0.6395924140422564,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7508943622127582,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0239807792926857,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.068267579709862,
+    "goal": 2.0943951023931953,
+    "error": -0.026127522683333293,
+    "drift": 0.010625909558155075,
+    "tilt": 0.09425004504645376,
+    "forces": [
+      0.31581452083637,
+      0.5377246342052113,
+      0.693841517076363,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7259901989315488,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.023257027904910032,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.106606875564946,
+    "goal": 2.146754979953026,
+    "error": -0.04014810438807981,
+    "drift": 0.011808104448775924,
+    "tilt": 0.06310156453169032,
+    "forces": [
+      0.0,
+      0.6738501519343734,
+      0.6408803061347186,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6953938892013966,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02239926144202204,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.1699931592166504,
+    "goal": 2.199114857512855,
+    "error": -0.029121698296204812,
+    "drift": 0.01337921146541201,
+    "tilt": 0.031105374407956313,
+    "forces": [
+      0.0,
+      0.5803625704534983,
+      0.5451125913558885,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6545402994024954,
+    "order": {
+      "min_matched_chain_gap_m": 0.02132284183843149,
+      "tip_order_gap_m": 0.02132284183843149,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.2361664494201876,
+    "goal": 2.2514747350726854,
+    "error": -0.015308285652497755,
+    "drift": 0.01460331163241783,
+    "tilt": 0.006605976191472822,
+    "forces": [
+      0.0,
+      0.35441912771085415,
+      0.2891736004633457,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6380045395515025,
+    "order": {
+      "min_matched_chain_gap_m": 0.020609206993622214,
+      "tip_order_gap_m": 0.020609206993622214,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.2888048669264007,
+    "goal": 2.303834612632515,
+    "error": -0.015029745706114372,
+    "drift": 0.01532510812991212,
+    "tilt": 0.01183921526681567,
+    "forces": [
+      0.0,
+      0.2996147325496433,
+      0.2525428885750059,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6212034785130152,
+    "order": {
+      "min_matched_chain_gap_m": 0.02017347243638247,
+      "tip_order_gap_m": 0.02017347243638247,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.333522459837141,
+    "goal": 2.356194490192345,
+    "error": -0.02267203035520371,
+    "drift": 0.016117103530116726,
+    "tilt": 0.023262995566213255,
+    "forces": [
+      0.0,
+      0.2623829601156017,
+      0.22343421081808096,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.573929308348267,
+    "order": {
+      "min_matched_chain_gap_m": 0.01975654066353177,
+      "tip_order_gap_m": 0.01975654066353177,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.3822931774904235,
+    "goal": 2.408554367752175,
+    "error": -0.026261190261751555,
+    "drift": 0.01699334607089097,
+    "tilt": 0.02752043880352507,
+    "forces": [
+      0.0,
+      0.16465015987223985,
+      0.12616402161686607,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5506559183415514,
+    "order": {
+      "min_matched_chain_gap_m": 0.019045994318571645,
+      "tip_order_gap_m": 0.019045994318571645,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.43649262346261,
+    "goal": 2.4609142453120048,
+    "error": -0.024421621849394892,
+    "drift": 0.017744406540802816,
+    "tilt": 0.02535029115676028,
+    "forces": [
+      0.0,
+      0.11769627453029363,
+      0.1291854569427462,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.536766643786179,
+    "order": {
+      "min_matched_chain_gap_m": 0.018252645084818383,
+      "tip_order_gap_m": 0.018252645084818383,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.4879181081343376,
+    "goal": 2.513274122871835,
+    "error": -0.02535601473749738,
+    "drift": 0.018011867488366147,
+    "tilt": 0.018005370448023857,
+    "forces": [
+      0.0,
+      0.13133302862677687,
+      0.12377168561439306,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5315411864347167,
+    "order": {
+      "min_matched_chain_gap_m": 0.017937582291312183,
+      "tip_order_gap_m": 0.017937582291312183,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.529689088272726,
+    "goal": 2.5656340004316647,
+    "error": -0.0359449121589388,
+    "drift": 0.017445962943951114,
+    "tilt": 0.010716789886359256,
+    "forces": [
+      0.10295786606693827,
+      0.1491477598039575,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.662229082562438,
+    "order": {
+      "min_matched_chain_gap_m": 0.018953058718599924,
+      "tip_order_gap_m": 0.018953058718599924,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.5827424225412403,
+    "goal": 2.6179938779914944,
+    "error": -0.0352514554502541,
+    "drift": 0.015595687047918106,
+    "tilt": 0.01582255068509218,
+    "forces": [
+      0.1354733326618691,
+      0.1752323692177749,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.664418668851186,
+    "order": {
+      "min_matched_chain_gap_m": 0.021065859811776763,
+      "tip_order_gap_m": 0.021065859811776763,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.647354569505514,
+    "goal": 2.6703537555513246,
+    "error": -0.02299918604581075,
+    "drift": 0.013817362780617716,
+    "tilt": 0.0290144311868522,
+    "forces": [
+      0.0,
+      0.29603652754445686,
+      0.2648120038490933,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.44519681637504904,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.022529783090106524,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.6927558772304683,
+    "goal": 2.7227136331111543,
+    "error": -0.029957755880686054,
+    "drift": 0.012287015646702659,
+    "tilt": 0.04174965236196201,
+    "forces": [
+      0.04558790038325062,
+      0.2784352242190243,
+      0.3366632755886661,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7151505014662949,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.023850848191104706,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.7469154990817937,
+    "goal": 2.775073510670984,
+    "error": -0.0281580115891904,
+    "drift": 0.010580549293081155,
+    "tilt": 0.05147116880585993,
+    "forces": [
+      0.06985182880326582,
+      0.35425838174537255,
+      0.4602889214305881,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7329034822816497,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02548218839220345,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.79922139377038,
+    "goal": 2.827433388230814,
+    "error": -0.028211994460433765,
+    "drift": 0.009006223684204132,
+    "tilt": 0.05536343849875594,
+    "forces": [
+      0.07932234932775084,
+      0.2817774072174218,
+      0.24620772720014517,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7406218063473227,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02653313041945322,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.8421330632736552,
+    "goal": 2.8797932657906435,
+    "error": -0.03766020251698832,
+    "drift": 0.007826733552346785,
+    "tilt": 0.0522144657003251,
+    "forces": [
+      0.19731473319341775,
+      0.3410682193249686,
+      0.3339250885958005,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7687586289178899,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.027995931942406495,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.889390255958201,
+    "goal": 2.932153143350474,
+    "error": -0.042762887392273186,
+    "drift": 0.007321328442530443,
+    "tilt": 0.040168745721645846,
+    "forces": [
+      0.12247444629027565,
+      0.34988019088092953,
+      0.24049670781156912,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7979282563198521,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.029673117986180303,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.934408615814344,
+    "goal": 2.9845130209103035,
+    "error": -0.05010440509595959,
+    "drift": 0.007431445852313949,
+    "tilt": 0.01547940970609757,
+    "forces": [
+      0.24731770155147187,
+      0.3172673020407931,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7365410881006871,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03089657188862466,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 2.994379382339396,
+    "goal": 3.0368728984701336,
+    "error": -0.042493516130737596,
+    "drift": 0.007854345614530672,
+    "tilt": 0.016148494802770887,
+    "forces": [
+      0.2912566395646852,
+      0.6434447210928117,
+      0.4998006640416454,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7631117783971404,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.032095840919155905,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.0418872950461595,
+    "goal": 3.0892327760299634,
+    "error": -0.04734548098380387,
+    "drift": 0.008822581816150452,
+    "tilt": 0.05363552625840142,
+    "forces": [
+      0.2887502299752537,
+      0.32090316358308585,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7482419081924061,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03341497467843421,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.082184196427726,
+    "goal": 3.141592653589793,
+    "error": -0.05940845716206722,
+    "drift": 0.010273198181215111,
+    "tilt": 0.09194051791163264,
+    "forces": [
+      0.2830518671261082,
+      0.27405424643775805,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7450327926324862,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.035043602032507795,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.1548697933033223,
+    "goal": 3.193952531149623,
+    "error": -0.039082737846300564,
+    "drift": 0.011998963506931512,
+    "tilt": 0.12265267140339722,
+    "forces": [
+      0.15114237345660037,
+      0.36126127534853403,
+      0.39742339514996744,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7814630268781135,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.036299712507364135,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.1786141296172374,
+    "goal": 3.246312408709453,
+    "error": -0.0676982790922156,
+    "drift": 0.012548009704696507,
+    "tilt": 0.14964902159926569,
+    "forces": [
+      0.38861523342905036,
+      0.26710178127560635,
+      0.08588039061433192,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8442858176325563,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03545005510997329,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.160421721415958,
+    "goal": 3.2986722862692828,
+    "error": -0.13825056485332476,
+    "drift": 0.01198619253482332,
+    "tilt": 0.2087273041258635,
+    "forces": [
+      0.3059843323328375,
+      0.39263534198013994,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.850091870524679,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03379480065491047,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.172080129784669,
+    "goal": 3.3510321638291125,
+    "error": -0.1789520340444435,
+    "drift": 0.011007954040673184,
+    "tilt": 0.29190792855368974,
+    "forces": [
+      0.3032015722459571,
+      0.4589631207978685,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8334709101520307,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03148461055337201,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.2208067208938806,
+    "goal": 3.4033920413889422,
+    "error": -0.1825853204950616,
+    "drift": 0.01014296060046867,
+    "tilt": 0.3736473154701907,
+    "forces": [
+      0.4142410987635679,
+      0.537967949152659,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8229240917139649,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.029175249518198845,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.2703876514013492,
+    "goal": 3.455751918948772,
+    "error": -0.18536426754742275,
+    "drift": 0.009398824652917933,
+    "tilt": 0.4408838066323324,
+    "forces": [
+      0.526987244711026,
+      0.6430161258562194,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.8327832112864475,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.027195105540264653,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.2991151787106516,
+    "goal": 3.508111796508603,
+    "error": -0.20899661779795142,
+    "drift": 0.008651522492060377,
+    "tilt": 0.49111696290409224,
+    "forces": [
+      0.6368730422490663,
+      0.7405022043726458,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7940288782695347,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.025328248777937122,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.311446389273031,
+    "goal": 3.560471674068433,
+    "error": -0.24902528479540198,
+    "drift": 0.007944312615641777,
+    "tilt": 0.5259630743912431,
+    "forces": [
+      0.8259846793445268,
+      0.9404989042415242,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7962768272674519,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.023808111264128583,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.3258882907879252,
+    "goal": 3.6128315516282625,
+    "error": -0.2869432608403373,
+    "drift": 0.007571925309075351,
+    "tilt": 0.5486896476379255,
+    "forces": [
+      0.8841301249494965,
+      0.9765345984844769,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7745034326006994,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.022257070100299134,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.3581043490780864,
+    "goal": 3.6651914291880923,
+    "error": -0.30708708011000585,
+    "drift": 0.00744804319058651,
+    "tilt": 0.5628772879914953,
+    "forces": [
+      0.821607934892722,
+      0.8962588774323834,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7361767857302468,
+    "order": {
+      "min_matched_chain_gap_m": 0.020730359238691244,
+      "tip_order_gap_m": 0.020730359238691244,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.415818174085586,
+    "goal": 3.717551306747922,
+    "error": -0.3017331326623358,
+    "drift": 0.00741363841071941,
+    "tilt": 0.5689205007597967,
+    "forces": [
+      0.8934405058109197,
+      0.9282395649279858,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7272467380451837,
+    "order": {
+      "min_matched_chain_gap_m": 0.019082889853592258,
+      "tip_order_gap_m": 0.019082889853592258,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.488118957789399,
+    "goal": 3.769911184307752,
+    "error": -0.28179222651835323,
+    "drift": 0.007437127191089881,
+    "tilt": 0.5640469595837712,
+    "forces": [
+      0.6181487270587283,
+      0.7640912516918478,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6750980640098486,
+    "order": {
+      "min_matched_chain_gap_m": 0.01728418401532638,
+      "tip_order_gap_m": 0.01728418401532638,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.558551413904702,
+    "goal": 3.822271061867582,
+    "error": -0.26371964796287983,
+    "drift": 0.007545584702551288,
+    "tilt": 0.546310377317481,
+    "forces": [
+      0.663431143843443,
+      0.8536456964651311,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6473449375353741,
+    "order": {
+      "min_matched_chain_gap_m": 0.01580076959736256,
+      "tip_order_gap_m": 0.01580076959736256,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.6195284408427746,
+    "goal": 3.8746309394274117,
+    "error": -0.25510249858463707,
+    "drift": 0.007800744961687411,
+    "tilt": 0.5153028008802769,
+    "forces": [
+      0.8340965094959676,
+      0.7987456516693259,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.623471006855574,
+    "order": {
+      "min_matched_chain_gap_m": 0.014535048232618092,
+      "tip_order_gap_m": 0.014535048232618092,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.6690154716428123,
+    "goal": 3.9269908169872414,
+    "error": -0.2579753453444291,
+    "drift": 0.008109217111632688,
+    "tilt": 0.47297293368358406,
+    "forces": [
+      0.6299551292662868,
+      0.6663390291034555,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6118858953912725,
+    "order": {
+      "min_matched_chain_gap_m": 0.013485298722177129,
+      "tip_order_gap_m": 0.013485298722177129,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.7158218720886005,
+    "goal": 3.9793506945470716,
+    "error": -0.2635288224584711,
+    "drift": 0.008431218162233101,
+    "tilt": 0.4198505568807926,
+    "forces": [
+      0.6056584312187036,
+      0.638262560399801,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5768284667907663,
+    "order": {
+      "min_matched_chain_gap_m": 0.012749363419953506,
+      "tip_order_gap_m": 0.012749363419953506,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0001258228953478753,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.762155293992924,
+    "goal": 4.031710572106902,
+    "error": -0.2695552781139776,
+    "drift": 0.00898495223140499,
+    "tilt": 0.354988310191697,
+    "forces": [
+      0.5967000821587677,
+      0.6236509700043438,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5532085749456745,
+    "order": {
+      "min_matched_chain_gap_m": 0.012737698491740886,
+      "tip_order_gap_m": 0.012737698491740886,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00011392664179879208,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.8110675720832283,
+    "goal": 4.084070449666731,
+    "error": -0.2730028775835027,
+    "drift": 0.009541194826768804,
+    "tilt": 0.2796569568158844,
+    "forces": [
+      0.576077001365715,
+      0.5895395680033391,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5384318086947436,
+    "order": {
+      "min_matched_chain_gap_m": 0.012620612358845545,
+      "tip_order_gap_m": 0.012620612358845545,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00015451157452274557,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.863177003728101,
+    "goal": 4.136430327226561,
+    "error": -0.27325332349846043,
+    "drift": 0.009982949552481687,
+    "tilt": 0.19362673621845028,
+    "forces": [
+      0.6527226946140359,
+      0.6750304504173746,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5141595743125021,
+    "order": {
+      "min_matched_chain_gap_m": 0.01249541608134886,
+      "tip_order_gap_m": 0.01249541608134886,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00017331478678762262,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.913648397938327,
+    "goal": 4.1887902047863905,
+    "error": -0.27514180684806355,
+    "drift": 0.010274443636571097,
+    "tilt": 0.09604485854898896,
+    "forces": [
+      0.6622851616179952,
+      0.616648033934668,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.49516735655473326,
+    "order": {
+      "min_matched_chain_gap_m": 0.01252118486576987,
+      "tip_order_gap_m": 0.01252118486576987,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00012196288838570587,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.9394470868279496,
+    "goal": 4.241150082346222,
+    "error": -0.30170299551827195,
+    "drift": 0.010463420576856983,
+    "tilt": 0.010790428879920209,
+    "forces": [
+      0.4934006685462524,
+      0.4859646867635048,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.49809273697098766,
+    "order": {
+      "min_matched_chain_gap_m": 0.012560236137755467,
+      "tip_order_gap_m": 0.012560236137755467,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 2.6818226306995753e-05,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.913396949916332,
+    "goal": 4.293509959906052,
+    "error": -0.38011300998971986,
+    "drift": 0.011208468959021736,
+    "tilt": 0.12713677331052256,
+    "forces": [
+      0.48207331863609015,
+      0.47953384619379047,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.47672675770346096,
+    "order": {
+      "min_matched_chain_gap_m": 0.012574507958553648,
+      "tip_order_gap_m": 0.012574507958553648,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 4.555160508624107e-06,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.882284571627953,
+    "goal": 4.345869837465881,
+    "error": -0.46358526583792825,
+    "drift": 0.01180689567306114,
+    "tilt": 0.16376529694831124,
+    "forces": [
+      0.5822869423425845,
+      0.37184757886202835,
+      0.23053624076572082,
+      0.0,
+      0.020525703987962454,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.020525703987962454,
+    "opposing": 0.7787603407225024,
+    "order": {
+      "min_matched_chain_gap_m": 0.012179280870319855,
+      "tip_order_gap_m": 0.012179280870319855,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00036305019945107237,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.8796142095305495,
+    "goal": 4.39822971502571,
+    "error": -0.5186155054951609,
+    "drift": 0.01205833036694062,
+    "tilt": 0.14186787011581078,
+    "forces": [
+      0.7965536363776565,
+      0.0,
+      0.7639490659984105,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7775749838561413,
+    "order": {
+      "min_matched_chain_gap_m": 0.012591244438365526,
+      "tip_order_gap_m": 0.012591244438365526,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 9.27962461917828e-05,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 3.9501081251566688,
+    "goal": 4.4505895925855405,
+    "error": -0.5004814674288718,
+    "drift": 0.011591068848288227,
+    "tilt": 0.12314874806815879,
+    "forces": [
+      0.849911809080188,
+      0.0,
+      0.6568850250144207,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7849852654716617,
+    "order": {
+      "min_matched_chain_gap_m": 0.01230770595221724,
+      "tip_order_gap_m": 0.01230770595221724,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00011766574583844625,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.086028853561902,
+    "goal": 4.502949470145371,
+    "error": -0.4169206165834689,
+    "drift": 0.010439257382522401,
+    "tilt": 0.10404321093167226,
+    "forces": [
+      1.4525655430926323,
+      0.0,
+      1.2748715750269004,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.762452470575323,
+    "order": {
+      "min_matched_chain_gap_m": 0.011277718413882903,
+      "tip_order_gap_m": 0.011277718413882903,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.224918883369049,
+    "goal": 4.555309347705201,
+    "error": -0.33039046433615216,
+    "drift": 0.009786656290019314,
+    "tilt": 0.07355051514460939,
+    "forces": [
+      1.4761277524905858,
+      0.0,
+      1.4571776075577731,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7315148003279931,
+    "order": {
+      "min_matched_chain_gap_m": 0.011818877052969117,
+      "tip_order_gap_m": 0.011818877052969117,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.2832333197426795,
+    "goal": 4.60766922526503,
+    "error": -0.3244359055223507,
+    "drift": 0.009536719385883092,
+    "tilt": 0.04283015754398112,
+    "forces": [
+      1.8371096494435104,
+      0.11758811342143397,
+      1.7485366007631962,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7348851394753931,
+    "order": {
+      "min_matched_chain_gap_m": 0.011863611671199911,
+      "tip_order_gap_m": 0.011863611671199911,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.282650070243595,
+    "goal": 4.66002910282486,
+    "error": -0.37737903258126515,
+    "drift": 0.009197126473447106,
+    "tilt": 0.019727740799836344,
+    "forces": [
+      1.7531215382331578,
+      0.0,
+      1.6851403686225943,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7194105399949154,
+    "order": {
+      "min_matched_chain_gap_m": 0.011244945643184245,
+      "tip_order_gap_m": 0.011244945643184245,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.302767495065927,
+    "goal": 4.71238898038469,
+    "error": -0.4096214853187625,
+    "drift": 0.009324098046835979,
+    "tilt": 0.01016354147215388,
+    "forces": [
+      1.3242866063678551,
+      0.20083296221856003,
+      1.284641987807241,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.7269033641375107,
+    "order": {
+      "min_matched_chain_gap_m": 0.011246621438996796,
+      "tip_order_gap_m": 0.011246621438996796,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.326904835204671,
+    "goal": 4.76474885794452,
+    "error": -0.43784402273984924,
+    "drift": 0.009254787472165132,
+    "tilt": 0.015656164530996358,
+    "forces": [
+      1.6192389759846124,
+      0.35203303802796027,
+      1.2650730663817857,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6764488093724634,
+    "order": {
+      "min_matched_chain_gap_m": 0.011233657431075475,
+      "tip_order_gap_m": 0.011233657431075475,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.374522512942576,
+    "goal": 4.81710873550435,
+    "error": -0.4425862225617738,
+    "drift": 0.008917503621444703,
+    "tilt": 0.0023070354419888893,
+    "forces": [
+      1.499066570087166,
+      0.4234041624585628,
+      1.1734829577178796,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6359585290310508,
+    "order": {
+      "min_matched_chain_gap_m": 0.012190450149932088,
+      "tip_order_gap_m": 0.012190450149932088,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.442861847913644,
+    "goal": 4.869468613064179,
+    "error": -0.4266067651505354,
+    "drift": 0.008259121104504687,
+    "tilt": 0.03713484846683256,
+    "forces": [
+      1.3723827430426243,
+      0.0,
+      1.2717130187399575,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.6038914579024065,
+    "order": {
+      "min_matched_chain_gap_m": 0.012752461660137986,
+      "tip_order_gap_m": 0.012752461660137986,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.542177706940798,
+    "goal": 4.9218284906240095,
+    "error": -0.3796507836832115,
+    "drift": 0.007661308498969918,
+    "tilt": 0.06831246167658435,
+    "forces": [
+      1.3733268388900544,
+      0.0,
+      1.2909771656546294,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5362106316246009,
+    "order": {
+      "min_matched_chain_gap_m": 0.014167272239713698,
+      "tip_order_gap_m": 0.014167272239713698,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.629827365482667,
+    "goal": 4.974188368183839,
+    "error": -0.34436100270117187,
+    "drift": 0.007237469754274175,
+    "tilt": 0.08141851736509277,
+    "forces": [
+      1.2589635267061432,
+      0.0,
+      1.2071115352205677,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.48959211379433004,
+    "order": {
+      "min_matched_chain_gap_m": 0.014865055801151356,
+      "tip_order_gap_m": 0.014865055801151356,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.672184071275571,
+    "goal": 5.02654824574367,
+    "error": -0.354364174468099,
+    "drift": 0.006970231707791327,
+    "tilt": 0.06536761127470458,
+    "forces": [
+      1.0079756923116014,
+      0.0,
+      0.9139553044029113,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.46226202312142295,
+    "order": {
+      "min_matched_chain_gap_m": 0.01538330555323442,
+      "tip_order_gap_m": 0.01538330555323442,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.686283329583822,
+    "goal": 5.0789081233035,
+    "error": -0.39262479371967807,
+    "drift": 0.007229830748790985,
+    "tilt": 0.029291063479734394,
+    "forces": [
+      0.5585802127101495,
+      0.0,
+      0.45467347358043453,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.4607494897523823,
+    "order": {
+      "min_matched_chain_gap_m": 0.01560087971835924,
+      "tip_order_gap_m": 0.01560087971835924,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.705253406735586,
+    "goal": 5.131268000863329,
+    "error": -0.4260145941277438,
+    "drift": 0.007213518821766509,
+    "tilt": 0.009561167669226139,
+    "forces": [
+      0.0,
+      0.07716821280812185,
+      0.06405108386933273,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.19901155413980456,
+    "order": {
+      "min_matched_chain_gap_m": 0.01537224456264132,
+      "tip_order_gap_m": 0.01537224456264132,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.729836047128111,
+    "goal": 5.183627878423159,
+    "error": -0.45379183129504774,
+    "drift": 0.008460283264674556,
+    "tilt": 0.04459511961009841,
+    "forces": [
+      0.0,
+      0.11375889903357397,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.01685829900001786,
+      "tip_order_gap_m": 0.01685829900001786,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.766592596777936,
+    "goal": 5.235987755982989,
+    "error": -0.46939515920505315,
+    "drift": 0.01180146255110267,
+    "tilt": 0.1265318717243718,
+    "forces": [
+      0.47879941994754477,
+      0.033083106150050494,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.01743524548889694,
+      "tip_order_gap_m": 0.01743524548889694,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 9.941706555960228e-05,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.799714624131204,
+    "goal": 5.288347633542819,
+    "error": -0.4886330094116147,
+    "drift": 0.012357569817446123,
+    "tilt": 0.21250099018005797,
+    "forces": [
+      0.2073255818082458,
+      0.0,
+      0.10018195942311395,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.5052557245083366,
+    "order": {
+      "min_matched_chain_gap_m": 0.017678898202272333,
+      "tip_order_gap_m": 0.017678898202272333,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.812352998160938,
+    "goal": 5.340707511102649,
+    "error": -0.5283545129417115,
+    "drift": 0.01251203380659057,
+    "tilt": 0.290321779853275,
+    "forces": [
+      0.4411767530749655,
+      0.0,
+      0.37356842595047074,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.48107419974574417,
+    "order": {
+      "min_matched_chain_gap_m": 0.01824249464565582,
+      "tip_order_gap_m": 0.01824249464565582,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 5.314988217150776e-05,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.798481915703533,
+    "goal": 5.3930673886624785,
+    "error": -0.5945854729589453,
+    "drift": 0.012591779351881677,
+    "tilt": 0.35298408208815263,
+    "forces": [
+      0.4538428374200829,
+      0.0,
+      0.364682325017869,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.3923686147123961,
+    "order": {
+      "min_matched_chain_gap_m": 0.018455277851199454,
+      "tip_order_gap_m": 0.018455277851199454,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.0
+  },
+  {
+    "angle": 4.736822918323887,
+    "goal": 5.445427266222309,
+    "error": -0.7086043478984214,
+    "drift": 0.012593731744652647,
+    "tilt": 0.3841502073457068,
+    "forces": [
+      0.5610500217359773,
+      0.0,
+      0.4192132252144186,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.36339035300317646,
+    "order": {
+      "min_matched_chain_gap_m": 0.018207903399729528,
+      "tip_order_gap_m": 0.018207903399729528,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.661938355120281,
+    "goal": 5.497787143782138,
+    "error": -0.8358487886618571,
+    "drift": 0.012028487604598544,
+    "tilt": 0.39718504447809605,
+    "forces": [
+      0.2305447517921933,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.0165434762493694,
+      "tip_order_gap_m": 0.0165434762493694,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.617814671781481,
+    "goal": 5.550147021341968,
+    "error": -0.9323323495604869,
+    "drift": 0.01217332988768163,
+    "tilt": 0.4180679812753662,
+    "forces": [
+      0.5050300319784613,
+      0.0,
+      0.3393773928432336,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.270269262459986,
+    "order": {
+      "min_matched_chain_gap_m": 0.015793034192335315,
+      "tip_order_gap_m": 0.015793034192335315,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.610538298521196,
+    "goal": 5.602506898901798,
+    "error": -0.9919686003806021,
+    "drift": 0.012380659831120591,
+    "tilt": 0.45012335084237765,
+    "forces": [
+      0.6239841818415737,
+      0.0,
+      0.5373761882702874,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.3322561648890258,
+    "order": {
+      "min_matched_chain_gap_m": 0.017037516233830464,
+      "tip_order_gap_m": 0.017037516233830464,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.571155190736105,
+    "goal": 5.654866776461628,
+    "error": -1.0837115857255224,
+    "drift": 0.012516819037410275,
+    "tilt": 0.44632498280282557,
+    "forces": [
+      1.0552623803343,
+      0.0,
+      0.8770216500049433,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.22618585157796278,
+    "order": {
+      "min_matched_chain_gap_m": 0.01767111688370235,
+      "tip_order_gap_m": 0.01767111688370235,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.550760579417474,
+    "goal": 5.707226654021458,
+    "error": -1.1564660746039834,
+    "drift": 0.012709298074242757,
+    "tilt": 0.4398904932119353,
+    "forces": [
+      1.0843764532190296,
+      0.0,
+      0.8537047380206745,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.15303793757529066,
+    "order": {
+      "min_matched_chain_gap_m": 0.016285622850261593,
+      "tip_order_gap_m": 0.016285622850261593,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.563686346413867,
+    "goal": 5.759586531581287,
+    "error": -1.19590018516742,
+    "drift": 0.012850198123898862,
+    "tilt": 0.44709129040689666,
+    "forces": [
+      1.2223105013552218,
+      0.0,
+      1.0730815019129014,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.21265369393755335,
+    "order": {
+      "min_matched_chain_gap_m": 0.017045261958570087,
+      "tip_order_gap_m": 0.017045261958570087,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.552204581463065,
+    "goal": 5.811946409141118,
+    "error": -1.2597418276780532,
+    "drift": 0.01281889167406764,
+    "tilt": 0.4255015043078747,
+    "forces": [
+      1.260579559247903,
+      0.0,
+      1.1363809141419847,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.0612895773263068,
+    "order": {
+      "min_matched_chain_gap_m": 0.017783040663555228,
+      "tip_order_gap_m": 0.017783040663555228,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.576158105619776,
+    "goal": 5.864306286700948,
+    "error": -1.288148181081172,
+    "drift": 0.012983397320046431,
+    "tilt": 0.4204904185819626,
+    "forces": [
+      1.530676129936335,
+      0.0,
+      1.3119953843927945,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": 0.09045554675610798,
+    "order": {
+      "min_matched_chain_gap_m": 0.01759884080183151,
+      "tip_order_gap_m": 0.01759884080183151,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.585893952123143,
+    "goal": 5.916666164260778,
+    "error": -1.3307722121376342,
+    "drift": 0.01300628731150649,
+    "tilt": 0.4032945099632923,
+    "forces": [
+      0.7716003395131463,
+      0.0,
+      1.3587656808020743,
+      0.0,
+      0.0,
+      0.8038242623860137,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.017731992542732024,
+      "tip_order_gap_m": 0.017731992542732024,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.586672009063926,
+    "goal": 5.969026041820607,
+    "error": -1.3823540327566812,
+    "drift": 0.012844046757762746,
+    "tilt": 0.39727950561260716,
+    "forces": [
+      0.28250621486564104,
+      0.0,
+      0.39340005418495405,
+      0.0,
+      0.0,
+      0.2894371749011645,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.019377366704463325,
+      "tip_order_gap_m": 0.019377366704463325,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00026339589596906883,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.591138205403761,
+    "goal": 6.021385919380437,
+    "error": -1.4302477139766765,
+    "drift": 0.012761740754306044,
+    "tilt": 0.39696905934890725,
+    "forces": [
+      0.17041252765966075,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.04079944103023379,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02139321014279868,
+      "tip_order_gap_m": 0.02139321014279868,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00032663521313514596,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.59794813019879,
+    "goal": 6.073745796940267,
+    "error": -1.4757976667414772,
+    "drift": 0.01295928128946973,
+    "tilt": 0.4001333948008947,
+    "forces": [
+      0.11831262213194531,
+      0.0,
+      0.10179797697200396,
+      0.0,
+      0.0,
+      0.14987360044987108,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.022412822497184928,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00036989501874113605,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.59948009241301,
+    "goal": 6.1261056745000975,
+    "error": -1.526625582087087,
+    "drift": 0.01300902756276177,
+    "tilt": 0.39985639032321124,
+    "forces": [
+      0.14758967233091938,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.06011675548825191,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.023753520370752276,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00038637123439928166,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.605775136415223,
+    "goal": 6.178465552059927,
+    "error": -1.5726904156447041,
+    "drift": 0.013088194536116274,
+    "tilt": 0.4006381657354585,
+    "forces": [
+      0.16122745068796127,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.05616472445496124,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02535322773271937,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0003760583592102712,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.607730577934549,
+    "goal": 6.230825429619757,
+    "error": -1.6230948516852077,
+    "drift": 0.013186342834270252,
+    "tilt": 0.40114683267255147,
+    "forces": [
+      0.1181341853456995,
+      0.0,
+      0.05180337805060756,
+      0.0,
+      0.0,
+      0.10495739861313953,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.026329705442603907,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0003929538016807887,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.609646863105056,
+    "goal": 6.283185307179586,
+    "error": -1.6735384440745307,
+    "drift": 0.013274464307849464,
+    "tilt": 0.39883002444471083,
+    "forces": [
+      0.16990901965343713,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.046187774317763365,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.027543491253023085,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0003834768618657909,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.610467419018832,
+    "goal": 6.283185307179586,
+    "error": -1.6727178881607543,
+    "drift": 0.013375511067084456,
+    "tilt": 0.3988169729062404,
+    "forces": [
+      0.12322261101873565,
+      0.0,
+      0.06538797645581806,
+      0.0,
+      0.0,
+      0.09325925698132195,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.02837126100736346,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004035831356971609,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.613154318614787,
+    "goal": 6.283185307179586,
+    "error": -1.6700309885647995,
+    "drift": 0.013583999737877762,
+    "tilt": 0.3984249845665265,
+    "forces": [
+      0.1486272798915594,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.06943502124103196,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.028982240431954583,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000424227269645501,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.620240205466679,
+    "goal": 6.283185307179586,
+    "error": -1.662945101712907,
+    "drift": 0.013757575795283207,
+    "tilt": 0.3996735654343366,
+    "forces": [
+      0.1259703936241407,
+      0.0,
+      0.056459064708945045,
+      0.0,
+      0.0,
+      0.1039856068728888,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.030061852568208067,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00044175985546544827,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.62381090157336,
+    "goal": 6.283185307179586,
+    "error": -1.6593744056062265,
+    "drift": 0.01390016559390123,
+    "tilt": 0.40244878784623456,
+    "forces": [
+      0.1220135892393769,
+      0.0,
+      0.07906661173943921,
+      0.0,
+      0.0,
+      0.11694145580899099,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03118422958138909,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00045353201588579564,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.6305392202446845,
+    "goal": 6.283185307179586,
+    "error": -1.6526460869349018,
+    "drift": 0.014102923062308429,
+    "tilt": 0.4054476298300551,
+    "forces": [
+      0.13914195354376385,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.07606553546066605,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0324998988118365,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000433934448335164,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.638607358974315,
+    "goal": 6.283185307179586,
+    "error": -1.6445779482052716,
+    "drift": 0.014274762338294686,
+    "tilt": 0.408622827934746,
+    "forces": [
+      0.12612337391031525,
+      0.0,
+      0.1342376955157495,
+      0.0,
+      0.0,
+      0.16437885891304183,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03393500165539545,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004218543619790223,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.644595193386914,
+    "goal": 6.283185307179586,
+    "error": -1.638590113792672,
+    "drift": 0.01441139127970981,
+    "tilt": 0.40963928158390095,
+    "forces": [
+      0.11463576739459277,
+      0.0,
+      0.06272753492420557,
+      0.0,
+      0.0,
+      0.10192303563806261,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03526300519131862,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004577946850909121,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.654102311489242,
+    "goal": 6.283185307179586,
+    "error": -1.6290829956903439,
+    "drift": 0.014642755434852953,
+    "tilt": 0.4110151740719527,
+    "forces": [
+      0.1044177581564785,
+      0.0,
+      0.13664776189836148,
+      0.0,
+      0.0,
+      0.1255553352636401,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03658030362065767,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004603023929845845,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.6594016878217595,
+    "goal": 6.283185307179586,
+    "error": -1.6237836193578268,
+    "drift": 0.014812524210159056,
+    "tilt": 0.4105344275091625,
+    "forces": [
+      0.13191527146803927,
+      0.0,
+      0.07375049483453636,
+      0.0,
+      0.0,
+      0.09750650626892911,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03762750756023163,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004646144806458114,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.666894818752185,
+    "goal": 6.283185307179586,
+    "error": -1.616290488427401,
+    "drift": 0.015044947026926108,
+    "tilt": 0.41085452066292333,
+    "forces": [
+      0.11089078217866001,
+      0.0,
+      0.03451036818524497,
+      0.0,
+      0.0,
+      0.08650834153383538,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03837206757909717,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00046932547011172584,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.670925020976456,
+    "goal": 6.283185307179586,
+    "error": -1.6122602862031306,
+    "drift": 0.01522904758376062,
+    "tilt": 0.410721151171926,
+    "forces": [
+      0.1650526979450715,
+      0.0,
+      0.1244306706218653,
+      0.0,
+      0.0,
+      0.1323358527541444,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03893105515861006,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00046137604272702195,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.674895617613398,
+    "goal": 6.283185307179586,
+    "error": -1.6082896895661882,
+    "drift": 0.015436997530560532,
+    "tilt": 0.4108269759444746,
+    "forces": [
+      0.13134744766733672,
+      0.0,
+      0.08377887674535558,
+      0.0,
+      0.0,
+      0.12563057834791777,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03952362799784597,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004478190725909701,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.678653342772844,
+    "goal": 6.283185307179586,
+    "error": -1.6045319644067426,
+    "drift": 0.015592505541726837,
+    "tilt": 0.41150863995391695,
+    "forces": [
+      0.15441482434554743,
+      0.0,
+      0.13317553245263647,
+      0.0,
+      0.0,
+      0.14397574580717754,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04034056400383985,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004041872325845094,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.68007939244988,
+    "goal": 6.283185307179586,
+    "error": -1.6031059147297064,
+    "drift": 0.015734244774412185,
+    "tilt": 0.41109131843381214,
+    "forces": [
+      0.15904607893719525,
+      0.0,
+      0.09990623655288745,
+      0.0,
+      0.0,
+      0.10208229266561185,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04118089663794193,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004995361463286168,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.684717434817289,
+    "goal": 6.283185307179586,
+    "error": -1.5984678723622974,
+    "drift": 0.01598550740205539,
+    "tilt": 0.4121151159225705,
+    "forces": [
+      0.13655458600476117,
+      0.0,
+      0.10179389541576431,
+      0.0,
+      0.0,
+      0.12064054294106599,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0417601094824497,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00047755477024826745,
+    "command_clip": 0.25
+  },
+  {
+    "angle": 4.685534123845667,
+    "goal": 6.283185307179586,
+    "error": -1.5976511833339195,
+    "drift": 0.016168158287531906,
+    "tilt": 0.41178779885021355,
+    "forces": [
+      0.18076581707495507,
+      0.0,
+      0.09869644294347062,
+      0.0,
+      0.0,
+      0.0935695866301719,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04119136505490493,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005034391544637829,
+    "command_clip": 0.25
+  },
+  {
+    "angle": 4.689650467603343,
+    "goal": 6.283185307179586,
+    "error": -1.5935348395762432,
+    "drift": 0.016453829594328482,
+    "tilt": 0.4133143246124046,
+    "forces": [
+      0.13547009449083375,
+      0.0,
+      0.08327016119363546,
+      0.0,
+      0.0,
+      0.10759638727693013,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.040863658091015866,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005262617958674574,
+    "command_clip": 0.25
+  },
+  {
+    "angle": 4.692697254506042,
+    "goal": 6.283185307179586,
+    "error": -1.5904880526735443,
+    "drift": 0.016678098277349142,
+    "tilt": 0.4149347279770117,
+    "forces": [
+      0.19215917694634577,
+      0.0,
+      0.08477939486454386,
+      0.0,
+      0.0,
+      0.0627689044543399,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0408546050598339,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005338637206121719,
+    "command_clip": 0.25
+  },
+  {
+    "angle": 4.69774457009072,
+    "goal": 6.283185307179586,
+    "error": -1.5854407370888666,
+    "drift": 0.016977718636001896,
+    "tilt": 0.41795730504652506,
+    "forces": [
+      0.19238369658124793,
+      0.0,
+      0.10016004769420889,
+      0.0,
+      0.0,
+      0.07629706294599232,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04067712645672961,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005405205946218448,
+    "command_clip": 0.25
+  },
+  {
+    "angle": 4.700668934931473,
+    "goal": 6.283185307179586,
+    "error": -1.5825163722481133,
+    "drift": 0.017263299004535902,
+    "tilt": 0.4195587593485391,
+    "forces": [
+      0.2572638692903396,
+      0.0,
+      0.11045198423489327,
+      0.0,
+      0.0,
+      0.038591562669957453,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04044276951111109,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005332738519435163,
+    "command_clip": 0.25
+  },
+  {
+    "angle": 4.704408237692634,
+    "goal": 6.283185307179586,
+    "error": -1.5787770694869518,
+    "drift": 0.017623526431312497,
+    "tilt": 0.4234532925497384,
+    "forces": [
+      0.29219989056354934,
+      0.0,
+      0.13722468231859675,
+      0.0,
+      0.0,
+      0.02492682957205687,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04017212477101138,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005296262008375702,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.706674839403302,
+    "goal": 6.283185307179586,
+    "error": -1.5765104677762842,
+    "drift": 0.01799925799365392,
+    "tilt": 0.42717364034309424,
+    "forces": [
+      0.31812942426525415,
+      0.0,
+      0.15817325410903046,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03988237175580049,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005424192299197522,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.707019128259978,
+    "goal": 6.283185307179586,
+    "error": -1.5761661789196086,
+    "drift": 0.01835101382162453,
+    "tilt": 0.43189178559635044,
+    "forces": [
+      0.35842808428264883,
+      0.0,
+      0.21059730661971976,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0393467176886453,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005381741760865966,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.704325570911513,
+    "goal": 6.283185307179586,
+    "error": -1.5788597362680736,
+    "drift": 0.01873329918798954,
+    "tilt": 0.4370618228316149,
+    "forces": [
+      0.20412307419476095,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.033902629225374,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.038604546529240426,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005318641643268354,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.702450630518334,
+    "goal": 6.283185307179586,
+    "error": -1.580734676661252,
+    "drift": 0.01928287752844926,
+    "tilt": 0.4440215869872602,
+    "forces": [
+      0.49246968984620365,
+      0.0,
+      0.4103681750580144,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0380407279552594,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000545019149042901,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.700908956785149,
+    "goal": 6.283185307179586,
+    "error": -1.5822763503944373,
+    "drift": 0.019736126061729014,
+    "tilt": 0.45169271402599953,
+    "forces": [
+      0.3464688475692457,
+      0.0,
+      0.20039113371106618,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.037712046034178416,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005353504273605264,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.697531647659944,
+    "goal": 6.283185307179586,
+    "error": -1.5856536595196422,
+    "drift": 0.020155083029316213,
+    "tilt": 0.4569388106436728,
+    "forces": [
+      0.21592412644053066,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03723423904581617,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000537673981622878,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.697604491573479,
+    "goal": 6.283185307179586,
+    "error": -1.5855808156061073,
+    "drift": 0.020659080279828778,
+    "tilt": 0.46161981820732134,
+    "forces": [
+      0.2377398486201651,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.036917060794446024,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005251259397841102,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.698538421057153,
+    "goal": 6.283185307179586,
+    "error": -1.5846468861224334,
+    "drift": 0.02105905837623465,
+    "tilt": 0.4659590285579199,
+    "forces": [
+      0.2142633837389699,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03691119478479686,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004213378600506793,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.699776488260804,
+    "goal": 6.283185307179586,
+    "error": -1.583408818918782,
+    "drift": 0.021413944448384136,
+    "tilt": 0.46899328074832347,
+    "forces": [
+      0.43922119598919657,
+      0.0,
+      0.308560305079098,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03698049663529961,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00039819722392482224,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.69990783014275,
+    "goal": 6.283185307179586,
+    "error": -1.5832774770368365,
+    "drift": 0.02169350002338253,
+    "tilt": 0.4705120674240658,
+    "forces": [
+      0.1464854807879357,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0924278455775111,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03680045187505458,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005154650738385827,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.699059726877565,
+    "goal": 6.283185307179586,
+    "error": -1.5841255803020209,
+    "drift": 0.022023300122593716,
+    "tilt": 0.47171208530916847,
+    "forces": [
+      0.21655217277263272,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03670284885285453,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000543261682224738,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.702282232227481,
+    "goal": 6.283185307179586,
+    "error": -1.5809030749521051,
+    "drift": 0.022326330193409898,
+    "tilt": 0.4765980371968856,
+    "forces": [
+      0.36786985600362226,
+      0.0,
+      0.3403251206756209,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.037062906634038294,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005451383182688264,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.698639771856563,
+    "goal": 6.283185307179586,
+    "error": -1.5845455353230236,
+    "drift": 0.022515086408107794,
+    "tilt": 0.47680541610651045,
+    "forces": [
+      0.2203555457130573,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.036958463672324124,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005349788996076283,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.69687274498735,
+    "goal": 6.283185307179586,
+    "error": -1.5863125621922363,
+    "drift": 0.022758809332166986,
+    "tilt": 0.4777742143507413,
+    "forces": [
+      0.2193482386074878,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03666386148964271,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005459753788368238,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.698961821488748,
+    "goal": 6.283185307179586,
+    "error": -1.5842234856908384,
+    "drift": 0.0230050543053491,
+    "tilt": 0.48087642978597267,
+    "forces": [
+      0.3628299056326508,
+      0.0,
+      0.27331386954533377,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03676096055743789,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005465026266739804,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.700782543074218,
+    "goal": 6.283185307179586,
+    "error": -1.5824027641053684,
+    "drift": 0.023191188665511567,
+    "tilt": 0.48161052221218886,
+    "forces": [
+      0.21353646668250187,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03700950518493506,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005434453827324986,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.702988909983372,
+    "goal": 6.283185307179586,
+    "error": -1.5801963971962145,
+    "drift": 0.023341340059478157,
+    "tilt": 0.48186890433084006,
+    "forces": [
+      0.22557809572058432,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03713662304846978,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005382613744313888,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.704614760984512,
+    "goal": 6.283185307179586,
+    "error": -1.578570546195074,
+    "drift": 0.023453758673460074,
+    "tilt": 0.4817227094270586,
+    "forces": [
+      0.2896701894588721,
+      0.0,
+      0.12770919954091212,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.0372323379940756,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005430982952819817,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.706725828358319,
+    "goal": 6.283185307179586,
+    "error": -1.576459478821267,
+    "drift": 0.02354897717172887,
+    "tilt": 0.4807037622012584,
+    "forces": [
+      0.22345163111270652,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03739322118281251,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005427236405796483,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.709318154436306,
+    "goal": 6.283185307179586,
+    "error": -1.5738671527432802,
+    "drift": 0.023654785337198145,
+    "tilt": 0.4798861493498398,
+    "forces": [
+      0.27229211111350027,
+      0.0,
+      0.13059128821907073,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03760007956076829,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005479119495617221,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.711257745988329,
+    "goal": 6.283185307179586,
+    "error": -1.5719275611912575,
+    "drift": 0.023723571364060433,
+    "tilt": 0.4783230497710789,
+    "forces": [
+      0.26988729261231,
+      0.0,
+      0.10163565122020658,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03777864562312327,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005440518578888004,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.712549596508324,
+    "goal": 6.283185307179586,
+    "error": -1.5706357106712625,
+    "drift": 0.02376211730354321,
+    "tilt": 0.4772218349329724,
+    "forces": [
+      0.26747404448696677,
+      0.0,
+      0.09574198345094775,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03788673527299537,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005455368503419857,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.714007210013486,
+    "goal": 6.283185307179586,
+    "error": -1.5691780971661,
+    "drift": 0.023794517331573187,
+    "tilt": 0.4756569073167692,
+    "forces": [
+      0.27089360868996126,
+      0.0,
+      0.09785401557016837,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03808904292458478,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005461733953318202,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.715595395058319,
+    "goal": 6.283185307179586,
+    "error": -1.5675899121212673,
+    "drift": 0.023836816313336295,
+    "tilt": 0.4741149005013656,
+    "forces": [
+      0.2638460233359028,
+      0.0,
+      0.09134410357051445,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03833514035173768,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005467119471714749,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.717386462562914,
+    "goal": 6.283185307179586,
+    "error": -1.5657988446166726,
+    "drift": 0.0238631741494374,
+    "tilt": 0.47285373154910654,
+    "forces": [
+      0.26571625913691,
+      0.0,
+      0.09258907238809037,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03855814235664897,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005470107160237629,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.718478003964095,
+    "goal": 6.283185307179586,
+    "error": -1.5647073032154912,
+    "drift": 0.023873044904383703,
+    "tilt": 0.4710766908122609,
+    "forces": [
+      0.25634464464264345,
+      0.0,
+      0.11241618201954866,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03877526316178846,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005518657942546369,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.719467753446182,
+    "goal": 6.283185307179586,
+    "error": -1.5637175537334045,
+    "drift": 0.023891957784739386,
+    "tilt": 0.4692835205998426,
+    "forces": [
+      0.26131096947562704,
+      0.0,
+      0.08634500628136593,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03901924888096896,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00054870221278568,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.7199137668256474,
+    "goal": 6.283185307179586,
+    "error": -1.5632715403539388,
+    "drift": 0.023893689769856,
+    "tilt": 0.46799222955438186,
+    "forces": [
+      0.25813206154841944,
+      0.0,
+      0.08389630996344818,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03924987500066531,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005480980820245528,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.720077065604066,
+    "goal": 6.283185307179586,
+    "error": -1.5631082415755202,
+    "drift": 0.023886757872424034,
+    "tilt": 0.4667954831443875,
+    "forces": [
+      0.25673212051086114,
+      0.0,
+      0.07912857182776496,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.039486176645903336,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005479616821983914,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.720167698987313,
+    "goal": 6.283185307179586,
+    "error": -1.5630176081922729,
+    "drift": 0.02390096410625776,
+    "tilt": 0.46561743405307127,
+    "forces": [
+      0.2536075989638321,
+      0.0,
+      0.0773269971482184,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03973718634114591,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00054758930941978,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.7200415659950705,
+    "goal": 6.283185307179586,
+    "error": -1.5631437411845157,
+    "drift": 0.023914035331096893,
+    "tilt": 0.46479916232834884,
+    "forces": [
+      0.24988116905318553,
+      0.0,
+      0.07295309922205026,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.03999137308260015,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005472996668247327,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.719559920292756,
+    "goal": 6.283185307179586,
+    "error": -1.5636253868868302,
+    "drift": 0.02391843235160101,
+    "tilt": 0.4639851673025779,
+    "forces": [
+      0.24878957327331114,
+      0.0,
+      0.07180735638336809,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04023252104752494,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005469363874986297,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.718582457053553,
+    "goal": 6.283185307179586,
+    "error": -1.5646028501260334,
+    "drift": 0.0239264829438867,
+    "tilt": 0.46337314188163126,
+    "forces": [
+      0.24653790145092636,
+      0.0,
+      0.07055332825920083,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.040459427396560166,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005464433519347837,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.717073335091003,
+    "goal": 6.283185307179586,
+    "error": -1.5661119720885832,
+    "drift": 0.023929878593172603,
+    "tilt": 0.4626645287216719,
+    "forces": [
+      0.22290432820941894,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04069096401301192,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000546452214048432,
+    "command_clip": 0.08333333333333333
+  },
+  {
+    "angle": 4.715953119073541,
+    "goal": 6.283185307179586,
+    "error": -1.5672321881060451,
+    "drift": 0.023961725307003766,
+    "tilt": 0.46240809884421646,
+    "forces": [
+      0.2410890876572846,
+      0.0,
+      0.06420028462826381,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04094003460983137,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005460284137981144,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.714292632256778,
+    "goal": 6.283185307179586,
+    "error": -1.5688926749228083,
+    "drift": 0.023981243174825306,
+    "tilt": 0.4623115333784299,
+    "forces": [
+      0.24584635703103183,
+      0.0,
+      0.07986330788697009,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04115326429568666,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005425150073476851,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.711262858210468,
+    "goal": 6.283185307179586,
+    "error": -1.5719224489691186,
+    "drift": 0.02397742006740314,
+    "tilt": 0.4619730634028561,
+    "forces": [
+      0.24775354148978776,
+      0.0,
+      0.07169328763429658,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04134866356327854,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005409068483031892,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.707573997412696,
+    "goal": 6.283185307179586,
+    "error": -1.5756113097668898,
+    "drift": 0.023984301763476126,
+    "tilt": 0.4623606469664577,
+    "forces": [
+      0.22131727595443199,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04155209243186274,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00044674557407548357,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.705157080529996,
+    "goal": 6.283185307179586,
+    "error": -1.5780282266495904,
+    "drift": 0.024067846302793426,
+    "tilt": 0.4639336715027576,
+    "forces": [
+      0.22453689414673123,
+      0.0,
+      0.03790220319356653,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04173461884241147,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.00046222982684825613,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.700784680935023,
+    "goal": 6.283185307179586,
+    "error": -1.5824006262445636,
+    "drift": 0.024090148433340036,
+    "tilt": 0.46443508690904906,
+    "forces": [
+      0.20326474491932187,
+      0.0,
+      0.05368728729022589,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.041868864387721,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005133058608093344,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.695835030370321,
+    "goal": 6.283185307179586,
+    "error": -1.587350276809265,
+    "drift": 0.02408869399391138,
+    "tilt": 0.4650225607681949,
+    "forces": [
+      0.29877065365865085,
+      0.0,
+      0.13931222852967287,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04204123930563069,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0004670934566021816,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.687401498567228,
+    "goal": 6.283185307179586,
+    "error": -1.5957838086123584,
+    "drift": 0.024027185566028654,
+    "tilt": 0.4641609410048084,
+    "forces": [
+      0.2203232491943953,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042067578365190386,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005421748630963403,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.678338752060412,
+    "goal": 6.283185307179586,
+    "error": -1.604846555119174,
+    "drift": 0.024019070248210816,
+    "tilt": 0.46405611554627096,
+    "forces": [
+      0.2528066156552913,
+      0.0,
+      0.07782708453365647,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042101577616188005,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005390181007078718,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.668908971528146,
+    "goal": 6.283185307179586,
+    "error": -1.6142763356514402,
+    "drift": 0.02401836124276888,
+    "tilt": 0.465173996807726,
+    "forces": [
+      0.23826807059072908,
+      0.0,
+      0.051966133209130794,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042127942595480986,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005404743900954741,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.659921425517651,
+    "goal": 6.283185307179586,
+    "error": -1.6232638816619351,
+    "drift": 0.02403407430625785,
+    "tilt": 0.46764819529655277,
+    "forces": [
+      0.23469056185184128,
+      0.0,
+      0.04694471073283773,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04215476205106826,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005403839587624969,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.651215538890587,
+    "goal": 6.283185307179586,
+    "error": -1.6319697682889993,
+    "drift": 0.02406207281356103,
+    "tilt": 0.47034740063388863,
+    "forces": [
+      0.21977401525426227,
+      0.0,
+      0.03505705170180913,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04223678759861706,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000538447253421138,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.642537531544596,
+    "goal": 6.283185307179586,
+    "error": -1.6406477756349904,
+    "drift": 0.024085340337096025,
+    "tilt": 0.47254930027669556,
+    "forces": [
+      0.22363602317718226,
+      0.0,
+      0.029643137985256626,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04231087098959878,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005332349829266271,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.632898360891302,
+    "goal": 6.283185307179586,
+    "error": -1.6502869462882845,
+    "drift": 0.024088049345173074,
+    "tilt": 0.47403477820811996,
+    "forces": [
+      0.2178139896900006,
+      0.0,
+      0.033614513598598066,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04233438863682333,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005332215772894311,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.623257916270921,
+    "goal": 6.283185307179586,
+    "error": -1.6599273909086651,
+    "drift": 0.024083666201634525,
+    "tilt": 0.4755080764376875,
+    "forces": [
+      0.2212616222424738,
+      0.0,
+      0.035087522647691494,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042329459270224704,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005308242206977201,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.61325940257829,
+    "goal": 6.283185307179586,
+    "error": -1.6699259046012962,
+    "drift": 0.024080598054838278,
+    "tilt": 0.4768761729104705,
+    "forces": [
+      0.21953891171078496,
+      0.0,
+      0.030283291302190866,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04231692465242813,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005292424310080963,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.6034040808973815,
+    "goal": 6.283185307179586,
+    "error": -1.6797812262822047,
+    "drift": 0.024078049307942648,
+    "tilt": 0.47856366849869575,
+    "forces": [
+      0.2160406797069675,
+      0.0,
+      0.026953030817849794,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04230794440620178,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005291170483975317,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.593387100848517,
+    "goal": 6.283185307179586,
+    "error": -1.6897982063310693,
+    "drift": 0.02407960777877506,
+    "tilt": 0.4805613057648545,
+    "forces": [
+      0.21646187025448166,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042313239204384914,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005298393468427249,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.583344351942104,
+    "goal": 6.283185307179586,
+    "error": -1.699840955237482,
+    "drift": 0.024097364609332345,
+    "tilt": 0.4827122692500651,
+    "forces": [
+      0.2037024521015855,
+      0.0,
+      0.017306466429323538,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04232676527433283,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005295748748094205,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.572185964953926,
+    "goal": 6.283185307179586,
+    "error": -1.7109993422256604,
+    "drift": 0.024102646703965752,
+    "tilt": 0.4843065316183911,
+    "forces": [
+      0.21450442461748961,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042339974593681724,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005297712562491354,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.560115966987855,
+    "goal": 6.283185307179586,
+    "error": -1.7230693401917314,
+    "drift": 0.02409734225785739,
+    "tilt": 0.48546032923505594,
+    "forces": [
+      0.2015470881576057,
+      0.0,
+      0.021505491409175577,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.042339030130292644,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000531045469833894,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.547293581515069,
+    "goal": 6.283185307179586,
+    "error": -1.7358917256645174,
+    "drift": 0.024094042663334012,
+    "tilt": 0.48659161246838817,
+    "forces": [
+      0.1980015483548766,
+      0.0,
+      0.015913400949734105,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04233281032955977,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005321654383788509,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.533674084689657,
+    "goal": 6.283185307179586,
+    "error": -1.7495112224899296,
+    "drift": 0.024084339567257553,
+    "tilt": 0.48775810112664303,
+    "forces": [
+      0.21521810092430427,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04230626389753635,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005285627479104586,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.519656119448665,
+    "goal": 6.283185307179586,
+    "error": -1.7635291877309216,
+    "drift": 0.024082147363245238,
+    "tilt": 0.48950980421737944,
+    "forces": [
+      0.21579830665133437,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04228775934283504,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.0005252305055459826,
+    "command_clip": 0.16666666666666666
+  },
+  {
+    "angle": 4.5052367184198765,
+    "goal": 6.283185307179586,
+    "error": -1.7779485887597097,
+    "drift": 0.024095364675837488,
+    "tilt": 0.4922644198711921,
+    "forces": [
+      0.21446164195054032,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "inactive_force": 0.0,
+    "opposing": -0.0,
+    "order": {
+      "min_matched_chain_gap_m": 0.02170898,
+      "tip_order_gap_m": 0.04227434558076746,
+      "projected_bone_crossing": false,
+      "passed": true
+    },
+    "posture": false,
+    "reverse": false,
+    "self_depth_m": 0.000528799372615388,
+    "command_clip": 0.16666666666666666
+  }
+]

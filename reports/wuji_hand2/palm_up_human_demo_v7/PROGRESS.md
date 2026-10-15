@@ -10,7 +10,9 @@
 | 360°/3 秒，历史最佳固定验证 | 第 3000 轮 | **24/24** | 无严格失败 | 截至第 6500 轮的最佳，平均角误差约 1.52° |
 | 360°/3 秒，历史最近固定验证 | 第 6500 轮 | **23/24** | 1 回合提前结束，转角进度和终点回夹失败 | 第一次阶段归档时的最近结果 |
 | 360°/3 秒，当前最佳固定验证 | 第 9000 轮 | **24/24** | 无严格失败 | 截至第 13000 轮的最佳，平均角误差约 0.55° |
-| 360°/3 秒，最近一次固定验证 | 第 13000 轮 | **23/24** | 1 回合提前结束，姿态/反弯和终点回夹失败 | 训练仍在进行；不覆盖第 9000 轮最佳结论 |
+| 360°/3 秒，历史最近固定验证 | 第 13000 轮 | **23/24** | 1 回合提前结束，姿态/反弯和终点回夹失败 | 2026-10-15 16:50 的阶段快照 |
+| 360°/3 秒，严重退化证据 | 第 33000 轮 | **9/24** | 13 回合提前结束，双指尖接触 9、姿态/反弯 8、自穿透 6 回合失败 | 不合格，不能作为成功演示或后续模仿目标 |
+| 360°/3 秒，最近一次固定验证 | 第 33500 轮 | **14/24** | 8 回合提前结束，相向夹持 9、终点回夹 9、自穿透 5 回合失败 | 不合格；最佳仍为第 9000 轮 |
 
 4 秒第 100 轮[独立评估视频](progress_20261015/turn_4s_iteration_100/rollout.mp4)、[逐回合指标](progress_20261015/turn_4s_iteration_100/metrics.json)、[接触记录](progress_20261015/turn_4s_iteration_100/contacts.json)和[模型权重](progress_20261015/turn_4s_iteration_100/model.pt)已固定归档。模型 SHA256 为 `37e03ee82085cbab8393b9b304a2ef4c297e7ada9db563ed54239547e2185017`。
 
@@ -39,5 +41,21 @@
 第 13000 轮是 2026-10-15 16:50（北京时间）归档时的**最近评估模型**：[视频](progress_20261015/turn_3s_latest_iteration_13000/rollout.mp4) · [逐回合指标及失败标记](progress_20261015/turn_3s_latest_iteration_13000/metrics.json) · [接触记录](progress_20261015/turn_3s_latest_iteration_13000/contacts.json) · [模型权重](progress_20261015/turn_3s_latest_iteration_13000/model.pt)。它为 23/24；模型 SHA256 为 `e16878bdbc36a0758ea4d7f5d221db1ffef6483238367638adb3ade3e483468e`。最近第 11500 轮曾降到 22/24，说明波动尚未完全消失。
 
 <video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_latest_iteration_13000/rollout.mp4"></video>
+
+截至 2026-10-16 02:52（北京时间），训练仍在 3 秒单圈课程，已用约 16.11/23 小时主训练预算。第 25500–33500 轮的 17 次固定验证平均约 17.82/24，通过数范围为 9–23，**没有一次达到 24/24**。训练继续并不改变已归档的第 9000 轮最佳权重；最终未见种子尚未评估。
+
+**第 33000 轮严重失败：** [视频](progress_20261015/turn_3s_failure_iteration_33000/rollout.mp4) · [逐回合失败门槛](progress_20261015/turn_3s_failure_iteration_33000/metrics.json) · [接触记录](progress_20261015/turn_3s_failure_iteration_33000/contacts.json) · [模型权重](progress_20261015/turn_3s_failure_iteration_33000/model.pt)。9/24 严格通过，模型 SHA256 为 `bb7cc95e97041f4d80c7c9479a88258c3db465839bd73c34a0c16c53588c915d`。
+
+<video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_failure_iteration_33000/rollout.mp4"></video>
+
+**第 33500 轮最近失败：** [视频](progress_20261015/turn_3s_latest_iteration_33500/rollout.mp4) · [逐回合失败门槛](progress_20261015/turn_3s_latest_iteration_33500/metrics.json) · [接触记录](progress_20261015/turn_3s_latest_iteration_33500/contacts.json) · [模型权重](progress_20261015/turn_3s_latest_iteration_33500/model.pt)。14/24 严格通过，模型 SHA256 为 `adc5d5b5bab34e19bc2766fdc4adbbc24e6e5a2ca99c5531d3282e421cdce33c`。
+
+<video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_latest_iteration_33500/rollout.mp4"></video>
+
+**第 9000 轮最佳模型的独立轻微水平扰动诊断：** 使用预留种子 `2026101502`、每 2 秒施加 0.1 秒水平外力、每轴最大 0.02 N，24 回合严格通过 **23/24**；唯一失败回合提前结束，并失去终点回夹。[视频](progress_20261015/turn_3s_best9000_push/rollout.mp4) · [逐回合指标](progress_20261015/turn_3s_best9000_push/metrics.json) · [接触记录](progress_20261015/turn_3s_best9000_push/contacts.json)。诊断对应的模型 SHA256 仍为 `98ad3e008ad1100e29550662acdb975eae4d4d062cdb1a91db7c51169904b9a4`；最终保留种子尚未使用。
+
+<video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_best9000_push/rollout.mp4"></video>
+
+退化分析和待确认的收尾方案见 [NEXT_STAGE_PLAN.md](NEXT_STAGE_PLAN.md)。
 
 视频为闭环策略的同步三视角；真人参考与训练前诊断见 [BASELINE.md](BASELINE.md)。严格物理通过率与人工动作相似性分开记录，后者仍**待审阅**。主训练配置不含 60 秒连续课程；须先完成 3 秒动作的人工审阅，再单独建立连续训练版本。最终未见种子只在选模结束后使用。
