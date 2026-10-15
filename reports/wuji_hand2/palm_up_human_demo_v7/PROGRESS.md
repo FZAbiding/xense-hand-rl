@@ -6,7 +6,7 @@
 | --- | ---: | ---: | --- | --- |
 | 360°/4 秒，目标后保持约 2 秒 | 第 100 轮 | **23/24** | 1 回合提前结束，并出现姿态/反弯与终点回夹失败 | 达到 ≥23/24，已进入 3.5 秒课程 |
 | 360°/3.5 秒，目标后保持约 2 秒 | 第 500 轮 | **24/24** | 无严格失败 | 已达到 ≥23/24，进入 3 秒课程 |
-| 360°/3 秒 | 尚未归档合格模型 | 待评估 | 待评估 | 训练中 |
+| 360°/3 秒，目标后保持约 2 秒 | 第 1000 轮 | **23/24** | 1 回合提前结束，伴随姿态/反弯、自穿透、相向夹持和终点回夹失败 | 达到 ≥23/24；继续训练，最终保留种子与人工审阅待完成 |
 
 4 秒第 100 轮[独立评估视频](progress_20261015/turn_4s_iteration_100/rollout.mp4)、[逐回合指标](progress_20261015/turn_4s_iteration_100/metrics.json)、[接触记录](progress_20261015/turn_4s_iteration_100/contacts.json)和[模型权重](progress_20261015/turn_4s_iteration_100/model.pt)已固定归档。模型 SHA256 为 `37e03ee82085cbab8393b9b304a2ef4c297e7ada9db563ed54239547e2185017`。
 
@@ -16,4 +16,8 @@
 
 <video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3p5s_iteration_500/rollout.mp4"></video>
 
-视频为闭环策略的同步三视角；真人参考与训练前诊断见 [BASELINE.md](BASELINE.md)。严格物理通过率与人工动作相似性分开记录，后者仍**待审阅**。3 秒单圈通过及人工审阅完成前，60 秒连续课程不会自动启动；最终未见种子只在选模结束后使用。
+3 秒第 1000 轮[独立评估视频](progress_20261015/turn_3s_iteration_1000/rollout.mp4)、[逐回合指标及失败标记](progress_20261015/turn_3s_iteration_1000/metrics.json)、[接触记录](progress_20261015/turn_3s_iteration_1000/contacts.json)和[模型权重](progress_20261015/turn_3s_iteration_1000/model.pt)已固定归档。24 回合平均实际转角约 355.45°、平均时长约 5.48/5.5 秒；平均值不替代上述逐回合严格门槛。模型 SHA256 为 `797c12fb8d09bb11ff4ad44b4e366c89de1a7c87464e590837cc80f9f6d2257f`。
+
+<video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_iteration_1000/rollout.mp4"></video>
+
+视频为闭环策略的同步三视角；真人参考与训练前诊断见 [BASELINE.md](BASELINE.md)。严格物理通过率与人工动作相似性分开记录，后者仍**待审阅**。主训练配置不含 60 秒连续课程；须先完成 3 秒动作的人工审阅，再单独建立连续训练版本。最终未见种子只在选模结束后使用。
