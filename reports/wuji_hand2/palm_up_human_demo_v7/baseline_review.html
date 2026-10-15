@@ -1,0 +1,45 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wuji v7 训练前基线与 v6b 最终失败</title>
+<style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
+</head><body><h1>Wuji v7 训练前基线与 v6b 最终失败</h1><p class="summary">v6b 最终 3 秒保留集 0/24；v7 所选 6 秒源权重在新未见种子 23/24、轻微外力组 24/24。均为 CPU 闭环物理指标，真人动作相似性待审阅；后续 v7 训练结果不在此页。</p><div class="grid">
+<article><h2>批准的真人参考 A</h2><p class="status reference">参考</p>
+<p>仅作动作参照；未进行三维接触或相位对齐。</p>
+<video src="baseline_20261015/human_A.mp4" controls preload="metadata" playsinline></video>
+<p><a href="baseline_20261015/human_A.mp4">视频文件</a></p>
+</article>
+<article><h2>v6b 最终 3 秒失败</h2><p class="status failed">失败</p>
+<p>最终保留种子 0/24；24/24 相向夹持及三次交接未达标。</p>
+<video src="baseline_20261015/v6b_final_failure/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="baseline_20261015/v6b_final_failure/rollout.mp4">视频文件</a></p>
+<p><a href="baseline_20261015/v6b_final_failure/metrics.json">原始指标</a></p>
+<p><a href="baseline_20261015/v6b_final_failure/frame_metrics.json">逐帧指标</a></p>
+<p><a href="baseline_20261015/v6b_final_failure/contacts.json">接触记录</a></p>
+<p><a href="baseline_20261015/v6b_final_failure/rollout.npz">原始轨迹</a></p>
+</article>
+<article><h2>v7 6 秒未见种子基线</h2><p class="status passed">通过指定检查</p>
+<p>同一拟热启动权重，新未见种子 23/24；唯一失败为交接次数不足。</p>
+<video src="baseline_20261015/v7_unseen/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="baseline_20261015/v7_unseen/rollout.mp4">视频文件</a></p>
+<p><a href="baseline_20261015/v7_unseen/metrics.json">原始指标</a></p>
+<p><a href="baseline_20261015/v7_unseen/frame_metrics.json">逐帧指标</a></p>
+<p><a href="baseline_20261015/v7_unseen/contacts.json">接触记录</a></p>
+<p><a href="baseline_20261015/v7_unseen/rollout.npz">原始轨迹</a></p>
+</article>
+<article><h2>v7 6 秒轻微外力诊断</h2><p class="status diagnostic">仅诊断</p>
+<p>另 24 个扰动回合 24/24；不与固定验证成功率合并。</p>
+<video src="baseline_20261015/v7_perturbed/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="baseline_20261015/v7_perturbed/rollout.mp4">视频文件</a></p>
+<p><a href="baseline_20261015/v7_perturbed/metrics.json">原始指标</a></p>
+<p><a href="baseline_20261015/v7_perturbed/frame_metrics.json">逐帧指标</a></p>
+<p><a href="baseline_20261015/v7_perturbed/contacts.json">接触记录</a></p>
+<p><a href="baseline_20261015/v7_perturbed/rollout.npz">原始轨迹</a></p>
+</article>
+</div>
+<h2>v7 六秒基线首帧：三视角与手指颜色</h2><img src="baseline_20261015/v7_unseen/rollout_frame_0000.png" alt="v7 六秒基线首帧：三视角与手指颜色" loading="lazy">
+<nav>
+<p><a href="BASELINE.md">阶段总结与视频下载</a></p>
+<p><a href="baseline_manifest.json">源文件与 SHA256</a></p>
+<p><a href="../palm_up_human_demo_v6b/snapshot_20261014_42500/fast6_validation/model.pt">拟热启动权重</a></p>
+<p><a href="../../../experiments/wuji_hand2/palm_up_human_demo_v7/PLAN.md">v7 训练计划</a></p>
+</nav></body></html>

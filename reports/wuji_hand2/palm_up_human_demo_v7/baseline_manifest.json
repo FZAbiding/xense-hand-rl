@@ -1,0 +1,123 @@
+{
+  "created_utc": "2026-10-15T01:42:03.248530+00:00",
+  "source_policy": "reports/wuji_hand2/palm_up_human_demo_v6b/snapshot_20261014_42500/fast6_validation/model.pt",
+  "source_policy_sha256": "c97c54d6fa62a83dbafa264098e1c924ce3c293996865d443320a6def1a7eaa010cb1",
+  "v7_baseline_adapter": "runs/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_adapted.pt",
+  "stage": "pretraining CPU diagnostics; v7 long training not represented by these videos",
+  "files": [
+    {
+      "path": "baseline_20261015/v7_unseen/metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_unseen/metrics.json",
+      "sha256": "2ff7149871f896d16225bff457884c19427c94f730590443fa95fc3a2d726a02",
+      "bytes": 31940
+    },
+    {
+      "path": "baseline_20261015/v7_unseen/frame_metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_unseen/frame_metrics.json",
+      "sha256": "b325a933eb9b772d0f57922379d5e52d8714952f57a6f0154711ab51f6f5e0b5",
+      "bytes": 220184
+    },
+    {
+      "path": "baseline_20261015/v7_unseen/contacts.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_unseen/contacts.json",
+      "sha256": "376a5f4d199b95b2ba0926f491a1051708f015ee55c0182ea02d8c948c58f2d2",
+      "bytes": 889489
+    },
+    {
+      "path": "baseline_20261015/v7_unseen/rollout.npz",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_unseen/rollout.npz",
+      "sha256": "94b674795f3ed7202dfd16fc2aef8b2af87034fc4f9df4204ffd008e6eb39a11",
+      "bytes": 55898
+    },
+    {
+      "path": "baseline_20261015/v7_unseen/rollout.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_unseen/rollout.mp4",
+      "sha256": "eff71e9a88d314ef7a9bb5459409de4539b88bbd335ba113ed920889ce529e0f",
+      "bytes": 2630314
+    },
+    {
+      "path": "baseline_20261015/v7_unseen/rollout_frame_0000.png",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_unseen/rollout_frame_0000.png",
+      "sha256": "97a27a506a7de8e43b0a3ca5e201143ae3948d3c6ab092aa8b0a3b1b8aee3e99",
+      "bytes": 138527
+    },
+    {
+      "path": "baseline_20261015/v7_perturbed/metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_perturbed/metrics.json",
+      "sha256": "d5143495c010f4a82318d7cc198d7d32332b0c40ed159d8c714825fd4f5c9aeb",
+      "bytes": 31843
+    },
+    {
+      "path": "baseline_20261015/v7_perturbed/frame_metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_perturbed/frame_metrics.json",
+      "sha256": "89456ce6d91e242be7366b4650c7ca399b26c66d37a72b5be95c16526e0259c0",
+      "bytes": 220455
+    },
+    {
+      "path": "baseline_20261015/v7_perturbed/contacts.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_perturbed/contacts.json",
+      "sha256": "1b9662aa41055fac546dfc50dee485fc98dc9e3782c8c65159838028d61fd243",
+      "bytes": 868712
+    },
+    {
+      "path": "baseline_20261015/v7_perturbed/rollout.npz",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_perturbed/rollout.npz",
+      "sha256": "e67dc2cfc47570f8da946f436b4e48710c8b5c49fbe4b40eee331e3dd75b71fa",
+      "bytes": 55776
+    },
+    {
+      "path": "baseline_20261015/v7_perturbed/rollout.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_perturbed/rollout.mp4",
+      "sha256": "9f8d276d47bb1c1adad22005e5752409312d2b6238bbca350f5c4772474f0dfe",
+      "bytes": 2663218
+    },
+    {
+      "path": "baseline_20261015/v7_perturbed/rollout_frame_0000.png",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/baseline_6s_regrip_perturbed/rollout_frame_0000.png",
+      "sha256": "b27a6e0076d01f6c2ff877ef84a5fdf8e807594e52fd87a81cd0182b5282c973",
+      "bytes": 137516
+    },
+    {
+      "path": "baseline_20261015/v6b_final_failure/metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/holdout_0047173/metrics.json",
+      "sha256": "acfbc691ecad5f06a25825ea464d12c562c02fa24cb226ecfcd64d5ddf6219d4",
+      "bytes": 31534
+    },
+    {
+      "path": "baseline_20261015/v6b_final_failure/frame_metrics.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/holdout_0047173/frame_metrics.json",
+      "sha256": "46f827a8880fa0ba1c739866bed675fa710d5db2173a3282048ed6bd037a6625",
+      "bytes": 86136
+    },
+    {
+      "path": "baseline_20261015/v6b_final_failure/contacts.json",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/holdout_0047173/contacts.json",
+      "sha256": "43761292a9a7dcb469ec02179b1793260e9401fdd17d9f93903b482c5a68fe13",
+      "bytes": 337986
+    },
+    {
+      "path": "baseline_20261015/v6b_final_failure/rollout.npz",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/holdout_0047173/rollout.npz",
+      "sha256": "d1b8760578b424a78eb04c8ed631cb66f824bbd40c1aa705615e2057f74e9a47",
+      "bytes": 25260
+    },
+    {
+      "path": "baseline_20261015/v6b_final_failure/rollout.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/holdout_0047173/rollout.mp4",
+      "sha256": "7542bddbce4f01afe4b657ffe075cf01bfc283486c18f0124eefc60ef1adc07d",
+      "bytes": 1141872
+    },
+    {
+      "path": "baseline_20261015/v6b_final_failure/rollout_frame_0000.png",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v6b/long_training_20261014/holdout_0047173/rollout_frame_0000.png",
+      "sha256": "d93d7263069f0f772edd79a8cb37d547a9e7c6979ba8c81bd1ad4e5300c25684",
+      "bytes": 137901
+    },
+    {
+      "path": "baseline_20261015/human_A.mp4",
+      "source": "artifacts/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/human_A.mp4",
+      "sha256": "5ffe284d73e0a07d24beff5b8b3d955cfcb8f2b0a38cd829cf498be973ec720a",
+      "bytes": 437877
+    }
+  ]
+}

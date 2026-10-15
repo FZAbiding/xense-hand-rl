@@ -1,0 +1,93 @@
+{
+  "experiment_id": "wuji_hand2_v7_pilot_combined_20261015",
+  "runs": "runs/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015",
+  "artifacts": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015",
+  "assets": "assets/wuji_hand2_palm_up_human_demo_v7_long",
+  "seed": 2026101500,
+  "wall_hours": 24,
+  "max_iterations": 250000,
+  "num_envs": 1024,
+  "horizon": 32,
+  "lr": 0.00015,
+  "target_kl": 0.015,
+  "reward_scale": 0.2,
+  "max_policy_std": 0.3,
+  "save_every": 100,
+  "evaluate_every": 500,
+  "first_evaluation": 100,
+  "validation_episodes": 24,
+  "validation_seed": 2026101501,
+  "holdout_seed": 2026101503,
+  "checkpoint_keep_recent": 4,
+  "checkpoint_keep_stride": 2000,
+  "max_restarts": 12,
+  "max_consecutive_failed_restarts": 3,
+  "levels": [
+    {
+      "name": "turn_360_6s",
+      "angle_deg": 360,
+      "duration": 6,
+      "episode_seconds": 8.5
+    },
+    {
+      "name": "turn_360_4.5s",
+      "angle_deg": 360,
+      "duration": 4.5,
+      "episode_seconds": 7.0
+    },
+    {
+      "name": "turn_360_4s",
+      "angle_deg": 360,
+      "duration": 4,
+      "episode_seconds": 6.5
+    },
+    {
+      "name": "turn_360_3.5s",
+      "angle_deg": 360,
+      "duration": 3.5,
+      "episode_seconds": 6.0
+    },
+    {
+      "name": "turn_360_3s",
+      "angle_deg": 360,
+      "duration": 3,
+      "episode_seconds": 5.5
+    },
+    {
+      "name": "continuous",
+      "angle_deg": 360,
+      "duration": 3,
+      "episode_seconds": 60,
+      "continuous": true
+    }
+  ],
+  "gates": {
+    "success_fraction_min": 0.95,
+    "order_violation_frames": 0,
+    "reverse_bending_frames": 0,
+    "non_tip_fraction_max": 0.05,
+    "inactive_fraction_max": 0.01,
+    "opposing_fraction_min": 0.9,
+    "two_tip_fraction_min": 0.95,
+    "max_drift_m": 0.025,
+    "mae_deg_max": 10,
+    "rotation_progress_min": 0.9,
+    "max_active_self_depth_m": 0.0005
+  },
+  "authorization": "User confirmed the v7 plan after reviewing the v6b stage report; run only after baseline verification",
+  "notes": "V7 isolated warm start from SHA256 c97c... v6b 6-second fixed-validation model; stage gate 23/24; contact and recapture corrections.",
+  "init_checkpoint": "reports/wuji_hand2/palm_up_human_demo_v6b/snapshot_20261014_42500/fast6_validation/model.pt",
+  "starting_level": 0,
+  "initial_policy_std": 0.09,
+  "min_policy_std": 0.07,
+  "source_run": "wuji_hand2_v6b_long_20261014",
+  "active_training_hours": 0.3333333333333333,
+  "reward_variant": "combined",
+  "curriculum_mode": "progressive",
+  "grip_gap_allow_steps": 3,
+  "grip_gap_fail_steps": 12,
+  "pilot_minutes": 20,
+  "perturbation_seed": 2026101502,
+  "final_holdout_enabled": false,
+  "pilot_name": "combined"
+}

@@ -1,0 +1,19 @@
+{
+  "version": "v7_long",
+  "source_version": "v6b_long",
+  "source_assets": {
+    "scene.xml": {
+      "path": "assets/wuji_hand2_palm_up_human_demo_v6b_long/scene.xml",
+      "sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb"
+    },
+    "grasp_seed_bank.npz": {
+      "path": "assets/wuji_hand2_palm_up_human_demo_v6b_long/grasp_seed_bank.npz",
+      "sha256": "bb7dcb800c98100cfe82615c5be2e8ba4c45c50724dfc76754438d5993a276b4"
+    }
+  },
+  "copies_identical": {
+    "scene.xml": true,
+    "grasp_seed_bank.npz": true
+  },
+  "purpose": "Same physical scene and initialization bank; isolated v7 training"
+}
