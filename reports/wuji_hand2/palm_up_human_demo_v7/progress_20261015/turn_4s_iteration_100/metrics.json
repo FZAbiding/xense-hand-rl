@@ -1,0 +1,1277 @@
+{
+  "iteration": 100,
+  "level": 2,
+  "task": {
+    "name": "turn_360_4s",
+    "angle_deg": 360,
+    "duration": 4,
+    "episode_seconds": 6.5
+  },
+  "seed": 2026101501,
+  "holdout": false,
+  "diagnostic_push": {
+    "enabled": false,
+    "each_axis_max_n": 0.02,
+    "pulse_seconds": 0.1,
+    "period_seconds": 2.0
+  },
+  "checkpoint_sha256": "37e03ee82085cbab8393b9b304a2ef4c297e7ada9db563ed54239547e2185017",
+  "success_fraction": 0.9583333333333334,
+  "episodes": [
+    {
+      "episode": 0,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.5673825316367,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.768232016741058,
+      "rotation_progress": 0.9849093959212131,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.01978476685164871,
+        "angle_mae_deg": 4.768232016741058,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9807692307692307,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9807692307692307,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 22.90886135418541,
+        "rotation_progress": 0.9849093959212131,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 0.9875,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 1,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.65354894810963,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.781318637709829,
+      "rotation_progress": 0.9851487470780823,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.0185380531169928,
+        "angle_mae_deg": 4.781318637709829,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 4.41765653231878e-05,
+        "two_tip_fraction": 0.9846153846153847,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9692307692307692,
+        "command_clip_fraction": 0.001282051282051282,
+        "middle_pip_excursion_deg": 24.73498608470341,
+        "rotation_progress": 0.9851487470780823,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 2,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.5504224896769,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.874091461886766,
+      "rotation_progress": 0.984862284693547,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.01812170771648783,
+        "angle_mae_deg": 4.874091461886766,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 3.420258410957092e-05,
+        "two_tip_fraction": 0.9961538461538462,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9923076923076923,
+        "command_clip_fraction": 0.001282051282051282,
+        "middle_pip_excursion_deg": 25.831774947957562,
+        "rotation_progress": 0.984862284693547,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 3,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.48602030424627,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.773718338960816,
+      "rotation_progress": 0.9846833897340174,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.018967010551872228,
+        "angle_mae_deg": 4.773718338960816,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9807692307692307,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9730769230769231,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 24.853672268722747,
+        "rotation_progress": 0.9846833897340174,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 0.9875,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 4,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.7077851396387,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.847905178796571,
+      "rotation_progress": 0.9852994031656631,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.019151238508319013,
+        "angle_mae_deg": 4.847905178796571,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 6.831831566093275e-06,
+        "two_tip_fraction": 0.9769230769230769,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9730769230769231,
+        "command_clip_fraction": 0.001282051282051282,
+        "middle_pip_excursion_deg": 23.6446117272841,
+        "rotation_progress": 0.9852994031656631,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 0.9875,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 5,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.70332250212863,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.917890868203944,
+      "rotation_progress": 0.9852870069503573,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0038461538461538464,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.02187226712419464,
+        "angle_mae_deg": 4.917890868203944,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 1.425380345262955e-05,
+        "two_tip_fraction": 0.9846153846153847,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0038461538461538464,
+        "opposing_fraction": 0.9730769230769231,
+        "command_clip_fraction": 0.004487179487179487,
+        "middle_pip_excursion_deg": 21.166706724258074,
+        "rotation_progress": 0.9852870069503573,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 6,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.5410434823403,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.90399038055598,
+      "rotation_progress": 0.9848362318953897,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.01942685522627691,
+        "angle_mae_deg": 4.90399038055598,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 2.4437396705594108e-05,
+        "two_tip_fraction": 0.9846153846153847,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9846153846153847,
+        "command_clip_fraction": 0.007692307692307691,
+        "middle_pip_excursion_deg": 24.41158455963342,
+        "rotation_progress": 0.9848362318953897,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 7,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.4159329596073,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.950693994635093,
+      "rotation_progress": 0.9844887026655758,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0038461538461538464,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "contact_handovers": 5,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.02127341135571128,
+        "angle_mae_deg": 4.950693994635093,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 3.6051180704229e-05,
+        "two_tip_fraction": 0.9884615384615385,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0038461538461538464,
+        "opposing_fraction": 0.9884615384615385,
+        "command_clip_fraction": 0.011858974358974362,
+        "middle_pip_excursion_deg": 22.977560315676403,
+        "rotation_progress": 0.9844887026655758,
+        "contact_handovers": 5,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 8,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.7046171979741,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.889085515306633,
+      "rotation_progress": 0.9852906033277058,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.019780813185548075,
+        "angle_mae_deg": 4.889085515306633,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 2.8343679482550337e-05,
+        "two_tip_fraction": 0.9730769230769231,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9730769230769231,
+        "command_clip_fraction": 0.0016025641025641025,
+        "middle_pip_excursion_deg": 23.17783276304013,
+        "rotation_progress": 0.9852906033277058,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 0.9875,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 9,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.563606562123,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.908434364702753,
+      "rotation_progress": 0.9848989071170084,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.01978620929082088,
+        "angle_mae_deg": 4.908434364702753,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 3.8787593667140864e-05,
+        "two_tip_fraction": 0.9807692307692307,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9730769230769231,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 25.290857920584266,
+        "rotation_progress": 0.9848989071170084,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 10,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.5513954643011,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.800695711683742,
+      "rotation_progress": 0.9848649874008364,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.018647889901626503,
+        "angle_mae_deg": 4.800695711683742,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 2.2675500630554467e-05,
+        "two_tip_fraction": 0.9846153846153847,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9807692307692307,
+        "command_clip_fraction": 0.0009615384615384616,
+        "middle_pip_excursion_deg": 24.952962466872947,
+        "rotation_progress": 0.9848649874008364,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 11,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.2215630534869,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.796661654453491,
+      "rotation_progress": 0.9839487862596857,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.01975060516775746,
+        "angle_mae_deg": 4.796661654453491,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9884615384615385,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9884615384615385,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 24.309353564111884,
+        "rotation_progress": 0.9839487862596857,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 12,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.5573753925324,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.717610468339576,
+      "rotation_progress": 0.9848815983125899,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.018683550429943675,
+        "angle_mae_deg": 4.717610468339576,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9961538461538462,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9923076923076923,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 24.349756052137906,
+        "rotation_progress": 0.9848815983125899,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 13,
+      "seconds": 4.425,
+      "actual_angle_deg": 345.05913424909636,
+      "goal_angle_deg": 353.24999999999994,
+      "mae_deg": 4.823116265370581,
+      "rotation_progress": 0.9768128358077747,
+      "strict_passed": false,
+      "order_violation_frames": 1,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": false,
+        "max_drift_m": 0.020879225334977505,
+        "angle_mae_deg": 4.823116265370581,
+        "posture_or_reverse": true,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9774011299435028,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9661016949152542,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 21.675579503640503,
+        "rotation_progress": 0.9768128358077747,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": null,
+        "terminal_regrip_final": false
+      },
+      "failed_gates": [
+        "full_duration",
+        "posture_or_reverse",
+        "terminal_regrip_fraction",
+        "terminal_regrip_final"
+      ]
+    },
+    {
+      "episode": 14,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.51959198501515,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.918268947371387,
+      "rotation_progress": 0.9847766444028199,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.019367008747932204,
+        "angle_mae_deg": 4.918268947371387,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 2.5709182213232445e-05,
+        "two_tip_fraction": 0.9692307692307692,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9653846153846154,
+        "command_clip_fraction": 0.007692307692307691,
+        "middle_pip_excursion_deg": 22.311917027313836,
+        "rotation_progress": 0.9847766444028199,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 0.9875,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 15,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.4443510206149,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 5.020900735075012,
+      "rotation_progress": 0.9845676417239302,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.020266046608614974,
+        "angle_mae_deg": 5.020900735075012,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 2.784073634261575e-05,
+        "two_tip_fraction": 0.9807692307692307,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9769230769230769,
+        "command_clip_fraction": 0.007371794871794871,
+        "middle_pip_excursion_deg": 22.71132579511273,
+        "rotation_progress": 0.9845676417239302,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 16,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.68197684137976,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.876480403931934,
+      "rotation_progress": 0.9852277134482771,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.017499188893883796,
+        "angle_mae_deg": 4.876480403931934,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 4.266151759591596e-05,
+        "two_tip_fraction": 0.9807692307692307,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9692307692307692,
+        "command_clip_fraction": 0.0003205128205128205,
+        "middle_pip_excursion_deg": 25.64365933201666,
+        "rotation_progress": 0.9852277134482771,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 0.9875,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 17,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.688649883591,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.835348623565841,
+      "rotation_progress": 0.9852462496766416,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.019749468869765984,
+        "angle_mae_deg": 4.835348623565841,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 4.766248347768967e-05,
+        "two_tip_fraction": 0.9692307692307692,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9615384615384616,
+        "command_clip_fraction": 0.0009615384615384616,
+        "middle_pip_excursion_deg": 26.020386376274438,
+        "rotation_progress": 0.9852462496766416,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 18,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.4713691691945,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.763198931839187,
+      "rotation_progress": 0.9846426921366513,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.01913870758400604,
+        "angle_mae_deg": 4.763198931839187,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9923076923076923,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9923076923076923,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 24.32310615383773,
+        "rotation_progress": 0.9846426921366513,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 19,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.0569149880418,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.954088904306053,
+      "rotation_progress": 0.9834914305223383,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.019682227732512294,
+        "angle_mae_deg": 4.954088904306053,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9846153846153847,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9846153846153847,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 23.56144237017308,
+        "rotation_progress": 0.9834914305223383,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 20,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.4359874491695,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.774026266945555,
+      "rotation_progress": 0.9845444095810264,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 3,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.019061650484813796,
+        "angle_mae_deg": 4.774026266945555,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 0.0,
+        "two_tip_fraction": 0.9923076923076923,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9884615384615385,
+        "command_clip_fraction": 0.0,
+        "middle_pip_excursion_deg": 22.150463120544376,
+        "rotation_progress": 0.9845444095810264,
+        "contact_handovers": 3,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 21,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.6928316021317,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.809331261655117,
+      "rotation_progress": 0.985257865561477,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.0201758264203987,
+        "angle_mae_deg": 4.809331261655117,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 1.2654837992449059e-05,
+        "two_tip_fraction": 0.9884615384615385,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9884615384615385,
+        "command_clip_fraction": 0.005128205128205128,
+        "middle_pip_excursion_deg": 23.183838336421996,
+        "rotation_progress": 0.985257865561477,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 0.9875,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 22,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.4251079037552,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.889812719667631,
+      "rotation_progress": 0.9845141886215422,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "contact_handovers": 4,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.020365499793440392,
+        "angle_mae_deg": 4.889812719667631,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 1.1152660055914915e-05,
+        "two_tip_fraction": 0.9884615384615385,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9846153846153847,
+        "command_clip_fraction": 0.007371794871794871,
+        "middle_pip_excursion_deg": 21.6154547242411,
+        "rotation_progress": 0.9845141886215422,
+        "contact_handovers": 4,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    },
+    {
+      "episode": 23,
+      "seconds": 6.5,
+      "actual_angle_deg": 354.40241808224135,
+      "goal_angle_deg": 360.0,
+      "mae_deg": 4.972017140154457,
+      "rotation_progress": 0.9844511613395593,
+      "strict_passed": true,
+      "order_violation_frames": 0,
+      "inactive_fraction": 0.0,
+      "non_tip_fraction": 0.0,
+      "stable_contact_pairs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "contact_handovers": 5,
+      "gates": {
+        "full_duration": true,
+        "max_drift_m": 0.02146221440325285,
+        "angle_mae_deg": 4.972017140154457,
+        "posture_or_reverse": false,
+        "max_self_depth_m": 3.759826363006892e-05,
+        "two_tip_fraction": 0.9807692307692307,
+        "non_tip_fraction": 0.0,
+        "inactive_fraction": 0.0,
+        "opposing_fraction": 0.9807692307692307,
+        "command_clip_fraction": 0.01057692307692308,
+        "middle_pip_excursion_deg": 22.976201571431492,
+        "rotation_progress": 0.9844511613395593,
+        "contact_handovers": 5,
+        "terminal_regrip_fraction": 1.0,
+        "terminal_regrip_final": true
+      },
+      "failed_gates": []
+    }
+  ],
+  "backend": "CPU MuJoCo",
+  "full_task_achieved": false
+}

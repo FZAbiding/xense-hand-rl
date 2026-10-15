@@ -1,0 +1,109 @@
+{
+  "pilots": {
+    "course_only:latest.pt": {
+      "pilot": "course_only",
+      "checkpoint": "runs/wuji_hand2/palm_up_human_demo_v7/pilot_course_only_20261015/latest.pt",
+      "checkpoint_sha256": "f445d5af0d9a1aa224d1d255e9354b10fe5753c34efb3e01aa4b5a31c2dcfb26",
+      "quality": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_course_only_20261015/cross_level_00/metrics.json",
+      "speed": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_course_only_20261015/cross_level_01/metrics.json",
+      "quality_score": [
+        19,
+        20,
+        20,
+        7.972916666666666
+      ],
+      "speed_score": [
+        24,
+        24,
+        24,
+        7.0
+      ]
+    },
+    "course_only:checkpoint_0000500.pt": {
+      "pilot": "course_only",
+      "checkpoint": "runs/wuji_hand2/palm_up_human_demo_v7/pilot_course_only_20261015/checkpoint_0000500.pt",
+      "checkpoint_sha256": "ecc7511ed9fd7733dd151f869aa05823d0eb7a4aeb2033ae6b5216b56ab7b00f",
+      "quality": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_course_only_20261015/cross_level_00_checkpoint_0000500/metrics.json",
+      "speed": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_course_only_20261015/cross_level_01_checkpoint_0000500/metrics.json",
+      "quality_score": [
+        23,
+        23,
+        23,
+        8.317708333333334
+      ],
+      "speed_score": [
+        24,
+        24,
+        24,
+        7.0
+      ]
+    },
+    "contact_only:latest.pt": {
+      "pilot": "contact_only",
+      "checkpoint": "runs/wuji_hand2/palm_up_human_demo_v7/pilot_contact_only_20261015/latest.pt",
+      "checkpoint_sha256": "771cb528371603178379bca768667cd1d1750c8892b078dd1563556a03e577f1",
+      "quality": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_contact_only_20261015/cross_level_00/metrics.json",
+      "speed": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_contact_only_20261015/cross_level_01/metrics.json",
+      "quality_score": [
+        23,
+        23,
+        24,
+        8.5
+      ],
+      "speed_score": [
+        22,
+        23,
+        22,
+        6.732291666666666
+      ]
+    },
+    "combined:latest.pt": {
+      "pilot": "combined",
+      "checkpoint": "runs/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015/latest.pt",
+      "checkpoint_sha256": "835224a969115a805041a8bb83dcdb5d5ea6e7f49712b8829a4c04ac7211130a",
+      "quality": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015/cross_level_00/metrics.json",
+      "speed": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015/cross_level_01/metrics.json",
+      "quality_score": [
+        24,
+        24,
+        24,
+        8.5
+      ],
+      "speed_score": [
+        8,
+        15,
+        10,
+        6.325
+      ]
+    },
+    "combined:checkpoint_0001000.pt": {
+      "pilot": "combined",
+      "checkpoint": "runs/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015/checkpoint_0001000.pt",
+      "checkpoint_sha256": "a14b411969096b197afcd6509c931d3bffe4cada773e8a691c63ed9be4051f9c",
+      "quality": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015/cross_level_00_checkpoint_0001000/metrics.json",
+      "speed": "artifacts/wuji_hand2/palm_up_human_demo_v7/pilot_combined_20261015/cross_level_01_checkpoint_0001000/metrics.json",
+      "quality_score": [
+        23,
+        24,
+        23,
+        8.414583333333333
+      ],
+      "speed_score": [
+        11,
+        23,
+        13,
+        6.236458333333334
+      ]
+    }
+  },
+  "eligible": [
+    "course_only:checkpoint_0000500.pt"
+  ],
+  "winner": "course_only:checkpoint_0000500.pt",
+  "main_init_checkpoint": "runs/wuji_hand2/palm_up_human_demo_v7/pilot_course_only_20261015/checkpoint_0000500.pt",
+  "main_init_sha256": "ecc7511ed9fd7733dd151f869aa05823d0eb7a4aeb2033ae6b5216b56ab7b00f",
+  "main_starting_level": 2,
+  "main_reward_variant": "course_only",
+  "pilot_active_training_seconds": 3602.5154299736023,
+  "main_active_training_hours": 22.999301269451777
+}

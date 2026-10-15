@@ -49,21 +49,22 @@ def pilot_artifacts(name):
     return ROOT / read_json(pilot_config(name))["artifacts"]
 
 
-def evaluate_at(name, level):
+def evaluate_at(name, level, checkpoint_name="latest.pt"):
     run = pilot_run(name)
     art = pilot_artifacts(name)
-    output_name = f"cross_level_{level:02d}"
+    suffix = "" if checkpoint_name == "latest.pt" else f"_{Path(checkpoint_name).stem}"
+    output_name = f"cross_level_{level:02d}{suffix}"
     evidence = art / output_name / "metrics.json"
     if evidence.exists():
         return read_json(evidence)
-    latest = run / "latest.pt"
-    checkpoint = torch.load(latest, map_location="cpu", weights_only=False)
-    source_sha = hashlib.sha256(latest.read_bytes()).hexdigest()
+    source = run / checkpoint_name
+    checkpoint = torch.load(source, map_location="cpu", weights_only=False)
+    source_sha = hashlib.sha256(source.read_bytes()).hexdigest()
     checkpoint["curriculum_level"] = level
-    candidate = run / f"cross_level_{level:02d}.pt"
+    candidate = run / f"{output_name}.pt"
     torch.save(checkpoint, candidate)
-    write_json(run / f"cross_level_{level:02d}_provenance.json", {
-        "source": str(latest.relative_to(ROOT)),
+    write_json(run / f"{output_name}_provenance.json", {
+        "source": str(source.relative_to(ROOT)),
         "source_sha256": source_sha,
         "evaluation_checkpoint": str(candidate.relative_to(ROOT)),
         "evaluation_checkpoint_sha256": hashlib.sha256(candidate.read_bytes()).hexdigest(),
@@ -74,7 +75,7 @@ def evaluate_at(name, level):
         sys.executable, "-m", f"{MODULE}.long_training.evaluate",
         "--checkpoint", str(candidate), "--seed", "2026101501",
         "--output-name", output_name, "--no-feedback",
-    ], f"evaluate_{name}_level_{level}")
+    ], f"evaluate_{name}_{output_name}")
     return read_json(evidence)
 
 
@@ -89,35 +90,59 @@ def gate_score(metrics):
     return (strict, contact, duration, mean_seconds)
 
 
+def candidate_checkpoints(name):
+    run = pilot_run(name)
+    art = pilot_artifacts(name)
+    names = ["latest.pt"]
+    for evidence in sorted(art.glob("validation_*/metrics.json")):
+        metrics = read_json(evidence)
+        if gate_score(metrics)[0] < 23:
+            continue
+        checkpoint_name = f"checkpoint_{metrics['iteration']:07d}.pt"
+        if (run / checkpoint_name).exists() and checkpoint_name not in names:
+            names.append(checkpoint_name)
+    return names
+
+
 def select_main_config():
     main_path = CONFIG_DIR / "config.json"
     base = read_json(main_path)
     records = {}
     for name in PILOTS:
-        quality = evaluate_at(name, 0)
-        speed = evaluate_at(name, 1)
-        records[name] = {
-            "quality": str((pilot_artifacts(name) / "cross_level_00/metrics.json").relative_to(ROOT)),
-            "speed": str((pilot_artifacts(name) / "cross_level_01/metrics.json").relative_to(ROOT)),
-            "quality_score": gate_score(quality),
-            "speed_score": gate_score(speed),
-            "latest_checkpoint": str((pilot_run(name) / "latest.pt").relative_to(ROOT)),
-        }
-    eligible = [n for n in PILOTS if records[n]["quality_score"][0] >= 23]
-    winner = max(eligible, key=lambda n: records[n]["speed_score"]) if eligible else None
+        for checkpoint_name in candidate_checkpoints(name):
+            quality = evaluate_at(name, 0, checkpoint_name)
+            speed = evaluate_at(name, 1, checkpoint_name)
+            suffix = "" if checkpoint_name == "latest.pt" else f"_{Path(checkpoint_name).stem}"
+            key = f"{name}:{checkpoint_name}"
+            source = pilot_run(name) / checkpoint_name
+            records[key] = {
+                "pilot": name,
+                "checkpoint": str(source.relative_to(ROOT)),
+                "checkpoint_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+                "quality": str((pilot_artifacts(name) / f"cross_level_00{suffix}/metrics.json").relative_to(ROOT)),
+                "speed": str((pilot_artifacts(name) / f"cross_level_01{suffix}/metrics.json").relative_to(ROOT)),
+                "quality_score": gate_score(quality),
+                "speed_score": gate_score(speed),
+            }
+    eligible = [key for key, record in records.items()
+                if record["quality_score"][0] >= 23 and record["speed_score"][0] >= 23]
+    winner = max(eligible, key=lambda key: (records[key]["speed_score"], records[key]["quality_score"])) if eligible else None
     if winner is None:
-        base["starting_level"] = 0
-        base["selection_note"] = "All pilots regressed on 6-second validation; restart from archived v6b source."
-    else:
-        base["init_checkpoint"] = records[winner]["latest_checkpoint"]
-        base["starting_level"] = 2 if records[winner]["speed_score"][0] >= 23 else 1
-        base["reward_variant"] = "course_only" if winner == "course_only" else "combined"
-        base["curriculum_mode"] = "progressive"
-        base["selection_note"] = f"Selected {winner} after same-seed 6-second and 4.5-second CPU comparison."
+        write_json(PIPELINE_DIR / "selection.json", {"pilots": records, "eligible": [], "winner": None,
+                    "decision": "No checkpoint passed both 6-second and 4.5-second CPU gates; diagnose before long training."})
+        raise RuntimeError("No pilot checkpoint passed both strict stage gates")
+    selected = records[winner]
+    base["init_checkpoint"] = selected["checkpoint"]
+    base["starting_level"] = 2
+    pilot_settings = read_json(pilot_config(selected["pilot"]))
+    base["reward_variant"] = pilot_settings["reward_variant"]
+    base["curriculum_mode"] = pilot_settings["curriculum_mode"]
+    base["selection_note"] = f"Selected {winner} after same-seed 6-second and 4.5-second CPU comparison."
     active = sum(float(read_json(pilot_run(n) / "training_status.json")["active_training_seconds"]) for n in PILOTS)
     base["active_training_hours"] = (24 * 3600 - active) / 3600
     base["pilot_active_training_seconds"] = active
-    base["selected_pilot"] = winner
+    base["selected_pilot"] = selected["pilot"]
+    base["selected_candidate"] = winner
     base["selected_source_sha256"] = hashlib.sha256((ROOT / base["init_checkpoint"]).read_bytes()).hexdigest()
     write_json(main_path, base)
     write_json(PIPELINE_DIR / "selection.json", {
