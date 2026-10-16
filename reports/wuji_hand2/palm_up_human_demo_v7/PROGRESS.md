@@ -79,6 +79,12 @@
 
 <video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_final_holdout_iteration_51074/rollout.mp4"></video>
 
-第 9000 轮预选最佳权重尚未运行最终未见集；它与最后权重的结果必须分开报告。真人 Triangle Pass 动作一致性仍**待人工审阅**。下一阶段的候选验收和任何新版本训练均待用户确认，详见 [NEXT_STAGE_PLAN.md](NEXT_STAGE_PLAN.md)。
+## 阶段 A：预选模型最终未见集与接触位置复核
+
+用户确认后，第 9000 轮预选权重在同一最终未见种子 `2026101503` 上按**原 v7 严格指标 24/24**，全部回合运行满 5.5 秒。对应[视频](stage_a_20261016/holdout_best9000/rollout.mp4)、[逐回合指标](stage_a_20261016/holdout_best9000/metrics.json)、[接触记录](stage_a_20261016/holdout_best9000/contacts.json)和[原始轨迹](stage_a_20261016/holdout_best9000/rollout.npz)已归档，精确权重仍是上述 SHA256 `98ad3e008ad1100e29550662acdb975eae4d4d062cdb1a91db7c51169904b9a4`。最后权重的 23/24 终评仍作为单独对照，未用于选模。
+
+<video controls preload="metadata" playsinline width="960" src="stage_a_20261016/holdout_best9000/rollout.mp4"></video>
+
+**接触部位问题：** 原训练和评估将手指末节本体与指尖传感区域合并计入“指尖”力。精确重放全部 24 回合后，只计指尖传感区域的双接触帧比例每回合仅 **75.0%–78.2%**；若沿用 95% 门槛，则 **0/24**。末节本体承力超过 0.05 N 的帧比例为每回合 24.5%–30.0%。详见[逐回合审计、全部接触点及离线真人并排审阅页](stage_a_20261016/REVIEW.md)。原 24/24 只说明**原 v7 门槛通过**，不能证明真实指腹接触或自然 Triangle Pass 已通过。真人动作一致性仍**待用户审阅**；60 秒连续训练尚未启动。[下一阶段计划](NEXT_STAGE_PLAN.md)已按此结果修订。
 
 视频为闭环策略的同步三视角；真人参考与训练前诊断见 [BASELINE.md](BASELINE.md)。严格物理通过率与人工动作相似性分开记录，后者仍**待审阅**。主训练配置不含 60 秒连续课程；须先完成 3 秒动作的人工审阅，再单独建立连续训练版本。最终未见种子只在选模结束后使用。

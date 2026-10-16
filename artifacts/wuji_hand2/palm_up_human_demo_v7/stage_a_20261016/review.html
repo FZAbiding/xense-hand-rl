@@ -1,0 +1,44 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wuji v7 阶段 A：3 秒整圈候选与真人参考</title>
+<style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
+</head><body><h1>Wuji v7 阶段 A：3 秒整圈候选与真人参考</h1><p class="summary">第 9000 轮预选模型在原 v7 最终未见集为 24/24；独立接触审计发现仅按指尖传感区域计数时双接触只有 75.0%–78.2%，因此指腹位置与动作自然性仍待审阅。未启动 60 秒训练。</p><div class="grid">
+<article><h2>真人 Triangle Pass 参考 A</h2><p class="status reference">参考</p>
+<p>已批准的 3 秒单视角参考。与机器人视频未做时间或相位对齐；遮挡处接触未知。</p>
+<video src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/baseline_20261015/human_A.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/baseline_20261015/human_A.mp4">视频文件</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/BASELINE.md">来源与基线</a></p>
+</article>
+<article><h2>预选最佳第 9000 轮：最终未见集</h2><p class="status pending">待审阅</p>
+<p>闭环策略同步三视角；原 v7 物理门槛 24/24。中指末节本体承力与真实指腹交接待人审，不能称自然动作已通过。</p>
+<video src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/holdout_best9000/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/holdout_best9000/rollout.mp4">视频文件</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/holdout_best9000/metrics.json">24 回合原始指标</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/holdout_best9000/frame_metrics.json">逐帧指标</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/holdout_best9000/contacts.json">首回合接触点</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/contact_audit/contact_audit.json">全 24 回合接触审计</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/contact_audit/contact_points_all_episodes.json.gz">完整接触点 gzip JSON</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_best_iteration_9000/model.pt">冻结模型</a></p>
+</article>
+<article><h2>第 9000 轮：固定验证</h2><p class="status diagnostic">仅诊断</p>
+<p>用于训练期间选定候选的固定验证视频；原 v7 门槛 24/24。与最终未见集分开报告。</p>
+<video src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_best_iteration_9000/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_best_iteration_9000/rollout.mp4">视频文件</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_best_iteration_9000/metrics.json">固定验证指标</a></p>
+</article>
+<article><h2>最后权重第 51074 轮：最终未见集对照</h2><p class="status diagnostic">仅诊断</p>
+<p>原 v7 门槛 23/24；第 23 回合提前结束，伴随接触、漂移、自穿透与回夹失败。不可凭此结果反向选模。</p>
+<video src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_final_holdout_iteration_51074/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_final_holdout_iteration_51074/rollout.mp4">视频文件</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_final_holdout_iteration_51074/metrics.json">逐回合失败指标</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_final_holdout_iteration_51074/model.pt">对照权重</a></p>
+</article>
+</div>
+<h2>真人 0.75 秒预览（未与机器人同步）</h2><img src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/human_0.75.png" alt="真人 0.75 秒预览（未与机器人同步）" loading="lazy">
+<h2>真人 1.50 秒预览（未与机器人同步）</h2><img src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/human_1.50.png" alt="真人 1.50 秒预览（未与机器人同步）" loading="lazy">
+<h2>机器人 2.00 秒三视角预览</h2><img src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/robot_2.00.png" alt="机器人 2.00 秒三视角预览" loading="lazy">
+<h2>机器人 3.50 秒三视角预览</h2><img src="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/robot_3.50.png" alt="机器人 3.50 秒三视角预览" loading="lazy">
+<nav>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/stage_a_20261016/REVIEW.md">阶段 A 结论与审阅要点</a></p>
+<p><a href="../../../../reports/wuji_hand2/palm_up_human_demo_v7/NEXT_STAGE_PLAN.md">下一阶段计划</a></p>
+</nav></body></html>

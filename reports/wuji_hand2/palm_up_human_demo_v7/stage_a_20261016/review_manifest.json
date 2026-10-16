@@ -1,0 +1,58 @@
+{
+  "title": "Wuji v7 阶段 A：3 秒整圈候选与真人参考",
+  "summary": "第 9000 轮预选模型在原 v7 最终未见集为 24/24；独立接触审计发现仅按指尖传感区域计数时双接触只有 75.0%–78.2%，因此指腹位置与动作自然性仍待审阅。未启动 60 秒训练。",
+  "cards": [
+    {
+      "title": "真人 Triangle Pass 参考 A",
+      "status": "reference",
+      "video": "../baseline_20261015/human_A.mp4",
+      "description": "已批准的 3 秒单视角参考。与机器人视频未做时间或相位对齐；遮挡处接触未知。",
+      "links": [
+        {"label": "来源与基线", "path": "../BASELINE.md"}
+      ]
+    },
+    {
+      "title": "预选最佳第 9000 轮：最终未见集",
+      "status": "pending",
+      "video": "holdout_best9000/rollout.mp4",
+      "description": "闭环策略同步三视角；原 v7 物理门槛 24/24。中指末节本体承力与真实指腹交接待人审，不能称自然动作已通过。",
+      "links": [
+        {"label": "24 回合原始指标", "path": "holdout_best9000/metrics.json"},
+        {"label": "逐帧指标", "path": "holdout_best9000/frame_metrics.json"},
+        {"label": "首回合接触点", "path": "holdout_best9000/contacts.json"},
+        {"label": "全 24 回合接触审计", "path": "contact_audit/contact_audit.json"},
+        {"label": "完整接触点 gzip JSON", "path": "contact_audit/contact_points_all_episodes.json.gz"},
+        {"label": "冻结模型", "path": "../progress_20261015/turn_3s_best_iteration_9000/model.pt"}
+      ]
+    },
+    {
+      "title": "第 9000 轮：固定验证",
+      "status": "diagnostic",
+      "video": "../progress_20261015/turn_3s_best_iteration_9000/rollout.mp4",
+      "description": "用于训练期间选定候选的固定验证视频；原 v7 门槛 24/24。与最终未见集分开报告。",
+      "links": [
+        {"label": "固定验证指标", "path": "../progress_20261015/turn_3s_best_iteration_9000/metrics.json"}
+      ]
+    },
+    {
+      "title": "最后权重第 51074 轮：最终未见集对照",
+      "status": "diagnostic",
+      "video": "../progress_20261015/turn_3s_final_holdout_iteration_51074/rollout.mp4",
+      "description": "原 v7 门槛 23/24；第 23 回合提前结束，伴随接触、漂移、自穿透与回夹失败。不可凭此结果反向选模。",
+      "links": [
+        {"label": "逐回合失败指标", "path": "../progress_20261015/turn_3s_final_holdout_iteration_51074/metrics.json"},
+        {"label": "对照权重", "path": "../progress_20261015/turn_3s_final_holdout_iteration_51074/model.pt"}
+      ]
+    }
+  ],
+  "images": [
+    {"label": "真人 0.75 秒预览（未与机器人同步）", "path": "human_0.75.png"},
+    {"label": "真人 1.50 秒预览（未与机器人同步）", "path": "human_1.50.png"},
+    {"label": "机器人 2.00 秒三视角预览", "path": "robot_2.00.png"},
+    {"label": "机器人 3.50 秒三视角预览", "path": "robot_3.50.png"}
+  ],
+  "links": [
+    {"label": "阶段 A 结论与审阅要点", "path": "REVIEW.md"},
+    {"label": "下一阶段计划", "path": "../NEXT_STAGE_PLAN.md"}
+  ]
+}
