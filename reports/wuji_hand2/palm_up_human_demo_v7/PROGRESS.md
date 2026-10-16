@@ -1,6 +1,6 @@
 # Wuji v7 正式长训阶段进度（更新至 2026-10-16）
 
-三组短训的[同种子比较、失败视频与入选模型](PILOTS.md)已归档。正式训练从“只改课程”第 500 轮权重开始，按训练预算扣除三组短训后的约 23 小时有效 GPU 时间运行。最新流水线状态和实时训练指标分别保存在 `runs/wuji_hand2/palm_up_human_demo_v7/pipeline_20261015/status.json` 与 `runs/wuji_hand2/palm_up_human_demo_v7/long_training_20261015/training_status.json`；以下只记录已完成的独立 CPU 评估，训练仍在进行。
+三组短训的[同种子比较、失败视频与入选模型](PILOTS.md)已归档。正式训练从“只改课程”第 500 轮权重开始，主训练已完成约 23 小时有效 GPU 预算；连同短训约 1 小时，总计约 24 小时。流水线状态保存在 `runs/wuji_hand2/palm_up_human_demo_v7/pipeline_20261015/status.json`。以下区分固定验证、最终未见集和仍待完成的人工动作审阅。
 
 | 阶段 | 检查点 | 固定验证种子严格通过 | 失败原因 | 状态 |
 | --- | ---: | ---: | --- | --- |
@@ -14,6 +14,8 @@
 | 360°/3 秒，严重退化证据 | 第 33000 轮 | **9/24** | 13 回合提前结束，双指尖接触 9、姿态/反弯 8、自穿透 6 回合失败 | 不合格，不能作为成功演示或后续模仿目标 |
 | 360°/3 秒，历史退化验证 | 第 33500 轮 | **14/24** | 8 回合提前结束，相向夹持 9、终点回夹 9、自穿透 5 回合失败 | 不合格；最佳仍为第 9000 轮 |
 | 360°/3 秒，本次归档的最新固定验证 | 第 40000 轮 | **20/24** | 4 回合未通过严格门槛，逐回合原因见原始指标 | 不合格；最佳仍为第 9000 轮 |
+| 360°/3 秒，训练结束前固定验证 | 第 51000 轮 | **22/24** | 2 回合未通过严格门槛，逐回合原因见原始指标 | 不合格；最佳仍为第 9000 轮 |
+| 360°/3 秒，最后权重最终未见集 | 第 51074 轮 | **23/24** | 第 23 回合提前结束，未达到转角、接触和终点回夹等门槛 | 仅为最后权重的物理终评；自然动作待人审 |
 
 4 秒第 100 轮[独立评估视频](progress_20261015/turn_4s_iteration_100/rollout.mp4)、[逐回合指标](progress_20261015/turn_4s_iteration_100/metrics.json)、[接触记录](progress_20261015/turn_4s_iteration_100/contacts.json)和[模型权重](progress_20261015/turn_4s_iteration_100/model.pt)已固定归档。模型 SHA256 为 `37e03ee82085cbab8393b9b304a2ef4c297e7ada9db563ed54239547e2185017`。
 
@@ -64,5 +66,19 @@
 退化分析和待确认的收尾方案见 [NEXT_STAGE_PLAN.md](NEXT_STAGE_PLAN.md)。
 
 2026-10-16 约 06:08（北京时间）原流水线全部进程意外退出，日志未记录正常完成或明确退出原因。到退出前主训练累计约 19.37/23 小时；没有 `STOP` 文件，终评尚未开始。10:55 在确认进程和锁均不在、检查点及源码清单存在后，恢复**同一**流水线与原预算；训练器从第 40400 轮检查点接续，重新计算未保存的约 90 轮。新训练进程 PID 2452708，心跳与迭代随后正常更新。原定预算没有提前停止；中断的空闲时间不计入有效 GPU 训练。中断原因仍未查明。
+
+## 24 小时预算完成后的结果
+
+流水线和监督器均已正常结束：第 51074 轮，主训练有效时间 `82797.858` 秒（约 23 小时），监督器本次恢复后重启数为 0。**第 9000 轮仍是按固定验证预选的最佳权重**，不能依据最终未见集反向换模。
+
+训练结束前第 51000 轮固定验证为 **22/24**：[三视角视频](progress_20261015/turn_3s_final_validation_iteration_51000/rollout.mp4) · [逐回合指标与失败标记](progress_20261015/turn_3s_final_validation_iteration_51000/metrics.json) · [逐帧指标](progress_20261015/turn_3s_final_validation_iteration_51000/frame_metrics.json) · [接触记录](progress_20261015/turn_3s_final_validation_iteration_51000/contacts.json) · [原始轨迹](progress_20261015/turn_3s_final_validation_iteration_51000/rollout.npz) · [评估权重](progress_20261015/turn_3s_final_validation_iteration_51000/model.pt)。权重 SHA256 `cbfd24c7ab26c2762f1bd35d7569991ab2927b522576b980cdb0c640325170db`。
+
+<video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_final_validation_iteration_51000/rollout.mp4"></video>
+
+现有收尾器按原定流程对**最后权重**第 51074 轮运行最终未见种子 `2026101503`，严格通过 **23/24**：[三视角视频](progress_20261015/turn_3s_final_holdout_iteration_51074/rollout.mp4) · [逐回合指标与失败标记](progress_20261015/turn_3s_final_holdout_iteration_51074/metrics.json) · [逐帧指标](progress_20261015/turn_3s_final_holdout_iteration_51074/frame_metrics.json) · [接触记录](progress_20261015/turn_3s_final_holdout_iteration_51074/contacts.json) · [原始轨迹](progress_20261015/turn_3s_final_holdout_iteration_51074/rollout.npz) · [**该次评估的精确权重**](progress_20261015/turn_3s_final_holdout_iteration_51074/model.pt) · [训练终态](progress_20261015/turn_3s_final_holdout_iteration_51074/training_status.json) · [源码哈希清单](progress_20261015/turn_3s_final_holdout_iteration_51074/source_manifest.json)。评估权重 SHA256 `74aae3bf2a2e953ab069ddbcf2a3a4fb186398302a5e117c2b19cda59c5b501d`。第 23 回合在 2.9 秒提前结束，实际约 200.8°，目标进度约 288°；同时出现漂移、自穿透、双指尖和相向接触、交接及终点回夹门槛失败。不能把 23/24 表述为全回合成功。
+
+<video controls preload="metadata" playsinline width="960" src="progress_20261015/turn_3s_final_holdout_iteration_51074/rollout.mp4"></video>
+
+第 9000 轮预选最佳权重尚未运行最终未见集；它与最后权重的结果必须分开报告。真人 Triangle Pass 动作一致性仍**待人工审阅**。下一阶段的候选验收和任何新版本训练均待用户确认，详见 [NEXT_STAGE_PLAN.md](NEXT_STAGE_PLAN.md)。
 
 视频为闭环策略的同步三视角；真人参考与训练前诊断见 [BASELINE.md](BASELINE.md)。严格物理通过率与人工动作相似性分开记录，后者仍**待审阅**。主训练配置不含 60 秒连续课程；须先完成 3 秒动作的人工审阅，再单独建立连续训练版本。最终未见种子只在选模结束后使用。
