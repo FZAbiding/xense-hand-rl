@@ -1,0 +1,134 @@
+{
+  "initial_observation_parity": true,
+  "functional_command_bounds": true,
+  "inactive_commands_fixed": true,
+  "continuous_goal_not_sinusoidal": true,
+  "capacity": {
+    "peak_constraints_per_world": 24,
+    "constraint_capacity_per_world": 512,
+    "peak_contacts_all_worlds": 24,
+    "contact_capacity_all_worlds": 512
+  },
+  "trace": [
+    {
+      "step": 0,
+      "kinematic_observation_max_error": 1.158417959334912e-07,
+      "force_observation_max_error": 0.14366135438247013,
+      "qpos_max_error": 0.0
+    },
+    {
+      "step": 1,
+      "kinematic_observation_max_error": 0.05514320542717281,
+      "force_observation_max_error": 0.11995513749805468,
+      "qpos_max_error": 0.02047674258600038
+    },
+    {
+      "step": 2,
+      "kinematic_observation_max_error": 0.07415992282058109,
+      "force_observation_max_error": 0.016662172345611456,
+      "qpos_max_error": 0.016436155480086784
+    },
+    {
+      "step": 3,
+      "kinematic_observation_max_error": 0.05964514491186408,
+      "force_observation_max_error": 0.09541792256995205,
+      "qpos_max_error": 0.013990487054548861
+    },
+    {
+      "step": 4,
+      "kinematic_observation_max_error": 0.017416952090579266,
+      "force_observation_max_error": 0.006948847131536113,
+      "qpos_max_error": 0.012843226756415749
+    },
+    {
+      "step": 5,
+      "kinematic_observation_max_error": 0.010558568706662275,
+      "force_observation_max_error": 0.004771399212479922,
+      "qpos_max_error": 0.014226589003934087
+    },
+    {
+      "step": 6,
+      "kinematic_observation_max_error": 0.08037197750626274,
+      "force_observation_max_error": 0.07191669808145809,
+      "qpos_max_error": 0.02651984845840022
+    },
+    {
+      "step": 7,
+      "kinematic_observation_max_error": 0.05774371340921017,
+      "force_observation_max_error": 0.022392885350820207,
+      "qpos_max_error": 0.026841837963669873
+    },
+    {
+      "step": 8,
+      "kinematic_observation_max_error": 0.07839404542441117,
+      "force_observation_max_error": 0.04577264362954903,
+      "qpos_max_error": 0.021486368515520438
+    },
+    {
+      "step": 9,
+      "kinematic_observation_max_error": 0.06038636314730504,
+      "force_observation_max_error": 0.11061775624107431,
+      "qpos_max_error": 0.036113434056058574
+    },
+    {
+      "step": 10,
+      "kinematic_observation_max_error": 0.05340936803318651,
+      "force_observation_max_error": 0.00842574311998174,
+      "qpos_max_error": 0.034096730222291816
+    },
+    {
+      "step": 11,
+      "kinematic_observation_max_error": 0.016731319365028696,
+      "force_observation_max_error": 0.009204734710226967,
+      "qpos_max_error": 0.032667300032848956
+    },
+    {
+      "step": 12,
+      "kinematic_observation_max_error": 0.34336015161949784,
+      "force_observation_max_error": 0.05455942712783453,
+      "qpos_max_error": 0.04504462445943447
+    },
+    {
+      "step": 13,
+      "kinematic_observation_max_error": 0.027827747989045144,
+      "force_observation_max_error": 0.03086253641284209,
+      "qpos_max_error": 0.047366474280595844
+    },
+    {
+      "step": 14,
+      "kinematic_observation_max_error": 0.14521672043185696,
+      "force_observation_max_error": 0.020804286433124507,
+      "qpos_max_error": 0.03920909347280255
+    },
+    {
+      "step": 15,
+      "kinematic_observation_max_error": 0.39879348448384033,
+      "force_observation_max_error": 0.05424739085720346,
+      "qpos_max_error": 0.04965534591886267
+    },
+    {
+      "step": 16,
+      "kinematic_observation_max_error": 0.05865005557685948,
+      "force_observation_max_error": 0.024507470727088254,
+      "qpos_max_error": 0.047657068575213735
+    },
+    {
+      "step": 17,
+      "kinematic_observation_max_error": 0.020066566947001353,
+      "force_observation_max_error": 0.014184277952763232,
+      "qpos_max_error": 0.04444607298741163
+    },
+    {
+      "step": 18,
+      "kinematic_observation_max_error": 0.19024468842246298,
+      "force_observation_max_error": 0.1610925128508806,
+      "qpos_max_error": 0.04626447596224015
+    },
+    {
+      "step": 19,
+      "kinematic_observation_max_error": 0.039491486239686416,
+      "force_observation_max_error": 0.03981507759562472,
+      "qpos_max_error": 0.06047670622392046
+    }
+  ]
+}

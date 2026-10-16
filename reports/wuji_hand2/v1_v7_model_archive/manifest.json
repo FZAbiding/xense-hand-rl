@@ -1,0 +1,44 @@
+[
+  {
+    "file": "v1_palm_up_checkpoint_000550.pt",
+    "source": "runs/wuji_hand2/palm_up_v1_small_long_seed1/checkpoint_000550.pt",
+    "sha256": "7dd09d024edd74a1a554b71a2f6bd4f451aa9eace1a68c287bc91c0d33b7a719",
+    "bytes": 3077879,
+    "status": "v1 palm-up source checkpoint; historical, not approved for Triangle Pass"
+  },
+  {
+    "file": "v2_pinch_policy.pt",
+    "source": "artifacts/wuji_hand2/palm_up_pinch_v2/policy.pt",
+    "sha256": "cbae47390f91806f14725dfaf07199799aa77fa65686c902ada3bf7e9a4a9a37",
+    "bytes": 3078455,
+    "status": "v2 survival-only result; 0/24 strict"
+  },
+  {
+    "file": "v3_tripod_policy.pt",
+    "source": "artifacts/wuji_hand2/palm_up_tripod_v3/policy.pt",
+    "sha256": "8bd8545dd79a35ddd00163210e2a971d4dc954df2c64e9409df822001c6337a6",
+    "bytes": 3066615,
+    "status": "v3 survival-only result; 0/24 strict"
+  },
+  {
+    "file": "v4_hold_policy.pt",
+    "source": "artifacts/wuji_hand2/palm_up_human_demo_v4/hold_verified/policy.pt",
+    "sha256": "7fedb13f5e1a3dcd7bb3d0d4b6fe9f16c55519a7813574212a676ec24e7fc382",
+    "bytes": 3065527,
+    "status": "v4 stable hold; human motion not approved"
+  },
+  {
+    "file": "v4_handover_policy.pt",
+    "source": "artifacts/wuji_hand2/palm_up_human_demo_v4/handover/policy.pt",
+    "sha256": "3db38029910db7f12cd36e059f21e937a168c3aa4664a36ad74f689c8cb9c239",
+    "bytes": 3066551,
+    "status": "v4 failed handover and rejected crossing diagnostic"
+  },
+  {
+    "file": "v5_long_final_checkpoint_0064902.pt",
+    "source": "runs/wuji_hand2/palm_up_human_demo_v5/long_training_20261012/checkpoint_0064902.pt",
+    "sha256": "f858a10a802d097185e80dead39d051698410d8aeae9ce1f576ba6f4239afc68",
+    "bytes": 3113581,
+    "status": "v5 long-training final; 0/24 strict"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "experiment_id": "wuji_hand2_palm_up_human_demo_v4",
+  "status": "user_rejected_finger_crossing",
+  "full_rotation_achieved": false,
+  "human_like_handover_achieved": false,
+  "ppo_iterations": {
+    "hold": 300,
+    "hold_refine": 200,
+    "handover": 400
+  },
+  "total_ppo_iterations": 900,
+  "ppo_environment_steps": 29491200,
+  "hold": {
+    "episodes": 24,
+    "seconds_per_episode": 60,
+    "passed_under_previous_physical_gates": 24,
+    "natural_posture_status": "requires_re_review",
+    "metrics": "artifacts/wuji_hand2/palm_up_human_demo_v4/hold_verified/metrics.json"
+  },
+  "learned_handover": {
+    "episodes": 24,
+    "passed": 0,
+    "metrics": "artifacts/wuji_hand2/palm_up_human_demo_v4/handover/metrics.json"
+  },
+  "open_loop_partial_rotation": {
+    "nominal_angle_deg": -58.27701395978985,
+    "perturbed_episodes": 24,
+    "partial_passed": 0,
+    "previous_numeric_gate_passed": 7,
+    "natural_motion_status": "rejected_finger_crossing",
+    "handover_passed": 0,
+    "metrics": "artifacts/wuji_hand2/palm_up_human_demo_v4/partial_rotation/metrics.json"
+  },
+  "human_review": {
+    "date": "2026-10-12",
+    "source": "user visual review",
+    "user_feedback": "\u98df\u6307\u548c\u4e2d\u6307\u90fd\u4ea4\u53c9\u4e86\uff0c\u6b63\u5e38\u4eba\u6839\u672c\u505a\u4e0d\u51fa\u6765\u8fd9\u79cd\u52a8\u4f5c\uff0c\u8fd9\u6837\u80af\u5b9a\u662f\u4e0d\u884c\u7684\uff01",
+    "verdict": "rejected_finger_crossing",
+    "accepted_natural_motion": false,
+    "withdrawn_claim": "local partial-rotation task pass",
+    "historical_numeric_results_unchanged": true,
+    "do_not_use_as_imitation_reference": true,
+    "static_grasp_posture_status": "requires_re_review",
+    "evidence": [
+      {
+        "path": "artifacts/wuji_hand2/palm_up_human_demo_v4/human_review/finger_crossing_view_1.png",
+        "sha256": "fcb0138779f2871198b331b0067e4d6b6092fccd75b371f478b552b53cef4ca0"
+      },
+      {
+        "path": "artifacts/wuji_hand2/palm_up_human_demo_v4/human_review/finger_crossing_view_2.png",
+        "sha256": "442c50182e8db77a1342f5144cbaed8b59ba2b60a4c56d68ea5c1432e0409cb5"
+      }
+    ],
+    "next_version_status": "plan_awaiting_user_confirmation_no_training"
+  },
+  "next_required_milestone": "Wait for v5 plan approval; calibrate natural finger ordering and review initial poses before short physical handover previews and training."
+}

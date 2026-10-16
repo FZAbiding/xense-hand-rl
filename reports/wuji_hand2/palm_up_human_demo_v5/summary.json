@@ -1,0 +1,21 @@
+{
+  "status": "physical_previews_complete_awaiting_human_posture_review",
+  "training_started": false,
+  "human_review": "pending",
+  "full_task_achieved": false,
+  "calibration_negative_frames_detected": 280,
+  "selected_candidate": 52,
+  "settled_initial_pen_depth_mm": 0.27345230891016004,
+  "initial_12s_holdout_passed": 22,
+  "initial_holdout_episodes": 24,
+  "nominal_long_hold_seconds": 35.275,
+  "nominal_60s_passed": false,
+  "small_motion_nominal_deg": 15.021409689237084,
+  "small_motion_physical_passed": 24,
+  "small_motion_angle_passed": 16,
+  "motion_holdout_episodes": 24,
+  "contact_region_status": "thumb contact includes side-edge locations; not accepted as a volar-pad reference",
+  "handover_holdout_passed": 0,
+  "handover_holdout_episodes": 24,
+  "next_action": "Human review of initial posture and short preview; then improve long hold and release/transfer before any training reference is accepted."
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "source": 79,
+    "settled_initializer_check": {
+      "frames": 480,
+      "seconds": 12.0,
+      "max_drift_m": 0.004392401461937978,
+      "two_tip_fraction": 1.0,
+      "non_tip_fraction": 0.0,
+      "inactive_fraction": 0.0,
+      "mean_force_n": 0.6769361158011148,
+      "reverse_bending_fraction": 0.0,
+      "passed": true
+    }
+  },
+  {
+    "source": 88,
+    "settled_initializer_check": {
+      "frames": 480,
+      "seconds": 12.0,
+      "max_drift_m": 0.030204193350692184,
+      "two_tip_fraction": 1.0,
+      "non_tip_fraction": 0.010416666666666666,
+      "inactive_fraction": 0.0,
+      "mean_force_n": 0.6050749928735714,
+      "reverse_bending_fraction": 0.0,
+      "passed": false
+    }
+  }
+]
