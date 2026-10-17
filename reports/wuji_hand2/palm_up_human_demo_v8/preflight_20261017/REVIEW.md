@@ -1,0 +1,18 @@
+# Wuji v8 sensor-contact preflight (2026-10-17)
+
+**Result before PPO:** the v7 iteration-9000 parameters complete 24/24 five-and-a-half-second fixed-validation episodes when given their original merged-contact policy input, but pass **0/24** under the new conservative sensor-only contact gate. This is an isolated v8 diagnostic, not a human approval of the motion or a long-duration result. The original v7 24/24 holdout remains a separate result under its frozen older gate.
+
+The unchanged v7 model parameters came from [the archived selected checkpoint](../../palm_up_human_demo_v7/progress_20261015/turn_3s_best_iteration_9000/model.pt), SHA256 `98ad3e008ad1100e29550662acdb975eae4d4d062cdb1a91db7c51169904b9a4`. A [diagnostic wrapper checkpoint](baseline_v7_wrapped_for_v8.pt), SHA256 `0865d7978279344dd1dd1f6e6467e2e3b67679b90ef0ea5557982785ff8912b1`, changes only the task/configuration and asset manifest for the v8 evaluator. The isolated scene and grasp bank are exact, hash-recorded copies of v7 assets. Fixed validation uses seed `2026101701`; the final unseen seed remains unopened.
+
+| Fixed-validation variant | Full 5.5 s | New strict gate | Meaning |
+| --- | ---: | ---: | --- |
+| [Change policy input to sensor-only as well](baseline_v7_9000_sensor_proxy/metrics.json) | **0/24** | 0/24 | Input distribution shift makes the frozen v7 controller fail early; [failed video](baseline_v7_9000_sensor_proxy/rollout.mp4) retained. This was a prefreeze design probe. |
+| [Keep old policy input; apply sensor-only gate](baseline_v7_legacy_obs_sensor_gate/metrics.json) | **24/24** | **0/24** | Controlled baseline for v8: mean dual-sensor contact 76.9% of frames, mean non-sensor force >0.05 N in 27.9% of frames, mean sensor-only opposing contact 74.9%. [Uncut three-view video](baseline_v7_legacy_obs_sensor_gate/rollout.mp4), [frame metrics](baseline_v7_legacy_obs_sensor_gate/frame_metrics.json), [raw contacts](baseline_v7_legacy_obs_sensor_gate/contacts.json), and [trajectory](baseline_v7_legacy_obs_sensor_gate/rollout.npz) retained. |
+
+<video controls preload="metadata" playsinline width="960" src="baseline_v7_legacy_obs_sensor_gate/rollout.mp4"></video>
+
+In the controlled baseline, all 24 episodes fail the `two_sensor_fraction`, `non_sensor_fraction`, and sensor-only opposing-force gates; one also fails the handover count. Dual-sensor fraction ranges **74.5%–78.6%**. This agrees with the independent [v7 contact replay](../../palm_up_human_demo_v7/stage_a_20261016/REVIEW.md), while the seed differs. It does **not** establish that every distal-body contact is anatomically invalid; the accepted pad surface still needs human calibration.
+
+The [v8 classifier](../../../../experiments/wuji_hand2/palm_up_human_demo_v8/long_training/contact.py) assigns only `tip_sensor_frame` bodies to five sensor channels. The GPU reward/grip logic and CPU strict evaluator use those channels; the warm-start policy observation keeps the original merged force vector and merged opposing-contact scalar. Both vectors are recorded in new per-frame metrics. [Preflight verification](verification.json) confirms all GPU collision-body channels match the CPU classifier, checks an archived middle-distal load frame, and runs finite GPU steps. This separation is explicit so no merged force can be reported as a sensor-only pass.
+
+The next artifact is the approximately 20-minute [isolated pilot](../../../../experiments/wuji_hand2/palm_up_human_demo_v8/long_training/config.json), selected only on fixed validation. No automatic 21-hour continuation or 30/60/120-second course is enabled. Human review of pad geometry, release/transfer, and terminal grasp remains a separate gate.
