@@ -2,6 +2,8 @@
 
 Status: planning on 2026-10-17; **no new training is authorized or started by this document**. v7's selected 3-second turn is promising under its original metric, but its 5.5-second rollout is not a continuous 30-second result. The [v7 stage A review](palm_up_human_demo_v7/stage_a_20261016/REVIEW.md) and [next-stage contact plan](palm_up_human_demo_v7/NEXT_STAGE_PLAN.md) define the immediate gate.
 
+The subsequent [collision-mesh contact map](palm_up_human_demo_v7/contact_geometry_20261017/REVIEW.md) and [isolated v8 preflight plan](../../experiments/wuji_hand2/palm_up_human_demo_v8/PLAN.md) make that gate concrete while the human contact verdict remains pending.
+
 ## Entry gate: correct the short-cycle evidence
 
 Calibrate the actual thumb/index/middle finger-pad regions on collision geometry and separate pad, distal-side, other-body, and idle-finger forces. Freeze this criterion in both training observation/reward and independent CPU evaluation. Review synchronized v7 video against the approved human reference for real release, handover, finger-chain order, and end regrasp. If the motion is rejected, keep its failure evidence and do not imitate it. In a new isolated version, reproduce a 3-second full turn with at least 23/24 fixed-validation and 23/24 independent holdout passes under the **new** contact and posture gate, plus an explicit favorable human review. The specific threshold is a proposed stage gate, not a claim that v7 already meets it.
