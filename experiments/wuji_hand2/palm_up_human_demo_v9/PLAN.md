@@ -1,0 +1,31 @@
+# Wuji v9 proposed next stage: calibrate pad contact, then retest one short turn
+
+**Status (2026-10-18): proposal for user review. No v9 code, assets, training run, or new holdout evaluation has started.** This plan follows the [v8 pilot review](../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/REVIEW.md), [offline human/robot comparison](../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/review.html), and [v7 mesh-contact audit](../../../reports/wuji_hand2/palm_up_human_demo_v7/contact_geometry_20261017/REVIEW.md).
+
+## Decision from v8
+
+The v8 diagnostic pilot ran 996 PPO updates in 1,224 seconds of effective GPU time. Its selected checkpoint, SHA256 `066643e4cd236b320d13518ae53c5b089084a38760784d41492b8f9ebfa7efaf`, finished 24/24 fixed-seed 5.5-second episodes and improved mean two-sensor contact from 76.9% to 83.1%. Non-sensor force frames fell from 27.9% to 17.3%. Yet **0/24 passed** the frozen conservative sensor-only gate; all 24 failed the two-sensor, non-sensor, and opposing-contact limits. The unseen seed `2026101703` was not opened. This weight is diagnostic, with unconfirmed motion naturalness. More training time on the same reward is not justified by the current evidence.
+
+The `tip_sensor_frame` proxy could exclude a legitimate distal pad edge. Conversely, the v7 merged-contact metric could count side support as a fingertip grip. The next experiment must distinguish those surfaces on the actual collision mesh before interpreting either success rate.
+
+## Gate 0: human motion and pad-surface review (no GPU training)
+
+1. Review the [three-view v7/v8 comparison](../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/review.html) alongside the approved human reference. Inspect 1.25–1.65 s and 2.75–3.30 s for index/middle crossing, release and transfer, pen contact location, idle-finger support, and final regrasp. Record accepted, rejected, or unresolved findings separately for v7 and v8. Preserve any rejected example and withdraw its natural-motion claim; rejected motion cannot be used as an imitation target.
+2. Label acceptable thumb, index, and middle finger pad patches on the v8 collision geometry, including any acceptable part of a distal-body mesh. Record mesh name, local coordinate system, boundary, force cutoff, annotated example frames, and uncertainty at occluded contacts. Have a second pass compare the proposed labels against the contact points and the same video frames. Do not define the pad by mesh name alone or choose a threshold just to turn the v8 result into a pass.
+3. Version the labels and adjudication as a new v9 asset. Recompute **both** frozen v7 and v8 rollouts with the same calibrated classifier. Report pad, distal non-pad, other active-finger, and idle-finger force separately, plus release intervals and handover events. Preserve their original metrics. Recheck GPU and independent CPU classification on a labeled contact sample; resolve disagreements before training.
+
+The user needs to confirm the motion and acceptable contact surface before the classifier can be treated as anatomically approved. If the clip cannot establish the surface, obtain an additional view or mark that region unresolved rather than silently counting it as pad.
+
+## Proposed isolated short experiment after Gate 0
+
+- Create separate v9 `experiments/`, `assets/`, `runs/`, `artifacts/`, and `reports/` locations. Copy the frozen scene and grasp bank with SHA256 provenance. Keep original collisions, joint limits, pen geometry, and grasp initialization; record every change. Freeze an executable config, source manifest, contact label file, training seed, and the selection rule before training.
+- Preserve the legacy 111-value merged-contact **policy input** in the first controlled comparison; v8's abrupt sensor-only input swap made 24/24 episodes end early. Use calibrated pad/non-pad channels in the reward and independent CPU acceptance. A later observation change requires its own controlled test.
+- Re-evaluate the two diagnostic warm-start candidates, v7 iteration 9000 and v8 iteration 996, under the identical v9 classifier and fixed seed. They remain diagnostic unless the user accepts the motion. If the motion is rejected, do not use those weights as imitation targets or a qualified baseline; start a new approved-motion design instead.
+- Run one variable at a time: **A**, calibrated pad-region classifier with the existing course reward; **B**, the same setup with a measured penalty on sustained non-pad support and explicit release/transfer evidence. Budget each arm at most 20 minutes of effective GPU time for the first screen, with 24 independent CPU fixed-validation episodes every 100 updates. Stop an arm early for repeated posture crossing, loss of pen, new side bracing, or sustained validation regression. Save final and validation-best weights separately, with exact videos and all failures.
+- Select only by the frozen fixed validation, seed `2026101701`. Do not inspect the unopened seed `2026101703` until a candidate passes the fixed gate and its motion review. Keep training and disturbance seeds separate. The final candidate must pass at least 23/24 fixed and 23/24 unseen episodes under the **same calibrated** contact, posture, continuous signed-angle, no-drop, and terminal-regrasp criteria, plus favorable human review. Record per-gate counts and confidence limits, not just a blended success rate.
+
+Before execution, the contact surface annotation determines the exact pad-force and non-pad-force thresholds. Freeze these in `v9/PLAN.md` and the config **before** looking at v9 validation outcomes; do not weaken the limits after seeing failures. If neither arm passes, retain the 0/24-style failure evidence and investigate release/transfer mechanics instead of extending training time.
+
+## Later duration stages (planning only)
+
+Only after the short-turn entry gate succeeds, propose a separate 10–12-second bridge with several uncut release/regrasp cycles. Then use separate 30-, 60-, and 120-second stages and independent duration-wide evaluations as specified in the [long-horizon roadmap](../../../reports/wuji_hand2/LONG_HORIZON_ROADMAP.md). The current 5.5-second evidence does not establish any of those durations. No long-duration run is part of this v9 proposal.

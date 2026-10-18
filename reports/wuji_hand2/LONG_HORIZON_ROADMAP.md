@@ -4,7 +4,7 @@ Status: planning on 2026-10-17; **no new training is authorized or started by th
 
 The subsequent [collision-mesh contact map](palm_up_human_demo_v7/contact_geometry_20261017/REVIEW.md) and [isolated v8 preflight plan](../../experiments/wuji_hand2/palm_up_human_demo_v8/PLAN.md) make that gate concrete while the human contact verdict remains pending.
 
-The [completed v8 short pilot](palm_up_human_demo_v8/pilot_20261017/REVIEW.md) improved the sensor-only diagnostic signals, but its selected checkpoint passed **0/24** fixed-validation strict episodes. Its unseen seed remains unopened. Treat the v8 weight as diagnostic only; calibrate the real acceptable pad surface and review the motion before proposing another short isolated ablation. The 10/30/60/120-second stages below remain plans and have not been started.
+The [completed v8 short pilot](palm_up_human_demo_v8/pilot_20261017/REVIEW.md) improved the sensor-only diagnostic signals, but its selected checkpoint passed **0/24** fixed-validation strict episodes. Its unseen seed remains unopened. Treat the v8 weight as diagnostic only; calibrate the real acceptable pad surface and review the motion before another short isolated ablation. The [proposed v9 plan](../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md) specifies that sequence for user review. The 10/30/60/120-second stages below remain plans and have not been started.
 
 ## Entry gate: correct the short-cycle evidence
 
