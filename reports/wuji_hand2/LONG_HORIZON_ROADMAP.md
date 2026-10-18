@@ -4,6 +4,8 @@ Status: planning on 2026-10-17; **no new training is authorized or started by th
 
 The subsequent [collision-mesh contact map](palm_up_human_demo_v7/contact_geometry_20261017/REVIEW.md) and [isolated v8 preflight plan](../../experiments/wuji_hand2/palm_up_human_demo_v8/PLAN.md) make that gate concrete while the human contact verdict remains pending.
 
+The [completed v8 short pilot](palm_up_human_demo_v8/pilot_20261017/REVIEW.md) improved the sensor-only diagnostic signals, but its selected checkpoint passed **0/24** fixed-validation strict episodes. Its unseen seed remains unopened. Treat the v8 weight as diagnostic only; calibrate the real acceptable pad surface and review the motion before proposing another short isolated ablation. The 10/30/60/120-second stages below remain plans and have not been started.
+
 ## Entry gate: correct the short-cycle evidence
 
 Calibrate the actual thumb/index/middle finger-pad regions on collision geometry and separate pad, distal-side, other-body, and idle-finger forces. Freeze this criterion in both training observation/reward and independent CPU evaluation. Review synchronized v7 video against the approved human reference for real release, handover, finger-chain order, and end regrasp. If the motion is rejected, keep its failure evidence and do not imitate it. In a new isolated version, reproduce a 3-second full turn with at least 23/24 fixed-validation and 23/24 independent holdout passes under the **new** contact and posture gate, plus an explicit favorable human review. The specific threshold is a proposed stage gate, not a claim that v7 already meets it.

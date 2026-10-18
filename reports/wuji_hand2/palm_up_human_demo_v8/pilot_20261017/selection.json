@@ -1,0 +1,99 @@
+{
+  "rule": "reports/wuji_hand2/palm_up_human_demo_v8/PILOT_SELECTION_RULE.md",
+  "selected_iteration": 996,
+  "selected_status": "diagnostic_only_no_strict_pass",
+  "validation_seed": 2026101701,
+  "unseen_seed_used": false,
+  "rows": [
+    {
+      "iteration": 100,
+      "strict_pass_count": 0,
+      "full_duration_count": 24,
+      "mean_non_sensor_fraction": 0.2630681818181818,
+      "mean_two_sensor_fraction": 0.7670454545454546,
+      "checkpoint_sha256": "becdaecb31157d217e18aeab40336dd4323d3dd012c3906924df72333764cb10",
+      "metrics": "iteration_0000100/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 200,
+      "strict_pass_count": 0,
+      "full_duration_count": 23,
+      "mean_non_sensor_fraction": 0.2510668612732833,
+      "mean_two_sensor_fraction": 0.7754552404781762,
+      "checkpoint_sha256": "6b2343c9a5b6b5ffb8913f71ddf20385fc1cc618548e22ef279b9115cabf9bcc",
+      "metrics": "iteration_0000200/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 300,
+      "strict_pass_count": 0,
+      "full_duration_count": 21,
+      "mean_non_sensor_fraction": 0.24263422023537717,
+      "mean_two_sensor_fraction": 0.7777377555288604,
+      "checkpoint_sha256": "a5a73f9a601ea84eb162ba361dbbc5b1bd8f0a5236f4e7359e004fc8fcbb8f85",
+      "metrics": "iteration_0000300/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 400,
+      "strict_pass_count": 0,
+      "full_duration_count": 24,
+      "mean_non_sensor_fraction": 0.22575757575757574,
+      "mean_two_sensor_fraction": 0.796590909090909,
+      "checkpoint_sha256": "f94ab7fee277663f93e60a89a913deb1412d94e178c6d3cb6cc1aabba5cf9b8a",
+      "metrics": "iteration_0000400/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 500,
+      "strict_pass_count": 0,
+      "full_duration_count": 24,
+      "mean_non_sensor_fraction": 0.21988636363636363,
+      "mean_two_sensor_fraction": 0.8075757575757576,
+      "checkpoint_sha256": "b91380abfdd73a45bac543e5cc9d9c8a2e7432df0e7093ba312afbdcedfcbe31",
+      "metrics": "iteration_0000500/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 600,
+      "strict_pass_count": 0,
+      "full_duration_count": 24,
+      "mean_non_sensor_fraction": 0.21496212121212122,
+      "mean_two_sensor_fraction": 0.815530303030303,
+      "checkpoint_sha256": "163325c9ace8f22646405366735c6047e142c18181e4cfd20e1d095df3787be6",
+      "metrics": "iteration_0000600/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 700,
+      "strict_pass_count": 0,
+      "full_duration_count": 23,
+      "mean_non_sensor_fraction": 0.21401515151515152,
+      "mean_two_sensor_fraction": 0.8201085372960373,
+      "checkpoint_sha256": "8c3326296e3367d2e3b2ea817cbe62ee98a0474d41d717e33f631cc3cba9d169",
+      "metrics": "iteration_0000700/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 800,
+      "strict_pass_count": 0,
+      "full_duration_count": 23,
+      "mean_non_sensor_fraction": 0.20723791973791975,
+      "mean_two_sensor_fraction": 0.8244318181818181,
+      "checkpoint_sha256": "f531ac55f55d8a8e08386181d6ccfebc6bb9fff205071846c02fae1fd385f8c9",
+      "metrics": "iteration_0000800/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 900,
+      "strict_pass_count": 0,
+      "full_duration_count": 24,
+      "mean_non_sensor_fraction": 0.18806818181818183,
+      "mean_two_sensor_fraction": 0.8231060606060606,
+      "checkpoint_sha256": "b8938fd479e319504bc5e2142a44967d98c33cd9aacca5ad3ebd475e5a8fcf16",
+      "metrics": "iteration_0000900/fixed_validation/metrics.json"
+    },
+    {
+      "iteration": 996,
+      "strict_pass_count": 0,
+      "full_duration_count": 24,
+      "mean_non_sensor_fraction": 0.17253787878787877,
+      "mean_two_sensor_fraction": 0.8306818181818182,
+      "checkpoint_sha256": "066643e4cd236b320d13518ae53c5b089084a38760784d41492b8f9ebfa7efaf",
+      "metrics": "final_0000996/fixed_validation/metrics.json"
+    }
+  ]
+}

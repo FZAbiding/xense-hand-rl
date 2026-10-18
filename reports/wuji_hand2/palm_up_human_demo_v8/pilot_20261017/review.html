@@ -1,0 +1,48 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wuji v8 指尖接触诊断评审｜2026-10-17</title>
+<style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
+</head><body><h1>Wuji v8 指尖接触诊断评审｜2026-10-17</h1><p class="summary">20 分钟短试验完成。最终第 996 轮 24/24 完成短回合，但保守 sensor-only 严格门槛 0/24；中途第 300 轮还有 3 次提前结束。所有策略片段均为真实 CPU rollout，三视角无循环。真人动作对齐和真实指腹区域仍待审阅；尚未进入长时训练。</p><div class="grid">
+<article><h2>真人参考：已批准示范</h2><p class="status reference">参考</p>
+<p>独立真人参考片段；未经时间与相位标定，不代表当前策略已经达到同样动作。</p>
+<video src="human_A.mp4" controls preload="metadata" playsinline></video>
+<p><a href="human_A.mp4">视频文件</a></p>
+</article>
+<article><h2>v7 第 9000 轮：v8 保守接触门槛下的基线</h2><p class="status failed">失败</p>
+<p>原权重、保留旧策略输入，v8 sensor-only 严格通过 0/24；5.5 秒完成 24/24。接触代理不等同于真实指腹。</p>
+<video src="../preflight_20261017/baseline_v7_legacy_obs_sensor_gate/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../preflight_20261017/baseline_v7_legacy_obs_sensor_gate/rollout.mp4">视频文件</a></p>
+<p><a href="../preflight_20261017/baseline_v7_legacy_obs_sensor_gate/metrics.json">24 回合原始指标</a></p>
+<p><a href="../preflight_20261017/baseline_v7_wrapped_for_v8.pt">基线包装权重</a></p>
+</article>
+<article><h2>v8 第 996 轮：固定验证选中，仅诊断</h2><p class="status diagnostic">仅诊断</p>
+<p>实际 CPU 策略 rollout，同一时间步的三视角；5.5 秒完成 24/24，sensor-only 严格通过 0/24。自然指腹、释放交接和动作一致性待人工审阅；不可升格为连续转笔成果。</p>
+<video src="final_0000996/fixed_validation/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="final_0000996/fixed_validation/rollout.mp4">视频文件</a></p>
+<p><a href="final_0000996/model.pt">选中权重</a></p>
+<p><a href="final_0000996/fixed_validation/metrics.json">24 回合原始指标</a></p>
+<p><a href="final_0000996/fixed_validation/frame_metrics.json">首回合逐帧指标</a></p>
+<p><a href="final_0000996/fixed_validation/contacts.json">首回合接触点</a></p>
+<p><a href="final_0000996/fixed_validation/rollout.npz">首回合原始轨迹</a></p>
+</article>
+<article><h2>v8 第 300 轮：回退失败案例</h2><p class="status failed">失败</p>
+<p>实际 CPU 策略 rollout；仅 21/24 完成 5.5 秒，严格通过 0/24。保留早停、姿态和末端重抓取失败证据。</p>
+<video src="iteration_0000300/fixed_validation/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="iteration_0000300/fixed_validation/rollout.mp4">视频文件</a></p>
+<p><a href="iteration_0000300/fixed_validation/metrics.json">24 回合失败明细</a></p>
+<p><a href="iteration_0000300/fixed_validation/frame_metrics.json">首回合逐帧指标</a></p>
+</article>
+</div>
+<h2>选中模型：食指/中指 PIP、DIP，接触力和笔角曲线（首回合）</h2><img src="first_episode_curves.png" alt="选中模型：食指/中指 PIP、DIP，接触力和笔角曲线（首回合）" loading="lazy">
+<h2>选中模型：起始三视角</h2><img src="final_0000996/fixed_validation/rollout_frame_0000.png" alt="选中模型：起始三视角" loading="lazy">
+<h2>选中模型：中段三视角</h2><img src="final_0000996/fixed_validation/rollout_frame_0110.png" alt="选中模型：中段三视角" loading="lazy">
+<h2>选中模型：结束三视角</h2><img src="final_0000996/fixed_validation/rollout_frame_0219.png" alt="选中模型：结束三视角" loading="lazy">
+<nav>
+<p><a href="REVIEW.md">完整阶段报告与视频</a></p>
+<p><a href="selection.json">检查点选择与全部周期指标</a></p>
+<p><a href="../PILOT_SELECTION_RULE.md">固定选择规则</a></p>
+<p><a href="source_manifest.json">源文件 SHA 清单</a></p>
+<p><a href="training_status.json">训练状态</a></p>
+<p><a href="../../../../experiments/wuji_hand2/palm_up_human_demo_v8/long_training/config.json">可执行配置</a></p>
+<p><a href="../../LONG_HORIZON_ROADMAP.md">下一阶段路线图（只规划）</a></p>
+</nav></body></html>
