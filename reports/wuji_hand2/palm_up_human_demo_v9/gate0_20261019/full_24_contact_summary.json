@@ -1,0 +1,1771 @@
+{
+  "scope": "24 paired fixed-validation episodes, seed 2026101701; collision-body occupancy only, no pad labels or new pass gate",
+  "filter_per_contact_normal_n_gt": 0.02,
+  "sources": {
+    "v7_baseline": {
+      "contact_archive": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v7_baseline_all_contacts.json.gz",
+      "contact_archive_sha256": "f9ee44677f46a53ffe9e5b211d04ee79eb4020f992070f495f551fda5db7b59b",
+      "episodes": 24,
+      "frames_per_episode": 220,
+      "bodies": {
+        "r_thumb_distal": {
+          "contact_samples_gt_filter": 310,
+          "active_frame_fraction": 0.05719696969696969,
+          "active_frame_fraction_min_max": [
+            0.045454545454545456,
+            0.08181818181818182
+          ],
+          "normal_force_sum_n": 48.81291174695497,
+          "median_local_xyz_mm": [
+            -3.581131777397376,
+            -6.9555078396842775,
+            -28.814821353712855
+          ],
+          "local_y_5_95_mm": [
+            -8.087390863738982,
+            -5.43561793043007
+          ]
+        },
+        "r_thumb_tip_sensor_frame": {
+          "contact_samples_gt_filter": 6975,
+          "active_frame_fraction": 0.7515151515151515,
+          "active_frame_fraction_min_max": [
+            0.7136363636363636,
+            0.7772727272727272
+          ],
+          "normal_force_sum_n": 2095.90079310072,
+          "median_local_xyz_mm": [
+            -3.8314028971112424,
+            1.782893101222531,
+            -26.786852348943505
+          ],
+          "local_y_5_95_mm": [
+            -1.102317202448376,
+            3.3595527630063704
+          ]
+        },
+        "r_index_finger_distal": {
+          "contact_samples_gt_filter": 5,
+          "active_frame_fraction": 0.0005681818181818182,
+          "active_frame_fraction_min_max": [
+            0.0,
+            0.00909090909090909
+          ],
+          "normal_force_sum_n": 0.39669621392949816,
+          "median_local_xyz_mm": [
+            -5.601835461020328,
+            -4.7371645414578705,
+            -22.591992059039217
+          ],
+          "local_y_5_95_mm": [
+            -4.875062563860703,
+            -4.703154491949662
+          ]
+        },
+        "r_index_finger_tip_sensor_frame": {
+          "contact_samples_gt_filter": 11703,
+          "active_frame_fraction": 0.8359848484848484,
+          "active_frame_fraction_min_max": [
+            0.7863636363636364,
+            0.8772727272727273
+          ],
+          "normal_force_sum_n": 1702.9989132422816,
+          "median_local_xyz_mm": [
+            2.3644529551954427,
+            6.158098401407875,
+            -16.270360943322924
+          ],
+          "local_y_5_95_mm": [
+            1.9033203392609004,
+            7.224446578642567
+          ]
+        },
+        "r_middle_finger_distal": {
+          "contact_samples_gt_filter": 1703,
+          "active_frame_fraction": 0.30056818181818185,
+          "active_frame_fraction_min_max": [
+            0.22727272727272727,
+            0.5454545454545454
+          ],
+          "normal_force_sum_n": 311.9601370896736,
+          "median_local_xyz_mm": [
+            5.876402396183433,
+            -6.628493140672105,
+            -10.764880072499528
+          ],
+          "local_y_5_95_mm": [
+            -7.714872341862291,
+            -4.189532644518319
+          ]
+        },
+        "r_middle_finger_tip_sensor_frame": {
+          "contact_samples_gt_filter": 4267,
+          "active_frame_fraction": 0.3073863636363637,
+          "active_frame_fraction_min_max": [
+            0.2727272727272727,
+            0.33181818181818185
+          ],
+          "normal_force_sum_n": 914.3147946652991,
+          "median_local_xyz_mm": [
+            5.30992900304026,
+            2.2429389115101737,
+            -19.462174145997903
+          ],
+          "local_y_5_95_mm": [
+            -0.8242813826198717,
+            5.056565109661437
+          ]
+        }
+      },
+      "per_episode": [
+        {
+          "r_thumb_distal": {
+            "active_frames": 14,
+            "active_fraction": 0.06363636363636363,
+            "contacts_gt_filter": 16
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 166,
+            "active_fraction": 0.7545454545454545,
+            "contacts_gt_filter": 353
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 184,
+            "active_fraction": 0.8363636363636363,
+            "contacts_gt_filter": 489
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 55,
+            "active_fraction": 0.25,
+            "contacts_gt_filter": 58
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 71,
+            "active_fraction": 0.32272727272727275,
+            "contacts_gt_filter": 189
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 11,
+            "active_fraction": 0.05,
+            "contacts_gt_filter": 11
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 165,
+            "active_fraction": 0.75,
+            "contacts_gt_filter": 360
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 481
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 120,
+            "active_fraction": 0.5454545454545454,
+            "contacts_gt_filter": 127
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 73,
+            "active_fraction": 0.33181818181818185,
+            "contacts_gt_filter": 189
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 14,
+            "active_fraction": 0.06363636363636363,
+            "contacts_gt_filter": 14
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 164,
+            "active_fraction": 0.7454545454545455,
+            "contacts_gt_filter": 237
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 183,
+            "active_fraction": 0.8318181818181818,
+            "contacts_gt_filter": 458
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 98,
+            "active_fraction": 0.44545454545454544,
+            "contacts_gt_filter": 103
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 69,
+            "active_fraction": 0.31363636363636366,
+            "contacts_gt_filter": 180
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 18,
+            "active_fraction": 0.08181818181818182,
+            "contacts_gt_filter": 20
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 157,
+            "active_fraction": 0.7136363636363636,
+            "contacts_gt_filter": 309
+          },
+          "r_index_finger_distal": {
+            "active_frames": 2,
+            "active_fraction": 0.00909090909090909,
+            "contacts_gt_filter": 2
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 189,
+            "active_fraction": 0.8590909090909091,
+            "contacts_gt_filter": 443
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 75,
+            "active_fraction": 0.3409090909090909,
+            "contacts_gt_filter": 80
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 172
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 13,
+            "active_fraction": 0.05909090909090909,
+            "contacts_gt_filter": 13
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 164,
+            "active_fraction": 0.7454545454545455,
+            "contacts_gt_filter": 233
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 190,
+            "active_fraction": 0.8636363636363636,
+            "contacts_gt_filter": 521
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 54,
+            "active_fraction": 0.24545454545454545,
+            "contacts_gt_filter": 55
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 66,
+            "active_fraction": 0.3,
+            "contacts_gt_filter": 187
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 12,
+            "active_fraction": 0.05454545454545454,
+            "contacts_gt_filter": 12
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 170,
+            "active_fraction": 0.7727272727272727,
+            "contacts_gt_filter": 260
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 179,
+            "active_fraction": 0.8136363636363636,
+            "contacts_gt_filter": 508
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 56,
+            "active_fraction": 0.2545454545454545,
+            "contacts_gt_filter": 60
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 63,
+            "active_fraction": 0.2863636363636364,
+            "contacts_gt_filter": 171
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 13,
+            "active_fraction": 0.05909090909090909,
+            "contacts_gt_filter": 13
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 167,
+            "active_fraction": 0.759090909090909,
+            "contacts_gt_filter": 334
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 173,
+            "active_fraction": 0.7863636363636364,
+            "contacts_gt_filter": 482
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 63,
+            "active_fraction": 0.2863636363636364,
+            "contacts_gt_filter": 68
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 65,
+            "active_fraction": 0.29545454545454547,
+            "contacts_gt_filter": 181
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 13,
+            "active_fraction": 0.05909090909090909,
+            "contacts_gt_filter": 13
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 165,
+            "active_fraction": 0.75,
+            "contacts_gt_filter": 290
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 193,
+            "active_fraction": 0.8772727272727273,
+            "contacts_gt_filter": 488
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 53,
+            "active_fraction": 0.2409090909090909,
+            "contacts_gt_filter": 56
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 60,
+            "active_fraction": 0.2727272727272727,
+            "contacts_gt_filter": 154
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 17,
+            "active_fraction": 0.07727272727272727,
+            "contacts_gt_filter": 17
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 167,
+            "active_fraction": 0.759090909090909,
+            "contacts_gt_filter": 276
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 188,
+            "active_fraction": 0.8545454545454545,
+            "contacts_gt_filter": 502
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 60,
+            "active_fraction": 0.2727272727272727,
+            "contacts_gt_filter": 64
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 72,
+            "active_fraction": 0.32727272727272727,
+            "contacts_gt_filter": 186
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 10,
+            "active_fraction": 0.045454545454545456,
+            "contacts_gt_filter": 10
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 163,
+            "active_fraction": 0.740909090909091,
+            "contacts_gt_filter": 300
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 184,
+            "active_fraction": 0.8363636363636363,
+            "contacts_gt_filter": 525
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 59,
+            "active_fraction": 0.2681818181818182,
+            "contacts_gt_filter": 66
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 72,
+            "active_fraction": 0.32727272727272727,
+            "contacts_gt_filter": 179
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 12,
+            "active_fraction": 0.05454545454545454,
+            "contacts_gt_filter": 12
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 165,
+            "active_fraction": 0.75,
+            "contacts_gt_filter": 346
+          },
+          "r_index_finger_distal": {
+            "active_frames": 1,
+            "active_fraction": 0.004545454545454545,
+            "contacts_gt_filter": 3
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 193,
+            "active_fraction": 0.8772727272727273,
+            "contacts_gt_filter": 462
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 57,
+            "active_fraction": 0.2590909090909091,
+            "contacts_gt_filter": 60
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 73,
+            "active_fraction": 0.33181818181818185,
+            "contacts_gt_filter": 194
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 10,
+            "active_fraction": 0.045454545454545456,
+            "contacts_gt_filter": 10
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 166,
+            "active_fraction": 0.7545454545454545,
+            "contacts_gt_filter": 365
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 187,
+            "active_fraction": 0.85,
+            "contacts_gt_filter": 476
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 77,
+            "active_fraction": 0.35,
+            "contacts_gt_filter": 81
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 174
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 13,
+            "active_fraction": 0.05909090909090909,
+            "contacts_gt_filter": 13
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 167,
+            "active_fraction": 0.759090909090909,
+            "contacts_gt_filter": 237
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 184,
+            "active_fraction": 0.8363636363636363,
+            "contacts_gt_filter": 400
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 77,
+            "active_fraction": 0.35,
+            "contacts_gt_filter": 81
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 66,
+            "active_fraction": 0.3,
+            "contacts_gt_filter": 184
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 11,
+            "active_fraction": 0.05,
+            "contacts_gt_filter": 11
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 165,
+            "active_fraction": 0.75,
+            "contacts_gt_filter": 233
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 504
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 66,
+            "active_fraction": 0.3,
+            "contacts_gt_filter": 71
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 184
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 11,
+            "active_fraction": 0.05,
+            "contacts_gt_filter": 11
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 171,
+            "active_fraction": 0.7772727272727272,
+            "contacts_gt_filter": 330
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 187,
+            "active_fraction": 0.85,
+            "contacts_gt_filter": 522
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 50,
+            "active_fraction": 0.22727272727272727,
+            "contacts_gt_filter": 53
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 61,
+            "active_fraction": 0.2772727272727273,
+            "contacts_gt_filter": 161
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 12,
+            "active_fraction": 0.05454545454545454,
+            "contacts_gt_filter": 12
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 166,
+            "active_fraction": 0.7545454545454545,
+            "contacts_gt_filter": 297
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 185,
+            "active_fraction": 0.8409090909090909,
+            "contacts_gt_filter": 492
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 70,
+            "active_fraction": 0.3181818181818182,
+            "contacts_gt_filter": 77
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 63,
+            "active_fraction": 0.2863636363636364,
+            "contacts_gt_filter": 164
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 15,
+            "active_fraction": 0.06818181818181818,
+            "contacts_gt_filter": 16
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 162,
+            "active_fraction": 0.7363636363636363,
+            "contacts_gt_filter": 292
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 183,
+            "active_fraction": 0.8318181818181818,
+            "contacts_gt_filter": 520
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 56,
+            "active_fraction": 0.2545454545454545,
+            "contacts_gt_filter": 61
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 71,
+            "active_fraction": 0.32272727272727275,
+            "contacts_gt_filter": 184
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 12,
+            "active_fraction": 0.05454545454545454,
+            "contacts_gt_filter": 12
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 166,
+            "active_fraction": 0.7545454545454545,
+            "contacts_gt_filter": 312
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 181,
+            "active_fraction": 0.8227272727272728,
+            "contacts_gt_filter": 514
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 67,
+            "active_fraction": 0.30454545454545456,
+            "contacts_gt_filter": 72
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 70,
+            "active_fraction": 0.3181818181818182,
+            "contacts_gt_filter": 178
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 11,
+            "active_fraction": 0.05,
+            "contacts_gt_filter": 11
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 166,
+            "active_fraction": 0.7545454545454545,
+            "contacts_gt_filter": 234
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 186,
+            "active_fraction": 0.8454545454545455,
+            "contacts_gt_filter": 471
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 79
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 71,
+            "active_fraction": 0.32272727272727275,
+            "contacts_gt_filter": 173
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 12,
+            "active_fraction": 0.05454545454545454,
+            "contacts_gt_filter": 12
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 167,
+            "active_fraction": 0.759090909090909,
+            "contacts_gt_filter": 238
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 191,
+            "active_fraction": 0.8681818181818182,
+            "contacts_gt_filter": 498
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 54,
+            "active_fraction": 0.24545454545454545,
+            "contacts_gt_filter": 55
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 69,
+            "active_fraction": 0.31363636363636366,
+            "contacts_gt_filter": 170
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 14,
+            "active_fraction": 0.06363636363636363,
+            "contacts_gt_filter": 16
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 164,
+            "active_fraction": 0.7454545454545455,
+            "contacts_gt_filter": 246
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 185,
+            "active_fraction": 0.8409090909090909,
+            "contacts_gt_filter": 490
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 62,
+            "active_fraction": 0.2818181818181818,
+            "contacts_gt_filter": 69
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 69,
+            "active_fraction": 0.31363636363636366,
+            "contacts_gt_filter": 189
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 11,
+            "active_fraction": 0.05,
+            "contacts_gt_filter": 11
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 163,
+            "active_fraction": 0.740909090909091,
+            "contacts_gt_filter": 243
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 179,
+            "active_fraction": 0.8136363636363636,
+            "contacts_gt_filter": 497
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 55,
+            "active_fraction": 0.25,
+            "contacts_gt_filter": 59
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 169
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 13,
+            "active_fraction": 0.05909090909090909,
+            "contacts_gt_filter": 13
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 166,
+            "active_fraction": 0.7545454545454545,
+            "contacts_gt_filter": 344
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 503
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 65,
+            "active_fraction": 0.29545454545454547,
+            "contacts_gt_filter": 71
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 65,
+            "active_fraction": 0.29545454545454547,
+            "contacts_gt_filter": 180
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 10,
+            "active_fraction": 0.045454545454545456,
+            "contacts_gt_filter": 11
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 166,
+            "active_fraction": 0.7545454545454545,
+            "contacts_gt_filter": 306
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 176,
+            "active_fraction": 0.8,
+            "contacts_gt_filter": 457
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 70,
+            "active_fraction": 0.3181818181818182,
+            "contacts_gt_filter": 77
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 62,
+            "active_fraction": 0.2818181818181818,
+            "contacts_gt_filter": 175
+          }
+        }
+      ]
+    },
+    "v8_iteration_996": {
+      "contact_archive": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_iteration_996_all_contacts.json.gz",
+      "contact_archive_sha256": "8e6560814d87a8b0e69598a3fdbaeed68a85697f22816c9ae9967307944c83c4",
+      "episodes": 24,
+      "frames_per_episode": 220,
+      "bodies": {
+        "r_thumb_distal": {
+          "contact_samples_gt_filter": 194,
+          "active_frame_fraction": 0.03428030303030303,
+          "active_frame_fraction_min_max": [
+            0.013636363636363636,
+            0.05909090909090909
+          ],
+          "normal_force_sum_n": 29.665039333152663,
+          "median_local_xyz_mm": [
+            -2.7597494572499164,
+            -6.4264887562855915,
+            -28.335299826502748
+          ],
+          "local_y_5_95_mm": [
+            -8.402053046320084,
+            -5.507657882966542
+          ]
+        },
+        "r_thumb_tip_sensor_frame": {
+          "contact_samples_gt_filter": 6875,
+          "active_frame_fraction": 0.80625,
+          "active_frame_fraction_min_max": [
+            0.7954545454545454,
+            0.8227272727272728
+          ],
+          "normal_force_sum_n": 2626.4608386313084,
+          "median_local_xyz_mm": [
+            -3.7055753311675144,
+            0.9499532566625071,
+            -27.380254780767714
+          ],
+          "local_y_5_95_mm": [
+            -1.9128563948956663,
+            2.34177333978582
+          ]
+        },
+        "r_index_finger_distal": {
+          "contact_samples_gt_filter": 0,
+          "active_frame_fraction": 0.0,
+          "active_frame_fraction_min_max": [
+            0.0,
+            0.0
+          ],
+          "normal_force_sum_n": 0.0,
+          "median_local_xyz_mm": null,
+          "local_y_5_95_mm": null
+        },
+        "r_index_finger_tip_sensor_frame": {
+          "contact_samples_gt_filter": 11163,
+          "active_frame_fraction": 0.821401515151515,
+          "active_frame_fraction_min_max": [
+            0.7863636363636364,
+            0.8545454545454545
+          ],
+          "normal_force_sum_n": 2146.9675071463776,
+          "median_local_xyz_mm": [
+            2.3717074277635075,
+            6.334752083858432,
+            -16.30343802020119
+          ],
+          "local_y_5_95_mm": [
+            0.801803284677858,
+            7.587768669777499
+          ]
+        },
+        "r_middle_finger_distal": {
+          "contact_samples_gt_filter": 1065,
+          "active_frame_fraction": 0.18484848484848485,
+          "active_frame_fraction_min_max": [
+            0.13636363636363635,
+            0.2863636363636364
+          ],
+          "normal_force_sum_n": 174.65487763855828,
+          "median_local_xyz_mm": [
+            5.602649264308356,
+            -6.2478652928611575,
+            -15.88290373824714
+          ],
+          "local_y_5_95_mm": [
+            -7.648073166446782,
+            -4.737572762049102
+          ]
+        },
+        "r_middle_finger_tip_sensor_frame": {
+          "contact_samples_gt_filter": 4231,
+          "active_frame_fraction": 0.334469696969697,
+          "active_frame_fraction_min_max": [
+            0.29545454545454547,
+            0.36363636363636365
+          ],
+          "normal_force_sum_n": 938.0247072347013,
+          "median_local_xyz_mm": [
+            5.107285679883512,
+            1.1208021083765531,
+            -20.781148106995403
+          ],
+          "local_y_5_95_mm": [
+            -2.0985548330129213,
+            4.54649863147376
+          ]
+        }
+      },
+      "per_episode": [
+        {
+          "r_thumb_distal": {
+            "active_frames": 13,
+            "active_fraction": 0.05909090909090909,
+            "contacts_gt_filter": 13
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 176,
+            "active_fraction": 0.8,
+            "contacts_gt_filter": 275
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 184,
+            "active_fraction": 0.8363636363636363,
+            "contacts_gt_filter": 501
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 44,
+            "active_fraction": 0.2,
+            "contacts_gt_filter": 45
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 75,
+            "active_fraction": 0.3409090909090909,
+            "contacts_gt_filter": 186
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 6,
+            "active_fraction": 0.02727272727272727,
+            "contacts_gt_filter": 6
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 181,
+            "active_fraction": 0.8227272727272728,
+            "contacts_gt_filter": 260
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 183,
+            "active_fraction": 0.8318181818181818,
+            "contacts_gt_filter": 468
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 34,
+            "active_fraction": 0.15454545454545454,
+            "contacts_gt_filter": 41
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 79,
+            "active_fraction": 0.35909090909090907,
+            "contacts_gt_filter": 202
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 8,
+            "active_fraction": 0.03636363636363636,
+            "contacts_gt_filter": 8
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 403
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 185,
+            "active_fraction": 0.8409090909090909,
+            "contacts_gt_filter": 494
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 40,
+            "active_fraction": 0.18181818181818182,
+            "contacts_gt_filter": 40
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 79,
+            "active_fraction": 0.35909090909090907,
+            "contacts_gt_filter": 177
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 6,
+            "active_fraction": 0.02727272727272727,
+            "contacts_gt_filter": 7
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 177,
+            "active_fraction": 0.8045454545454546,
+            "contacts_gt_filter": 261
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 186,
+            "active_fraction": 0.8454545454545455,
+            "contacts_gt_filter": 470
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 34,
+            "active_fraction": 0.15454545454545454,
+            "contacts_gt_filter": 34
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 74,
+            "active_fraction": 0.33636363636363636,
+            "contacts_gt_filter": 150
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 8,
+            "active_fraction": 0.03636363636363636,
+            "contacts_gt_filter": 8
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 176,
+            "active_fraction": 0.8,
+            "contacts_gt_filter": 302
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 180,
+            "active_fraction": 0.8181818181818182,
+            "contacts_gt_filter": 381
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 30,
+            "active_fraction": 0.13636363636363635,
+            "contacts_gt_filter": 31
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 76,
+            "active_fraction": 0.34545454545454546,
+            "contacts_gt_filter": 161
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 13,
+            "active_fraction": 0.05909090909090909,
+            "contacts_gt_filter": 15
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 265
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 452
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 57,
+            "active_fraction": 0.2590909090909091,
+            "contacts_gt_filter": 63
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 74,
+            "active_fraction": 0.33636363636363636,
+            "contacts_gt_filter": 163
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 5,
+            "active_fraction": 0.022727272727272728,
+            "contacts_gt_filter": 5
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 177,
+            "active_fraction": 0.8045454545454546,
+            "contacts_gt_filter": 291
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 180,
+            "active_fraction": 0.8181818181818182,
+            "contacts_gt_filter": 449
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 55,
+            "active_fraction": 0.25,
+            "contacts_gt_filter": 63
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 70,
+            "active_fraction": 0.3181818181818182,
+            "contacts_gt_filter": 185
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 8,
+            "active_fraction": 0.03636363636363636,
+            "contacts_gt_filter": 9
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 177,
+            "active_fraction": 0.8045454545454546,
+            "contacts_gt_filter": 320
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 180,
+            "active_fraction": 0.8181818181818182,
+            "contacts_gt_filter": 459
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 63,
+            "active_fraction": 0.2863636363636364,
+            "contacts_gt_filter": 66
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 184
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 9,
+            "active_fraction": 0.04090909090909091,
+            "contacts_gt_filter": 9
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 244
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 184,
+            "active_fraction": 0.8363636363636363,
+            "contacts_gt_filter": 500
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 41,
+            "active_fraction": 0.18636363636363637,
+            "contacts_gt_filter": 42
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 79,
+            "active_fraction": 0.35909090909090907,
+            "contacts_gt_filter": 189
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 7,
+            "active_fraction": 0.031818181818181815,
+            "contacts_gt_filter": 7
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 176,
+            "active_fraction": 0.8,
+            "contacts_gt_filter": 277
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 176,
+            "active_fraction": 0.8,
+            "contacts_gt_filter": 526
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 38,
+            "active_fraction": 0.17272727272727273,
+            "contacts_gt_filter": 46
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 76,
+            "active_fraction": 0.34545454545454546,
+            "contacts_gt_filter": 188
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 10,
+            "active_fraction": 0.045454545454545456,
+            "contacts_gt_filter": 10
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 292
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 181,
+            "active_fraction": 0.8227272727272728,
+            "contacts_gt_filter": 489
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 40,
+            "active_fraction": 0.18181818181818182,
+            "contacts_gt_filter": 42
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 76,
+            "active_fraction": 0.34545454545454546,
+            "contacts_gt_filter": 189
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 3,
+            "active_fraction": 0.013636363636363636,
+            "contacts_gt_filter": 5
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 175,
+            "active_fraction": 0.7954545454545454,
+            "contacts_gt_filter": 271
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 183,
+            "active_fraction": 0.8318181818181818,
+            "contacts_gt_filter": 468
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 34,
+            "active_fraction": 0.15454545454545454,
+            "contacts_gt_filter": 37
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 73,
+            "active_fraction": 0.33181818181818185,
+            "contacts_gt_filter": 172
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 4,
+            "active_fraction": 0.01818181818181818,
+            "contacts_gt_filter": 4
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 264
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 184,
+            "active_fraction": 0.8363636363636363,
+            "contacts_gt_filter": 460
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 38,
+            "active_fraction": 0.17272727272727273,
+            "contacts_gt_filter": 44
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 75,
+            "active_fraction": 0.3409090909090909,
+            "contacts_gt_filter": 147
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 9,
+            "active_fraction": 0.04090909090909091,
+            "contacts_gt_filter": 9
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 179,
+            "active_fraction": 0.8136363636363636,
+            "contacts_gt_filter": 285
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 179,
+            "active_fraction": 0.8136363636363636,
+            "contacts_gt_filter": 478
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 47,
+            "active_fraction": 0.21363636363636362,
+            "contacts_gt_filter": 54
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 70,
+            "active_fraction": 0.3181818181818182,
+            "contacts_gt_filter": 156
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 7,
+            "active_fraction": 0.031818181818181815,
+            "contacts_gt_filter": 8
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 175,
+            "active_fraction": 0.7954545454545454,
+            "contacts_gt_filter": 250
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 183,
+            "active_fraction": 0.8318181818181818,
+            "contacts_gt_filter": 442
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 31,
+            "active_fraction": 0.1409090909090909,
+            "contacts_gt_filter": 35
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 69,
+            "active_fraction": 0.31363636363636366,
+            "contacts_gt_filter": 164
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 5,
+            "active_fraction": 0.022727272727272728,
+            "contacts_gt_filter": 5
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 178,
+            "active_fraction": 0.8090909090909091,
+            "contacts_gt_filter": 389
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 174,
+            "active_fraction": 0.7909090909090909,
+            "contacts_gt_filter": 460
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 44,
+            "active_fraction": 0.2,
+            "contacts_gt_filter": 52
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 65,
+            "active_fraction": 0.29545454545454547,
+            "contacts_gt_filter": 172
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 5,
+            "active_fraction": 0.022727272727272728,
+            "contacts_gt_filter": 5
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 177,
+            "active_fraction": 0.8045454545454546,
+            "contacts_gt_filter": 279
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 184,
+            "active_fraction": 0.8363636363636363,
+            "contacts_gt_filter": 505
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 36,
+            "active_fraction": 0.16363636363636364,
+            "contacts_gt_filter": 38
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 79,
+            "active_fraction": 0.35909090909090907,
+            "contacts_gt_filter": 192
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 7,
+            "active_fraction": 0.031818181818181815,
+            "contacts_gt_filter": 11
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 179,
+            "active_fraction": 0.8136363636363636,
+            "contacts_gt_filter": 264
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 177,
+            "active_fraction": 0.8045454545454546,
+            "contacts_gt_filter": 520
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 33,
+            "active_fraction": 0.15,
+            "contacts_gt_filter": 36
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 80,
+            "active_fraction": 0.36363636363636365,
+            "contacts_gt_filter": 198
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 11,
+            "active_fraction": 0.05,
+            "contacts_gt_filter": 13
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 176,
+            "active_fraction": 0.8,
+            "contacts_gt_filter": 250
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 185,
+            "active_fraction": 0.8409090909090909,
+            "contacts_gt_filter": 498
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 41,
+            "active_fraction": 0.18636363636363637,
+            "contacts_gt_filter": 43
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 75,
+            "active_fraction": 0.3409090909090909,
+            "contacts_gt_filter": 202
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 5,
+            "active_fraction": 0.022727272727272728,
+            "contacts_gt_filter": 5
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 177,
+            "active_fraction": 0.8045454545454546,
+            "contacts_gt_filter": 269
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 188,
+            "active_fraction": 0.8545454545454545,
+            "contacts_gt_filter": 425
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 34,
+            "active_fraction": 0.15454545454545454,
+            "contacts_gt_filter": 34
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 78,
+            "active_fraction": 0.35454545454545455,
+            "contacts_gt_filter": 173
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 6,
+            "active_fraction": 0.02727272727272727,
+            "contacts_gt_filter": 6
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 179,
+            "active_fraction": 0.8136363636363636,
+            "contacts_gt_filter": 290
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 183,
+            "active_fraction": 0.8318181818181818,
+            "contacts_gt_filter": 420
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 39,
+            "active_fraction": 0.17727272727272728,
+            "contacts_gt_filter": 41
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 73,
+            "active_fraction": 0.33181818181818185,
+            "contacts_gt_filter": 151
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 9,
+            "active_fraction": 0.04090909090909091,
+            "contacts_gt_filter": 9
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 179,
+            "active_fraction": 0.8136363636363636,
+            "contacts_gt_filter": 242
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 173,
+            "active_fraction": 0.7863636363636364,
+            "contacts_gt_filter": 459
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 40,
+            "active_fraction": 0.18181818181818182,
+            "contacts_gt_filter": 40
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 173
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 8,
+            "active_fraction": 0.03636363636363636,
+            "contacts_gt_filter": 8
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 177,
+            "active_fraction": 0.8045454545454546,
+            "contacts_gt_filter": 284
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 174,
+            "active_fraction": 0.7909090909090909,
+            "contacts_gt_filter": 450
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 41,
+            "active_fraction": 0.18636363636363637,
+            "contacts_gt_filter": 47
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 67,
+            "active_fraction": 0.30454545454545456,
+            "contacts_gt_filter": 171
+          }
+        },
+        {
+          "r_thumb_distal": {
+            "active_frames": 9,
+            "active_fraction": 0.04090909090909091,
+            "contacts_gt_filter": 9
+          },
+          "r_thumb_tip_sensor_frame": {
+            "active_frames": 176,
+            "active_fraction": 0.8,
+            "contacts_gt_filter": 348
+          },
+          "r_index_finger_distal": {
+            "active_frames": 0,
+            "active_fraction": 0.0,
+            "contacts_gt_filter": 0
+          },
+          "r_index_finger_tip_sensor_frame": {
+            "active_frames": 173,
+            "active_fraction": 0.7863636363636364,
+            "contacts_gt_filter": 389
+          },
+          "r_middle_finger_distal": {
+            "active_frames": 42,
+            "active_fraction": 0.19090909090909092,
+            "contacts_gt_filter": 51
+          },
+          "r_middle_finger_tip_sensor_frame": {
+            "active_frames": 68,
+            "active_fraction": 0.3090909090909091,
+            "contacts_gt_filter": 186
+          }
+        }
+      ]
+    }
+  }
+}

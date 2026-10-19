@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wuji v9 Gate 0｜接触网格与交接动作待审阅</title>
+<style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
+</head><body><h1>Wuji v9 Gate 0｜接触网格与交接动作待审阅</h1><p class="summary">同一场景、固定种子下对照 v7 基线与 v8 第 996 轮。24 回合重放与原指标逐回合完全吻合；v8 中指末节承力帧占比由 30.1% 降至 18.5%，但两者在保守接触门槛均为 0/24。图中的颜色是碰撞体，不是获认可的指腹边界；尚未开展 v9 训练。</p><div class="grid">
+<article><h2>真人参考（已批准示范）</h2><p class="status reference">参考</p>
+<p>独立参考片段；机器人视频尚未经相位标定，不能视为同步模仿。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/human_A.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/human_A.mp4">视频文件</a></p>
+</article>
+<article><h2>v7 第 9000 轮：固定种子基线</h2><p class="status failed">失败</p>
+<p>三视角实际 CPU 策略 rollout。v8 sensor-only 严格门槛 0/24；动作自然性待人工判定。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/metrics.json">24 回合指标</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/contacts.json">首回合逐帧接触点</a></p>
+</article>
+<article><h2>v8 第 996 轮：改进但仅诊断</h2><p class="status diagnostic">仅诊断</p>
+<p>三视角实际 CPU 策略 rollout。5.5 秒 24/24 完成、保守严格门槛 0/24；中指末节仍有承力，真实指腹与交接待人工判定。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/metrics.json">24 回合指标</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/contacts.json">首回合逐帧接触点</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/model.pt">第 996 轮权重</a></p>
+</article>
+</div>
+<h2>24 回合配对接触本体承力比例：这是网格体统计，并非人体指腹验收</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/paired_24_contact_occupancy.png" alt="24 回合配对接触本体承力比例：这是网格体统计，并非人体指腹验收" loading="lazy">
+<h2>同一网格上的接触位置：蓝色传感体、橙色末节本体</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/mesh_contact_comparison.png" alt="同一网格上的接触位置：蓝色传感体、橙色末节本体" loading="lazy">
+<h2>首回合接触力时间线；浅黄为需审阅的交接窗口</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/contact_force_comparison.png" alt="首回合接触力时间线；浅黄为需审阅的交接窗口" loading="lazy">
+<nav>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/REVIEW.md">Gate 0 分析与待确认项</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/summary.json">原始统计及 SHA</a></p>
+<p><a href="../../../assets/wuji_hand2_palm_up_human_demo_v9/contact_surface_review.json">待确认的区域记录</a></p>
+<p><a href="../../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md">v9 下一阶段计划</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/full_24_contact_summary.json">24 回合逐帧接触统计</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v7_baseline_all_contacts.json.gz">v7 全 24 回合原始接触点</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_iteration_996_all_contacts.json.gz">v8 全 24 回合原始接触点</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/replay_checks.json">逐回合复现核对</a></p>
+</nav></body></html>

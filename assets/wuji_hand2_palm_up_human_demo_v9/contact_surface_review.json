@@ -1,0 +1,25 @@
+{
+  "status": "pending_human_pad_calibration",
+  "purpose": "Review-only body categories; not an anatomical pad classifier or training gate.",
+  "source_scene": "assets/wuji_hand2_palm_up_human_demo_v8/scene.xml",
+  "source_scene_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
+  "source_summary": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/summary.json",
+  "source_full_24_summary": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/full_24_contact_summary.json",
+  "coordinate_frame": "MuJoCo body-local metres; child tip_sensor_frame origins coincide with parent distal body origins in this scene",
+  "contact_sample_filter_n": 0.02,
+  "accepted_pad_regions": null,
+  "accepted_force_thresholds": null,
+  "bodies_to_adjudicate": [
+    "r_thumb_tip_sensor_frame",
+    "r_thumb_distal",
+    "r_index_finger_tip_sensor_frame",
+    "r_index_finger_distal",
+    "r_middle_finger_tip_sensor_frame",
+    "r_middle_finger_distal"
+  ],
+  "motion_verdicts": {
+    "v7_iteration_9000": "pending_human_review",
+    "v8_iteration_996": "pending_human_review"
+  },
+  "training_use_allowed": false
+}

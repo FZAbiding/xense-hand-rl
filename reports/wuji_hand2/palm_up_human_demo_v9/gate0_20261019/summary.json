@@ -1,0 +1,177 @@
+{
+  "scope": "First fixed-validation episode only; contact surface anatomy and motion acceptance remain pending.",
+  "seed": 2026101701,
+  "force_filter_n": 0.02,
+  "scene": "assets/wuji_hand2_palm_up_human_demo_v8/scene.xml",
+  "scene_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
+  "sources": {
+    "v7 baseline": {
+      "path": "reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/contacts.json",
+      "sha256": "35b5b441feac336bde8d2b56d8715522ab3593ba9ece700be4a1954d9a2316b5",
+      "frames": 220,
+      "bodies": {
+        "r_thumb_distal": {
+          "contacts_gt_0p02_n": 16,
+          "active_frames_gt_0p02_n": 14,
+          "normal_force_sum_n": 2.8154594122658736,
+          "median_local_xyz_mm": [
+            -3.2992597437387117,
+            -6.516613049343368,
+            -28.343780711081596
+          ],
+          "local_y_5_95_mm": [
+            -7.742952460346517,
+            -5.233568672920024
+          ]
+        },
+        "r_thumb_tip_sensor_frame": {
+          "contacts_gt_0p02_n": 353,
+          "active_frames_gt_0p02_n": 166,
+          "normal_force_sum_n": 83.28637822848836,
+          "median_local_xyz_mm": [
+            -5.722054373413201,
+            1.5130229683257617,
+            -26.267974729820466
+          ],
+          "local_y_5_95_mm": [
+            -0.9447757731498085,
+            2.9920718799838855
+          ]
+        },
+        "r_index_finger_distal": {
+          "contacts_gt_0p02_n": 0,
+          "active_frames_gt_0p02_n": 0,
+          "normal_force_sum_n": 0.0,
+          "median_local_xyz_mm": null,
+          "local_y_5_95_mm": null
+        },
+        "r_index_finger_tip_sensor_frame": {
+          "contacts_gt_0p02_n": 489,
+          "active_frames_gt_0p02_n": 189,
+          "normal_force_sum_n": 67.56617747381723,
+          "median_local_xyz_mm": [
+            1.588685845142672,
+            5.842831652197942,
+            -17.172695085148447
+          ],
+          "local_y_5_95_mm": [
+            1.7161574904881647,
+            6.991442596459053
+          ]
+        },
+        "r_middle_finger_distal": {
+          "contacts_gt_0p02_n": 58,
+          "active_frames_gt_0p02_n": 56,
+          "normal_force_sum_n": 11.444811830348263,
+          "median_local_xyz_mm": [
+            6.089103656309077,
+            -6.366028199138389,
+            -11.690651096756145
+          ],
+          "local_y_5_95_mm": [
+            -7.702087087237619,
+            -4.2618371253138205
+          ]
+        },
+        "r_middle_finger_tip_sensor_frame": {
+          "contacts_gt_0p02_n": 189,
+          "active_frames_gt_0p02_n": 72,
+          "normal_force_sum_n": 38.254052382433535,
+          "median_local_xyz_mm": [
+            5.439088479344573,
+            2.0804081581604117,
+            -19.10268460723382
+          ],
+          "local_y_5_95_mm": [
+            -1.4500330727838013,
+            5.417863365235598
+          ]
+        }
+      }
+    },
+    "v8 iteration 996": {
+      "path": "reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/contacts.json",
+      "sha256": "763f9866e1a4f3f76e65a61ad835c8eabdc04764ea9321e208b71ebf5745417b",
+      "frames": 220,
+      "bodies": {
+        "r_thumb_distal": {
+          "contacts_gt_0p02_n": 13,
+          "active_frames_gt_0p02_n": 13,
+          "normal_force_sum_n": 2.1736737390308076,
+          "median_local_xyz_mm": [
+            -1.272011918160629,
+            -6.957837688051917,
+            -28.823801915426216
+          ],
+          "local_y_5_95_mm": [
+            -8.370582549918142,
+            -5.430002965316548
+          ]
+        },
+        "r_thumb_tip_sensor_frame": {
+          "contacts_gt_0p02_n": 275,
+          "active_frames_gt_0p02_n": 176,
+          "normal_force_sum_n": 103.09256722661792,
+          "median_local_xyz_mm": [
+            -5.131765925212021,
+            0.4906914525414016,
+            -27.374624615628584
+          ],
+          "local_y_5_95_mm": [
+            -2.168350542108576,
+            1.8546180664589496
+          ]
+        },
+        "r_index_finger_distal": {
+          "contacts_gt_0p02_n": 0,
+          "active_frames_gt_0p02_n": 0,
+          "normal_force_sum_n": 0.0,
+          "median_local_xyz_mm": null,
+          "local_y_5_95_mm": null
+        },
+        "r_index_finger_tip_sensor_frame": {
+          "contacts_gt_0p02_n": 501,
+          "active_frames_gt_0p02_n": 188,
+          "normal_force_sum_n": 83.91049744333915,
+          "median_local_xyz_mm": [
+            2.223366796976162,
+            6.234448938051651,
+            -16.914346790469192
+          ],
+          "local_y_5_95_mm": [
+            1.0076385039824258,
+            6.835378151307242
+          ]
+        },
+        "r_middle_finger_distal": {
+          "contacts_gt_0p02_n": 45,
+          "active_frames_gt_0p02_n": 44,
+          "normal_force_sum_n": 8.10648532895833,
+          "median_local_xyz_mm": [
+            5.435471976550976,
+            -6.23835696881263,
+            -16.735244365405585
+          ],
+          "local_y_5_95_mm": [
+            -7.641810844440435,
+            -4.7781161269448615
+          ]
+        },
+        "r_middle_finger_tip_sensor_frame": {
+          "contacts_gt_0p02_n": 186,
+          "active_frames_gt_0p02_n": 76,
+          "normal_force_sum_n": 40.314544104387984,
+          "median_local_xyz_mm": [
+            4.744231099715101,
+            1.5535206837069457,
+            -20.49252440623153
+          ],
+          "local_y_5_95_mm": [
+            -2.2216871458098493,
+            4.697289822442921
+          ]
+        }
+      }
+    }
+  }
+}

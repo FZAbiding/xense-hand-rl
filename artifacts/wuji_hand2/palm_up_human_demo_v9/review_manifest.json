@@ -1,0 +1,96 @@
+{
+  "title": "Wuji v9 Gate 0｜接触网格与交接动作待审阅",
+  "summary": "同一场景、固定种子下对照 v7 基线与 v8 第 996 轮。24 回合重放与原指标逐回合完全吻合；v8 中指末节承力帧占比由 30.1% 降至 18.5%，但两者在保守接触门槛均为 0/24。图中的颜色是碰撞体，不是获认可的指腹边界；尚未开展 v9 训练。",
+  "cards": [
+    {
+      "title": "真人参考（已批准示范）",
+      "status": "reference",
+      "video": "../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/human_A.mp4",
+      "description": "独立参考片段；机器人视频尚未经相位标定，不能视为同步模仿。"
+    },
+    {
+      "title": "v7 第 9000 轮：固定种子基线",
+      "status": "failed",
+      "video": "../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/rollout.mp4",
+      "description": "三视角实际 CPU 策略 rollout。v8 sensor-only 严格门槛 0/24；动作自然性待人工判定。",
+      "links": [
+        {
+          "label": "24 回合指标",
+          "path": "../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/metrics.json"
+        },
+        {
+          "label": "首回合逐帧接触点",
+          "path": "../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/contacts.json"
+        }
+      ]
+    },
+    {
+      "title": "v8 第 996 轮：改进但仅诊断",
+      "status": "diagnostic",
+      "video": "../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4",
+      "description": "三视角实际 CPU 策略 rollout。5.5 秒 24/24 完成、保守严格门槛 0/24；中指末节仍有承力，真实指腹与交接待人工判定。",
+      "links": [
+        {
+          "label": "24 回合指标",
+          "path": "../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/metrics.json"
+        },
+        {
+          "label": "首回合逐帧接触点",
+          "path": "../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/contacts.json"
+        },
+        {
+          "label": "第 996 轮权重",
+          "path": "../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/model.pt"
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "label": "24 回合配对接触本体承力比例：这是网格体统计，并非人体指腹验收",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/paired_24_contact_occupancy.png"
+    },
+    {
+      "label": "同一网格上的接触位置：蓝色传感体、橙色末节本体",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/mesh_contact_comparison.png"
+    },
+    {
+      "label": "首回合接触力时间线；浅黄为需审阅的交接窗口",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/contact_force_comparison.png"
+    }
+  ],
+  "links": [
+    {
+      "label": "Gate 0 分析与待确认项",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/REVIEW.md"
+    },
+    {
+      "label": "原始统计及 SHA",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/summary.json"
+    },
+    {
+      "label": "待确认的区域记录",
+      "path": "../../../assets/wuji_hand2_palm_up_human_demo_v9/contact_surface_review.json"
+    },
+    {
+      "label": "v9 下一阶段计划",
+      "path": "../../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md"
+    },
+    {
+      "label": "24 回合逐帧接触统计",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/full_24_contact_summary.json"
+    },
+    {
+      "label": "v7 全 24 回合原始接触点",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v7_baseline_all_contacts.json.gz"
+    },
+    {
+      "label": "v8 全 24 回合原始接触点",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_iteration_996_all_contacts.json.gz"
+    },
+    {
+      "label": "逐回合复现核对",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/replay_checks.json"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "status": "fixed-validation replay only; not a pad classifier or new acceptance result",
+  "v7_baseline": {
+    "checkpoint": "reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_wrapped_for_v8.pt",
+    "checkpoint_sha256": "0865d7978279344dd1dd1f6e6467e2e3b67679b90ef0ea5557982785ff8912b1",
+    "archived_metrics": "reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/metrics.json",
+    "archived_metrics_sha256": "4458822aada98701c517e05b0a430ff2b29d8e9fbb45dfb0554f50f1813d0bc0",
+    "seed": 2026101701,
+    "episodes": [
+      {
+        "episode": 0,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 1,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 2,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 3,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 4,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 5,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 6,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 7,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 8,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 9,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 10,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 11,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 12,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 13,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 14,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 15,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 16,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 17,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 18,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 19,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 20,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 21,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 22,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 23,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      }
+    ],
+    "max_angle_replay_error_deg": 0.0,
+    "contact_archive": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v7_baseline_all_contacts.json.gz",
+    "contact_archive_sha256": "f9ee44677f46a53ffe9e5b211d04ee79eb4020f992070f495f551fda5db7b59b"
+  },
+  "v8_iteration_996": {
+    "checkpoint": "reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/model.pt",
+    "checkpoint_sha256": "066643e4cd236b320d13518ae53c5b089084a38760784d41492b8f9ebfa7efaf",
+    "archived_metrics": "reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/metrics.json",
+    "archived_metrics_sha256": "cfe96e22e5311bf41e792c910923ca24717d89241457f3c1e0437d946736cdbb",
+    "seed": 2026101701,
+    "episodes": [
+      {
+        "episode": 0,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 1,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 2,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 3,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 4,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 5,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 6,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 7,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 8,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 9,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 10,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 11,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 12,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 13,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 14,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 15,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 16,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 17,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 18,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 19,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 20,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 21,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 22,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      },
+      {
+        "episode": 23,
+        "frames": 220,
+        "angle_error_deg": 0.0
+      }
+    ],
+    "max_angle_replay_error_deg": 0.0,
+    "contact_archive": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_iteration_996_all_contacts.json.gz",
+    "contact_archive_sha256": "8e6560814d87a8b0e69598a3fdbaeed68a85697f22816c9ae9967307944c83c4"
+  }
+}
