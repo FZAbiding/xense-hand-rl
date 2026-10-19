@@ -1,6 +1,6 @@
 {
-  "status": "pending_human_pad_calibration",
-  "purpose": "Review-only body categories; not an anatomical pad classifier or training gate.",
+  "status": "approved_example_neighborhoods_frozen",
+  "purpose": "Training and acceptance classifier for isolated v9 short pilots; not a full anatomical mesh annotation.",
   "source_scene": "assets/wuji_hand2_palm_up_human_demo_v8/scene.xml",
   "source_scene_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
   "source_summary": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/summary.json",
@@ -8,8 +8,11 @@
   "contact_closeup_metadata": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/contact_closeup_metadata.json",
   "coordinate_frame": "MuJoCo body-local metres; child tip_sensor_frame origins coincide with parent distal body origins in this scene",
   "contact_sample_filter_n": 0.02,
-  "accepted_pad_regions": null,
-  "accepted_force_thresholds": null,
+  "accepted_pad_regions": "assets/wuji_hand2_palm_up_human_demo_v9/pad_regions.json",
+  "accepted_force_thresholds": {
+    "sample_n": 0.02,
+    "nonpad_frame_n": 0.05
+  },
   "bodies_to_adjudicate": [
     "r_thumb_tip_sensor_frame",
     "r_thumb_distal",
@@ -32,9 +35,14 @@
       "date": "2026-10-19",
       "verbatim": "v8 的交接动作可以作为下一轮待改进候选",
       "interpretation": "V8 transfer motion is accepted as a candidate for iterative short-turn improvement, not as a passed natural-motion demonstration."
+    },
+    {
+      "date": "2026-10-19",
+      "verbatim": "可以接受，启动训练",
+      "interpretation": "User accepts the highlighted distal contact locations and authorizes short v9 training under the previously proposed limits."
     }
   ],
   "diagnostic_warm_start_candidate": "v8_iteration_996_after_pad_gate_is_frozen",
   "qualified_imitation_target": false,
-  "training_use_allowed": false
+  "training_use_allowed": true
 }

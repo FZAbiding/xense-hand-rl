@@ -1,0 +1,15 @@
+{
+  "source_version": "palm_up_human_demo_v8",
+  "source_commit": "d58ec03",
+  "files": {
+    "scene.xml": {
+      "source_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
+      "v9_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb"
+    },
+    "grasp_seed_bank.npz": {
+      "source_sha256": "bb7dcb800c98100cfe82615c5be2e8ba4c45c50724dfc76754438d5993a276b4",
+      "v9_sha256": "bb7dcb800c98100cfe82615c5be2e8ba4c45c50724dfc76754438d5993a276b4"
+    }
+  },
+  "changes": "No scene or grasp-bank changes; calibrated contact classifier is external to scene.xml."
+}

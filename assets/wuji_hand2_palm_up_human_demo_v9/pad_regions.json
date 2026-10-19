@@ -1,0 +1,43 @@
+{
+  "status": "frozen_before_v9_training",
+  "decision_date": "2026-10-19",
+  "coordinate_frame": "MuJoCo body-local metres; radius applies to each approved exemplar center",
+  "accepted_sensor_bodies": "all five r_*_tip_sensor_frame collision bodies",
+  "distal_regions": {
+    "r_middle_finger_distal": {
+      "finger_channel": 2,
+      "accepted_example_centers_local_m": [
+        [
+          0.006132177964307345,
+          -0.004788706419712888,
+          -0.01879203916632773
+        ],
+        [
+          0.004660211912804875,
+          -0.006948412403223364,
+          -0.01407278918505476
+        ]
+      ],
+      "neighborhood_radius_m": 0.004
+    },
+    "r_thumb_distal": {
+      "finger_channel": 0,
+      "accepted_example_centers_local_m": [
+        [
+          -0.005071719547935102,
+          -0.006957837688051917,
+          -0.028823801915426217
+        ]
+      ],
+      "neighborhood_radius_m": 0.004
+    }
+  },
+  "remaining_distal_bodies": "non-pad including index, ring, pinky and points outside accepted neighborhoods",
+  "contact_sample_force_n": 0.02,
+  "nonpad_frame_force_n": 0.05,
+  "source_closeups": [
+    "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t1.30.png",
+    "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t3.20.png"
+  ],
+  "human_decision": "User accepted highlighted distal contact positions and authorized v9 short training; neighborhood radius is a conservative implementation assumption and does not approve entire distal mesh."
+}
