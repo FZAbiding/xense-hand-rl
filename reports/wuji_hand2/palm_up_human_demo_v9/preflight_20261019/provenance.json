@@ -1,0 +1,16 @@
+{
+  "v8": {
+    "parent": "reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/model.pt",
+    "parent_sha256": "066643e4cd236b320d13518ae53c5b089084a38760784d41492b8f9ebfa7efaf",
+    "wrapper": "reports/wuji_hand2/palm_up_human_demo_v9/preflight_20261019/v8_wrapped_for_v9_pad.pt",
+    "wrapper_sha256": "dde54c93373151035e9c5a076507291b379935916e6a25ef7cbd95dbeee48fa8",
+    "policy_weights_unchanged": true
+  },
+  "v7": {
+    "parent": "reports/wuji_hand2/palm_up_human_demo_v7/progress_20261015/turn_3s_best_iteration_9000/model.pt",
+    "parent_sha256": "98ad3e008ad1100e29550662acdb975eae4d4d062cdb1a91db7c51169904b9a4",
+    "wrapper": "reports/wuji_hand2/palm_up_human_demo_v9/preflight_20261019/v7_wrapped_for_v9_pad.pt",
+    "wrapper_sha256": "f6a2743c59a4bb05b89248836e71327456a8d7d7f52f7cd59f08dcacc3c65602",
+    "policy_weights_unchanged": true
+  }
+}
