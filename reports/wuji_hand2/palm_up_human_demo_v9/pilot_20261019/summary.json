@@ -1,0 +1,93 @@
+{
+  "arm_a_best_0000900": {
+    "arm": "a",
+    "iteration": 900,
+    "seed": 2026101701,
+    "strict_passes": 24,
+    "episodes": 24,
+    "wilson95_lower": 0.86202,
+    "wilson95_upper": 1.0,
+    "failed_gates": {},
+    "checkpoint_sha256_in_evaluation": "f9c07a3cd91009a7347f9c0947503c7937cb7a549c3915acadf5f3c3d382d40c",
+    "weight_file_available": true,
+    "weight_sha256": "f9c07a3cd91009a7347f9c0947503c7937cb7a549c3915acadf5f3c3d382d40c",
+    "first_episode_video": "rollout.mp4",
+    "mean_signed_angle_deg": 358.8764810926853,
+    "mean_mae_deg": 0.885728202217882
+  },
+  "arm_a_final_0000914": {
+    "arm": "a",
+    "iteration": 914,
+    "seed": 2026101701,
+    "strict_passes": 23,
+    "episodes": 24,
+    "wilson95_lower": 0.79758,
+    "wilson95_upper": 0.99261,
+    "failed_gates": {
+      "two_sensor_fraction": 1
+    },
+    "checkpoint_sha256_in_evaluation": "137eed14ca43655cea78e84fe9ed0100ec1c139a4714bc31d715cdabaf04a615",
+    "weight_file_available": true,
+    "weight_sha256": "137eed14ca43655cea78e84fe9ed0100ec1c139a4714bc31d715cdabaf04a615",
+    "first_episode_video": "rollout.mp4",
+    "mean_signed_angle_deg": 359.3055517834785,
+    "mean_mae_deg": 0.9760640779585197
+  },
+  "arm_b_best_observed_0000800": {
+    "arm": "b",
+    "iteration": 800,
+    "seed": 2026101701,
+    "strict_passes": 23,
+    "episodes": 24,
+    "wilson95_lower": 0.79758,
+    "wilson95_upper": 0.99261,
+    "failed_gates": {
+      "rotation_progress": 1
+    },
+    "checkpoint_sha256_in_evaluation": "3a19ad7963da213c8dc8cb33c8cd0039c41c91ee4661f2b653199704e101ebcf",
+    "weight_file_available": false,
+    "weight_sha256": null,
+    "first_episode_video": "rollout.mp4",
+    "mean_signed_angle_deg": 354.36512482888423,
+    "mean_mae_deg": 1.3487600883353628
+  },
+  "arm_b_final_0000953": {
+    "arm": "b",
+    "iteration": 953,
+    "seed": 2026101701,
+    "strict_passes": 22,
+    "episodes": 24,
+    "wilson95_lower": 0.74151,
+    "wilson95_upper": 0.97684,
+    "failed_gates": {
+      "two_sensor_fraction": 2
+    },
+    "checkpoint_sha256_in_evaluation": "a5d13ca0059604a67129330f66937dfd1a79cc34bfa564fbec8c7f9ca5137222",
+    "weight_file_available": true,
+    "weight_sha256": "a5d13ca0059604a67129330f66937dfd1a79cc34bfa564fbec8c7f9ca5137222",
+    "first_episode_video": "rollout.mp4",
+    "mean_signed_angle_deg": 358.2638999569062,
+    "mean_mae_deg": 1.0508408028556737
+  },
+  "arm_b_regression_0000900": {
+    "arm": "b",
+    "iteration": 900,
+    "seed": 2026101701,
+    "strict_passes": 20,
+    "episodes": 24,
+    "wilson95_lower": 0.64147,
+    "wilson95_upper": 0.93321,
+    "failed_gates": {
+      "non_sensor_fraction": 2,
+      "full_duration": 2,
+      "posture_or_reverse": 2,
+      "two_sensor_fraction": 1
+    },
+    "checkpoint_sha256_in_evaluation": "b2c57052f001cbb086eaecec3b614a159d8e2c18ef2d9c9240bf0fe6d4588e9a",
+    "weight_file_available": true,
+    "weight_sha256": "b2c57052f001cbb086eaecec3b614a159d8e2c18ef2d9c9240bf0fe6d4588e9a",
+    "first_episode_video": "rollout.mp4",
+    "mean_signed_angle_deg": 358.47482077339265,
+    "mean_mae_deg": 1.0473550562036387
+  }
+}

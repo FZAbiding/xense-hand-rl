@@ -1,0 +1,68 @@
+<!doctype html><html lang="zh"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wuji v9｜短时 A/B 训练阶段评审</title>
+<style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
+</head><body><h1>Wuji v9｜短时 A/B 训练阶段评审</h1><p class="summary">A900 在固定 24 回合达到 24/24，但仍待人工确认接触位置、食指/中指关系、释放交接和最终回握。未见种子未打开，30/60/120 秒训练未启动。B800 的 23/24 权重已被旧清理规则删除，不能作为可复现候选。</p><div class="grid">
+<article><h2>真人参考（已批准）</h2><p class="status reference">参考</p>
+<p>动作参考；机器人和真人视频未经相位对齐。</p>
+<video src="human_A.mp4" controls preload="metadata" playsinline></video>
+<p><a href="human_A.mp4">视频文件</a></p>
+</article>
+<article><h2>v9 A 第 900 轮：固定种子 24/24，待人工动作审阅</h2><p class="status pending">待审阅</p>
+<p>5.5 秒实际 CPU 策略轨迹，三同步视角；机器固定种子 24/24，未见种子未开。画面左上角 V8 为继承的渲染文字错误。</p>
+<video src="arm_a_best_0000900/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="arm_a_best_0000900/rollout.mp4">视频文件</a></p>
+<p><a href="arm_a_best_0000900/metrics.json">24 回合指标</a></p>
+<p><a href="arm_a_best_0000900/contacts.json">逐帧接触</a></p>
+<p><a href="arm_a_best_0000900/model.pt">A900 权重</a></p>
+<p><a href="arm_a_best_0000900/contact_curve.svg">指腹与非指腹接触力曲线</a></p>
+<p><a href="arm_a_best_0000900/joint_curve.svg">食指与中指关节曲线</a></p>
+<p><a href="arm_a_best_0000900/rollout.npz">首回合原始轨迹</a></p>
+<p><a href="arm_a_run_record/config.json">训练配置</a></p>
+</article>
+<article><h2>v9 B 第 800 轮：23/24，权重已被旧清理规则删除</h2><p class="status diagnostic">仅诊断</p>
+<p>仅保留视频和原始指标，缺少该轮权重，不能作为可复现交付模型。</p>
+<video src="arm_b_best_observed_0000800/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="arm_b_best_observed_0000800/rollout.mp4">视频文件</a></p>
+<p><a href="arm_b_best_observed_0000800/metrics.json">24 回合指标</a></p>
+<p><a href="arm_b_best_observed_0000800/contact_curve.svg">指腹与非指腹接触力曲线</a></p>
+<p><a href="arm_b_best_observed_0000800/joint_curve.svg">食指与中指关节曲线</a></p>
+</article>
+<article><h2>v8 第 996 轮：v9 接触门槛基线 2/24</h2><p class="status failed">失败</p>
+<p>相同固定种子、相同局部指腹验收；v8 是用户认可的改进候选，不是完整成功示范。</p>
+<video src="../preflight_20261019/baseline_v8_pad/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../preflight_20261019/baseline_v8_pad/rollout.mp4">视频文件</a></p>
+<p><a href="../preflight_20261019/baseline_v8_pad/metrics.json">24 回合指标</a></p>
+</article>
+<article><h2>v9 A 最终第 914 轮：23/24</h2><p class="status pending">待审阅</p>
+<p>最终训练权重单独保留；固定种子比选中的 A900 少一回合通过。</p>
+<video src="arm_a_final_0000914/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="arm_a_final_0000914/rollout.mp4">视频文件</a></p>
+<p><a href="arm_a_final_0000914/metrics.json">24 回合指标</a></p>
+<p><a href="arm_a_final_0000914/model.pt">最终权重</a></p>
+</article>
+<article><h2>v9 B 最终第 953 轮：22/24</h2><p class="status failed">失败</p>
+<p>未达到固定种子 23/24 门槛；保留权重与逐回合失败记录。</p>
+<video src="arm_b_final_0000953/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="arm_b_final_0000953/rollout.mp4">视频文件</a></p>
+<p><a href="arm_b_final_0000953/metrics.json">24 回合指标</a></p>
+<p><a href="arm_b_final_0000953/model.pt">最终权重</a></p>
+</article>
+<article><h2>v9 B 第 900 轮：回落至 20/24</h2><p class="status failed">失败</p>
+<p>视频是首回合示例，失败回合编号与失败门槛见 JSON；本卡保留回归证据。</p>
+<video src="arm_b_regression_0000900/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="arm_b_regression_0000900/rollout.mp4">视频文件</a></p>
+<p><a href="arm_b_regression_0000900/metrics.json">24 回合失败明细</a></p>
+</article>
+</div>
+<h2>A900 交接 1.3 秒，三同步视角</h2><img src="arm_a_best_0000900/handover_t1.3.png" alt="A900 交接 1.3 秒，三同步视角" loading="lazy">
+<h2>A900 交接 3.2 秒，三同步视角</h2><img src="arm_a_best_0000900/handover_t3.2.png" alt="A900 交接 3.2 秒，三同步视角" loading="lazy">
+<h2>B800 交接 1.3 秒，三同步视角</h2><img src="arm_b_best_observed_0000800/handover_t1.3.png" alt="B800 交接 1.3 秒，三同步视角" loading="lazy">
+<h2>B800 交接 3.2 秒，三同步视角</h2><img src="arm_b_best_observed_0000800/handover_t3.2.png" alt="B800 交接 3.2 秒，三同步视角" loading="lazy">
+<nav>
+<p><a href="REVIEW.md">完整报告与下一步门槛</a></p>
+<p><a href="summary.json">逐模型哈希与置信区间</a></p>
+<p><a href="../../../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md">冻结训练计划</a></p>
+<p><a href="arm_a_run_record/metrics.jsonl">A 训练逐轮记录</a></p>
+<p><a href="arm_b_run_record/metrics.jsonl">B 训练逐轮记录</a></p>
+</nav></body></html>

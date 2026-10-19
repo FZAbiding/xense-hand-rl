@@ -1,42 +1,68 @@
 <!doctype html><html lang="zh"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wuji v9 Gate 0｜接触网格与交接动作待审阅</title>
+<title>Wuji v9｜短时 A/B 训练阶段评审</title>
 <style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
-</head><body><h1>Wuji v9 Gate 0｜接触网格与交接动作待审阅</h1><p class="summary">用户认为 v8 比 v7 更好，并已批准 v8 交接动作作为下一轮待改进候选；这不是动作质量通过，也不是指腹接触已获认可。v8 24 回合中指末节承力帧占比从 v7 的 30.1% 降至 18.5%，但保守严格门槛仍为 0/24。v9 训练尚未开始。</p><div class="grid">
-<article><h2>真人参考（已批准示范）</h2><p class="status reference">参考</p>
-<p>独立参考片段；机器人视频尚未经相位标定，不能视为同步模仿。</p>
-<video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/human_A.mp4" controls preload="metadata" playsinline></video>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/human_A.mp4">视频文件</a></p>
+</head><body><h1>Wuji v9｜短时 A/B 训练阶段评审</h1><p class="summary">A900 在固定 24 回合达到 24/24，但仍待人工确认接触位置、食指/中指关系、释放交接和最终回握。未见种子未打开，30/60/120 秒训练未启动。B800 的 23/24 权重已被旧清理规则删除，不能作为可复现候选。</p><div class="grid">
+<article><h2>真人参考（已批准）</h2><p class="status reference">参考</p>
+<p>动作参考；机器人和真人视频未经相位对齐。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/human_A.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/human_A.mp4">视频文件</a></p>
 </article>
-<article><h2>v7 第 9000 轮：固定种子基线</h2><p class="status failed">失败</p>
-<p>三视角实际 CPU 策略 rollout。v8 sensor-only 严格门槛 0/24；动作自然性待人工判定。</p>
-<video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/rollout.mp4" controls preload="metadata" playsinline></video>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/rollout.mp4">视频文件</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/metrics.json">24 回合指标</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/contacts.json">首回合逐帧接触点</a></p>
+<article><h2>v9 A 第 900 轮：固定种子 24/24，待人工动作审阅</h2><p class="status pending">待审阅</p>
+<p>5.5 秒实际 CPU 策略轨迹，三同步视角；机器固定种子 24/24，未见种子未开。画面左上角 V8 为继承的渲染文字错误。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/metrics.json">24 回合指标</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/contacts.json">逐帧接触</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/model.pt">A900 权重</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/contact_curve.svg">指腹与非指腹接触力曲线</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/joint_curve.svg">食指与中指关节曲线</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/rollout.npz">首回合原始轨迹</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_run_record/config.json">训练配置</a></p>
 </article>
-<article><h2>v8 第 996 轮：下一轮待改进动作候选（仅诊断）</h2><p class="status diagnostic">仅诊断</p>
-<p>用户认可其交接动作可作为下一轮待改进候选。该三视角 CPU 策略 rollout 仍仅有 0/24 保守严格通过；真实指腹区域待标定，当前权重不是合格示范。</p>
-<video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4" controls preload="metadata" playsinline></video>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4">视频文件</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/metrics.json">24 回合指标</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/contacts.json">首回合逐帧接触点</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/model.pt">第 996 轮权重</a></p>
+<article><h2>v9 B 第 800 轮：23/24，权重已被旧清理规则删除</h2><p class="status diagnostic">仅诊断</p>
+<p>仅保留视频和原始指标，缺少该轮权重，不能作为可复现交付模型。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_best_observed_0000800/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_best_observed_0000800/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_best_observed_0000800/metrics.json">24 回合指标</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_best_observed_0000800/contact_curve.svg">指腹与非指腹接触力曲线</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_best_observed_0000800/joint_curve.svg">食指与中指关节曲线</a></p>
+</article>
+<article><h2>v8 第 996 轮：v9 接触门槛基线 2/24</h2><p class="status failed">失败</p>
+<p>相同固定种子、相同局部指腹验收；v8 是用户认可的改进候选，不是完整成功示范。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v9/preflight_20261019/baseline_v8_pad/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/preflight_20261019/baseline_v8_pad/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/preflight_20261019/baseline_v8_pad/metrics.json">24 回合指标</a></p>
+</article>
+<article><h2>v9 A 最终第 914 轮：23/24</h2><p class="status pending">待审阅</p>
+<p>最终训练权重单独保留；固定种子比选中的 A900 少一回合通过。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_final_0000914/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_final_0000914/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_final_0000914/metrics.json">24 回合指标</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_final_0000914/model.pt">最终权重</a></p>
+</article>
+<article><h2>v9 B 最终第 953 轮：22/24</h2><p class="status failed">失败</p>
+<p>未达到固定种子 23/24 门槛；保留权重与逐回合失败记录。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_final_0000953/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_final_0000953/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_final_0000953/metrics.json">24 回合指标</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_final_0000953/model.pt">最终权重</a></p>
+</article>
+<article><h2>v9 B 第 900 轮：回落至 20/24</h2><p class="status failed">失败</p>
+<p>视频是首回合示例，失败回合编号与失败门槛见 JSON；本卡保留回归证据。</p>
+<video src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_regression_0000900/rollout.mp4" controls preload="metadata" playsinline></video>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_regression_0000900/rollout.mp4">视频文件</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_regression_0000900/metrics.json">24 回合失败明细</a></p>
 </article>
 </div>
-<h2>v8 第 1.30 秒：品红圈为中指末节本体接触，青色圈为食指传感体接触；三视角同一时间</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t1.30.png" alt="v8 第 1.30 秒：品红圈为中指末节本体接触，青色圈为食指传感体接触；三视角同一时间" loading="lazy">
-<h2>v8 第 3.20 秒：品红为中指末节、白色为拇指末节、青色为食指传感体；投影圈可能被近处表面遮挡</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t3.20.png" alt="v8 第 3.20 秒：品红为中指末节、白色为拇指末节、青色为食指传感体；投影圈可能被近处表面遮挡" loading="lazy">
-<h2>24 回合配对接触本体承力比例：这是网格体统计，并非人体指腹验收</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/paired_24_contact_occupancy.png" alt="24 回合配对接触本体承力比例：这是网格体统计，并非人体指腹验收" loading="lazy">
-<h2>同一网格上的接触位置：蓝色传感体、橙色末节本体</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/mesh_contact_comparison.png" alt="同一网格上的接触位置：蓝色传感体、橙色末节本体" loading="lazy">
-<h2>首回合接触力时间线；浅黄为需审阅的交接窗口</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/contact_force_comparison.png" alt="首回合接触力时间线；浅黄为需审阅的交接窗口" loading="lazy">
+<h2>A900 交接 1.3 秒，三同步视角</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/handover_t1.3.png" alt="A900 交接 1.3 秒，三同步视角" loading="lazy">
+<h2>A900 交接 3.2 秒，三同步视角</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/handover_t3.2.png" alt="A900 交接 3.2 秒，三同步视角" loading="lazy">
+<h2>B800 交接 1.3 秒，三同步视角</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_best_observed_0000800/handover_t1.3.png" alt="B800 交接 1.3 秒，三同步视角" loading="lazy">
+<h2>B800 交接 3.2 秒，三同步视角</h2><img src="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_best_observed_0000800/handover_t3.2.png" alt="B800 交接 3.2 秒，三同步视角" loading="lazy">
 <nav>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/REVIEW.md">Gate 0 分析与待确认项</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/summary.json">原始统计及 SHA</a></p>
-<p><a href="../../../assets/wuji_hand2_palm_up_human_demo_v9/contact_surface_review.json">待确认的区域记录</a></p>
-<p><a href="../../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md">v9 下一阶段计划</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/full_24_contact_summary.json">24 回合逐帧接触统计</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v7_baseline_all_contacts.json.gz">v7 全 24 回合原始接触点</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_iteration_996_all_contacts.json.gz">v8 全 24 回合原始接触点</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/replay_checks.json">逐回合复现核对</a></p>
-<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/contact_closeup_metadata.json">局部接触标注的来源哈希与精确坐标</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/REVIEW.md">完整报告与下一步门槛</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/summary.json">逐模型哈希与置信区间</a></p>
+<p><a href="../../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md">冻结训练计划</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_run_record/metrics.jsonl">A 训练逐轮记录</a></p>
+<p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_b_run_record/metrics.jsonl">B 训练逐轮记录</a></p>
 </nav></body></html>
