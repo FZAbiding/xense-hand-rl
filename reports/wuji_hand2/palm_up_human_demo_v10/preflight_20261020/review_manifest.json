@@ -1,0 +1,70 @@
+{
+  "title": "Wuji v10｜夜间抗扰训练预检",
+  "summary": "v9 A900 无扰动固定种子 24/24；±0.2 N 诊断外力下降至 18/24，失败 6 回合。v10 仅准备夜间短回合抗扰训练，人工动作审阅与未见种子仍待完成。",
+  "cards": [
+    {
+      "title": "真人参考（已批准示范）",
+      "status": "reference",
+      "video": "../../palm_up_human_demo_v9/pilot_20261019/human_A.mp4",
+      "description": "独立动作参考，未经机器人视频相位对齐。"
+    },
+    {
+      "title": "v9 A900：标准条件 24/24",
+      "status": "pending",
+      "video": "baseline_standard/rollout.mp4",
+      "description": "5.5 秒实际 CPU 策略轨迹；机器门槛通过，动作自然性待用户审阅。",
+      "links": [
+        {
+          "label": "24 回合指标",
+          "path": "baseline_standard/metrics.json"
+        },
+        {
+          "label": "原始轨迹",
+          "path": "baseline_standard/rollout.npz"
+        },
+        {
+          "label": "A900 对应权重",
+          "path": "a900_wrapped_for_v10_020.pt"
+        }
+      ]
+    },
+    {
+      "title": "v9 A900：±0.2 N 外力 18/24",
+      "status": "failed",
+      "video": "baseline_push_020/rollout.mp4",
+      "description": "首回合即为实际失败轨迹；24 回合中 3 次提前结束、3 次非指腹承力超标。作为 v10 抗扰训练的失败基线。",
+      "links": [
+        {
+          "label": "24 回合失败明细",
+          "path": "baseline_push_020/metrics.json"
+        },
+        {
+          "label": "首回合接触点",
+          "path": "baseline_push_020/contacts.json"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "label": "预检报告和阈值",
+      "path": "REVIEW.md"
+    },
+    {
+      "label": "v10 夜间训练计划",
+      "path": "../../../../experiments/wuji_hand2/palm_up_human_demo_v10/PLAN.md"
+    },
+    {
+      "label": "模型来源哈希",
+      "path": "provenance.json"
+    },
+    {
+      "label": "±0.02 N 逐回合结果",
+      "path": "calibration/push_002.metrics.json"
+    },
+    {
+      "label": "±0.08 N 逐回合结果",
+      "path": "calibration/push_008.metrics.json"
+    }
+  ]
+}

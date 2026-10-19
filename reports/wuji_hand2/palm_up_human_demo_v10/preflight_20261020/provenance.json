@@ -1,0 +1,13 @@
+{
+  "parent_model": "reports/wuji_hand2/palm_up_human_demo_v9/pilot_20261019/arm_a_best_0000900/model.pt",
+  "parent_sha256": "f9c07a3cd91009a7347f9c0947503c7937cb7a549c3915acadf5f3c3d382d40c",
+  "wrapped_model": "reports/wuji_hand2/palm_up_human_demo_v10/preflight_20261020/a900_wrapped_for_v10_020.pt",
+  "wrapped_sha256": "3d9135a9d1dfe9b026822ae1f5b90eeddf89568500cc27423b84c0cefe9c24f8",
+  "policy_weights_unchanged": true,
+  "standard_validation_seed": 2026101701,
+  "push_diagnostic_seed": 2026102001,
+  "push_force_max_n": 0.2,
+  "calibration_wrapper": "reports/wuji_hand2/palm_up_human_demo_v10/preflight_20261020/a900_wrapped_for_v10.pt",
+  "calibration_wrapper_sha256": "45e683a3e2f7ee3a481ab532b035e2012328c0f0513ce2bb513fa534660d8646",
+  "calibration_note": "The 0.02 and 0.08 N exploratory metrics used this unchanged-policy wrapper; the final 0.2 N paired validation used the frozen-config wrapper."
+}

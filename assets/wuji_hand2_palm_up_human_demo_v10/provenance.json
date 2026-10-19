@@ -1,0 +1,19 @@
+{
+  "source_version": "palm_up_human_demo_v9",
+  "source_commit": "7acef98",
+  "files": {
+    "scene.xml": {
+      "v9_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
+      "v10_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb"
+    },
+    "grasp_seed_bank.npz": {
+      "v9_sha256": "bb7dcb800c98100cfe82615c5be2e8ba4c45c50724dfc76754438d5993a276b4",
+      "v10_sha256": "bb7dcb800c98100cfe82615c5be2e8ba4c45c50724dfc76754438d5993a276b4"
+    },
+    "pad_regions.json": {
+      "v9_sha256": "59f3cfb99c5d0c259b442b9c670bf65e73925a76dc18a7cd09de245de35cd927",
+      "v10_sha256": "59f3cfb99c5d0c259b442b9c670bf65e73925a76dc18a7cd09de245de35cd927"
+    }
+  },
+  "changes": "Scene, grasp bank, and pad map are byte-identical. V10 only activates existing small training-time pen pushes and fixes review overlay/retention."
+}
