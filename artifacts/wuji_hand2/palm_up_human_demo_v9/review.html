@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wuji v9 Gate 0｜接触网格与交接动作待审阅</title>
 <style>body{background:#111;color:#eee;font:17px/1.6 sans-serif;max-width:1400px;margin:30px auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,480px),1fr));gap:20px}video,img{width:100%;height:auto}a{color:#9cf}article{background:#222;padding:15px;border-radius:6px}.status{display:inline-block;padding:3px 12px;border:1px solid #aaa;border-radius:4px}.rejected,.failed{border-color:#f88;color:#faa}.pending{border-color:#fc8;color:#fc8}.passed{border-color:#9d9;color:#9d9}.summary{border-left:4px solid #fc8;padding-left:15px}</style>
-</head><body><h1>Wuji v9 Gate 0｜接触网格与交接动作待审阅</h1><p class="summary">同一场景、固定种子下对照 v7 基线与 v8 第 996 轮。24 回合重放与原指标逐回合完全吻合；v8 中指末节承力帧占比由 30.1% 降至 18.5%，但两者在保守接触门槛均为 0/24。图中的颜色是碰撞体，不是获认可的指腹边界；尚未开展 v9 训练。</p><div class="grid">
+</head><body><h1>Wuji v9 Gate 0｜接触网格与交接动作待审阅</h1><p class="summary">用户直观认为 v8 效果比 v7 好；这已记录为相对视觉偏好，动作与指腹接触仍待明确验收。24 回合固定种子重放与原指标完全吻合；v8 中指末节承力帧占比由 30.1% 降至 18.5%，但两者在保守门槛均为 0/24。尚未开展 v9 训练。</p><div class="grid">
 <article><h2>真人参考（已批准示范）</h2><p class="status reference">参考</p>
 <p>独立参考片段；机器人视频尚未经相位标定，不能视为同步模仿。</p>
 <video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/human_A.mp4" controls preload="metadata" playsinline></video>
@@ -16,7 +16,7 @@
 <p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/preflight_20261017/baseline_v7_legacy_obs_sensor_gate/contacts.json">首回合逐帧接触点</a></p>
 </article>
 <article><h2>v8 第 996 轮：改进但仅诊断</h2><p class="status diagnostic">仅诊断</p>
-<p>三视角实际 CPU 策略 rollout。5.5 秒 24/24 完成、保守严格门槛 0/24；中指末节仍有承力，真实指腹与交接待人工判定。</p>
+<p>用户直观认为 v8 比 v7 更好；目前仍是三视角 CPU 策略诊断 rollout。5.5 秒 24/24 完成、保守严格门槛 0/24；真实指腹与交接是否合格待进一步确认。</p>
 <video src="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4" controls preload="metadata" playsinline></video>
 <p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4">视频文件</a></p>
 <p><a href="../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/metrics.json">24 回合指标</a></p>

@@ -1,6 +1,6 @@
 # Wuji v9 Gate 0: contact-surface evidence for human review
 
-**Status:** read-only comparison completed on 2026-10-19. Anatomical pad boundaries and v7/v8 motion naturalness remain **unconfirmed**. No v9 training or new holdout evaluation was run. The [v9 execution plan](../../../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md) requires those decisions before a calibrated contact gate or short pilot can be frozen.
+**Status:** read-only comparison completed on 2026-10-19. The user reports that v8 **looks better than v7**. This is a relative visual preference, not an explicit natural-motion acceptance or anatomical pad label; both remain **unconfirmed**. No v9 training or new holdout evaluation was run. The [v9 execution plan](../../../../experiments/wuji_hand2/palm_up_human_demo_v9/PLAN.md) requires those decisions before a calibrated contact gate or short pilot can be frozen.
 
 [Offline comparison cards](../../../../artifacts/wuji_hand2/palm_up_human_demo_v9/review.html) · [24-episode source and replay checks](replay_checks.json) · [24-episode per-body statistics](full_24_contact_summary.json) · [First-episode plot statistics](summary.json) · [Reproduction scripts](../../../../tools/replay_wuji_v9_fixed_contacts.py)
 
@@ -17,6 +17,10 @@ Both frozen checkpoints were independently replayed on the **already opened** fi
 | Middle tip-sensor body | 30.7% | 33.5% | +2.7 points |
 
 Middle distal-body occupancy decreases in **22/24** paired episodes. That is a measured reduction in this collision body's load, not proof of approved pad contact or a natural release. The full 24-episode summary keeps per-episode fractions and local contact coordinates so a later **human-approved** region definition can be applied without altering the original v7/v8 results.
+
+The user's 2026-10-19 feedback was: “直观感觉 v8效果更好”. We record v8 as the **visually preferred diagnostic candidate** and keep both policies' motion verdicts pending. This preference is consistent with the reduced distal-body occupancy, but the contact statistic cannot explain or certify the user's visual judgment.
+
+Other fixed-validation measures temper the comparison: both policies complete 24/24 episodes without the evaluator's posture/reverse flag, while v8 mean angle error is **1.31°** versus v7's **0.58°**, and the handover-count gate fails in **3/24** v8 episodes versus **1/24** v7 episodes. These old proxy checks do not settle whether the visible handover matches the human reference.
 
 ## First-episode mesh position and handover timing
 

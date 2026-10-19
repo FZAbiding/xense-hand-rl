@@ -4,6 +4,8 @@
 
 **Execution update (2026-10-19):** user requested continuation. The [Gate 0 fixed-seed contact comparison](../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/REVIEW.md), [offline review page](../../../artifacts/wuji_hand2/palm_up_human_demo_v9/review.html), and a machine-readable [pending contact-region record](../../../assets/wuji_hand2_palm_up_human_demo_v9/contact_surface_review.json) now exist. Both policies were replayed on the *already opened* 24-episode fixed seed, with exact agreement to archived angle and duration metrics. Anatomical pad labels and human motion verdict remain pending; no v9 PPO training, calibrated strict gate, or unseen-seed evaluation has begun.
 
+**Human feedback (2026-10-19):** v8 visually appears better than v7. Record v8 as the preferred *diagnostic* candidate while the user reviews whether its transfer motion is acceptable and which distal surfaces, if any, count as pad. This feedback does not change the 0/24 conservative strict result or authorize treating v8 as an approved imitation target.
+
 ## Decision from v8
 
 The v8 diagnostic pilot ran 996 PPO updates in 1,224 seconds of effective GPU time. Its selected checkpoint, SHA256 `066643e4cd236b320d13518ae53c5b089084a38760784d41492b8f9ebfa7efaf`, finished 24/24 fixed-seed 5.5-second episodes and improved mean two-sensor contact from 76.9% to 83.1%. Non-sensor force frames fell from 27.9% to 17.3%. Yet **0/24 passed** the frozen conservative sensor-only gate; all 24 failed the two-sensor, non-sensor, and opposing-contact limits. The unseen seed `2026101703` was not opened. This weight is diagnostic, with unconfirmed motion naturalness. More training time on the same reward is not justified by the current evidence.
