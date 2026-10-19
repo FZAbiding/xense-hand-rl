@@ -1,0 +1,239 @@
+{
+  "scope": "Visual overlays of archived v8 first-episode contact points, not a pad classifier or altered rollout",
+  "scene_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
+  "trajectory_sha256": "d576e7cb4a88e44578a481edcb8effd1048825753d3ad516924b769c4dee1425",
+  "contacts_sha256": "763f9866e1a4f3f76e65a61ad835c8eabdc04764ea9321e208b71ebf5745417b",
+  "marker_radius_m": 0.004,
+  "camera_azimuth_elevation_deg": [
+    [
+      130,
+      35
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      90,
+      85
+    ]
+  ],
+  "frames": [
+    {
+      "index": 51,
+      "seconds": 1.3,
+      "output": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t1.30.png",
+      "contacts": [
+        {
+          "body": "r_index_finger_tip_sensor_frame",
+          "normal_n": 0.16332697584426228,
+          "world_position_m": [
+            0.07245474586291366,
+            -0.01477268026503074,
+            0.135394209512394
+          ]
+        },
+        {
+          "body": "r_index_finger_tip_sensor_frame",
+          "normal_n": 0.16319361044653033,
+          "world_position_m": [
+            0.07246273091686234,
+            -0.014776836743732796,
+            0.13541076457345785
+          ]
+        },
+        {
+          "body": "r_index_finger_tip_sensor_frame",
+          "normal_n": 0.16346021064820696,
+          "world_position_m": [
+            0.0724467564490047,
+            -0.01476850781885928,
+            0.1353776605726416
+          ]
+        },
+        {
+          "body": "r_middle_finger_distal",
+          "normal_n": 0.3377684965007895,
+          "world_position_m": [
+            0.05690422756309563,
+            -0.001405707965098534,
+            0.1362698747913506
+          ]
+        }
+      ],
+      "projected_callouts_by_view": [
+        {
+          "r_index_finger_tip_sensor_frame": {
+            "normal_n": 0.48998079693899954,
+            "pixel": [
+              329.97189343782185,
+              207.2959011112644
+            ]
+          },
+          "r_middle_finger_distal": {
+            "normal_n": 0.3377684965007895,
+            "pixel": [
+              319.99998699439374,
+              240.00000129600107
+            ]
+          }
+        },
+        {
+          "r_index_finger_tip_sensor_frame": {
+            "normal_n": 0.48998079693899954,
+            "pixel": [
+              354.39728702541777,
+              249.1678934955536
+            ]
+          },
+          "r_middle_finger_distal": {
+            "normal_n": 0.3377684965007895,
+            "pixel": [
+              319.99999854677134,
+              240.00001046961157
+            ]
+          }
+        },
+        {
+          "r_index_finger_tip_sensor_frame": {
+            "normal_n": 0.48998079693899954,
+            "pixel": [
+              363.32576962823975,
+              203.1122362376999
+            ]
+          },
+          "r_middle_finger_distal": {
+            "normal_n": 0.3377684965007895,
+            "pixel": [
+              320.00000281863265,
+              239.9999987635385
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "index": 127,
+      "seconds": 3.2,
+      "output": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t3.20.png",
+      "contacts": [
+        {
+          "body": "r_thumb_distal",
+          "normal_n": 0.18598493369310243,
+          "world_position_m": [
+            0.05251972507346265,
+            -0.024453541271177038,
+            0.13385241383152496
+          ]
+        },
+        {
+          "body": "r_index_finger_tip_sensor_frame",
+          "normal_n": 0.062253103605386634,
+          "world_position_m": [
+            0.07307594844614289,
+            -0.017040103516747097,
+            0.13129697011392794
+          ]
+        },
+        {
+          "body": "r_index_finger_tip_sensor_frame",
+          "normal_n": 0.06249379873507652,
+          "world_position_m": [
+            0.07306550781318588,
+            -0.017040349250305897,
+            0.13128119865319948
+          ]
+        },
+        {
+          "body": "r_index_finger_tip_sensor_frame",
+          "normal_n": 0.062011675515943984,
+          "world_position_m": [
+            0.07308637398056521,
+            -0.017039852098648778,
+            0.13131275146988924
+          ]
+        },
+        {
+          "body": "r_middle_finger_distal",
+          "normal_n": 0.304399735034513,
+          "world_position_m": [
+            0.05915805276909689,
+            -0.007608713713952904,
+            0.13414154039550763
+          ]
+        }
+      ],
+      "projected_callouts_by_view": [
+        {
+          "r_index_finger_tip_sensor_frame": {
+            "normal_n": 0.18675857785640715,
+            "pixel": [
+              333.65760404114036,
+              219.37637184108306
+            ]
+          },
+          "r_middle_finger_distal": {
+            "normal_n": 0.304399735034513,
+            "pixel": [
+              319.99998468930323,
+              240.00001186552538
+            ]
+          },
+          "r_thumb_distal": {
+            "normal_n": 0.18598493369310243,
+            "pixel": [
+              274.52678218910484,
+              226.52040483015955
+            ]
+          }
+        },
+        {
+          "r_index_finger_tip_sensor_frame": {
+            "normal_n": 0.18675857785640715,
+            "pixel": [
+              344.48184127039156,
+              253.5453196526033
+            ]
+          },
+          "r_middle_finger_distal": {
+            "normal_n": 0.304399735034513,
+            "pixel": [
+              319.9999977940221,
+              239.9999919120673
+            ]
+          },
+          "r_thumb_distal": {
+            "normal_n": 0.18598493369310243,
+            "pixel": [
+              367.9817642681267,
+              237.5275324492273
+            ]
+          }
+        },
+        {
+          "r_index_finger_tip_sensor_frame": {
+            "normal_n": 0.18675857785640715,
+            "pixel": [
+              359.08114505111064,
+              214.3137583918683
+            ]
+          },
+          "r_middle_finger_distal": {
+            "normal_n": 0.304399735034513,
+            "pixel": [
+              320.00000895401814,
+              240.00000244419178
+            ]
+          },
+          "r_thumb_distal": {
+            "normal_n": 0.18598493369310243,
+            "pixel": [
+              301.5297322347728,
+              193.37993834469478
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

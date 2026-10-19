@@ -1,6 +1,6 @@
 {
   "title": "Wuji v9 Gate 0｜接触网格与交接动作待审阅",
-  "summary": "用户直观认为 v8 效果比 v7 好；这已记录为相对视觉偏好，动作与指腹接触仍待明确验收。24 回合固定种子重放与原指标完全吻合；v8 中指末节承力帧占比由 30.1% 降至 18.5%，但两者在保守门槛均为 0/24。尚未开展 v9 训练。",
+  "summary": "用户认为 v8 比 v7 更好，并已批准 v8 交接动作作为下一轮待改进候选；这不是动作质量通过，也不是指腹接触已获认可。v8 24 回合中指末节承力帧占比从 v7 的 30.1% 降至 18.5%，但保守严格门槛仍为 0/24。v9 训练尚未开始。",
   "cards": [
     {
       "title": "真人参考（已批准示范）",
@@ -25,10 +25,10 @@
       ]
     },
     {
-      "title": "v8 第 996 轮：改进但仅诊断",
+      "title": "v8 第 996 轮：下一轮待改进动作候选（仅诊断）",
       "status": "diagnostic",
       "video": "../../../reports/wuji_hand2/palm_up_human_demo_v8/pilot_20261017/final_0000996/fixed_validation/rollout.mp4",
-      "description": "用户直观认为 v8 比 v7 更好；目前仍是三视角 CPU 策略诊断 rollout。5.5 秒 24/24 完成、保守严格门槛 0/24；真实指腹与交接是否合格待进一步确认。",
+      "description": "用户认可其交接动作可作为下一轮待改进候选。该三视角 CPU 策略 rollout 仍仅有 0/24 保守严格通过；真实指腹区域待标定，当前权重不是合格示范。",
       "links": [
         {
           "label": "24 回合指标",
@@ -46,6 +46,14 @@
     }
   ],
   "images": [
+    {
+      "label": "v8 第 1.30 秒：品红圈为中指末节本体接触，青色圈为食指传感体接触；三视角同一时间",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t1.30.png"
+    },
+    {
+      "label": "v8 第 3.20 秒：品红为中指末节、白色为拇指末节、青色为食指传感体；投影圈可能被近处表面遮挡",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/v8_handover_contact_t3.20.png"
+    },
     {
       "label": "24 回合配对接触本体承力比例：这是网格体统计，并非人体指腹验收",
       "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/paired_24_contact_occupancy.png"
@@ -91,6 +99,10 @@
     {
       "label": "逐回合复现核对",
       "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/replay_checks.json"
+    },
+    {
+      "label": "局部接触标注的来源哈希与精确坐标",
+      "path": "../../../reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/contact_closeup_metadata.json"
     }
   ]
 }

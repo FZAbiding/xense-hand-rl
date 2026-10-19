@@ -6,6 +6,8 @@
 
 **Human feedback (2026-10-19):** v8 visually appears better than v7. Record v8 as the preferred *diagnostic* candidate while the user reviews whether its transfer motion is acceptable and which distal surfaces, if any, count as pad. This feedback does not change the 0/24 conservative strict result or authorize treating v8 as an approved imitation target.
 
+**Motion-candidate decision (2026-10-19):** the user explicitly accepted v8's handover motion as a candidate for the next improvement round. V8 may therefore be considered as a diagnostic warm start for that isolated short-turn study once the pad-region gate is calibrated and frozen. This does not promote its present 0/24 result, certify a natural full turn, or resolve distal pad boundaries.
+
 ## Decision from v8
 
 The v8 diagnostic pilot ran 996 PPO updates in 1,224 seconds of effective GPU time. Its selected checkpoint, SHA256 `066643e4cd236b320d13518ae53c5b089084a38760784d41492b8f9ebfa7efaf`, finished 24/24 fixed-seed 5.5-second episodes and improved mean two-sensor contact from 76.9% to 83.1%. Non-sensor force frames fell from 27.9% to 17.3%. Yet **0/24 passed** the frozen conservative sensor-only gate; all 24 failed the two-sensor, non-sensor, and opposing-contact limits. The unseen seed `2026101703` was not opened. This weight is diagnostic, with unconfirmed motion naturalness. More training time on the same reward is not justified by the current evidence.

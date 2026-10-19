@@ -5,6 +5,7 @@
   "source_scene_sha256": "0acb24310e85453aa564c29670daa69e701584a9a50320a591fa714c122aefeb",
   "source_summary": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/summary.json",
   "source_full_24_summary": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/full_24_contact_summary.json",
+  "contact_closeup_metadata": "reports/wuji_hand2/palm_up_human_demo_v9/gate0_20261019/contact_closeup_metadata.json",
   "coordinate_frame": "MuJoCo body-local metres; child tip_sensor_frame origins coincide with parent distal body origins in this scene",
   "contact_sample_filter_n": 0.02,
   "accepted_pad_regions": null,
@@ -19,14 +20,21 @@
   ],
   "motion_verdicts": {
     "v7_iteration_9000": "pending_human_review",
-    "v8_iteration_996": "pending_human_review"
+    "v8_iteration_996": "accepted_as_next_improvement_candidate_not_quality_pass"
   },
   "human_feedback": [
     {
       "date": "2026-10-19",
       "verbatim": "直观感觉 v8效果更好",
       "interpretation": "Visual preference for v8 over v7; motion acceptance and anatomical pad labels remain pending."
+    },
+    {
+      "date": "2026-10-19",
+      "verbatim": "v8 的交接动作可以作为下一轮待改进候选",
+      "interpretation": "V8 transfer motion is accepted as a candidate for iterative short-turn improvement, not as a passed natural-motion demonstration."
     }
   ],
+  "diagnostic_warm_start_candidate": "v8_iteration_996_after_pad_gate_is_frozen",
+  "qualified_imitation_target": false,
   "training_use_allowed": false
 }
